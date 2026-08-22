@@ -318,5 +318,5 @@ current best among the original four structures, not a global minimum. A new
 structure becomes the current-best candidate only if a broader ensemble search
 finds a lower-energy result under comparable conditions.
 
-Note: English is not my strong point, so I used AI to help with the documentation. I also used AI as a development assistant throughout the project. The research design, calculations, and final decisions are my own.
+Note: English is not my strong point, so I used AI to help with the documentation. I also used AI as a development and research-assistance tool throughout the project. The calculations were run by me, and I reviewed and made the final decisions on the methods, analyses, and conclusions.
 "Because it’s a free download I’m surrounded by a forcefield that destroys all complaints"
