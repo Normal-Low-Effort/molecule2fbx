@@ -317,3 +317,6 @@ chemistry runtime in the Python environment.
 current best among the original four structures, not a global minimum. A new
 structure becomes the current-best candidate only if a broader ensemble search
 finds a lower-energy result under comparable conditions.
+
+Note: English is not my strong point, so I used AI to help with the documentation. I also used AI as a development assistant throughout the project. The research design, calculations, and final decisions are my own.
+"Because it’s a free download I’m surrounded by a forcefield that destroys all complaints"
