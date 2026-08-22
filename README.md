@@ -7,7 +7,7 @@ models from a PubChem CID or SMILES and exports them to FBX through Blender.
 It distinguishes PubChem 3D structures, RDKit force-field structures, and ORCA
 quantum-chemistry structures, and records their provenance and calculation
 settings in JSON metadata.
-The repository also includes a small curated snapshot of research analyses performed with molecule2fbx. Large raw calculation data are kept locally and are not included in the repository. If you are interested in the research data, feel free to ask.
+The repository also includes descriptions related to research analyses of LSD conducted using molecule2fbx, as well as selected snapshots of those research analyses. Large raw computational datasets are stored locally and are not included in the repository. If you are interested in the research data, please feel free to contact me.
 
 Version 0.4.0 adds an `--ensemble` mode that runs ETKDG conformer generation,
 DFT geometry optimization, post-DFT duplicate removal, selective frequency
