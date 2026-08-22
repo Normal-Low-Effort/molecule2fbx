@@ -2,6 +2,8 @@
 
 [Japanese version](READMEja.md)
 
+The repository also includes a small curated snapshot of research analyses performed with molecule2fbx. Large raw calculation data are kept locally and are not included in the repository. If you are interested in the research data, feel free to ask.
+
 `molecule2fbx` is a command-line tool that generates ball-and-stick molecular
 models from a PubChem CID or SMILES and exports them to FBX through Blender.
 It distinguishes PubChem 3D structures, RDKit force-field structures, and ORCA
