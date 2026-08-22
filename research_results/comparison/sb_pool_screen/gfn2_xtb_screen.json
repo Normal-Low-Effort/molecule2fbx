@@ -1,0 +1,414 @@
+{
+  "additional_dft_opt_recommendation": [
+    {
+      "pool_index": 109,
+      "recommendation": "review_for_at_most_one_additional_dft_opt",
+      "relative_energy_kj_mol": 5.036890912354926
+    },
+    {
+      "pool_index": 46,
+      "recommendation": "review_for_at_most_one_additional_dft_opt",
+      "relative_energy_kj_mol": 6.882423801349263
+    }
+  ],
+  "charge": 0,
+  "generated_at_utc": "2026-08-14T07:47:28.425530Z",
+  "interpretation": "GFN2-xTB rankings are a screening model and are not combined with DFT energies or thermochemistry. No additional DFT Opt was launched.",
+  "method": "GFN2-xTB tight geometry optimization",
+  "nprocs": 16,
+  "original_common_scaffold_representative_count": 9,
+  "originally_unrepresented_results": [
+    {
+      "energy_hartree": -101.777507494786,
+      "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\sb_pool_gfn2_xtb\\pool_109\\xtbopt.xyz",
+      "originally_unrepresented": true,
+      "output": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\sb_pool_gfn2_xtb\\pool_109\\xtb.out",
+      "pool_index": 109,
+      "provenance": "computed_this_run",
+      "relative_energy_kj_mol": 5.036890912354926,
+      "stereochemistry_validation": {
+        "atom_order_matches": true,
+        "expected_centers": [
+          {
+            "atom_index": 7,
+            "cip": "R"
+          },
+          {
+            "atom_index": 11,
+            "cip": "R"
+          }
+        ],
+        "matches": true,
+        "observed_centers": [
+          {
+            "atom_index": 7,
+            "cip": "R"
+          },
+          {
+            "atom_index": 11,
+            "cip": "R"
+          }
+        ]
+      },
+      "xtb_common_scaffold_cluster_id": "xtb_core_cluster_008",
+      "xtb_common_scaffold_rmsd_to_representative_angstrom": 0.0
+    },
+    {
+      "energy_hartree": -101.776804568432,
+      "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\sb_pool_gfn2_xtb\\pool_046\\xtbopt.xyz",
+      "originally_unrepresented": true,
+      "output": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\sb_pool_gfn2_xtb\\pool_046\\xtb.out",
+      "pool_index": 46,
+      "provenance": "computed_this_run",
+      "relative_energy_kj_mol": 6.882423801349263,
+      "stereochemistry_validation": {
+        "atom_order_matches": true,
+        "expected_centers": [
+          {
+            "atom_index": 7,
+            "cip": "R"
+          },
+          {
+            "atom_index": 11,
+            "cip": "R"
+          }
+        ],
+        "matches": true,
+        "observed_centers": [
+          {
+            "atom_index": 7,
+            "cip": "R"
+          },
+          {
+            "atom_index": 11,
+            "cip": "R"
+          }
+        ]
+      },
+      "xtb_common_scaffold_cluster_id": "xtb_core_cluster_009",
+      "xtb_common_scaffold_rmsd_to_representative_angstrom": 0.0
+    }
+  ],
+  "purpose": "Independent cheap reranking before any additional DFT Opt",
+  "results": [
+    {
+      "energy_hartree": -101.779425945216,
+      "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\sb_pool_gfn2_xtb\\pool_078\\xtbopt.xyz",
+      "originally_unrepresented": false,
+      "output": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\sb_pool_gfn2_xtb\\pool_078\\xtb.out",
+      "pool_index": 78,
+      "provenance": "computed_this_run",
+      "relative_energy_kj_mol": 0.0,
+      "stereochemistry_validation": {
+        "atom_order_matches": true,
+        "expected_centers": [
+          {
+            "atom_index": 7,
+            "cip": "R"
+          },
+          {
+            "atom_index": 11,
+            "cip": "R"
+          }
+        ],
+        "matches": true,
+        "observed_centers": [
+          {
+            "atom_index": 7,
+            "cip": "R"
+          },
+          {
+            "atom_index": 11,
+            "cip": "R"
+          }
+        ]
+      },
+      "xtb_common_scaffold_cluster_id": "xtb_core_cluster_001",
+      "xtb_common_scaffold_rmsd_to_representative_angstrom": 0.0
+    },
+    {
+      "energy_hartree": -101.77912836197,
+      "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\sb_pool_gfn2_xtb\\pool_161\\xtbopt.xyz",
+      "originally_unrepresented": false,
+      "output": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\sb_pool_gfn2_xtb\\pool_161\\xtb.out",
+      "pool_index": 161,
+      "provenance": "computed_this_run",
+      "relative_energy_kj_mol": 0.78130470511315,
+      "stereochemistry_validation": {
+        "atom_order_matches": true,
+        "expected_centers": [
+          {
+            "atom_index": 7,
+            "cip": "R"
+          },
+          {
+            "atom_index": 11,
+            "cip": "R"
+          }
+        ],
+        "matches": true,
+        "observed_centers": [
+          {
+            "atom_index": 7,
+            "cip": "R"
+          },
+          {
+            "atom_index": 11,
+            "cip": "R"
+          }
+        ]
+      },
+      "xtb_common_scaffold_cluster_id": "xtb_core_cluster_002",
+      "xtb_common_scaffold_rmsd_to_representative_angstrom": 0.0
+    },
+    {
+      "energy_hartree": -101.778108943342,
+      "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\sb_pool_gfn2_xtb\\pool_154\\xtbopt.xyz",
+      "originally_unrepresented": false,
+      "output": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\sb_pool_gfn2_xtb\\pool_154\\xtb.out",
+      "pool_index": 154,
+      "provenance": "computed_this_run",
+      "relative_energy_kj_mol": 3.457787945380977,
+      "stereochemistry_validation": {
+        "atom_order_matches": true,
+        "expected_centers": [
+          {
+            "atom_index": 7,
+            "cip": "R"
+          },
+          {
+            "atom_index": 11,
+            "cip": "R"
+          }
+        ],
+        "matches": true,
+        "observed_centers": [
+          {
+            "atom_index": 7,
+            "cip": "R"
+          },
+          {
+            "atom_index": 11,
+            "cip": "R"
+          }
+        ]
+      },
+      "xtb_common_scaffold_cluster_id": "xtb_core_cluster_003",
+      "xtb_common_scaffold_rmsd_to_representative_angstrom": 0.0
+    },
+    {
+      "energy_hartree": -101.778097976133,
+      "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\sb_pool_gfn2_xtb\\pool_077\\xtbopt.xyz",
+      "originally_unrepresented": false,
+      "output": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\sb_pool_gfn2_xtb\\pool_077\\xtb.out",
+      "pool_index": 77,
+      "provenance": "computed_this_run",
+      "relative_energy_kj_mol": 3.486582348676577,
+      "stereochemistry_validation": {
+        "atom_order_matches": true,
+        "expected_centers": [
+          {
+            "atom_index": 7,
+            "cip": "R"
+          },
+          {
+            "atom_index": 11,
+            "cip": "R"
+          }
+        ],
+        "matches": true,
+        "observed_centers": [
+          {
+            "atom_index": 7,
+            "cip": "R"
+          },
+          {
+            "atom_index": 11,
+            "cip": "R"
+          }
+        ]
+      },
+      "xtb_common_scaffold_cluster_id": "xtb_core_cluster_004",
+      "xtb_common_scaffold_rmsd_to_representative_angstrom": 0.0
+    },
+    {
+      "energy_hartree": -101.778097252448,
+      "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\sb_pool_gfn2_xtb\\pool_133\\xtbopt.xyz",
+      "originally_unrepresented": false,
+      "output": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\sb_pool_gfn2_xtb\\pool_133\\xtb.out",
+      "pool_index": 133,
+      "provenance": "computed_this_run",
+      "relative_energy_kj_mol": 3.4884823833596603,
+      "stereochemistry_validation": {
+        "atom_order_matches": true,
+        "expected_centers": [
+          {
+            "atom_index": 7,
+            "cip": "R"
+          },
+          {
+            "atom_index": 11,
+            "cip": "R"
+          }
+        ],
+        "matches": true,
+        "observed_centers": [
+          {
+            "atom_index": 7,
+            "cip": "R"
+          },
+          {
+            "atom_index": 11,
+            "cip": "R"
+          }
+        ]
+      },
+      "xtb_common_scaffold_cluster_id": "xtb_core_cluster_005",
+      "xtb_common_scaffold_rmsd_to_representative_angstrom": 0.0
+    },
+    {
+      "energy_hartree": -101.778052420654,
+      "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\sb_pool_gfn2_xtb\\pool_144\\xtbopt.xyz",
+      "originally_unrepresented": false,
+      "output": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\sb_pool_gfn2_xtb\\pool_144\\xtb.out",
+      "pool_index": 144,
+      "provenance": "computed_this_run",
+      "relative_energy_kj_mol": 3.6061882423434595,
+      "stereochemistry_validation": {
+        "atom_order_matches": true,
+        "expected_centers": [
+          {
+            "atom_index": 7,
+            "cip": "R"
+          },
+          {
+            "atom_index": 11,
+            "cip": "R"
+          }
+        ],
+        "matches": true,
+        "observed_centers": [
+          {
+            "atom_index": 7,
+            "cip": "R"
+          },
+          {
+            "atom_index": 11,
+            "cip": "R"
+          }
+        ]
+      },
+      "xtb_common_scaffold_cluster_id": "xtb_core_cluster_006",
+      "xtb_common_scaffold_rmsd_to_representative_angstrom": 0.0
+    },
+    {
+      "energy_hartree": -101.778018542757,
+      "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\sb_pool_gfn2_xtb\\pool_093\\xtbopt.xyz",
+      "originally_unrepresented": false,
+      "output": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\sb_pool_gfn2_xtb\\pool_093\\xtb.out",
+      "pool_index": 93,
+      "provenance": "computed_this_run",
+      "relative_energy_kj_mol": 3.6951346487305243,
+      "stereochemistry_validation": {
+        "atom_order_matches": true,
+        "expected_centers": [
+          {
+            "atom_index": 7,
+            "cip": "R"
+          },
+          {
+            "atom_index": 11,
+            "cip": "R"
+          }
+        ],
+        "matches": true,
+        "observed_centers": [
+          {
+            "atom_index": 7,
+            "cip": "R"
+          },
+          {
+            "atom_index": 11,
+            "cip": "R"
+          }
+        ]
+      },
+      "xtb_common_scaffold_cluster_id": "xtb_core_cluster_007",
+      "xtb_common_scaffold_rmsd_to_representative_angstrom": 0.0
+    },
+    {
+      "energy_hartree": -101.777507494786,
+      "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\sb_pool_gfn2_xtb\\pool_109\\xtbopt.xyz",
+      "originally_unrepresented": true,
+      "output": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\sb_pool_gfn2_xtb\\pool_109\\xtb.out",
+      "pool_index": 109,
+      "provenance": "computed_this_run",
+      "relative_energy_kj_mol": 5.036890912354926,
+      "stereochemistry_validation": {
+        "atom_order_matches": true,
+        "expected_centers": [
+          {
+            "atom_index": 7,
+            "cip": "R"
+          },
+          {
+            "atom_index": 11,
+            "cip": "R"
+          }
+        ],
+        "matches": true,
+        "observed_centers": [
+          {
+            "atom_index": 7,
+            "cip": "R"
+          },
+          {
+            "atom_index": 11,
+            "cip": "R"
+          }
+        ]
+      },
+      "xtb_common_scaffold_cluster_id": "xtb_core_cluster_008",
+      "xtb_common_scaffold_rmsd_to_representative_angstrom": 0.0
+    },
+    {
+      "energy_hartree": -101.776804568432,
+      "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\sb_pool_gfn2_xtb\\pool_046\\xtbopt.xyz",
+      "originally_unrepresented": true,
+      "output": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\sb_pool_gfn2_xtb\\pool_046\\xtb.out",
+      "pool_index": 46,
+      "provenance": "computed_this_run",
+      "relative_energy_kj_mol": 6.882423801349263,
+      "stereochemistry_validation": {
+        "atom_order_matches": true,
+        "expected_centers": [
+          {
+            "atom_index": 7,
+            "cip": "R"
+          },
+          {
+            "atom_index": 11,
+            "cip": "R"
+          }
+        ],
+        "matches": true,
+        "observed_centers": [
+          {
+            "atom_index": 7,
+            "cip": "R"
+          },
+          {
+            "atom_index": 11,
+            "cip": "R"
+          }
+        ]
+      },
+      "xtb_common_scaffold_cluster_id": "xtb_core_cluster_009",
+      "xtb_common_scaffold_rmsd_to_representative_angstrom": 0.0
+    }
+  ],
+  "software": "xTB",
+  "unpaired_electrons": 0,
+  "version": "6.7.1pre",
+  "xtb_common_scaffold_cluster_count": 9
+}

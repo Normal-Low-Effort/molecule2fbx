@@ -1,0 +1,108 @@
+{
+  "completed_jobs": [
+    {
+      "condition": "baseline_b3lyp_def2_svp_gas",
+      "conformer_id": "conf002",
+      "finished_at_utc": "2026-08-14T13:24:51.530046Z",
+      "molecule": "1Bz-LSD_RR",
+      "provenance": "computed_this_run",
+      "started_at_utc": "2026-08-14T13:20:39.010619Z"
+    },
+    {
+      "condition": "baseline_b3lyp_def2_svp_gas",
+      "conformer_id": "conf009",
+      "finished_at_utc": "2026-08-14T13:29:05.808193Z",
+      "molecule": "1SB-LSD_RR",
+      "provenance": "computed_this_run",
+      "started_at_utc": "2026-08-14T13:24:51.563047Z"
+    },
+    {
+      "condition": "baseline_b3lyp_def2_svp_gas",
+      "conformer_id": "conf006",
+      "finished_at_utc": "2026-08-14T13:32:23.260434Z",
+      "molecule": "1Bz-LSD_RR",
+      "provenance": "computed_this_run",
+      "started_at_utc": "2026-08-14T13:29:05.830063Z"
+    },
+    {
+      "condition": "baseline_b3lyp_def2_svp_gas",
+      "conformer_id": "conf010",
+      "finished_at_utc": "2026-08-14T13:36:51.034882Z",
+      "molecule": "1SB-LSD_RR",
+      "provenance": "computed_this_run",
+      "started_at_utc": "2026-08-14T13:32:23.277983Z"
+    },
+    {
+      "condition": "baseline_b3lyp_def2_svp_gas",
+      "conformer_id": "conf005",
+      "finished_at_utc": "2026-08-14T13:40:10.505715Z",
+      "molecule": "1Bz-LSD_RR",
+      "provenance": "computed_this_run",
+      "started_at_utc": "2026-08-14T13:36:51.055882Z"
+    },
+    {
+      "condition": "baseline_b3lyp_def2_svp_gas",
+      "conformer_id": "conf008",
+      "finished_at_utc": "2026-08-14T13:44:25.704926Z",
+      "molecule": "1SB-LSD_RR",
+      "provenance": "computed_this_run",
+      "started_at_utc": "2026-08-14T13:40:10.526333Z"
+    },
+    {
+      "condition": "baseline_b3lyp_def2_svp_gas",
+      "conformer_id": "conf009",
+      "finished_at_utc": "2026-08-14T13:47:44.241125Z",
+      "molecule": "1Bz-LSD_RR",
+      "provenance": "computed_this_run",
+      "started_at_utc": "2026-08-14T13:44:25.729282Z"
+    },
+    {
+      "condition": "baseline_b3lyp_def2_svp_gas",
+      "conformer_id": "conf003",
+      "finished_at_utc": "2026-08-14T13:52:09.512855Z",
+      "molecule": "1SB-LSD_RR",
+      "provenance": "computed_this_run",
+      "started_at_utc": "2026-08-14T13:47:44.265258Z"
+    },
+    {
+      "condition": "b3lyp_d3bj_def2_tzvp_cpcm_water",
+      "conformer_id": "conf003",
+      "finished_at_utc": "2026-08-14T14:13:56.882555Z",
+      "molecule": "1Bz-LSD_RR",
+      "provenance": "computed_this_run",
+      "started_at_utc": "2026-08-14T13:52:09.529375Z"
+    },
+    {
+      "condition": "b3lyp_d3bj_def2_tzvp_cpcm_water",
+      "conformer_id": "conf005",
+      "finished_at_utc": "2026-08-14T14:43:04.221088Z",
+      "molecule": "1SB-LSD_RR",
+      "provenance": "computed_this_run",
+      "started_at_utc": "2026-08-14T14:13:56.906429Z"
+    },
+    {
+      "condition": "b3lyp_d3bj_def2_tzvp_cpcm_water",
+      "conformer_id": "conf008",
+      "finished_at_utc": "2026-08-14T15:08:13.530997Z",
+      "molecule": "1Bz-LSD_RR",
+      "provenance": "computed_this_run",
+      "started_at_utc": "2026-08-14T14:43:04.240088Z"
+    },
+    {
+      "condition": "b3lyp_d3bj_def2_tzvp_cpcm_water",
+      "conformer_id": "conf002",
+      "finished_at_utc": "2026-08-14T15:39:46.004467Z",
+      "molecule": "1SB-LSD_RR",
+      "provenance": "computed_this_run",
+      "started_at_utc": "2026-08-14T15:08:13.552679Z"
+    }
+  ],
+  "current_job": null,
+  "effect_on_hypothesis": "Persistence with one sign supports a model-robust TMS electronic effect; sign reversal or method-scale variability makes it unresolved.",
+  "estimated_wall_time_hours": "1-2",
+  "finished_at_utc": "2026-08-14T15:39:46.016766Z",
+  "planned_job_count_including_reuse": 16,
+  "reason": "Test whether the observed MBIS and local-LUMO shifts survive conformer pairing and a larger basis/dispersion/aqueous continuum.",
+  "started_at_utc": "2026-08-14T13:20:38.762246Z",
+  "status": "SUCCESS"
+}

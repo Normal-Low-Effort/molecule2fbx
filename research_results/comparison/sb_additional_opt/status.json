@@ -1,0 +1,8 @@
+{
+  "elapsed_minutes": 23.46,
+  "finished_at_utc": "2026-08-14T08:17:30.230755Z",
+  "pool_index": 109,
+  "started_at_utc": "2026-08-14T07:54:02.502014Z",
+  "status": "SUCCESS",
+  "work_directory": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\sb_additional_dft_opt\\conformer_011_pool_109"
+}

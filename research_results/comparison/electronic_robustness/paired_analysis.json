@@ -1,0 +1,698 @@
+{
+  "condition_summaries": {
+    "b3lyp_d3bj_def2_tzvp_cpcm_water": {
+      "chelpg_charge_amide_n": {
+        "maximum_sb_minus_bz": -0.00017400000000000054,
+        "mean_sb_minus_bz": -0.004229500000000001,
+        "median_sb_minus_bz": -0.004229500000000001,
+        "minimum_sb_minus_bz": -0.008285,
+        "negative_pair_count": 2,
+        "pair_count": 2,
+        "positive_pair_count": 0,
+        "same_nonzero_sign_for_all_pairs": true,
+        "standard_deviation": 0.005735343102204087
+      },
+      "chelpg_charge_carbonyl_c": {
+        "maximum_sb_minus_bz": -0.007439000000000029,
+        "mean_sb_minus_bz": -0.013988000000000028,
+        "median_sb_minus_bz": -0.013988000000000028,
+        "minimum_sb_minus_bz": -0.020537000000000027,
+        "negative_pair_count": 2,
+        "pair_count": 2,
+        "positive_pair_count": 0,
+        "same_nonzero_sign_for_all_pairs": true,
+        "standard_deviation": 0.009261684619981399
+      },
+      "chelpg_charge_carbonyl_o": {
+        "maximum_sb_minus_bz": 0.005198000000000036,
+        "mean_sb_minus_bz": 0.0017945000000000322,
+        "median_sb_minus_bz": 0.0017945000000000322,
+        "minimum_sb_minus_bz": -0.0016089999999999716,
+        "negative_pair_count": 1,
+        "pair_count": 2,
+        "positive_pair_count": 1,
+        "same_nonzero_sign_for_all_pairs": false,
+        "standard_deviation": 0.004813275859536835
+      },
+      "dipole_magnitude_debye": {
+        "maximum_sb_minus_bz": 0.790135394,
+        "mean_sb_minus_bz": 0.48600624150000016,
+        "median_sb_minus_bz": 0.48600624150000016,
+        "minimum_sb_minus_bz": 0.18187708900000032,
+        "negative_pair_count": 0,
+        "pair_count": 2,
+        "positive_pair_count": 2,
+        "same_nonzero_sign_for_all_pairs": true,
+        "standard_deviation": 0.43010357217853507
+      },
+      "homo_energy_ev": {
+        "maximum_sb_minus_bz": 0.0035999999999996035,
+        "mean_sb_minus_bz": 0.0009500000000000064,
+        "median_sb_minus_bz": 0.0009500000000000064,
+        "minimum_sb_minus_bz": -0.0016999999999995907,
+        "negative_pair_count": 1,
+        "pair_count": 2,
+        "positive_pair_count": 1,
+        "same_nonzero_sign_for_all_pairs": false,
+        "standard_deviation": 0.003747665940288132
+      },
+      "homo_loewdin_population_benzoyl_center": {
+        "maximum_sb_minus_bz": 0.0010999999999999899,
+        "mean_sb_minus_bz": 0.0006009999999999974,
+        "median_sb_minus_bz": 0.0006009999999999974,
+        "minimum_sb_minus_bz": 0.00010200000000000486,
+        "negative_pair_count": 0,
+        "pair_count": 2,
+        "positive_pair_count": 2,
+        "same_nonzero_sign_for_all_pairs": true,
+        "standard_deviation": 0.0007056925676241639
+      },
+      "homo_lumo_gap_ev": {
+        "maximum_sb_minus_bz": -0.0472999999999999,
+        "mean_sb_minus_bz": -0.04925000000000024,
+        "median_sb_minus_bz": -0.04925000000000024,
+        "minimum_sb_minus_bz": -0.05120000000000058,
+        "negative_pair_count": 2,
+        "pair_count": 2,
+        "positive_pair_count": 0,
+        "same_nonzero_sign_for_all_pairs": true,
+        "standard_deviation": 0.0027577164466280166
+      },
+      "loewdin_charge_amide_n": {
+        "maximum_sb_minus_bz": 6.100000000003325e-05,
+        "mean_sb_minus_bz": -2.649999999998487e-05,
+        "median_sb_minus_bz": -2.649999999998487e-05,
+        "minimum_sb_minus_bz": -0.00011400000000000299,
+        "negative_pair_count": 1,
+        "pair_count": 2,
+        "positive_pair_count": 1,
+        "same_nonzero_sign_for_all_pairs": false,
+        "standard_deviation": 0.00012374368670767144
+      },
+      "loewdin_charge_carbonyl_c": {
+        "maximum_sb_minus_bz": 0.00017499999999998073,
+        "mean_sb_minus_bz": 8.949999999996461e-05,
+        "median_sb_minus_bz": 8.949999999996461e-05,
+        "minimum_sb_minus_bz": 3.999999999948489e-06,
+        "negative_pair_count": 0,
+        "pair_count": 2,
+        "positive_pair_count": 2,
+        "same_nonzero_sign_for_all_pairs": true,
+        "standard_deviation": 0.00012091525958292242
+      },
+      "loewdin_charge_carbonyl_o": {
+        "maximum_sb_minus_bz": -0.0004529999999999951,
+        "mean_sb_minus_bz": -0.0005304999999999963,
+        "median_sb_minus_bz": -0.0005304999999999963,
+        "minimum_sb_minus_bz": -0.0006079999999999974,
+        "negative_pair_count": 2,
+        "pair_count": 2,
+        "positive_pair_count": 0,
+        "same_nonzero_sign_for_all_pairs": true,
+        "standard_deviation": 0.00010960155108391653
+      },
+      "lumo_energy_ev": {
+        "maximum_sb_minus_bz": -0.04370000000000007,
+        "mean_sb_minus_bz": -0.04830000000000001,
+        "median_sb_minus_bz": -0.04830000000000001,
+        "minimum_sb_minus_bz": -0.05289999999999995,
+        "negative_pair_count": 2,
+        "pair_count": 2,
+        "positive_pair_count": 0,
+        "same_nonzero_sign_for_all_pairs": true,
+        "standard_deviation": 0.006505382386916149
+      },
+      "lumo_loewdin_population_benzoyl_center": {
+        "maximum_sb_minus_bz": -0.018098000000000003,
+        "mean_sb_minus_bz": -0.018195500000000003,
+        "median_sb_minus_bz": -0.018195500000000003,
+        "minimum_sb_minus_bz": -0.018293000000000004,
+        "negative_pair_count": 2,
+        "pair_count": 2,
+        "positive_pair_count": 0,
+        "same_nonzero_sign_for_all_pairs": true,
+        "standard_deviation": 0.00013788582233137728
+      },
+      "mayer_bond_order_c_n": {
+        "maximum_sb_minus_bz": 0.0007999999999999119,
+        "mean_sb_minus_bz": 0.00034999999999996145,
+        "median_sb_minus_bz": 0.00034999999999996145,
+        "minimum_sb_minus_bz": -9.999999999998899e-05,
+        "negative_pair_count": 1,
+        "pair_count": 2,
+        "positive_pair_count": 1,
+        "same_nonzero_sign_for_all_pairs": false,
+        "standard_deviation": 0.0006363961030678227
+      },
+      "mayer_bond_order_c_o": {
+        "maximum_sb_minus_bz": 0.0037999999999998035,
+        "mean_sb_minus_bz": 0.0024999999999999467,
+        "median_sb_minus_bz": 0.0024999999999999467,
+        "minimum_sb_minus_bz": 0.0012000000000000899,
+        "negative_pair_count": 0,
+        "pair_count": 2,
+        "positive_pair_count": 2,
+        "same_nonzero_sign_for_all_pairs": true,
+        "standard_deviation": 0.0018384776310848212
+      },
+      "mbis_charge_amide_n": {
+        "maximum_sb_minus_bz": 0.0011570000000000191,
+        "mean_sb_minus_bz": 0.000973500000000016,
+        "median_sb_minus_bz": 0.000973500000000016,
+        "minimum_sb_minus_bz": 0.0007900000000000129,
+        "negative_pair_count": 0,
+        "pair_count": 2,
+        "positive_pair_count": 2,
+        "same_nonzero_sign_for_all_pairs": true,
+        "standard_deviation": 0.00025950818869546733
+      },
+      "mbis_charge_carbonyl_c": {
+        "maximum_sb_minus_bz": -0.0047319999999999585,
+        "mean_sb_minus_bz": -0.004828999999999972,
+        "median_sb_minus_bz": -0.004828999999999972,
+        "minimum_sb_minus_bz": -0.004925999999999986,
+        "negative_pair_count": 2,
+        "pair_count": 2,
+        "positive_pair_count": 0,
+        "same_nonzero_sign_for_all_pairs": true,
+        "standard_deviation": 0.00013717871555020964
+      },
+      "mbis_charge_carbonyl_o": {
+        "maximum_sb_minus_bz": 0.00037199999999992794,
+        "mean_sb_minus_bz": 0.0003689999999999527,
+        "median_sb_minus_bz": 0.0003689999999999527,
+        "minimum_sb_minus_bz": 0.00036599999999997745,
+        "negative_pair_count": 0,
+        "pair_count": 2,
+        "positive_pair_count": 2,
+        "same_nonzero_sign_for_all_pairs": true,
+        "standard_deviation": 4.242640687084276e-06
+      },
+      "mulliken_charge_amide_n": {
+        "maximum_sb_minus_bz": 0.00033600000000000123,
+        "mean_sb_minus_bz": 0.00022250000000000048,
+        "median_sb_minus_bz": 0.00022250000000000048,
+        "minimum_sb_minus_bz": 0.00010899999999999972,
+        "negative_pair_count": 0,
+        "pair_count": 2,
+        "positive_pair_count": 2,
+        "same_nonzero_sign_for_all_pairs": true,
+        "standard_deviation": 0.00016051323932934734
+      },
+      "mulliken_charge_carbonyl_c": {
+        "maximum_sb_minus_bz": -0.0042019999999999835,
+        "mean_sb_minus_bz": -0.004709500000000005,
+        "median_sb_minus_bz": -0.004709500000000005,
+        "minimum_sb_minus_bz": -0.005217000000000027,
+        "negative_pair_count": 2,
+        "pair_count": 2,
+        "positive_pair_count": 0,
+        "same_nonzero_sign_for_all_pairs": true,
+        "standard_deviation": 0.0007177133829043766
+      },
+      "mulliken_charge_carbonyl_o": {
+        "maximum_sb_minus_bz": -9.999999999732445e-07,
+        "mean_sb_minus_bz": -0.0004689999999999972,
+        "median_sb_minus_bz": -0.0004689999999999972,
+        "minimum_sb_minus_bz": -0.0009370000000000211,
+        "negative_pair_count": 2,
+        "pair_count": 2,
+        "positive_pair_count": 0,
+        "same_nonzero_sign_for_all_pairs": true,
+        "standard_deviation": 0.0006618519471906424
+      }
+    },
+    "baseline_b3lyp_def2_svp_gas": {
+      "chelpg_charge_amide_n": {
+        "maximum_sb_minus_bz": 0.024652999999999994,
+        "mean_sb_minus_bz": -0.0007525000000000009,
+        "median_sb_minus_bz": -0.0015100000000000044,
+        "minimum_sb_minus_bz": -0.022024000000000002,
+        "negative_pair_count": 3,
+        "pair_count": 6,
+        "positive_pair_count": 3,
+        "same_nonzero_sign_for_all_pairs": false,
+        "standard_deviation": 0.015277316698294893
+      },
+      "chelpg_charge_carbonyl_c": {
+        "maximum_sb_minus_bz": 0.017154000000000003,
+        "mean_sb_minus_bz": -0.0027226666666666697,
+        "median_sb_minus_bz": -0.000929499999999972,
+        "minimum_sb_minus_bz": -0.023370000000000002,
+        "negative_pair_count": 4,
+        "pair_count": 6,
+        "positive_pair_count": 2,
+        "same_nonzero_sign_for_all_pairs": false,
+        "standard_deviation": 0.013730467663800344
+      },
+      "chelpg_charge_carbonyl_o": {
+        "maximum_sb_minus_bz": 0.002840000000000009,
+        "mean_sb_minus_bz": -0.0005763333333333268,
+        "median_sb_minus_bz": -0.0006240000000000134,
+        "minimum_sb_minus_bz": -0.003159999999999996,
+        "negative_pair_count": 3,
+        "pair_count": 6,
+        "positive_pair_count": 3,
+        "same_nonzero_sign_for_all_pairs": false,
+        "standard_deviation": 0.0022728484917976057
+      },
+      "dipole_magnitude_debye": {
+        "maximum_sb_minus_bz": 0.6158344250000001,
+        "mean_sb_minus_bz": -0.1766858210000001,
+        "median_sb_minus_bz": -0.09513369500000013,
+        "minimum_sb_minus_bz": -1.219845969,
+        "negative_pair_count": 4,
+        "pair_count": 6,
+        "positive_pair_count": 2,
+        "same_nonzero_sign_for_all_pairs": false,
+        "standard_deviation": 0.6226347155566461
+      },
+      "homo_energy_ev": {
+        "maximum_sb_minus_bz": 0.11050000000000004,
+        "mean_sb_minus_bz": 0.041566666666666606,
+        "median_sb_minus_bz": 0.027750000000000163,
+        "minimum_sb_minus_bz": 0.02400000000000002,
+        "negative_pair_count": 0,
+        "pair_count": 6,
+        "positive_pair_count": 6,
+        "same_nonzero_sign_for_all_pairs": true,
+        "standard_deviation": 0.034057461248112306
+      },
+      "homo_loewdin_population_benzoyl_center": {
+        "maximum_sb_minus_bz": 0.005272000000000013,
+        "mean_sb_minus_bz": 0.0018923333333333361,
+        "median_sb_minus_bz": 0.0014375000000000082,
+        "minimum_sb_minus_bz": 0.0004189999999999888,
+        "negative_pair_count": 0,
+        "pair_count": 6,
+        "positive_pair_count": 6,
+        "same_nonzero_sign_for_all_pairs": true,
+        "standard_deviation": 0.0018877621319082268
+      },
+      "homo_lumo_gap_ev": {
+        "maximum_sb_minus_bz": -0.04420000000000002,
+        "mean_sb_minus_bz": -0.05610000000000004,
+        "median_sb_minus_bz": -0.0547500000000003,
+        "minimum_sb_minus_bz": -0.07249999999999979,
+        "negative_pair_count": 6,
+        "pair_count": 6,
+        "positive_pair_count": 0,
+        "same_nonzero_sign_for_all_pairs": true,
+        "standard_deviation": 0.00968565950258418
+      },
+      "loewdin_charge_amide_n": {
+        "maximum_sb_minus_bz": 0.0002489999999999992,
+        "mean_sb_minus_bz": 0.00011133333333333308,
+        "median_sb_minus_bz": 0.00010850000000000009,
+        "minimum_sb_minus_bz": -8.999999999998592e-06,
+        "negative_pair_count": 1,
+        "pair_count": 6,
+        "positive_pair_count": 5,
+        "same_nonzero_sign_for_all_pairs": false,
+        "standard_deviation": 0.00010073860564186173
+      },
+      "loewdin_charge_carbonyl_c": {
+        "maximum_sb_minus_bz": 0.00010999999999999899,
+        "mean_sb_minus_bz": -1.2166666666664957e-05,
+        "median_sb_minus_bz": 2.2500000000001685e-05,
+        "minimum_sb_minus_bz": -0.00027800000000000047,
+        "negative_pair_count": 2,
+        "pair_count": 6,
+        "positive_pair_count": 4,
+        "same_nonzero_sign_for_all_pairs": false,
+        "standard_deviation": 0.0001383075076294373
+      },
+      "loewdin_charge_carbonyl_o": {
+        "maximum_sb_minus_bz": -0.00023699999999998722,
+        "mean_sb_minus_bz": -0.0008893333333333253,
+        "median_sb_minus_bz": -0.0006074999999999969,
+        "minimum_sb_minus_bz": -0.0024470000000000047,
+        "negative_pair_count": 6,
+        "pair_count": 6,
+        "positive_pair_count": 0,
+        "same_nonzero_sign_for_all_pairs": true,
+        "standard_deviation": 0.0007894622642448946
+      },
+      "lumo_energy_ev": {
+        "maximum_sb_minus_bz": 0.038000000000000034,
+        "mean_sb_minus_bz": -0.014533333333333287,
+        "median_sb_minus_bz": -0.02389999999999992,
+        "minimum_sb_minus_bz": -0.03279999999999994,
+        "negative_pair_count": 5,
+        "pair_count": 6,
+        "positive_pair_count": 1,
+        "same_nonzero_sign_for_all_pairs": false,
+        "standard_deviation": 0.02646285446936263
+      },
+      "lumo_loewdin_population_benzoyl_center": {
+        "maximum_sb_minus_bz": -0.02025300000000002,
+        "mean_sb_minus_bz": -0.020959833333333355,
+        "median_sb_minus_bz": -0.020601500000000023,
+        "minimum_sb_minus_bz": -0.02218600000000004,
+        "negative_pair_count": 6,
+        "pair_count": 6,
+        "positive_pair_count": 0,
+        "same_nonzero_sign_for_all_pairs": true,
+        "standard_deviation": 0.0008063248518225662
+      },
+      "mayer_bond_order_c_n": {
+        "maximum_sb_minus_bz": 0.0023999999999999577,
+        "mean_sb_minus_bz": -0.0004333333333332856,
+        "median_sb_minus_bz": -0.0007000000000000339,
+        "minimum_sb_minus_bz": -0.0015999999999998238,
+        "negative_pair_count": 5,
+        "pair_count": 6,
+        "positive_pair_count": 1,
+        "same_nonzero_sign_for_all_pairs": false,
+        "standard_deviation": 0.0014773850773127737
+      },
+      "mayer_bond_order_c_o": {
+        "maximum_sb_minus_bz": 0.000500000000000167,
+        "mean_sb_minus_bz": -0.001283333333333229,
+        "median_sb_minus_bz": -0.0014499999999997293,
+        "minimum_sb_minus_bz": -0.0034999999999998366,
+        "negative_pair_count": 5,
+        "pair_count": 6,
+        "positive_pair_count": 1,
+        "same_nonzero_sign_for_all_pairs": false,
+        "standard_deviation": 0.00135412948666903
+      },
+      "mbis_charge_amide_n": {
+        "maximum_sb_minus_bz": 0.0012120000000000186,
+        "mean_sb_minus_bz": 0.0008728333333333412,
+        "median_sb_minus_bz": 0.000874500000000028,
+        "minimum_sb_minus_bz": 0.0005469999999999919,
+        "negative_pair_count": 0,
+        "pair_count": 6,
+        "positive_pair_count": 6,
+        "same_nonzero_sign_for_all_pairs": true,
+        "standard_deviation": 0.00021761931593190632
+      },
+      "mbis_charge_carbonyl_c": {
+        "maximum_sb_minus_bz": -0.003806000000000087,
+        "mean_sb_minus_bz": -0.003909499999999992,
+        "median_sb_minus_bz": -0.003908999999999996,
+        "minimum_sb_minus_bz": -0.004028999999999949,
+        "negative_pair_count": 6,
+        "pair_count": 6,
+        "positive_pair_count": 0,
+        "same_nonzero_sign_for_all_pairs": true,
+        "standard_deviation": 8.781970166196164e-05
+      },
+      "mbis_charge_carbonyl_o": {
+        "maximum_sb_minus_bz": 0.0003189999999999582,
+        "mean_sb_minus_bz": -0.00025799999999999895,
+        "median_sb_minus_bz": 6.850000000002687e-05,
+        "minimum_sb_minus_bz": -0.0018540000000000223,
+        "negative_pair_count": 2,
+        "pair_count": 6,
+        "positive_pair_count": 4,
+        "same_nonzero_sign_for_all_pairs": false,
+        "standard_deviation": 0.000804057211894791
+      },
+      "mulliken_charge_amide_n": {
+        "maximum_sb_minus_bz": 0.0008199999999999874,
+        "mean_sb_minus_bz": 0.0005218333333333325,
+        "median_sb_minus_bz": 0.0005769999999999942,
+        "minimum_sb_minus_bz": 0.00017499999999998073,
+        "negative_pair_count": 0,
+        "pair_count": 6,
+        "positive_pair_count": 6,
+        "same_nonzero_sign_for_all_pairs": true,
+        "standard_deviation": 0.0002841425111923016
+      },
+      "mulliken_charge_carbonyl_c": {
+        "maximum_sb_minus_bz": 0.0002999999999999947,
+        "mean_sb_minus_bz": -7.316666666666582e-05,
+        "median_sb_minus_bz": -2.9999999999891225e-06,
+        "minimum_sb_minus_bz": -0.0008100000000000052,
+        "negative_pair_count": 3,
+        "pair_count": 6,
+        "positive_pair_count": 3,
+        "same_nonzero_sign_for_all_pairs": false,
+        "standard_deviation": 0.00039782278299095564
+      },
+      "mulliken_charge_carbonyl_o": {
+        "maximum_sb_minus_bz": -0.00012100000000000999,
+        "mean_sb_minus_bz": -0.0011451666666666739,
+        "median_sb_minus_bz": -0.001025000000000012,
+        "minimum_sb_minus_bz": -0.002832000000000001,
+        "negative_pair_count": 6,
+        "pair_count": 6,
+        "positive_pair_count": 0,
+        "same_nonzero_sign_for_all_pairs": true,
+        "standard_deviation": 0.000913049268477153
+      }
+    }
+  },
+  "cross_condition_robustness": {
+    "chelpg_charge_amide_n": {
+      "aqueous_to_baseline_magnitude_ratio": 2.051163918525709,
+      "aqueous_tzvp_mean_sb_minus_bz": -0.004229500000000001,
+      "baseline_common_pair_mean_sb_minus_bz": -0.0020619999999999944,
+      "common_pair_ids": [
+        "pair001",
+        "pair002"
+      ],
+      "same_nonzero_sign": true,
+      "same_sign_retained_pair_count": 1,
+      "tested_pair_count": 2
+    },
+    "chelpg_charge_carbonyl_c": {
+      "aqueous_to_baseline_magnitude_ratio": 2.1863082213191616,
+      "aqueous_tzvp_mean_sb_minus_bz": -0.013988000000000028,
+      "baseline_common_pair_mean_sb_minus_bz": -0.006398000000000015,
+      "common_pair_ids": [
+        "pair001",
+        "pair002"
+      ],
+      "same_nonzero_sign": true,
+      "same_sign_retained_pair_count": 2,
+      "tested_pair_count": 2
+    },
+    "chelpg_charge_carbonyl_o": {
+      "aqueous_to_baseline_magnitude_ratio": 9.941828254846289,
+      "aqueous_tzvp_mean_sb_minus_bz": 0.0017945000000000322,
+      "baseline_common_pair_mean_sb_minus_bz": 0.00018050000000002786,
+      "common_pair_ids": [
+        "pair001",
+        "pair002"
+      ],
+      "same_nonzero_sign": true,
+      "same_sign_retained_pair_count": 2,
+      "tested_pair_count": 2
+    },
+    "dipole_magnitude_debye": {
+      "aqueous_to_baseline_magnitude_ratio": 1.228527266038987,
+      "aqueous_tzvp_mean_sb_minus_bz": 0.48600624150000016,
+      "baseline_common_pair_mean_sb_minus_bz": 0.3956006959999998,
+      "common_pair_ids": [
+        "pair001",
+        "pair002"
+      ],
+      "same_nonzero_sign": true,
+      "same_sign_retained_pair_count": 2,
+      "tested_pair_count": 2
+    },
+    "homo_energy_ev": {
+      "aqueous_to_baseline_magnitude_ratio": 0.034234234234234266,
+      "aqueous_tzvp_mean_sb_minus_bz": 0.0009500000000000064,
+      "baseline_common_pair_mean_sb_minus_bz": 0.027750000000000163,
+      "common_pair_ids": [
+        "pair001",
+        "pair002"
+      ],
+      "same_nonzero_sign": true,
+      "same_sign_retained_pair_count": 1,
+      "tested_pair_count": 2
+    },
+    "homo_loewdin_population_benzoyl_center": {
+      "aqueous_to_baseline_magnitude_ratio": 0.434405493314058,
+      "aqueous_tzvp_mean_sb_minus_bz": 0.0006009999999999974,
+      "baseline_common_pair_mean_sb_minus_bz": 0.0013834999999999958,
+      "common_pair_ids": [
+        "pair001",
+        "pair002"
+      ],
+      "same_nonzero_sign": true,
+      "same_sign_retained_pair_count": 2,
+      "tested_pair_count": 2
+    },
+    "homo_lumo_gap_ev": {
+      "aqueous_to_baseline_magnitude_ratio": 0.841161400512382,
+      "aqueous_tzvp_mean_sb_minus_bz": -0.04925000000000024,
+      "baseline_common_pair_mean_sb_minus_bz": -0.058550000000000324,
+      "common_pair_ids": [
+        "pair001",
+        "pair002"
+      ],
+      "same_nonzero_sign": true,
+      "same_sign_retained_pair_count": 2,
+      "tested_pair_count": 2
+    },
+    "loewdin_charge_amide_n": {
+      "aqueous_to_baseline_magnitude_ratio": 0.20229007633576362,
+      "aqueous_tzvp_mean_sb_minus_bz": -2.649999999998487e-05,
+      "baseline_common_pair_mean_sb_minus_bz": 0.00013099999999999917,
+      "common_pair_ids": [
+        "pair001",
+        "pair002"
+      ],
+      "same_nonzero_sign": false,
+      "same_sign_retained_pair_count": 1,
+      "tested_pair_count": 2
+    },
+    "loewdin_charge_carbonyl_c": {
+      "aqueous_to_baseline_magnitude_ratio": 2.08139534883632,
+      "aqueous_tzvp_mean_sb_minus_bz": 8.949999999996461e-05,
+      "baseline_common_pair_mean_sb_minus_bz": 4.300000000000137e-05,
+      "common_pair_ids": [
+        "pair001",
+        "pair002"
+      ],
+      "same_nonzero_sign": true,
+      "same_sign_retained_pair_count": 1,
+      "tested_pair_count": 2
+    },
+    "loewdin_charge_carbonyl_o": {
+      "aqueous_to_baseline_magnitude_ratio": 1.303439803439824,
+      "aqueous_tzvp_mean_sb_minus_bz": -0.0005304999999999963,
+      "baseline_common_pair_mean_sb_minus_bz": -0.0004069999999999907,
+      "common_pair_ids": [
+        "pair001",
+        "pair002"
+      ],
+      "same_nonzero_sign": true,
+      "same_sign_retained_pair_count": 2,
+      "tested_pair_count": 2
+    },
+    "lumo_energy_ev": {
+      "aqueous_to_baseline_magnitude_ratio": 1.5681818181818217,
+      "aqueous_tzvp_mean_sb_minus_bz": -0.04830000000000001,
+      "baseline_common_pair_mean_sb_minus_bz": -0.03079999999999994,
+      "common_pair_ids": [
+        "pair001",
+        "pair002"
+      ],
+      "same_nonzero_sign": true,
+      "same_sign_retained_pair_count": 2,
+      "tested_pair_count": 2
+    },
+    "lumo_loewdin_population_benzoyl_center": {
+      "aqueous_to_baseline_magnitude_ratio": 0.8889078873445859,
+      "aqueous_tzvp_mean_sb_minus_bz": -0.018195500000000003,
+      "baseline_common_pair_mean_sb_minus_bz": -0.0204695,
+      "common_pair_ids": [
+        "pair001",
+        "pair002"
+      ],
+      "same_nonzero_sign": true,
+      "same_sign_retained_pair_count": 2,
+      "tested_pair_count": 2
+    },
+    "mayer_bond_order_c_n": {
+      "aqueous_to_baseline_magnitude_ratio": 0.3181818181818182,
+      "aqueous_tzvp_mean_sb_minus_bz": 0.00034999999999996145,
+      "baseline_common_pair_mean_sb_minus_bz": -0.0010999999999998789,
+      "common_pair_ids": [
+        "pair001",
+        "pair002"
+      ],
+      "same_nonzero_sign": false,
+      "same_sign_retained_pair_count": 1,
+      "tested_pair_count": 2
+    },
+    "mayer_bond_order_c_o": {
+      "aqueous_to_baseline_magnitude_ratio": 5.000000000000444,
+      "aqueous_tzvp_mean_sb_minus_bz": 0.0024999999999999467,
+      "baseline_common_pair_mean_sb_minus_bz": -0.0004999999999999449,
+      "common_pair_ids": [
+        "pair001",
+        "pair002"
+      ],
+      "same_nonzero_sign": false,
+      "same_sign_retained_pair_count": 1,
+      "tested_pair_count": 2
+    },
+    "mbis_charge_amide_n": {
+      "aqueous_to_baseline_magnitude_ratio": 1.1260844418739469,
+      "aqueous_tzvp_mean_sb_minus_bz": 0.000973500000000016,
+      "baseline_common_pair_mean_sb_minus_bz": 0.0008644999999999903,
+      "common_pair_ids": [
+        "pair001",
+        "pair002"
+      ],
+      "same_nonzero_sign": true,
+      "same_sign_retained_pair_count": 2,
+      "tested_pair_count": 2
+    },
+    "mbis_charge_carbonyl_c": {
+      "aqueous_to_baseline_magnitude_ratio": 1.2492562411072343,
+      "aqueous_tzvp_mean_sb_minus_bz": -0.004828999999999972,
+      "baseline_common_pair_mean_sb_minus_bz": -0.003865499999999966,
+      "common_pair_ids": [
+        "pair001",
+        "pair002"
+      ],
+      "same_nonzero_sign": true,
+      "same_sign_retained_pair_count": 2,
+      "tested_pair_count": 2
+    },
+    "mbis_charge_carbonyl_o": {
+      "aqueous_to_baseline_magnitude_ratio": 1.8923076923074427,
+      "aqueous_tzvp_mean_sb_minus_bz": 0.0003689999999999527,
+      "baseline_common_pair_mean_sb_minus_bz": 0.00019500000000000073,
+      "common_pair_ids": [
+        "pair001",
+        "pair002"
+      ],
+      "same_nonzero_sign": true,
+      "same_sign_retained_pair_count": 2,
+      "tested_pair_count": 2
+    },
+    "mulliken_charge_amide_n": {
+      "aqueous_to_baseline_magnitude_ratio": 0.44723618090453787,
+      "aqueous_tzvp_mean_sb_minus_bz": 0.00022250000000000048,
+      "baseline_common_pair_mean_sb_minus_bz": 0.0004974999999999841,
+      "common_pair_ids": [
+        "pair001",
+        "pair002"
+      ],
+      "same_nonzero_sign": true,
+      "same_sign_retained_pair_count": 2,
+      "tested_pair_count": 2
+    },
+    "mulliken_charge_carbonyl_c": {
+      "aqueous_to_baseline_magnitude_ratio": 61.1623376623427,
+      "aqueous_tzvp_mean_sb_minus_bz": -0.004709500000000005,
+      "baseline_common_pair_mean_sb_minus_bz": 7.699999999999374e-05,
+      "common_pair_ids": [
+        "pair001",
+        "pair002"
+      ],
+      "same_nonzero_sign": false,
+      "same_sign_retained_pair_count": 1,
+      "tested_pair_count": 2
+    },
+    "mulliken_charge_carbonyl_o": {
+      "aqueous_to_baseline_magnitude_ratio": 0.8442844284428175,
+      "aqueous_tzvp_mean_sb_minus_bz": -0.0004689999999999972,
+      "baseline_common_pair_mean_sb_minus_bz": -0.0005555000000000143,
+      "common_pair_ids": [
+        "pair001",
+        "pair002"
+      ],
+      "same_nonzero_sign": true,
+      "same_sign_retained_pair_count": 2,
+      "tested_pair_count": 2
+    }
+  },
+  "delta_definition": "SB minus Bz on matched optimized geometries",
+  "generated_at_utc": "2026-08-14T15:41:06.550038Z",
+  "interpretation": {
+    "if_true": "The direction of the carbonyl-C MBIS and benzoyl-center LUMO shifts is robust across the tested conformers and two electronic conditions. This does not establish a hydrolysis rate effect.",
+    "scope_limit": "Only B3LYP-based gas and aqueous-continuum single points on fixed geometries were tested; explicit solvent, enzyme, and activation free energies were not calculated."
+  },
+  "primary_direction_robust_within_tested_models": true,
+  "source": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\electronic_robustness\\results.json"
+}

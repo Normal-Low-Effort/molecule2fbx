@@ -1,0 +1,45 @@
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+.venv/
+venv/
+.coverage
+htmlcov/
+
+# Local build and packaging artifacts
+build/
+dist/
+*.zip
+
+# Calculation outputs. Curated, lightweight snapshots live in
+# research_results/ and are exported with scripts/export_research_results.py.
+output/
+outputs/
+research_archive/03_raw_calculations/
+
+# Scratch space, release staging, local integration outputs, and test venvs
+work/
+
+# Third-party binaries are installed locally and are not redistributed.
+tools/
+
+# Safety net: do not accidentally commit quantum-chemistry or rendered binary
+# artifacts if they are copied outside outputs/.
+*.gbw
+*.densities
+*.densitiesinfo
+*.hess
+*.engrad
+*.vpot
+*.cube
+*.cpcm
+*.cpcm_corr
+*.tmp
+*.tmp[0-9]*
+*.ges
+*.bas[0-9]*
+*.fbx
+*.out
+*.log

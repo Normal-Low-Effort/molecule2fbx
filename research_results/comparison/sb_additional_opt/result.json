@@ -1,0 +1,131 @@
+{
+  "all_existing_rmsds": [
+    {
+      "common_scaffold_rmsd_angstrom": 1.2564073372623774,
+      "conformer_id": "conf002",
+      "reaction_center_rmsd_angstrom": 0.8043662995013883
+    },
+    {
+      "common_scaffold_rmsd_angstrom": 1.3630756768421477,
+      "conformer_id": "conf007",
+      "reaction_center_rmsd_angstrom": 0.004230230929041889
+    },
+    {
+      "common_scaffold_rmsd_angstrom": 1.533094151731358,
+      "conformer_id": "conf005",
+      "reaction_center_rmsd_angstrom": 0.803590854077975
+    },
+    {
+      "common_scaffold_rmsd_angstrom": 1.1407772959761995,
+      "conformer_id": "conf004",
+      "reaction_center_rmsd_angstrom": 0.808093714745146
+    },
+    {
+      "common_scaffold_rmsd_angstrom": 1.3602236195269326,
+      "conformer_id": "conf006",
+      "reaction_center_rmsd_angstrom": 0.005768498693548694
+    },
+    {
+      "common_scaffold_rmsd_angstrom": 1.8466416015999778,
+      "conformer_id": "conf003",
+      "reaction_center_rmsd_angstrom": 1.1389221215542504
+    },
+    {
+      "common_scaffold_rmsd_angstrom": 1.6059916747077743,
+      "conformer_id": "conf010",
+      "reaction_center_rmsd_angstrom": 1.1417242348810706
+    },
+    {
+      "common_scaffold_rmsd_angstrom": 2.079383714442965,
+      "conformer_id": "conf009",
+      "reaction_center_rmsd_angstrom": 1.1398482137566108
+    },
+    {
+      "common_scaffold_rmsd_angstrom": 1.8579855687102607,
+      "conformer_id": "conf008",
+      "reaction_center_rmsd_angstrom": 1.1395417772745728
+    },
+    {
+      "common_scaffold_rmsd_angstrom": 2.077930377915018,
+      "conformer_id": "conf001",
+      "reaction_center_rmsd_angstrom": 1.13898295136354
+    }
+  ],
+  "basis": "def2-SVP",
+  "calculation_directory": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\sb_additional_dft_opt\\conformer_011_pool_109",
+  "charge": 0,
+  "closest_existing_structure": {
+    "common_scaffold_rmsd_angstrom": 1.1407772959761995,
+    "conformer_id": "conf004",
+    "reaction_center_rmsd_angstrom": 0.808093714745146
+  },
+  "conformer_id": "conf011_pool109",
+  "energy_hartree": -1767.603665704513,
+  "frequency_calculated": false,
+  "functional": "B3LYP",
+  "generated_at_utc": "2026-08-14T08:17:30.226755Z",
+  "geometry_converged": true,
+  "imaginary_modes": null,
+  "interpretation": "Targeted follow-up candidate; not automatically part of the original ensemble and not a frequency-confirmed local minimum.",
+  "multiplicity": 1,
+  "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\sb_additional_dft_opt\\conformer_011_pool_109\\conformer_011.xyz",
+  "pool_index": 109,
+  "relative_to_existing_current_best_kj_mol": 4.027358147345122,
+  "scf_converged": true,
+  "software": "ORCA",
+  "stereochemistry_validation": {
+    "atom_order_matches": true,
+    "expected_centers": [
+      {
+        "atom_index": 7,
+        "cip": "R"
+      },
+      {
+        "atom_index": 11,
+        "cip": "R"
+      }
+    ],
+    "matches": true,
+    "observed_centers": [
+      {
+        "atom_index": 7,
+        "cip": "R"
+      },
+      {
+        "atom_index": 11,
+        "cip": "R"
+      }
+    ]
+  },
+  "structural_descriptors": {
+    "amide_c_n_length_angstrom": 1.402470873339585,
+    "amide_n_planarity_torsion_abs_mean_deg": 13.90725615567612,
+    "amide_n_planarity_torsions_deg": [
+      16.91515916922185,
+      10.899353142130387
+    ],
+    "aryl_c_si_length_angstrom": 1.9048228628675452,
+    "atom_indices": {
+      "amide_n_ring_neighbors": [
+        14,
+        28
+      ],
+      "benzoyl_amide_n": 15,
+      "benzoyl_carbonyl_c": 16,
+      "benzoyl_carbonyl_o": 17,
+      "benzoyl_ipso_c": 18,
+      "benzoyl_ortho_c": [
+        19,
+        23
+      ]
+    },
+    "benzoyl_carbonyl_torsion_abs_mean_deg": 40.61007707390834,
+    "benzoyl_carbonyl_torsions_deg": [
+      37.651893217841604,
+      43.56826092997508
+    ],
+    "carbonyl_c_o_length_angstrom": 1.2157646696653135
+  },
+  "unique_common_scaffold_at_0_75_angstrom": true,
+  "version": "6.1.1"
+}

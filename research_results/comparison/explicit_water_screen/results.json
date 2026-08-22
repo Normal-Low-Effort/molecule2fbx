@@ -1,0 +1,1953 @@
+{
+  "generated_at_utc": "2026-08-21T23:31:23.773713Z",
+  "method": "one explicit H2O, GFN2-xTB tight Opt, ALPB(water)",
+  "pairs": [
+    {
+      "bz_conformer": "conf008",
+      "pair_id": "pair_low_energy",
+      "sb_conformer": "conf002",
+      "states": {
+        "n6_protonated": {
+          "1Bz-LSD_RR": {
+            "charge": 1,
+            "records": [
+              {
+                "apparent_cluster_formation_energy_kj_mol": -9.415833358353492,
+                "energy_hartree": -94.846799655248,
+                "fragment_interaction_energy_kj_mol": -9.68551383538102,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 4.06354630515744,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 1.9778853912891796,
+                  "carbonyl_o_water_o_distance_angstrom": 2.910963352348047,
+                  "final_location": "carbonyl_o_hbond",
+                  "intact_water": true,
+                  "n6_water_o_distance_angstrom": 9.993824282682764,
+                  "o_c_water_o_angle_deg": 16.628991720223702,
+                  "water_o_h_distances_angstrom": [
+                    0.9670906251919612,
+                    0.9621132409816657
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": null
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_low_energy\\n6_protonated\\1Bz-LSD_RR\\carbonyl_o_hbond\\xtbopt.xyz",
+                "placement_id": "carbonyl_o_hbond",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": 0.2469276293519706,
+                "water_deformation_energy_kj_mol": 0.02275284767555649
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": 280.6105999938413,
+                "energy_hartree": -94.736334420749,
+                "fragment_interaction_energy_kj_mol": null,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 3.369586133328151,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 4.27522634742366,
+                  "carbonyl_o_water_o_distance_angstrom": 3.7090696894862285,
+                  "final_location": "proton_transfer_or_dissociated_water",
+                  "intact_water": false,
+                  "n6_water_o_distance_angstrom": 4.710148918538037,
+                  "o_c_water_o_angle_deg": 96.15844644171031,
+                  "water_o_h_distances_angstrom": [
+                    0.9686018773996697,
+                    3.511174207855268
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": null
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_low_energy\\n6_protonated\\1Bz-LSD_RR\\attack_00\\xtbopt.xyz",
+                "placement_id": "attack_00",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": null,
+                "water_deformation_energy_kj_mol": null
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": -13.530992007857819,
+                "energy_hartree": -94.8483670364,
+                "fragment_interaction_energy_kj_mol": -13.583882112590846,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 4.001883297409535,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 4.72491472286785,
+                  "carbonyl_o_water_o_distance_angstrom": 4.672075136369897,
+                  "final_location": "other_or_dispersed",
+                  "intact_water": true,
+                  "n6_water_o_distance_angstrom": 7.126602977839964,
+                  "o_c_water_o_angle_deg": 116.14667460772978,
+                  "water_o_h_distances_angstrom": [
+                    0.9635774402941334,
+                    0.9613723720997549
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": null
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_low_energy\\n6_protonated\\1Bz-LSD_RR\\attack_01\\xtbopt.xyz",
+                "placement_id": "attack_01",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": 0.061890283365768226,
+                "water_deformation_energy_kj_mol": -0.009000178632740363
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": -13.558101541367433,
+                "energy_hartree": -94.848377361876,
+                "fragment_interaction_energy_kj_mol": -13.613175772989711,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 4.045766976009505,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 4.7911541255513,
+                  "carbonyl_o_water_o_distance_angstrom": 4.733790204199802,
+                  "final_location": "other_or_dispersed",
+                  "intact_water": true,
+                  "n6_water_o_distance_angstrom": 7.118798222771978,
+                  "o_c_water_o_angle_deg": 117.3131027920714,
+                  "water_o_h_distances_angstrom": [
+                    0.9633329525391864,
+                    0.9614268128955378
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": null
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_low_energy\\n6_protonated\\1Bz-LSD_RR\\attack_02\\xtbopt.xyz",
+                "placement_id": "attack_02",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": 0.05981937851228531,
+                "water_deformation_energy_kj_mol": -0.0047451468900080165
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": -13.56429588792249,
+                "energy_hartree": -94.848379721178,
+                "fragment_interaction_energy_kj_mol": -13.580104331036765,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 4.010905108897055,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 4.743478652927086,
+                  "carbonyl_o_water_o_distance_angstrom": 4.6908189222576695,
+                  "final_location": "other_or_dispersed",
+                  "intact_water": true,
+                  "n6_water_o_distance_angstrom": 7.0958511252028496,
+                  "o_c_water_o_angle_deg": 116.75285139453457,
+                  "water_o_h_distances_angstrom": [
+                    0.9634631621792484,
+                    0.9613120780875745
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": null
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_low_energy\\n6_protonated\\1Bz-LSD_RR\\attack_03\\xtbopt.xyz",
+                "placement_id": "attack_03",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": 0.01710621445984698,
+                "water_deformation_energy_kj_mol": -0.001297771345572798
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": 147.2312020630809,
+                "energy_hartree": -94.787135950456,
+                "fragment_interaction_energy_kj_mol": null,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 3.6664146965552793,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 4.348578917130619,
+                  "carbonyl_o_water_o_distance_angstrom": 4.03619163895747,
+                  "final_location": "proton_transfer_or_dissociated_water",
+                  "intact_water": false,
+                  "n6_water_o_distance_angstrom": 10.223418676256825,
+                  "o_c_water_o_angle_deg": 98.56570722825194,
+                  "water_o_h_distances_angstrom": [
+                    0.9744592635008282,
+                    3.1666280488680068
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": null
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_low_energy\\n6_protonated\\1Bz-LSD_RR\\attack_04\\xtbopt.xyz",
+                "placement_id": "attack_04",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": null,
+                "water_deformation_energy_kj_mol": null
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": -27.035743554027476,
+                "energy_hartree": -94.853510724612,
+                "fragment_interaction_energy_kj_mol": -27.23291664720214,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 6.761203044361415,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 7.962372670904702,
+                  "carbonyl_o_water_o_distance_angstrom": 7.887405460832674,
+                  "final_location": "other_or_dispersed",
+                  "intact_water": true,
+                  "n6_water_o_distance_angstrom": 4.06968417591916,
+                  "o_c_water_o_angle_deg": 155.02005055909333,
+                  "water_o_h_distances_angstrom": [
+                    0.9617592893682453,
+                    0.9614097114384409
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": null
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_low_energy\\n6_protonated\\1Bz-LSD_RR\\attack_05\\xtbopt.xyz",
+                "placement_id": "attack_05",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": 0.23172358672602741,
+                "water_deformation_energy_kj_mol": -0.03455049355136594
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": -11.182879164679527,
+                "energy_hartree": -94.847472687451,
+                "fragment_interaction_energy_kj_mol": -11.210767437135749,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 3.8225971411579716,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 4.658409673302134,
+                  "carbonyl_o_water_o_distance_angstrom": 4.497091914858414,
+                  "final_location": "other_or_dispersed",
+                  "intact_water": true,
+                  "n6_water_o_distance_angstrom": 6.498623033427013,
+                  "o_c_water_o_angle_deg": 116.08272780292215,
+                  "water_o_h_distances_angstrom": [
+                    0.9630689897713769,
+                    0.9618665185334724
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": null
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_low_energy\\n6_protonated\\1Bz-LSD_RR\\attack_06\\xtbopt.xyz",
+                "placement_id": "attack_06",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": 0.01984137336083735,
+                "water_deformation_energy_kj_mol": 0.008046899095384157
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": -25.803850522052876,
+                "energy_hartree": -94.853041521336,
+                "fragment_interaction_energy_kj_mol": -26.093605451150214,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 7.269035239093842,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 7.665449836820668,
+                  "carbonyl_o_water_o_distance_angstrom": 7.870914709537444,
+                  "final_location": "other_or_dispersed",
+                  "intact_water": true,
+                  "n6_water_o_distance_angstrom": 3.5960245059154556,
+                  "o_c_water_o_angle_deg": 115.34762986164054,
+                  "water_o_h_distances_angstrom": [
+                    0.961856990509347,
+                    0.9614854773628584
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": null
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_low_energy\\n6_protonated\\1Bz-LSD_RR\\attack_07\\xtbopt.xyz",
+                "placement_id": "attack_07",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": 0.2902390371014057,
+                "water_deformation_energy_kj_mol": -0.00048410800406988844
+              }
+            ],
+            "source_conformer_id": "conf008",
+            "summary": {
+              "best_apparent_carbonyl_local_cluster_formation_kj_mol": -9.415833358353492,
+              "best_carbonyl_local_fragment_interaction_kj_mol": -9.68551383538102,
+              "carbonyl_local_count": 1,
+              "carbonyl_local_fraction_of_intact": 0.14285714285714285,
+              "intact_water_count": 7,
+              "location_counts": {
+                "carbonyl_attack_region": 0,
+                "carbonyl_o_hbond": 1,
+                "n6_region": 0,
+                "other_or_dispersed": 6,
+                "proton_transfer_or_dissociated_water": 2
+              },
+              "median_apparent_carbonyl_local_cluster_formation_kj_mol": -9.415833358353492,
+              "median_carbonyl_local_fragment_interaction_kj_mol": -9.68551383538102,
+              "placement_count": 9,
+              "proton_transfer_or_dissociation_count": 2
+            }
+          },
+          "1SB-LSD_RR": {
+            "charge": 1,
+            "records": [
+              {
+                "apparent_cluster_formation_energy_kj_mol": -9.76921926134361,
+                "energy_hartree": -107.069908172448,
+                "fragment_interaction_energy_kj_mol": -10.030574087330232,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 4.04629853832835,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 1.9606171618183448,
+                  "carbonyl_o_water_o_distance_angstrom": 2.8998891503103743,
+                  "final_location": "carbonyl_o_hbond",
+                  "intact_water": true,
+                  "n6_water_o_distance_angstrom": 10.015079498091035,
+                  "o_c_water_o_angle_deg": 17.4199858720038,
+                  "water_o_h_distances_angstrom": [
+                    0.9673857137047567,
+                    0.9621940849797129
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": 9.291513619774364
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_low_energy\\n6_protonated\\1SB-LSD_RR\\carbonyl_o_hbond\\xtbopt.xyz",
+                "placement_id": "carbonyl_o_hbond",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": 0.20612485232925026,
+                "water_deformation_energy_kj_mol": 0.055229973657372214
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": 280.94035005688704,
+                "energy_hartree": -106.959182745201,
+                "fragment_interaction_energy_kj_mol": null,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 3.3630432690570204,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 4.256687224065334,
+                  "carbonyl_o_water_o_distance_angstrom": 3.695396372903001,
+                  "final_location": "proton_transfer_or_dissociated_water",
+                  "intact_water": false,
+                  "n6_water_o_distance_angstrom": 4.734178641218958,
+                  "o_c_water_o_angle_deg": 95.75566001230322,
+                  "water_o_h_distances_angstrom": [
+                    0.9683888523668873,
+                    3.5118379922726337
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": 9.024463061982583
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_low_energy\\n6_protonated\\1SB-LSD_RR\\attack_00\\xtbopt.xyz",
+                "placement_id": "attack_00",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": null,
+                "water_deformation_energy_kj_mol": null
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": -13.377089033839102,
+                "energy_hartree": -107.071282337471,
+                "fragment_interaction_energy_kj_mol": -13.302956783405223,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 4.202131856854295,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 5.011828154683408,
+                  "carbonyl_o_water_o_distance_angstrom": 4.962695362887168,
+                  "final_location": "other_or_dispersed",
+                  "intact_water": true,
+                  "n6_water_o_distance_angstrom": 6.903726945078113,
+                  "o_c_water_o_angle_deg": 122.10975460381154,
+                  "water_o_h_distances_angstrom": [
+                    0.9634197595066399,
+                    0.9613379428771817
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": 7.044922988593588
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_low_energy\\n6_protonated\\1SB-LSD_RR\\attack_01\\xtbopt.xyz",
+                "placement_id": "attack_01",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": -0.0848138069121425,
+                "water_deformation_energy_kj_mol": 0.010681556478264883
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": -13.071400209936906,
+                "energy_hartree": -107.071165906747,
+                "fragment_interaction_energy_kj_mol": -13.122037202773114,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 4.007009470747328,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 4.719099816528593,
+                  "carbonyl_o_water_o_distance_angstrom": 4.678433722975062,
+                  "final_location": "other_or_dispersed",
+                  "intact_water": true,
+                  "n6_water_o_distance_angstrom": 7.077906105667146,
+                  "o_c_water_o_angle_deg": 116.20184364573106,
+                  "water_o_h_distances_angstrom": [
+                    0.9636839857580709,
+                    0.961146066236849
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": 7.152905949447502
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_low_energy\\n6_protonated\\1SB-LSD_RR\\attack_02\\xtbopt.xyz",
+                "placement_id": "attack_02",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": 0.05505064676802442,
+                "water_deformation_energy_kj_mol": -0.00441365393181521
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": -13.029588379915321,
+                "energy_hartree": -107.071149981462,
+                "fragment_interaction_energy_kj_mol": -13.079696956817473,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 3.945666416794749,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 4.62899206600084,
+                  "carbonyl_o_water_o_distance_angstrom": 4.60157014520196,
+                  "final_location": "other_or_dispersed",
+                  "intact_water": true,
+                  "n6_water_o_distance_angstrom": 7.074068113175859,
+                  "o_c_water_o_angle_deg": 115.15419773936348,
+                  "water_o_h_distances_angstrom": [
+                    0.9637018137871394,
+                    0.9612641976046588
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": 7.2108696108304
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_low_energy\\n6_protonated\\1SB-LSD_RR\\attack_03\\xtbopt.xyz",
+                "placement_id": "attack_03",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": 0.04990992635018415,
+                "water_deformation_energy_kj_mol": 0.00019865055196983416
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": 145.74113174227546,
+                "energy_hartree": -107.010677407886,
+                "fragment_interaction_energy_kj_mol": null,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 3.665762843890898,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 4.375833608832636,
+                  "carbonyl_o_water_o_distance_angstrom": 4.041139309428666,
+                  "final_location": "proton_transfer_or_dissociated_water",
+                  "intact_water": false,
+                  "n6_water_o_distance_angstrom": 10.246919482972688,
+                  "o_c_water_o_angle_deg": 98.8383410308365,
+                  "water_o_h_distances_angstrom": [
+                    0.9745226462276024,
+                    3.6127539235099486
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": 3.5147159714038727
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_low_energy\\n6_protonated\\1SB-LSD_RR\\attack_04\\xtbopt.xyz",
+                "placement_id": "attack_04",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": null,
+                "water_deformation_energy_kj_mol": null
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": -27.120923728436427,
+                "energy_hartree": -107.076517087645,
+                "fragment_interaction_energy_kj_mol": -27.468583251337883,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 6.709753766165734,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 7.882874491484799,
+                  "carbonyl_o_water_o_distance_angstrom": 7.825934432181634,
+                  "final_location": "other_or_dispersed",
+                  "intact_water": true,
+                  "n6_water_o_distance_angstrom": 4.080280539154176,
+                  "o_c_water_o_angle_deg": 153.66777404806584,
+                  "water_o_h_distances_angstrom": [
+                    0.9616847778225253,
+                    0.9612609591710838
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": 7.262341030963377
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_low_energy\\n6_protonated\\1SB-LSD_RR\\attack_05\\xtbopt.xyz",
+                "placement_id": "attack_05",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": 0.3468813904455496,
+                "water_deformation_energy_kj_mol": 0.0007781324559062401
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": -27.026219609249143,
+                "energy_hartree": -107.076481016751,
+                "fragment_interaction_energy_kj_mol": -27.569677605603545,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 6.709899945870749,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 7.833781195990363,
+                  "carbonyl_o_water_o_distance_angstrom": 7.805553421957875,
+                  "final_location": "other_or_dispersed",
+                  "intact_water": true,
+                  "n6_water_o_distance_angstrom": 4.054749751979742,
+                  "o_c_water_o_angle_deg": 151.23983584354053,
+                  "water_o_h_distances_angstrom": [
+                    0.9616323798529323,
+                    0.9613000576649612
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": 7.536571460645836
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_low_energy\\n6_protonated\\1SB-LSD_RR\\attack_06\\xtbopt.xyz",
+                "placement_id": "attack_06",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": 0.5495244705705001,
+                "water_deformation_energy_kj_mol": -0.006066474216097817
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": -25.829720567708993,
+                "energy_hartree": -107.076025294334,
+                "fragment_interaction_energy_kj_mol": -26.122357938348763,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 7.3059104066425,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 7.731836557375105,
+                  "carbonyl_o_water_o_distance_angstrom": 7.939043231460744,
+                  "final_location": "other_or_dispersed",
+                  "intact_water": true,
+                  "n6_water_o_distance_angstrom": 3.581461238829942,
+                  "o_c_water_o_angle_deg": 117.11994685429748,
+                  "water_o_h_distances_angstrom": [
+                    0.96188048297946,
+                    0.9613022441460947
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": 10.793829032803052
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_low_energy\\n6_protonated\\1SB-LSD_RR\\attack_07\\xtbopt.xyz",
+                "placement_id": "attack_07",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": 0.32569814519309476,
+                "water_deformation_energy_kj_mol": -0.033060774553325165
+              }
+            ],
+            "source_conformer_id": "conf002",
+            "summary": {
+              "best_apparent_carbonyl_local_cluster_formation_kj_mol": -9.76921926134361,
+              "best_carbonyl_local_fragment_interaction_kj_mol": -10.030574087330232,
+              "carbonyl_local_count": 1,
+              "carbonyl_local_fraction_of_intact": 0.14285714285714285,
+              "intact_water_count": 7,
+              "location_counts": {
+                "carbonyl_attack_region": 0,
+                "carbonyl_o_hbond": 1,
+                "n6_region": 0,
+                "other_or_dispersed": 6,
+                "proton_transfer_or_dissociated_water": 2
+              },
+              "median_apparent_carbonyl_local_cluster_formation_kj_mol": -9.76921926134361,
+              "median_carbonyl_local_fragment_interaction_kj_mol": -10.030574087330232,
+              "placement_count": 9,
+              "proton_transfer_or_dissociation_count": 2
+            }
+          }
+        },
+        "neutral": {
+          "1Bz-LSD_RR": {
+            "charge": 0,
+            "records": [
+              {
+                "apparent_cluster_formation_energy_kj_mol": -7.867235869519465,
+                "energy_hartree": -94.664854066646,
+                "fragment_interaction_energy_kj_mol": -7.9788141930656815,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 4.150540058268506,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 1.9918612815090393,
+                  "carbonyl_o_water_o_distance_angstrom": 2.9540612692081583,
+                  "final_location": "carbonyl_o_hbond",
+                  "intact_water": true,
+                  "n6_water_o_distance_angstrom": 10.828333848264853,
+                  "o_c_water_o_angle_deg": 10.668903072858313,
+                  "water_o_h_distances_angstrom": [
+                    0.9660888382929476,
+                    0.962919973828101
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": null
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_low_energy\\neutral\\1Bz-LSD_RR\\carbonyl_o_hbond\\xtbopt.xyz",
+                "placement_id": "carbonyl_o_hbond",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": 0.08526684740369125,
+                "water_deformation_energy_kj_mol": 0.026311476142525252
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": 285.13632563383766,
+                "energy_hartree": -94.55325490392,
+                "fragment_interaction_energy_kj_mol": null,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 3.35105155853994,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 4.2734562229499575,
+                  "carbonyl_o_water_o_distance_angstrom": 3.674590251344309,
+                  "final_location": "proton_transfer_or_dissociated_water",
+                  "intact_water": false,
+                  "n6_water_o_distance_angstrom": 4.758503678158356,
+                  "o_c_water_o_angle_deg": 95.265828999788,
+                  "water_o_h_distances_angstrom": [
+                    0.9687841477581178,
+                    3.538081778565446
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": null
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_low_energy\\neutral\\1Bz-LSD_RR\\attack_00\\xtbopt.xyz",
+                "placement_id": "attack_00",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": null,
+                "water_deformation_energy_kj_mol": null
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": -10.97627459937327,
+                "energy_hartree": -94.666038236959,
+                "fragment_interaction_energy_kj_mol": -11.054440213253026,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 4.034370019974871,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 4.7795817469995905,
+                  "carbonyl_o_water_o_distance_angstrom": 4.685626298463127,
+                  "final_location": "other_or_dispersed",
+                  "intact_water": true,
+                  "n6_water_o_distance_angstrom": 7.24303364853131,
+                  "o_c_water_o_angle_deg": 115.0231502172254,
+                  "water_o_h_distances_angstrom": [
+                    0.9632888714616529,
+                    0.9618356030516212
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": null
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_low_energy\\neutral\\1Bz-LSD_RR\\attack_01\\xtbopt.xyz",
+                "placement_id": "attack_01",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": 0.09934508363823169,
+                "water_deformation_energy_kj_mol": -0.021179469758476236
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": -10.987491350833682,
+                "energy_hartree": -94.666042509194,
+                "fragment_interaction_energy_kj_mol": -11.095111268936275,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 4.0241032302987385,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 4.775360120049566,
+                  "carbonyl_o_water_o_distance_angstrom": 4.681688098851944,
+                  "final_location": "other_or_dispersed",
+                  "intact_water": true,
+                  "n6_water_o_distance_angstrom": 7.24178240387596,
+                  "o_c_water_o_angle_deg": 115.38564819851638,
+                  "water_o_h_distances_angstrom": [
+                    0.9630871096004417,
+                    0.9622293591589719
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": null
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_low_energy\\neutral\\1Bz-LSD_RR\\attack_02\\xtbopt.xyz",
+                "placement_id": "attack_02",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": 0.12612388820801362,
+                "water_deformation_energy_kj_mol": -0.018503970105421045
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": -10.950529758556186,
+                "energy_hartree": -94.666028431267,
+                "fragment_interaction_energy_kj_mol": -11.087826208438623,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 3.9950671972456826,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 4.737557148244562,
+                  "carbonyl_o_water_o_distance_angstrom": 4.637634982548466,
+                  "final_location": "other_or_dispersed",
+                  "intact_water": true,
+                  "n6_water_o_distance_angstrom": 7.2692850920332575,
+                  "o_c_water_o_angle_deg": 114.43752533115573,
+                  "water_o_h_distances_angstrom": [
+                    0.9634384965757986,
+                    0.9619238740867029
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": null
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_low_energy\\neutral\\1Bz-LSD_RR\\attack_03\\xtbopt.xyz",
+                "placement_id": "attack_03",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": 0.16457257397669728,
+                "water_deformation_energy_kj_mol": -0.027276124094261032
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": 147.82483385378887,
+                "energy_hartree": -94.605554089079,
+                "fragment_interaction_energy_kj_mol": null,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 3.6691070776604575,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 4.384256998516683,
+                  "carbonyl_o_water_o_distance_angstrom": 4.0387893287034835,
+                  "final_location": "proton_transfer_or_dissociated_water",
+                  "intact_water": false,
+                  "n6_water_o_distance_angstrom": 10.176851152976917,
+                  "o_c_water_o_angle_deg": 98.55121939313283,
+                  "water_o_h_distances_angstrom": [
+                    0.974218126083585,
+                    3.120055805675836
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": null
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_low_energy\\neutral\\1Bz-LSD_RR\\attack_04\\xtbopt.xyz",
+                "placement_id": "attack_04",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": null,
+                "water_deformation_energy_kj_mol": null
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": -11.042644294967316,
+                "energy_hartree": -94.666063515841,
+                "fragment_interaction_energy_kj_mol": -11.15260333635136,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 4.6714395384835585,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 6.085744843629589,
+                  "carbonyl_o_water_o_distance_angstrom": 5.798250228060484,
+                  "final_location": "other_or_dispersed",
+                  "intact_water": true,
+                  "n6_water_o_distance_angstrom": 6.498982254674088,
+                  "o_c_water_o_angle_deg": 154.05193518967587,
+                  "water_o_h_distances_angstrom": [
+                    0.9629268849354318,
+                    0.9623662903508235
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": null
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_low_energy\\neutral\\1Bz-LSD_RR\\attack_05\\xtbopt.xyz",
+                "placement_id": "attack_05",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": 0.12789394494509343,
+                "water_deformation_energy_kj_mol": -0.017934903561048564
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": -7.845415817235581,
+                "energy_hartree": -94.664845755827,
+                "fragment_interaction_energy_kj_mol": -7.924145522357301,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 3.652273586202189,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 4.484449605202493,
+                  "carbonyl_o_water_o_distance_angstrom": 4.251000682955529,
+                  "final_location": "other_or_dispersed",
+                  "intact_water": true,
+                  "n6_water_o_distance_angstrom": 6.8561803790079185,
+                  "o_c_water_o_angle_deg": 111.17543617765868,
+                  "water_o_h_distances_angstrom": [
+                    0.9634647202336942,
+                    0.9622410226787176
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": null
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_low_energy\\neutral\\1Bz-LSD_RR\\attack_06\\xtbopt.xyz",
+                "placement_id": "attack_06",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": 0.08361110756543351,
+                "water_deformation_energy_kj_mol": -0.004881402443712805
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": -7.906815074417982,
+                "energy_hartree": -94.664869141569,
+                "fragment_interaction_energy_kj_mol": -8.00790305137271,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 3.5054392406674597,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 4.1605613800986365,
+                  "carbonyl_o_water_o_distance_angstrom": 3.922834578248781,
+                  "final_location": "other_or_dispersed",
+                  "intact_water": true,
+                  "n6_water_o_distance_angstrom": 6.74514684946749,
+                  "o_c_water_o_angle_deg": 100.75900658980767,
+                  "water_o_h_distances_angstrom": [
+                    0.9636793424248591,
+                    0.9624809550433703
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": null
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_low_energy\\neutral\\1Bz-LSD_RR\\attack_07\\xtbopt.xyz",
+                "placement_id": "attack_07",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": 0.10272727591941103,
+                "water_deformation_energy_kj_mol": -0.0016392989646843506
+              }
+            ],
+            "source_conformer_id": "conf008",
+            "summary": {
+              "best_apparent_carbonyl_local_cluster_formation_kj_mol": -7.867235869519465,
+              "best_carbonyl_local_fragment_interaction_kj_mol": -7.9788141930656815,
+              "carbonyl_local_count": 1,
+              "carbonyl_local_fraction_of_intact": 0.14285714285714285,
+              "intact_water_count": 7,
+              "location_counts": {
+                "carbonyl_attack_region": 0,
+                "carbonyl_o_hbond": 1,
+                "n6_region": 0,
+                "other_or_dispersed": 6,
+                "proton_transfer_or_dissociated_water": 2
+              },
+              "median_apparent_carbonyl_local_cluster_formation_kj_mol": -7.867235869519465,
+              "median_carbonyl_local_fragment_interaction_kj_mol": -7.9788141930656815,
+              "placement_count": 9,
+              "proton_transfer_or_dissociation_count": 2
+            }
+          },
+          "1SB-LSD_RR": {
+            "charge": 0,
+            "records": [
+              {
+                "apparent_cluster_formation_energy_kj_mol": -9.393044291889924,
+                "energy_hartree": -106.88828071524,
+                "fragment_interaction_energy_kj_mol": -9.613548380904609,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 4.099193371408457,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 1.9595498859608622,
+                  "carbonyl_o_water_o_distance_angstrom": 2.9098214839977508,
+                  "final_location": "carbonyl_o_hbond",
+                  "intact_water": true,
+                  "n6_water_o_distance_angstrom": 10.033243668849313,
+                  "o_c_water_o_angle_deg": 11.985225035714569,
+                  "water_o_h_distances_angstrom": [
+                    0.9669900066548911,
+                    0.9625823295074387
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": 9.351375547022036
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_low_energy\\neutral\\1SB-LSD_RR\\carbonyl_o_hbond\\xtbopt.xyz",
+                "placement_id": "carbonyl_o_hbond",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": 0.19133539976227976,
+                "water_deformation_energy_kj_mol": 0.029168689252405244
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": 285.02288637715515,
+                "energy_hartree": -106.776143609509,
+                "fragment_interaction_energy_kj_mol": null,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 3.3490642769166628,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 4.268465277041262,
+                  "carbonyl_o_water_o_distance_angstrom": 3.6653833992470632,
+                  "final_location": "proton_transfer_or_dissociated_water",
+                  "intact_water": false,
+                  "n6_water_o_distance_angstrom": 4.751252619211139,
+                  "o_c_water_o_angle_deg": 94.87146296212183,
+                  "water_o_h_distances_angstrom": [
+                    0.9686654728298137,
+                    3.535206858142032
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": 9.052610045103595
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_low_energy\\neutral\\1SB-LSD_RR\\attack_00\\xtbopt.xyz",
+                "placement_id": "attack_00",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": null,
+                "water_deformation_energy_kj_mol": null
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": -10.488182656364128,
+                "energy_hartree": -106.888697831414,
+                "fragment_interaction_energy_kj_mol": -10.604274938418632,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 4.031235353206217,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 4.791343011624034,
+                  "carbonyl_o_water_o_distance_angstrom": 4.6931961995310845,
+                  "final_location": "other_or_dispersed",
+                  "intact_water": true,
+                  "n6_water_o_distance_angstrom": 7.201098752984939,
+                  "o_c_water_o_angle_deg": 115.62775310229142,
+                  "water_o_h_distances_angstrom": [
+                    0.9631989595941185,
+                    0.9622003876905993
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": 7.142671187629944
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_low_energy\\neutral\\1SB-LSD_RR\\attack_01\\xtbopt.xyz",
+                "placement_id": "attack_01",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": 0.12528136276220966,
+                "water_deformation_energy_kj_mol": -0.009189080707706465
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": -10.467750865874962,
+                "energy_hartree": -106.888690049356,
+                "fragment_interaction_energy_kj_mol": -10.643705211820286,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 4.048830961595716,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 4.812937209546365,
+                  "carbonyl_o_water_o_distance_angstrom": 4.711627639061311,
+                  "final_location": "other_or_dispersed",
+                  "intact_water": true,
+                  "n6_water_o_distance_angstrom": 7.2394029070639085,
+                  "o_c_water_o_angle_deg": 115.71119617477794,
+                  "water_o_h_distances_angstrom": [
+                    0.9633221388154735,
+                    0.9622389438753091
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": 7.134574910070203
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_low_energy\\neutral\\1SB-LSD_RR\\attack_02\\xtbopt.xyz",
+                "placement_id": "attack_02",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": 0.1843291410664297,
+                "water_deformation_energy_kj_mol": -0.008374795121105177
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": -5.737677626753744,
+                "energy_hartree": -106.886888459606,
+                "fragment_interaction_energy_kj_mol": -5.676340643776559,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 4.294170284682999,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 4.569916950965433,
+                  "carbonyl_o_water_o_distance_angstrom": 4.533707751461511,
+                  "final_location": "other_or_dispersed",
+                  "intact_water": true,
+                  "n6_water_o_distance_angstrom": 9.932952772545452,
+                  "o_c_water_o_angle_deg": 93.34604506172697,
+                  "water_o_h_distances_angstrom": [
+                    0.9634843819702951,
+                    0.9618795080764697
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": 5.399286681292809
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_low_energy\\neutral\\1SB-LSD_RR\\attack_03\\xtbopt.xyz",
+                "placement_id": "attack_03",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": -0.020455152181761152,
+                "water_deformation_energy_kj_mol": -0.04088183079542307
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": 146.57264254060692,
+                "energy_hartree": -106.82887652242,
+                "fragment_interaction_energy_kj_mol": null,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 3.6667247818667374,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 4.374889132873786,
+                  "carbonyl_o_water_o_distance_angstrom": 4.033272705015874,
+                  "final_location": "proton_transfer_or_dissociated_water",
+                  "intact_water": false,
+                  "n6_water_o_distance_angstrom": 10.21725105614991,
+                  "o_c_water_o_angle_deg": 98.35635166524702,
+                  "water_o_h_distances_angstrom": [
+                    0.9743800314783702,
+                    3.6347900489093217
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": 3.50186739399656
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_low_energy\\neutral\\1SB-LSD_RR\\attack_04\\xtbopt.xyz",
+                "placement_id": "attack_04",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": null,
+                "water_deformation_energy_kj_mol": null
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": -10.517178703234897,
+                "energy_hartree": -106.888708875425,
+                "fragment_interaction_energy_kj_mol": -11.141745151999466,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 4.793401871461199,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 6.209984752728113,
+                  "carbonyl_o_water_o_distance_angstrom": 5.931407312228128,
+                  "final_location": "other_or_dispersed",
+                  "intact_water": true,
+                  "n6_water_o_distance_angstrom": 6.236954964847134,
+                  "o_c_water_o_angle_deg": 155.49739890228207,
+                  "water_o_h_distances_angstrom": [
+                    0.9626206346400055,
+                    0.962020620119989
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": 5.185309374684574
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_low_energy\\neutral\\1SB-LSD_RR\\attack_05\\xtbopt.xyz",
+                "placement_id": "attack_05",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": 0.6494383083211864,
+                "water_deformation_energy_kj_mol": -0.02487185955661782
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": -7.827915701664959,
+                "energy_hartree": -106.887684589243,
+                "fragment_interaction_energy_kj_mol": -7.851995799798013,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 3.611787278883007,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 4.427222728126805,
+                  "carbonyl_o_water_o_distance_angstrom": 4.1993336957174785,
+                  "final_location": "other_or_dispersed",
+                  "intact_water": true,
+                  "n6_water_o_distance_angstrom": 6.823172725202233,
+                  "o_c_water_o_angle_deg": 110.4109853605956,
+                  "water_o_h_distances_angstrom": [
+                    0.9634618088042786,
+                    0.9623533959969119
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": 6.784303468690503
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_low_energy\\neutral\\1SB-LSD_RR\\attack_06\\xtbopt.xyz",
+                "placement_id": "attack_06",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": 0.01918988188702187,
+                "water_deformation_energy_kj_mol": 0.004890216246032223
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": -7.670560051250477,
+                "energy_hartree": -106.887624655641,
+                "fragment_interaction_energy_kj_mol": -7.785783605344955,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 3.5087174108752897,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 4.155008946751854,
+                  "carbonyl_o_water_o_distance_angstrom": 3.931091645656017,
+                  "final_location": "other_or_dispersed",
+                  "intact_water": true,
+                  "n6_water_o_distance_angstrom": 6.495862165502664,
+                  "o_c_water_o_angle_deg": 101.00372661912789,
+                  "water_o_h_distances_angstrom": [
+                    0.9637043502417478,
+                    0.962332147789138
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": 7.557599016819463
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_low_energy\\neutral\\1SB-LSD_RR\\attack_07\\xtbopt.xyz",
+                "placement_id": "attack_07",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": 0.1215389283017384,
+                "water_deformation_energy_kj_mol": -0.006315374207260211
+              }
+            ],
+            "source_conformer_id": "conf002",
+            "summary": {
+              "best_apparent_carbonyl_local_cluster_formation_kj_mol": -9.393044291889924,
+              "best_carbonyl_local_fragment_interaction_kj_mol": -9.613548380904609,
+              "carbonyl_local_count": 1,
+              "carbonyl_local_fraction_of_intact": 0.14285714285714285,
+              "intact_water_count": 7,
+              "location_counts": {
+                "carbonyl_attack_region": 0,
+                "carbonyl_o_hbond": 1,
+                "n6_region": 0,
+                "other_or_dispersed": 6,
+                "proton_transfer_or_dissociated_water": 2
+              },
+              "median_apparent_carbonyl_local_cluster_formation_kj_mol": -9.393044291889924,
+              "median_carbonyl_local_fragment_interaction_kj_mol": -9.613548380904609,
+              "placement_count": 9,
+              "proton_transfer_or_dissociation_count": 2
+            }
+          }
+        }
+      }
+    },
+    {
+      "bz_conformer": "conf005",
+      "pair_id": "pair_close_geometry",
+      "sb_conformer": "conf008",
+      "states": {
+        "n6_protonated": {
+          "1Bz-LSD_RR": {
+            "charge": 1,
+            "records": [
+              {
+                "apparent_cluster_formation_energy_kj_mol": -14.900931224734927,
+                "energy_hartree": -94.847013726555,
+                "fragment_interaction_energy_kj_mol": -15.248538140524436,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 3.817053278557043,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 1.957345517374896,
+                  "carbonyl_o_water_o_distance_angstrom": 2.8759113320775747,
+                  "final_location": "carbonyl_o_hbond",
+                  "intact_water": true,
+                  "n6_water_o_distance_angstrom": 7.403992675942794,
+                  "o_c_water_o_angle_deg": 33.519264424244334,
+                  "water_o_h_distances_angstrom": [
+                    0.9689829332050545,
+                    0.9615118954308074
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": null
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_close_geometry\\n6_protonated\\1Bz-LSD_RR\\carbonyl_o_hbond\\xtbopt.xyz",
+                "placement_id": "carbonyl_o_hbond",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": 0.27565070833571936,
+                "water_deformation_energy_kj_mol": 0.07195620745379
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": 285.1977184139383,
+                "energy_hartree": -94.732712187478,
+                "fragment_interaction_energy_kj_mol": null,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 3.635850788074892,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 4.261707592075285,
+                  "carbonyl_o_water_o_distance_angstrom": 4.055894190992273,
+                  "final_location": "proton_transfer_or_dissociated_water",
+                  "intact_water": false,
+                  "n6_water_o_distance_angstrom": 4.696321860711674,
+                  "o_c_water_o_angle_deg": 100.7247181488026,
+                  "water_o_h_distances_angstrom": [
+                    2.0078962669511684,
+                    0.9874543214652278
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": null
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_close_geometry\\n6_protonated\\1Bz-LSD_RR\\attack_00\\xtbopt.xyz",
+                "placement_id": "attack_00",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": null,
+                "water_deformation_energy_kj_mol": null
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": -10.070772324668123,
+                "energy_hartree": -94.84517401619,
+                "fragment_interaction_energy_kj_mol": -10.304284522538017,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 3.611446520239903,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 4.051239400183538,
+                  "carbonyl_o_water_o_distance_angstrom": 3.8782603635688386,
+                  "final_location": "other_or_dispersed",
+                  "intact_water": true,
+                  "n6_water_o_distance_angstrom": 6.385251879420159,
+                  "o_c_water_o_angle_deg": 93.25472456437217,
+                  "water_o_h_distances_angstrom": [
+                    0.9628322201431342,
+                    0.9624655039139902
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": null
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_close_geometry\\n6_protonated\\1Bz-LSD_RR\\attack_01\\xtbopt.xyz",
+                "placement_id": "attack_01",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": 0.2472963991659903,
+                "water_deformation_energy_kj_mol": -0.013784201296095267
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": -13.309034799292109,
+                "energy_hartree": -94.846407405228,
+                "fragment_interaction_energy_kj_mol": -10.406538712289631,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 3.584843117635194,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 3.958865511161675,
+                  "carbonyl_o_water_o_distance_angstrom": 3.8266282220414087,
+                  "final_location": "other_or_dispersed",
+                  "intact_water": true,
+                  "n6_water_o_distance_angstrom": 6.62359162134122,
+                  "o_c_water_o_angle_deg": 91.93462919153237,
+                  "water_o_h_distances_angstrom": [
+                    0.9628020614003143,
+                    0.9629806623533418
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": null
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_close_geometry\\n6_protonated\\1Bz-LSD_RR\\attack_02\\xtbopt.xyz",
+                "placement_id": "attack_02",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": -2.886284461636601,
+                "water_deformation_energy_kj_mol": -0.016211625365875837
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": -9.21035291908142,
+                "energy_hartree": -94.844846299746,
+                "fragment_interaction_energy_kj_mol": -9.542303668066646,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 4.763104009222203,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 5.7463067232726965,
+                  "carbonyl_o_water_o_distance_angstrom": 5.59924824612031,
+                  "final_location": "other_or_dispersed",
+                  "intact_water": true,
+                  "n6_water_o_distance_angstrom": 9.525659893388967,
+                  "o_c_water_o_angle_deg": 127.91628131138283,
+                  "water_o_h_distances_angstrom": [
+                    0.962656461530662,
+                    0.9626570466869053
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": null
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_close_geometry\\n6_protonated\\1Bz-LSD_RR\\attack_03\\xtbopt.xyz",
+                "placement_id": "attack_03",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": 0.3565706078351172,
+                "water_deformation_energy_kj_mol": -0.024619858849891457
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": 150.54484850823783,
+                "energy_hartree": -94.783998757044,
+                "fragment_interaction_energy_kj_mol": null,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 3.6618577180733203,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 4.538265509775021,
+                  "carbonyl_o_water_o_distance_angstrom": 4.032535509937418,
+                  "final_location": "proton_transfer_or_dissociated_water",
+                  "intact_water": false,
+                  "n6_water_o_distance_angstrom": 10.785200459020299,
+                  "o_c_water_o_angle_deg": 98.61377904441083,
+                  "water_o_h_distances_angstrom": [
+                    2.789259982013277,
+                    0.9741905401699752
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": null
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_close_geometry\\n6_protonated\\1Bz-LSD_RR\\attack_04\\xtbopt.xyz",
+                "placement_id": "attack_04",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": null,
+                "water_deformation_energy_kj_mol": null
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": -13.589969294100296,
+                "energy_hartree": -94.846514407526,
+                "fragment_interaction_energy_kj_mol": -13.64603371196668,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 4.058613193550693,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 4.949678849797346,
+                  "carbonyl_o_water_o_distance_angstrom": 4.790324525230025,
+                  "final_location": "other_or_dispersed",
+                  "intact_water": true,
+                  "n6_water_o_distance_angstrom": 6.816373353039483,
+                  "o_c_water_o_angle_deg": 120.05869363807561,
+                  "water_o_h_distances_angstrom": [
+                    0.9623886587014228,
+                    0.9631745892591933
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": null
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_close_geometry\\n6_protonated\\1Bz-LSD_RR\\attack_05\\xtbopt.xyz",
+                "placement_id": "attack_05",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": 0.08468696906303477,
+                "water_deformation_energy_kj_mol": -0.028622551196649113
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": -13.524469205995901,
+                "energy_hartree": -94.84648945986,
+                "fragment_interaction_energy_kj_mol": -13.610440396183192,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 4.032287091160136,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 4.873425840787059,
+                  "carbonyl_o_water_o_distance_angstrom": 4.731548960981365,
+                  "final_location": "other_or_dispersed",
+                  "intact_water": true,
+                  "n6_water_o_distance_angstrom": 6.8745140577434,
+                  "o_c_water_o_angle_deg": 117.97261026493291,
+                  "water_o_h_distances_angstrom": [
+                    0.962432933250998,
+                    0.9632276634000742
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": null
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_close_geometry\\n6_protonated\\1Bz-LSD_RR\\attack_06\\xtbopt.xyz",
+                "placement_id": "attack_06",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": 0.08088771616459497,
+                "water_deformation_energy_kj_mol": 0.005083474022695512
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": -13.499208470582806,
+                "energy_hartree": -94.846479838554,
+                "fragment_interaction_energy_kj_mol": -13.531111830389499,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 4.068922116478515,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 4.908744547092374,
+                  "carbonyl_o_water_o_distance_angstrom": 4.764214470512213,
+                  "final_location": "other_or_dispersed",
+                  "intact_water": true,
+                  "n6_water_o_distance_angstrom": 7.02662793526934,
+                  "o_c_water_o_angle_deg": 117.78865500313645,
+                  "water_o_h_distances_angstrom": [
+                    0.9623116336503224,
+                    0.9631509438554963
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": null
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_close_geometry\\n6_protonated\\1Bz-LSD_RR\\attack_07\\xtbopt.xyz",
+                "placement_id": "attack_07",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": 0.0372278415712445,
+                "water_deformation_energy_kj_mol": -0.005324481764553299
+              }
+            ],
+            "source_conformer_id": "conf005",
+            "summary": {
+              "best_apparent_carbonyl_local_cluster_formation_kj_mol": -14.900931224734927,
+              "best_carbonyl_local_fragment_interaction_kj_mol": -15.248538140524436,
+              "carbonyl_local_count": 1,
+              "carbonyl_local_fraction_of_intact": 0.14285714285714285,
+              "intact_water_count": 7,
+              "location_counts": {
+                "carbonyl_attack_region": 0,
+                "carbonyl_o_hbond": 1,
+                "n6_region": 0,
+                "other_or_dispersed": 6,
+                "proton_transfer_or_dissociated_water": 2
+              },
+              "median_apparent_carbonyl_local_cluster_formation_kj_mol": -14.900931224734927,
+              "median_carbonyl_local_fragment_interaction_kj_mol": -15.248538140524436,
+              "placement_count": 9,
+              "proton_transfer_or_dissociation_count": 2
+            }
+          },
+          "1SB-LSD_RR": {
+            "charge": 1,
+            "records": [
+              {
+                "apparent_cluster_formation_energy_kj_mol": -15.153967294267987,
+                "energy_hartree": -107.067722530204,
+                "fragment_interaction_energy_kj_mol": -15.484051751471435,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 3.8112636876470636,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 1.9479528583425396,
+                  "carbonyl_o_water_o_distance_angstrom": 2.8698283822772654,
+                  "final_location": "carbonyl_o_hbond",
+                  "intact_water": true,
+                  "n6_water_o_distance_angstrom": 7.395301171910695,
+                  "o_c_water_o_angle_deg": 33.526792967504605,
+                  "water_o_h_distances_angstrom": [
+                    0.9692792075658049,
+                    0.9611295189383923
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": 9.631396807597795
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_close_geometry\\n6_protonated\\1SB-LSD_RR\\carbonyl_o_hbond\\xtbopt.xyz",
+                "placement_id": "carbonyl_o_hbond",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": 0.27957184214699954,
+                "water_deformation_energy_kj_mol": 0.050512615056448516
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": 286.62231186920076,
+                "energy_hartree": -106.952782015787,
+                "fragment_interaction_energy_kj_mol": null,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 3.6358289409879743,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 4.252604015558997,
+                  "carbonyl_o_water_o_distance_angstrom": 4.051064461633509,
+                  "final_location": "proton_transfer_or_dissociated_water",
+                  "intact_water": false,
+                  "n6_water_o_distance_angstrom": 4.693615611360597,
+                  "o_c_water_o_angle_deg": 100.46391705578043,
+                  "water_o_h_distances_angstrom": [
+                    2.0081717722666492,
+                    0.9874757571406019
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": 9.297456951255695
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_close_geometry\\n6_protonated\\1SB-LSD_RR\\attack_00\\xtbopt.xyz",
+                "placement_id": "attack_00",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": null,
+                "water_deformation_energy_kj_mol": null
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": -29.0323437881722,
+                "energy_hartree": -107.073008524643,
+                "fragment_interaction_energy_kj_mol": -26.179298285870676,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 7.236921550941542,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 7.165467574198397,
+                  "carbonyl_o_water_o_distance_angstrom": 7.495539813553205,
+                  "final_location": "other_or_dispersed",
+                  "intact_water": true,
+                  "n6_water_o_distance_angstrom": 3.5835609110552578,
+                  "o_c_water_o_angle_deg": 97.49503747053944,
+                  "water_o_h_distances_angstrom": [
+                    0.9616942802389379,
+                    0.9612861565939339
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": 12.42947166503428
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_close_geometry\\n6_protonated\\1SB-LSD_RR\\attack_01\\xtbopt.xyz",
+                "placement_id": "attack_01",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": -2.8285630069667422,
+                "water_deformation_energy_kj_mol": -0.02448249533478075
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": -29.05487002896212,
+                "energy_hartree": -107.073017104435,
+                "fragment_interaction_energy_kj_mol": -26.139511824004146,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 7.248520648443656,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 7.213123111251161,
+                  "carbonyl_o_water_o_distance_angstrom": 7.513204826063856,
+                  "final_location": "other_or_dispersed",
+                  "intact_water": true,
+                  "n6_water_o_distance_angstrom": 3.5762530106611305,
+                  "o_c_water_o_angle_deg": 97.79869284255284,
+                  "water_o_h_distances_angstrom": [
+                    0.9617120404960259,
+                    0.9615286366802221
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": 12.438638927738486
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_close_geometry\\n6_protonated\\1SB-LSD_RR\\attack_02\\xtbopt.xyz",
+                "placement_id": "attack_02",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": -2.8870691814807423,
+                "water_deformation_energy_kj_mol": -0.02828902347723331
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": -8.669839475711866,
+                "energy_hartree": -107.065252856348,
+                "fragment_interaction_energy_kj_mol": -8.936127358243638,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 4.521550161255481,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 5.375855692526264,
+                  "carbonyl_o_water_o_distance_angstrom": 5.253399920975807,
+                  "final_location": "other_or_dispersed",
+                  "intact_water": true,
+                  "n6_water_o_distance_angstrom": 9.254320053035645,
+                  "o_c_water_o_angle_deg": 120.69647024444026,
+                  "water_o_h_distances_angstrom": [
+                    0.9624832062651153,
+                    0.9625864650868258
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": 5.727182757942442
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_close_geometry\\n6_protonated\\1SB-LSD_RR\\attack_03\\xtbopt.xyz",
+                "placement_id": "attack_03",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": 0.2883841793913253,
+                "water_deformation_energy_kj_mol": -0.022096296859552875
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": 152.4013468542684,
+                "energy_hartree": -107.003904081468,
+                "fragment_interaction_energy_kj_mol": null,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 3.6557768605044294,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 4.518077590259784,
+                  "carbonyl_o_water_o_distance_angstrom": 4.011748379457277,
+                  "final_location": "proton_transfer_or_dissociated_water",
+                  "intact_water": false,
+                  "n6_water_o_distance_angstrom": 10.816346483502333,
+                  "o_c_water_o_angle_deg": 97.80213503932025,
+                  "water_o_h_distances_angstrom": [
+                    3.3178015974945914,
+                    0.9745864834844935
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": 3.6030651595565613
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_close_geometry\\n6_protonated\\1SB-LSD_RR\\attack_04\\xtbopt.xyz",
+                "placement_id": "attack_04",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": null,
+                "water_deformation_energy_kj_mol": null
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": -16.615139029369093,
+                "energy_hartree": -107.068279061126,
+                "fragment_interaction_energy_kj_mol": -13.41284925782999,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 4.112362249350969,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 5.019120892372413,
+                  "carbonyl_o_water_o_distance_angstrom": 4.876890578111229,
+                  "final_location": "other_or_dispersed",
+                  "intact_water": true,
+                  "n6_water_o_distance_angstrom": 6.727787719030732,
+                  "o_c_water_o_angle_deg": 122.22556491843685,
+                  "water_o_h_distances_angstrom": [
+                    0.9621058773210417,
+                    0.9630686047335135
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": 7.132873924360291
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_close_geometry\\n6_protonated\\1SB-LSD_RR\\attack_05\\xtbopt.xyz",
+                "placement_id": "attack_05",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": -3.1976274381590457,
+                "water_deformation_energy_kj_mol": -0.004662333380056874
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": -13.201396024842083,
+                "energy_hartree": -107.066978835084,
+                "fragment_interaction_energy_kj_mol": -13.192711525802185,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 4.1173219675809,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 4.979195892736168,
+                  "carbonyl_o_water_o_distance_angstrom": 4.833256151645947,
+                  "final_location": "other_or_dispersed",
+                  "intact_water": true,
+                  "n6_water_o_distance_angstrom": 6.931503534313732,
+                  "o_c_water_o_angle_deg": 119.12496053426572,
+                  "water_o_h_distances_angstrom": [
+                    0.9623571391916536,
+                    0.9632076783672693
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": 7.116984568911117
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_close_geometry\\n6_protonated\\1SB-LSD_RR\\attack_06\\xtbopt.xyz",
+                "placement_id": "attack_06",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": 0.010660426476871633,
+                "water_deformation_energy_kj_mol": -0.019344925516768547
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": -13.186164188696576,
+                "energy_hartree": -107.066973033584,
+                "fragment_interaction_energy_kj_mol": -13.194869691760978,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 4.130789846127641,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 5.017919778391825,
+                  "carbonyl_o_water_o_distance_angstrom": 4.864236104486184,
+                  "final_location": "other_or_dispersed",
+                  "intact_water": true,
+                  "n6_water_o_distance_angstrom": 6.9131019098543804,
+                  "o_c_water_o_angle_deg": 120.24941296509384,
+                  "water_o_h_distances_angstrom": [
+                    0.9621390005072281,
+                    0.9633074650370366
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": 7.12367489395941
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_close_geometry\\n6_protonated\\1SB-LSD_RR\\attack_07\\xtbopt.xyz",
+                "placement_id": "attack_07",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": 0.02444548367565978,
+                "water_deformation_energy_kj_mol": -0.015739980611258114
+              }
+            ],
+            "source_conformer_id": "conf008",
+            "summary": {
+              "best_apparent_carbonyl_local_cluster_formation_kj_mol": -15.153967294267987,
+              "best_carbonyl_local_fragment_interaction_kj_mol": -15.484051751471435,
+              "carbonyl_local_count": 1,
+              "carbonyl_local_fraction_of_intact": 0.14285714285714285,
+              "intact_water_count": 7,
+              "location_counts": {
+                "carbonyl_attack_region": 0,
+                "carbonyl_o_hbond": 1,
+                "n6_region": 0,
+                "other_or_dispersed": 6,
+                "proton_transfer_or_dissociated_water": 2
+              },
+              "median_apparent_carbonyl_local_cluster_formation_kj_mol": -15.153967294267987,
+              "median_carbonyl_local_fragment_interaction_kj_mol": -15.484051751471435,
+              "placement_count": 9,
+              "proton_transfer_or_dissociation_count": 2
+            }
+          }
+        },
+        "neutral": {
+          "1Bz-LSD_RR": {
+            "charge": 0,
+            "records": [
+              {
+                "apparent_cluster_formation_energy_kj_mol": -9.318746669108931,
+                "energy_hartree": -94.665594388203,
+                "fragment_interaction_energy_kj_mol": -9.423855191802444,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 4.18630170343615,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 2.0216498404090815,
+                  "carbonyl_o_water_o_distance_angstrom": 2.9785475986640555,
+                  "final_location": "carbonyl_o_hbond",
+                  "intact_water": true,
+                  "n6_water_o_distance_angstrom": 9.812935858009878,
+                  "o_c_water_o_angle_deg": 8.44967574574441,
+                  "water_o_h_distances_angstrom": [
+                    0.9661482222495976,
+                    0.962797234674287
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": null
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_close_geometry\\neutral\\1Bz-LSD_RR\\carbonyl_o_hbond\\xtbopt.xyz",
+                "placement_id": "carbonyl_o_hbond",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": 0.06386172907052329,
+                "water_deformation_energy_kj_mol": 0.041246793622990975
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": 278.781527105118,
+                "energy_hartree": -94.555862789142,
+                "fragment_interaction_energy_kj_mol": null,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 3.642443402290198,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 4.3019602426700425,
+                  "carbonyl_o_water_o_distance_angstrom": 4.065391837023027,
+                  "final_location": "proton_transfer_or_dissociated_water",
+                  "intact_water": false,
+                  "n6_water_o_distance_angstrom": 4.6304784391823715,
+                  "o_c_water_o_angle_deg": 100.88073288142085,
+                  "water_o_h_distances_angstrom": [
+                    2.0124548132581395,
+                    0.9868681769268277
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": null
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_close_geometry\\neutral\\1Bz-LSD_RR\\attack_00\\xtbopt.xyz",
+                "placement_id": "attack_00",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": null,
+                "water_deformation_energy_kj_mol": null
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": -6.172244616608728,
+                "energy_hartree": -94.664395948864,
+                "fragment_interaction_energy_kj_mol": -6.431689297102758,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 3.860376709751029,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 4.539921427876574,
+                  "carbonyl_o_water_o_distance_angstrom": 4.271273519413671,
+                  "final_location": "other_or_dispersed",
+                  "intact_water": true,
+                  "n6_water_o_distance_angstrom": 6.907960833745327,
+                  "o_c_water_o_angle_deg": 101.22088719812933,
+                  "water_o_h_distances_angstrom": [
+                    0.9628416828330153,
+                    0.963141067580557
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": null
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_close_geometry\\neutral\\1Bz-LSD_RR\\attack_01\\xtbopt.xyz",
+                "placement_id": "attack_01",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": 0.278941766842169,
+                "water_deformation_energy_kj_mol": -0.01949708634813893
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": -6.942896454072852,
+                "energy_hartree": -94.664689474647,
+                "fragment_interaction_energy_kj_mol": -7.003132887978915,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 3.767133872058671,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 4.4135466137994275,
+                  "carbonyl_o_water_o_distance_angstrom": 4.208252548196059,
+                  "final_location": "other_or_dispersed",
+                  "intact_water": true,
+                  "n6_water_o_distance_angstrom": 8.073930977240519,
+                  "o_c_water_o_angle_deg": 102.63619100799488,
+                  "water_o_h_distances_angstrom": [
+                    0.9624133383127642,
+                    0.9629358582969656
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": null
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_close_geometry\\neutral\\1Bz-LSD_RR\\attack_02\\xtbopt.xyz",
+                "placement_id": "attack_02",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": 0.05922036554546285,
+                "water_deformation_energy_kj_mol": 0.0010160683605997581
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": -7.544299203836608,
+                "energy_hartree": -94.664918536857,
+                "fragment_interaction_energy_kj_mol": -7.763280631693258,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 4.8564566511080764,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 5.886444976017487,
+                  "carbonyl_o_water_o_distance_angstrom": 5.715500499909824,
+                  "final_location": "other_or_dispersed",
+                  "intact_water": true,
+                  "n6_water_o_distance_angstrom": 9.609443790030133,
+                  "o_c_water_o_angle_deg": 129.549452409925,
+                  "water_o_h_distances_angstrom": [
+                    0.9625907669307104,
+                    0.9629882696335387
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": null
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_close_geometry\\neutral\\1Bz-LSD_RR\\attack_03\\xtbopt.xyz",
+                "placement_id": "attack_03",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": 0.24342570379304818,
+                "water_deformation_energy_kj_mol": -0.02444427593639804
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": 150.95889596342178,
+                "energy_hartree": -94.604547858155,
+                "fragment_interaction_energy_kj_mol": null,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 3.6637872684082726,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 4.532055235000853,
+                  "carbonyl_o_water_o_distance_angstrom": 4.031299671580081,
+                  "final_location": "proton_transfer_or_dissociated_water",
+                  "intact_water": false,
+                  "n6_water_o_distance_angstrom": 10.761171135904995,
+                  "o_c_water_o_angle_deg": 98.42511618511102,
+                  "water_o_h_distances_angstrom": [
+                    2.792231668776226,
+                    0.9743892627507764
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": null
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_close_geometry\\neutral\\1Bz-LSD_RR\\attack_04\\xtbopt.xyz",
+                "placement_id": "attack_04",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": null,
+                "water_deformation_energy_kj_mol": null
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": -5.785166808302051,
+                "energy_hartree": -94.664248518713,
+                "fragment_interaction_energy_kj_mol": -5.792741852593502,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 4.018538924510675,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 4.390599744447903,
+                  "carbonyl_o_water_o_distance_angstrom": 4.143220271521508,
+                  "final_location": "other_or_dispersed",
+                  "intact_water": true,
+                  "n6_water_o_distance_angstrom": 9.706552592550635,
+                  "o_c_water_o_angle_deg": 87.19824433294102,
+                  "water_o_h_distances_angstrom": [
+                    0.9624735109369098,
+                    0.9636896833839373
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": null
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_close_geometry\\neutral\\1Bz-LSD_RR\\attack_05\\xtbopt.xyz",
+                "placement_id": "attack_05",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": 0.04432482437150297,
+                "water_deformation_energy_kj_mol": -0.036749780080052724
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": -11.025512235085946,
+                "energy_hartree": -94.666244460875,
+                "fragment_interaction_energy_kj_mol": -11.058589476760847,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 4.099886541596576,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 4.96842991172198,
+                  "carbonyl_o_water_o_distance_angstrom": 4.8069342368898536,
+                  "final_location": "other_or_dispersed",
+                  "intact_water": true,
+                  "n6_water_o_distance_angstrom": 7.078226233192295,
+                  "o_c_water_o_angle_deg": 118.50792080954366,
+                  "water_o_h_distances_angstrom": [
+                    0.9626722955724805,
+                    0.9628971013103661
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": null
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_close_geometry\\neutral\\1Bz-LSD_RR\\attack_06\\xtbopt.xyz",
+                "placement_id": "attack_06",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": 0.04592808835181987,
+                "water_deformation_energy_kj_mol": -0.012850846676918479
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": -10.946008120473644,
+                "energy_hartree": -94.666214179357,
+                "fragment_interaction_energy_kj_mol": -11.055028432848001,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 4.058769214572569,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 4.9073602205479245,
+                  "carbonyl_o_water_o_distance_angstrom": 4.748701442295392,
+                  "final_location": "other_or_dispersed",
+                  "intact_water": true,
+                  "n6_water_o_distance_angstrom": 7.0664025622645825,
+                  "o_c_water_o_angle_deg": 117.3858818104781,
+                  "water_o_h_distances_angstrom": [
+                    0.9627803783653016,
+                    0.9632299034603538
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": null
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_close_geometry\\neutral\\1Bz-LSD_RR\\attack_07\\xtbopt.xyz",
+                "placement_id": "attack_07",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": 0.1092817018676379,
+                "water_deformation_energy_kj_mol": -0.000261389493281212
+              }
+            ],
+            "source_conformer_id": "conf005",
+            "summary": {
+              "best_apparent_carbonyl_local_cluster_formation_kj_mol": -9.318746669108931,
+              "best_carbonyl_local_fragment_interaction_kj_mol": -9.423855191802444,
+              "carbonyl_local_count": 1,
+              "carbonyl_local_fraction_of_intact": 0.14285714285714285,
+              "intact_water_count": 7,
+              "location_counts": {
+                "carbonyl_attack_region": 0,
+                "carbonyl_o_hbond": 1,
+                "n6_region": 0,
+                "other_or_dispersed": 6,
+                "proton_transfer_or_dissociated_water": 2
+              },
+              "median_apparent_carbonyl_local_cluster_formation_kj_mol": -9.318746669108931,
+              "median_carbonyl_local_fragment_interaction_kj_mol": -9.423855191802444,
+              "placement_count": 9,
+              "proton_transfer_or_dissociation_count": 2
+            }
+          },
+          "1SB-LSD_RR": {
+            "charge": 0,
+            "records": [
+              {
+                "apparent_cluster_formation_energy_kj_mol": -9.627682288243708,
+                "energy_hartree": -106.886397657229,
+                "fragment_interaction_energy_kj_mol": -9.718777180325654,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 4.177135362801335,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 1.999663478776831,
+                  "carbonyl_o_water_o_distance_angstrom": 2.958132340589645,
+                  "final_location": "carbonyl_o_hbond",
+                  "intact_water": true,
+                  "n6_water_o_distance_angstrom": 9.663251486665695,
+                  "o_c_water_o_angle_deg": 5.672476873576454,
+                  "water_o_h_distances_angstrom": [
+                    0.9659411380635343,
+                    0.9630824037853388
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": 8.77360637465292
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_close_geometry\\neutral\\1SB-LSD_RR\\carbonyl_o_hbond\\xtbopt.xyz",
+                "placement_id": "carbonyl_o_hbond",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": 0.0556587754964668,
+                "water_deformation_energy_kj_mol": 0.03543611658547957
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": 280.413961998478,
+                "energy_hartree": -106.775926629191,
+                "fragment_interaction_energy_kj_mol": null,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 3.638964303340358,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 4.268518753547313,
+                  "carbonyl_o_water_o_distance_angstrom": 4.05212298173307,
+                  "final_location": "proton_transfer_or_dissociated_water",
+                  "intact_water": false,
+                  "n6_water_o_distance_angstrom": 4.630046391152766,
+                  "o_c_water_o_angle_deg": 100.34433497199255,
+                  "water_o_h_distances_angstrom": [
+                    2.0124481370766314,
+                    0.9867989382859385
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": 9.311844828261188
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_close_geometry\\neutral\\1SB-LSD_RR\\attack_00\\xtbopt.xyz",
+                "placement_id": "attack_00",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": null,
+                "water_deformation_energy_kj_mol": null
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": -6.89119777218447,
+                "energy_hartree": -106.885355385322,
+                "fragment_interaction_energy_kj_mol": -7.107885791956644,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 3.490572055147802,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 3.953835200053233,
+                  "carbonyl_o_water_o_distance_angstrom": 3.7609240886239497,
+                  "final_location": "carbonyl_attack_region",
+                  "intact_water": true,
+                  "n6_water_o_distance_angstrom": 7.311852786001129,
+                  "o_c_water_o_angle_deg": 93.08334257343314,
+                  "water_o_h_distances_angstrom": [
+                    0.9628463680263492,
+                    0.9635319729099934
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": 7.6667773364209335
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_close_geometry\\neutral\\1SB-LSD_RR\\attack_01\\xtbopt.xyz",
+                "placement_id": "attack_01",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": 0.213317369203755,
+                "water_deformation_energy_kj_mol": 0.0033706505684186067
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": -6.745697302824938,
+                "energy_hartree": -106.88529996712,
+                "fragment_interaction_energy_kj_mol": -6.772908800222737,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 3.8018499637808754,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 4.437722228523648,
+                  "carbonyl_o_water_o_distance_angstrom": 4.229343157975274,
+                  "final_location": "other_or_dispersed",
+                  "intact_water": true,
+                  "n6_water_o_distance_angstrom": 7.997739064639532,
+                  "o_c_water_o_angle_deg": 101.96278115662136,
+                  "water_o_h_distances_angstrom": [
+                    0.9625398459080127,
+                    0.9632369007656666
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": 7.076793161246522
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_close_geometry\\neutral\\1SB-LSD_RR\\attack_02\\xtbopt.xyz",
+                "placement_id": "attack_02",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": 0.04454077958160204,
+                "water_deformation_energy_kj_mol": -0.017329282183803384
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": -6.829124423195638,
+                "energy_hartree": -106.885331742832,
+                "fragment_interaction_energy_kj_mol": -7.125755223430796,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 4.502890605086493,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 5.345031889949177,
+                  "carbonyl_o_water_o_distance_angstrom": 5.224262829510496,
+                  "final_location": "other_or_dispersed",
+                  "intact_water": true,
+                  "n6_water_o_distance_angstrom": 9.208234087086984,
+                  "o_c_water_o_angle_deg": 119.95084347738886,
+                  "water_o_h_distances_angstrom": [
+                    0.9621104828765922,
+                    0.9630749795941358
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": 5.702482830772121
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_close_geometry\\neutral\\1SB-LSD_RR\\attack_03\\xtbopt.xyz",
+                "placement_id": "attack_03",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": 0.28508274223427243,
+                "water_deformation_energy_kj_mol": 0.011548058000886308
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": 153.63656990193454,
+                "energy_hartree": -106.824213587677,
+                "fragment_interaction_energy_kj_mol": null,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 3.656380854422512,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 4.506984684720144,
+                  "carbonyl_o_water_o_distance_angstrom": 4.006942095022773,
+                  "final_location": "proton_transfer_or_dissociated_water",
+                  "intact_water": false,
+                  "n6_water_o_distance_angstrom": 10.790817339706404,
+                  "o_c_water_o_angle_deg": 97.49225126637705,
+                  "water_o_h_distances_angstrom": [
+                    3.388546123123077,
+                    0.9745919359331874
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": 3.6073859857233743
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_close_geometry\\neutral\\1SB-LSD_RR\\attack_04\\xtbopt.xyz",
+                "placement_id": "attack_04",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": null,
+                "water_deformation_energy_kj_mol": null
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": -5.693832084720372,
+                "energy_hartree": -106.884899332817,
+                "fragment_interaction_energy_kj_mol": -5.700528392641213,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 4.119808811563993,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 4.412149804763513,
+                  "carbonyl_o_water_o_distance_angstrom": 4.2833903217525435,
+                  "final_location": "other_or_dispersed",
+                  "intact_water": true,
+                  "n6_water_o_distance_angstrom": 9.764462041956799,
+                  "o_c_water_o_angle_deg": 89.28287172716374,
+                  "water_o_h_distances_angstrom": [
+                    0.9622317089588859,
+                    0.9637836765974469
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": 5.415239835418188
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_close_geometry\\neutral\\1SB-LSD_RR\\attack_05\\xtbopt.xyz",
+                "placement_id": "attack_05",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": 0.050774765919037144,
+                "water_deformation_energy_kj_mol": -0.04407845799819591
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": -10.47052886767282,
+                "energy_hartree": -106.886718680537,
+                "fragment_interaction_energy_kj_mol": -10.629920750599938,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 4.0708834540496825,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 4.890959491982593,
+                  "carbonyl_o_water_o_distance_angstrom": 4.7351529658317295,
+                  "final_location": "other_or_dispersed",
+                  "intact_water": true,
+                  "n6_water_o_distance_angstrom": 7.16395574121338,
+                  "o_c_water_o_angle_deg": 115.81497738510595,
+                  "water_o_h_distances_angstrom": [
+                    0.9626376770634757,
+                    0.9630504355360013
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": 7.121871410616894
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_close_geometry\\neutral\\1SB-LSD_RR\\attack_06\\xtbopt.xyz",
+                "placement_id": "attack_06",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": 0.18144148264948443,
+                "water_deformation_energy_kj_mol": -0.02204959972236602
+              },
+              {
+                "apparent_cluster_formation_energy_kj_mol": -10.582692499064947,
+                "energy_hartree": -106.886761401408,
+                "fragment_interaction_energy_kj_mol": -10.68693670722895,
+                "geometry": {
+                  "carbonyl_c_water_o_distance_angstrom": 4.121623855624281,
+                  "carbonyl_o_nearest_water_h_distance_angstrom": 5.008500053803871,
+                  "carbonyl_o_water_o_distance_angstrom": 4.838972067919668,
+                  "final_location": "other_or_dispersed",
+                  "intact_water": true,
+                  "n6_water_o_distance_angstrom": 7.086275023022318,
+                  "o_c_water_o_angle_deg": 119.15556951856667,
+                  "water_o_h_distances_angstrom": [
+                    0.9625926968261215,
+                    0.962935197493228
+                  ],
+                  "water_o_minimum_tms_atom_distance_angstrom": 7.0985209610045885
+                },
+                "optimized_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\pair_close_geometry\\neutral\\1SB-LSD_RR\\attack_07\\xtbopt.xyz",
+                "placement_id": "attack_07",
+                "provenance": "reused_completed_xtb_job",
+                "solute_deformation_energy_kj_mol": 0.1297948670233429,
+                "water_deformation_energy_kj_mol": -0.02555065885934
+              }
+            ],
+            "source_conformer_id": "conf008",
+            "summary": {
+              "best_apparent_carbonyl_local_cluster_formation_kj_mol": -9.627682288243708,
+              "best_carbonyl_local_fragment_interaction_kj_mol": -9.718777180325654,
+              "carbonyl_local_count": 2,
+              "carbonyl_local_fraction_of_intact": 0.2857142857142857,
+              "intact_water_count": 7,
+              "location_counts": {
+                "carbonyl_attack_region": 1,
+                "carbonyl_o_hbond": 1,
+                "n6_region": 0,
+                "other_or_dispersed": 5,
+                "proton_transfer_or_dissociated_water": 2
+              },
+              "median_apparent_carbonyl_local_cluster_formation_kj_mol": -8.259440030214089,
+              "median_carbonyl_local_fragment_interaction_kj_mol": -8.41333148614115,
+              "placement_count": 9,
+              "proton_transfer_or_dissociation_count": 2
+            }
+          }
+        }
+      }
+    }
+  ],
+  "schema_version": 1,
+  "scope_limit": "microsolvation geometry screen; not MD, hydration free energy, or reaction barrier",
+  "software": "xTB 6.7.1pre",
+  "water_reference_energy_hartree": -5.085021163731,
+  "water_reference_xyz": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\explicit_water_screen\\water_reference\\xtbopt.xyz"
+}

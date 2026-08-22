@@ -1,0 +1,12 @@
+{
+  "complex_optimization_jobs_expected": 73,
+  "computed_jobs": 0,
+  "current_job": null,
+  "finished_at_utc": "2026-08-21T23:31:23.776278Z",
+  "maximum_jobs_if_all_waters_remain_intact": 217,
+  "processed_jobs": 185,
+  "reused_jobs": 185,
+  "skipped_fragment_jobs_due_nonintact_water": 32,
+  "started_at_utc": "2026-08-21T23:31:22.960772Z",
+  "status": "SUCCESS"
+}

@@ -1,0 +1,62 @@
+{
+  "current_pool_index": null,
+  "finished_at_utc": "2026-08-14T07:47:28.427586Z",
+  "jobs": [
+    {
+      "finished_at_utc": "2026-08-14T07:47:11.122145Z",
+      "pool_index": 78,
+      "provenance": "computed_this_run",
+      "started_at_utc": "2026-08-14T07:47:09.036616Z"
+    },
+    {
+      "finished_at_utc": "2026-08-14T07:47:13.805030Z",
+      "pool_index": 161,
+      "provenance": "computed_this_run",
+      "started_at_utc": "2026-08-14T07:47:11.943506Z"
+    },
+    {
+      "finished_at_utc": "2026-08-14T07:47:16.297031Z",
+      "pool_index": 133,
+      "provenance": "computed_this_run",
+      "started_at_utc": "2026-08-14T07:47:13.811035Z"
+    },
+    {
+      "finished_at_utc": "2026-08-14T07:47:18.400026Z",
+      "pool_index": 77,
+      "provenance": "computed_this_run",
+      "started_at_utc": "2026-08-14T07:47:16.302314Z"
+    },
+    {
+      "finished_at_utc": "2026-08-14T07:47:20.295684Z",
+      "pool_index": 144,
+      "provenance": "computed_this_run",
+      "started_at_utc": "2026-08-14T07:47:18.406024Z"
+    },
+    {
+      "finished_at_utc": "2026-08-14T07:47:22.160972Z",
+      "pool_index": 93,
+      "provenance": "computed_this_run",
+      "started_at_utc": "2026-08-14T07:47:20.301754Z"
+    },
+    {
+      "finished_at_utc": "2026-08-14T07:47:24.270859Z",
+      "pool_index": 154,
+      "provenance": "computed_this_run",
+      "started_at_utc": "2026-08-14T07:47:22.167386Z"
+    },
+    {
+      "finished_at_utc": "2026-08-14T07:47:26.315152Z",
+      "pool_index": 109,
+      "provenance": "computed_this_run",
+      "started_at_utc": "2026-08-14T07:47:24.276911Z"
+    },
+    {
+      "finished_at_utc": "2026-08-14T07:47:28.407364Z",
+      "pool_index": 46,
+      "provenance": "computed_this_run",
+      "started_at_utc": "2026-08-14T07:47:26.321183Z"
+    }
+  ],
+  "started_at_utc": "2026-08-14T07:47:09.032609Z",
+  "status": "SUCCESS"
+}

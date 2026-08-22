@@ -1,0 +1,438 @@
+{
+  "schema_version": 1,
+  "source_latest_modified_at_utc": "2026-08-21T23:31:23.776081+00:00",
+  "source_policy": "outputs/ remains canonical and Git-ignored",
+  "maximum_file_mib": 5.0,
+  "file_count": 47,
+  "files": [
+    {
+      "source": "outputs/1Bz-LSD_RR/ensemble.json",
+      "snapshot": "research_results/ensembles/1Bz-LSD_RR/ensemble.json",
+      "source_bytes": 150360,
+      "snapshot_bytes": 144250,
+      "source_sha256": "1c89e38cd1f9b262b16ce0f9d79da9fde85589189d44644ed016ed2f05ccc86b",
+      "snapshot_sha256": "f8829374e9a14936679ee88ee4b945dcbf9da1fee26ac67cfcaf8a3b63ccfc60",
+      "workspace_path_replacements": 31
+    },
+    {
+      "source": "outputs/1Bz-LSD_RR/RUN_SUMMARY.md",
+      "snapshot": "research_results/ensembles/1Bz-LSD_RR/RUN_SUMMARY.md",
+      "source_bytes": 1503,
+      "snapshot_bytes": 1448,
+      "source_sha256": "1aa3c06e530c812c67327c6581d61e1cf2f6d33e439316ce6e4983f5774fe1d2",
+      "snapshot_sha256": "7d22b8ecdfdaedd53b3ce55a71b2a9868147735094b827c06e49c9b08345831e",
+      "workspace_path_replacements": 0
+    },
+    {
+      "source": "outputs/1SB-LSD_RR/ensemble.json",
+      "snapshot": "research_results/ensembles/1SB-LSD_RR/ensemble.json",
+      "source_bytes": 165332,
+      "snapshot_bytes": 157703,
+      "source_sha256": "d1388401798385245de86c8528512a348e3c2ae31fef54bd94d03935c496beeb",
+      "snapshot_sha256": "3b3bfcaf3a6c0c9a563ffbf54fb09ff25c65039309f7186ec4edb484d417f02a",
+      "workspace_path_replacements": 49
+    },
+    {
+      "source": "outputs/1SB-LSD_RR/RUN_SUMMARY.md",
+      "snapshot": "research_results/ensembles/1SB-LSD_RR/RUN_SUMMARY.md",
+      "source_bytes": 1507,
+      "snapshot_bytes": 1452,
+      "source_sha256": "c5b03460c57f0692391d0f1a62134fea318ad6d8b5fd730d7ba88524d6c27ca8",
+      "snapshot_sha256": "f9a39bdd579224ce80b1d9562aa7e4d6ee745f33b6522b45a130f1981daf598d",
+      "workspace_path_replacements": 0
+    },
+    {
+      "source": "outputs/Bz_vs_SB_preliminary_comparison/1Bz-LSD_RR_conformer_metrics.csv",
+      "snapshot": "research_results/comparison/1Bz-LSD_RR_conformer_metrics.csv",
+      "source_bytes": 5512,
+      "snapshot_bytes": 5502,
+      "source_sha256": "65968cb9531da330b7e43fd36fd6bee327d492996300c2a8893092ce39d5cba8",
+      "snapshot_sha256": "735a32932b950e96a72f71e3c3eb780680c551e8b725400856e95d6074cdfb7d",
+      "workspace_path_replacements": 0
+    },
+    {
+      "source": "outputs/Bz_vs_SB_preliminary_comparison/1SB-LSD_RR_conformer_metrics.csv",
+      "snapshot": "research_results/comparison/1SB-LSD_RR_conformer_metrics.csv",
+      "source_bytes": 7171,
+      "snapshot_bytes": 7159,
+      "source_sha256": "ee312270b1c9e30d7a611fd5229b9bc4ee69a93b333ca2dc17a3fe805ad12956",
+      "snapshot_sha256": "c3bd58da67bd236adc5d22c91240dab323639a0643b735e50e33361e7123052a",
+      "workspace_path_replacements": 0
+    },
+    {
+      "source": "outputs/Bz_vs_SB_preliminary_comparison/1SB-LSD_RR_regenerated_pool.json",
+      "snapshot": "research_results/comparison/intermediate/1SB-LSD_RR_regenerated_pool.json",
+      "source_bytes": 1741039,
+      "snapshot_bytes": 1666075,
+      "source_sha256": "b9dd55022ccfc49be5c6a8d3b4d28f4b6ed67880e87b3f64d5320cb5a34530ef",
+      "snapshot_sha256": "49758ee64d304dad33e0076dd94858778375d7d0d1f57846b19829b3e3c3fb1e",
+      "workspace_path_replacements": 0
+    },
+    {
+      "source": "outputs/Bz_vs_SB_preliminary_comparison/Bz_SB_common_scaffold_rmsd_matrix.csv",
+      "snapshot": "research_results/comparison/Bz_SB_common_scaffold_rmsd_matrix.csv",
+      "source_bytes": 5644,
+      "snapshot_bytes": 5544,
+      "source_sha256": "440af06a73ed7271c465b72135d3c32accb9a0122bb4f5b10de92c6c2661913b",
+      "snapshot_sha256": "f74bb68e14f6f891f49a117fb32a2983aa89ef55cbdda43797920079a41e0758",
+      "workspace_path_replacements": 0
+    },
+    {
+      "source": "outputs/Bz_vs_SB_preliminary_comparison/analysis.json",
+      "snapshot": "research_results/comparison/analysis.json",
+      "source_bytes": 539113,
+      "snapshot_bytes": 522686,
+      "source_sha256": "d8d6ae6d5bca78ec64c7bb6ce25ec97776fc8d59c51f5ff72fa0f2d7c43b3e47",
+      "snapshot_sha256": "19452eebed62e928681bd4e8f65c33a188c6b450261819a933c21176b7287525",
+      "workspace_path_replacements": 46
+    },
+    {
+      "source": "outputs/Bz_vs_SB_preliminary_comparison/PRELIMINARY_COMPARISON_JA.md",
+      "snapshot": "research_results/comparison/PRELIMINARY_COMPARISON_JA.md",
+      "source_bytes": 11381,
+      "snapshot_bytes": 11246,
+      "source_sha256": "3e34a51d9f8c5bf61e3da501ee9019e9f53b3f7233bfa5e76c772d34b5dd675a",
+      "snapshot_sha256": "04fc324dcadd43b133eb20b4e343aaf6259e1886b3f1a6f4ca091517da34083a",
+      "workspace_path_replacements": 0
+    },
+    {
+      "source": "outputs/Bz_vs_SB_preliminary_comparison/PRELIMINARY_COMPARISON.md",
+      "snapshot": "research_results/comparison/PRELIMINARY_COMPARISON.md",
+      "source_bytes": 5201,
+      "snapshot_bytes": 5137,
+      "source_sha256": "54ea68ded74829aba50d7d3fcd93256da113f99f33bb94e5b1dd8b2c1da7a162",
+      "snapshot_sha256": "cafb298cb798343c29d2589660526e4871db6cfb892730fe63817d52a0d7ccf2",
+      "workspace_path_replacements": 0
+    },
+    {
+      "source": "outputs/Bz_vs_SB_preliminary_comparison/paired_continuous_steric_access.json",
+      "snapshot": "research_results/comparison/steric_access/paired_continuous_steric_access.json",
+      "source_bytes": 736212,
+      "snapshot_bytes": 721399,
+      "source_sha256": "d0ff85fb05fd0eb86400cf5822b8b2a92f0ac9153ec99ffbe0a5f2e505ecfa65",
+      "snapshot_sha256": "30d3797b151b91c7a6399484e2b21a344815deabea9e40b85d67abbbe058d762",
+      "workspace_path_replacements": 2
+    },
+    {
+      "source": "outputs/Bz_vs_SB_preliminary_comparison/paired_continuous_steric_trajectories.csv",
+      "snapshot": "research_results/comparison/steric_access/paired_continuous_steric_trajectories.csv",
+      "source_bytes": 705287,
+      "snapshot_bytes": 696646,
+      "source_sha256": "035986f524ac1455742496c629453f3546f73e15da3e978ca77bd98cfd63553b",
+      "snapshot_sha256": "d6f61f1b04b7a8c875a17ff71b3f69067f8ecf2ccc6920c5f2dca48649841d36",
+      "workspace_path_replacements": 0
+    },
+    {
+      "source": "outputs/Bz_vs_SB_preliminary_comparison/hypotheses4_5_analysis.json",
+      "snapshot": "research_results/comparison/hypotheses4_5/analysis.json",
+      "source_bytes": 396703,
+      "snapshot_bytes": 385013,
+      "source_sha256": "15614924dacd69fc05a8601dc6dc13c76e29949cc14e3f7ec1363fd5fb60eed5",
+      "snapshot_sha256": "db6d42b8d85392a2c427bea90b0adb124379d95995afa1554b3fb6907a5e38ca",
+      "workspace_path_replacements": 31
+    },
+    {
+      "source": "outputs/Bz_vs_SB_preliminary_comparison/HYPOTHESES4_5_FINDINGS_JA.md",
+      "snapshot": "research_results/comparison/hypotheses4_5/FINDINGS_JA.md",
+      "source_bytes": 2726,
+      "snapshot_bytes": 2694,
+      "source_sha256": "45d55dfc11d5e2a86a122ea96b1ac1e7ffc9b0f5e92a634eb921515ceccb4aef",
+      "snapshot_sha256": "9dac20b2f3d43c58931581d782c725cf353af427a6d2d44bdc85b644d9677a60",
+      "workspace_path_replacements": 0
+    },
+    {
+      "source": "outputs/Bz_vs_SB_preliminary_comparison/electronic_property_results.json",
+      "snapshot": "research_results/comparison/electronic_properties/results.json",
+      "source_bytes": 228815,
+      "snapshot_bytes": 219754,
+      "source_sha256": "97696aa0287e6a1d4a7eed717e4f38a3547c736026fe08d70f3137bf00620dc9",
+      "snapshot_sha256": "ba2bc5ef2443aa6f1ba388fe7b2261672ce90f62fdd594cade994cfac282a585",
+      "workspace_path_replacements": 30
+    },
+    {
+      "source": "outputs/Bz_vs_SB_preliminary_comparison/electronic_property_status.json",
+      "snapshot": "research_results/comparison/electronic_properties/status.json",
+      "source_bytes": 171,
+      "snapshot_bytes": 165,
+      "source_sha256": "00b3ddb33b791cf19c2a0f6958f5d3ecc437cbcbcc23ff39787610106afb5821",
+      "snapshot_sha256": "d22e9d7ce1fca49fc4d65976a776260f6b20e47ae01ef718e54d494a5716d32a",
+      "workspace_path_replacements": 0
+    },
+    {
+      "source": "outputs/Bz_vs_SB_preliminary_comparison/electronic_robustness/results.json",
+      "snapshot": "research_results/comparison/electronic_robustness/results.json",
+      "source_bytes": 27289,
+      "snapshot_bytes": 24816,
+      "source_sha256": "523188fab816b36bfa294b1c56558820bc1acaa1ce213a2e6a2fa9e991255dd6",
+      "snapshot_sha256": "a31fff900f68e4672c111c3383fc5cad1c5ad2dd84bedc97500c0819266cd99a",
+      "workspace_path_replacements": 32
+    },
+    {
+      "source": "outputs/Bz_vs_SB_preliminary_comparison/electronic_robustness/status.json",
+      "snapshot": "research_results/comparison/electronic_robustness/status.json",
+      "source_bytes": 4037,
+      "snapshot_bytes": 3930,
+      "source_sha256": "b50a85f9b99ba527e3b4542fb2ff5fa74f2ecca2b2b8a19c6746686f199db94e",
+      "snapshot_sha256": "f4da5ee135a7a47afdb0c16aadf155c572813247b534bf3f9d4715ae62362cb1",
+      "workspace_path_replacements": 0
+    },
+    {
+      "source": "outputs/Bz_vs_SB_preliminary_comparison/electronic_robustness/paired_analysis.json",
+      "snapshot": "research_results/comparison/electronic_robustness/paired_analysis.json",
+      "source_bytes": 27887,
+      "snapshot_bytes": 27130,
+      "source_sha256": "ded7222e6e365e5ac98c8afe3332c2c966b017b5ffade70cbd304e4433e616b8",
+      "snapshot_sha256": "43bbaf6e3b266f4795e4eb1c7470732571e0ff0817ae291c85afe96a9216a8ee",
+      "workspace_path_replacements": 1
+    },
+    {
+      "source": "outputs/Bz_vs_SB_preliminary_comparison/electronic_robustness/paired_deltas.csv",
+      "snapshot": "research_results/comparison/electronic_robustness/paired_deltas.csv",
+      "source_bytes": 19138,
+      "snapshot_bytes": 18977,
+      "source_sha256": "86425a59ea92ecec49d53f87c6273b09a19299422707916f6405be065a581e1f",
+      "snapshot_sha256": "ff16d32b5ccde9d438d681668fd42641dc1ada5ae4c836e96cfb55610a59ccea",
+      "workspace_path_replacements": 0
+    },
+    {
+      "source": "outputs/Bz_vs_SB_preliminary_comparison/hypothesis2_validation/results.json",
+      "snapshot": "research_results/comparison/hypothesis2_validation/results.json",
+      "source_bytes": 19630,
+      "snapshot_bytes": 17786,
+      "source_sha256": "6d625b70e37cca46575b0813a34f6fbf4fe73d051e0cd7496670f2d7f7e01eb8",
+      "snapshot_sha256": "0918a4bf85aae511df92935f61fb03366cc99e3109243730bb98d815f5cb63e5",
+      "workspace_path_replacements": 24
+    },
+    {
+      "source": "outputs/Bz_vs_SB_preliminary_comparison/hypothesis2_validation/status.json",
+      "snapshot": "research_results/comparison/hypothesis2_validation/status.json",
+      "source_bytes": 3036,
+      "snapshot_bytes": 2958,
+      "source_sha256": "f42f1ffd002b63300e8d5e974ffd6a7d5f514a2f9c595f36fddad3f3eaa23db8",
+      "snapshot_sha256": "74c20e8da191af9151cc52f6d35b36547457d07f563c7a05c36251190ca72c5c",
+      "workspace_path_replacements": 0
+    },
+    {
+      "source": "outputs/Bz_vs_SB_preliminary_comparison/hypothesis2_validation/analysis.json",
+      "snapshot": "research_results/comparison/hypothesis2_validation/analysis.json",
+      "source_bytes": 67798,
+      "snapshot_bytes": 65916,
+      "source_sha256": "c7902b0230b7cebfa7ad2b238ac111b6b5660ab6b67f626454038e588faa82e2",
+      "snapshot_sha256": "d3201897dfa005aee0aa5686e72e7ad7142a2f8493f06e3585e178d3fc9e2878",
+      "workspace_path_replacements": 1
+    },
+    {
+      "source": "outputs/Bz_vs_SB_preliminary_comparison/hypothesis2_validation/paired_deltas.csv",
+      "snapshot": "research_results/comparison/hypothesis2_validation/paired_deltas.csv",
+      "source_bytes": 27394,
+      "snapshot_bytes": 27189,
+      "source_sha256": "1987a486c4f73d61759784fdc0b8252866fc464cfa0a35fb790ed9b05a1e3c1a",
+      "snapshot_sha256": "cd46e91e60961acc3809f171cfe651ec8200599413315afa627068398c36e16c",
+      "workspace_path_replacements": 0
+    },
+    {
+      "source": "outputs/Bz_vs_SB_preliminary_comparison/hypothesis2_validation/eddb/pbe0_d3bj_def2_tzvp_cpcm_water/results.json",
+      "snapshot": "research_results/comparison/hypothesis2_validation/eddb/results.json",
+      "source_bytes": 282938,
+      "snapshot_bytes": 268009,
+      "source_sha256": "3c545b8b4fbd5221012a4f1f43db5e5688dae7b691368564c527f9df40d90ff8",
+      "snapshot_sha256": "01f13f13e9a35cc073c4aac774673b253080542f69a59020e4675298e1ed268d",
+      "workspace_path_replacements": 93
+    },
+    {
+      "source": "outputs/Bz_vs_SB_preliminary_comparison/hypothesis2_validation/eddb/pbe0_d3bj_def2_tzvp_cpcm_water/paired_deltas.csv",
+      "snapshot": "research_results/comparison/hypothesis2_validation/eddb/paired_deltas.csv",
+      "source_bytes": 15866,
+      "snapshot_bytes": 15673,
+      "source_sha256": "1d783e5d00ca06d732d1f3a9d56d28db37c37aacabe7722e2d03872527403dca",
+      "snapshot_sha256": "0ad67cba207f17080d536f8c9563ba3058bd30208d0f092bf31ebf3d977c5298",
+      "workspace_path_replacements": 0
+    },
+    {
+      "source": "outputs/Bz_vs_SB_preliminary_comparison/protonation_screen/results.json",
+      "snapshot": "research_results/comparison/protonation_screen/results.json",
+      "source_bytes": 592288,
+      "snapshot_bytes": 574957,
+      "source_sha256": "cbe0632897d3c1502287e718f1ba6738c1f7af4d4ef8a000a84c1c7ebba1121e",
+      "snapshot_sha256": "abe48b17bfc83f0715e436fea5c08512842cc24b47b901f33abdd312e910fffe",
+      "workspace_path_replacements": 36
+    },
+    {
+      "source": "outputs/Bz_vs_SB_preliminary_comparison/protonation_screen/status.json",
+      "snapshot": "research_results/comparison/protonation_screen/status.json",
+      "source_bytes": 247,
+      "snapshot_bytes": 238,
+      "source_sha256": "30d04c5df776185fa7b28f9ea0dd74506354a4a14f7d75af4e698787e6c4fcdf",
+      "snapshot_sha256": "8fdf06fb4affc76e05583ad0505abd545199abc78c1fbacc5c40abe9e218fd75",
+      "workspace_path_replacements": 0
+    },
+    {
+      "source": "outputs/Bz_vs_SB_preliminary_comparison/protonation_screen/FINDINGS_JA.md",
+      "snapshot": "research_results/comparison/protonation_screen/FINDINGS_JA.md",
+      "source_bytes": 2035,
+      "snapshot_bytes": 2013,
+      "source_sha256": "ddd0034a39498390a646a24d5403ab805107198bf3d5d285b0bf5e4b51820f6a",
+      "snapshot_sha256": "f366bb81026348620039e3c15d0915d3d62d0b56b2c6a7f08415e3d362e048ef",
+      "workspace_path_replacements": 0
+    },
+    {
+      "source": "outputs/Bz_vs_SB_preliminary_comparison/explicit_water_screen/results.json",
+      "snapshot": "research_results/comparison/explicit_water_screen/results.json",
+      "source_bytes": 117151,
+      "snapshot_bytes": 110819,
+      "source_sha256": "d55fbeca487ffaa6431beeb3770579aacc162b567951ba80def39471a6933246",
+      "snapshot_sha256": "82a38d37d2a732f83cedc81297423f75a10c1b13b9dfb3ee4fc03fd698516fbb",
+      "workspace_path_replacements": 73
+    },
+    {
+      "source": "outputs/Bz_vs_SB_preliminary_comparison/explicit_water_screen/status.json",
+      "snapshot": "research_results/comparison/explicit_water_screen/status.json",
+      "source_bytes": 377,
+      "snapshot_bytes": 366,
+      "source_sha256": "8e4445674cd8bfc41e891fd3c9e61d016422e6675765cb207b9bab04fda4f5c0",
+      "snapshot_sha256": "1a5a4dbe367963d894be2541f11b3156d96b97cdc6040420d019b5f69c63b25f",
+      "workspace_path_replacements": 0
+    },
+    {
+      "source": "outputs/Bz_vs_SB_preliminary_comparison/explicit_water_screen/FINDINGS_JA.md",
+      "snapshot": "research_results/comparison/explicit_water_screen/FINDINGS_JA.md",
+      "source_bytes": 1488,
+      "snapshot_bytes": 1474,
+      "source_sha256": "018d5ff4a3f0cfa66436ce5ed353f4d5532eba6bb9084f3e5eefd56b013002db",
+      "snapshot_sha256": "c7a3b8be796d333e0396b35f9751a83bc4a2ee47d8ec9af5913b3aa823af573a",
+      "workspace_path_replacements": 0
+    },
+    {
+      "source": "outputs/Bz_vs_SB_preliminary_comparison/sb_pool_gfn2_xtb_screen.json",
+      "snapshot": "research_results/comparison/sb_pool_screen/gfn2_xtb_screen.json",
+      "source_bytes": 14463,
+      "snapshot_bytes": 12730,
+      "source_sha256": "711fdcce38545f886f3636086cbe8909e73e48fe7879c887e13a9342c99491f6",
+      "snapshot_sha256": "2f2d8f28bc40080f641c7ff19ec037e4e3b0ce9f23031f5554fa10d304ffab38",
+      "workspace_path_replacements": 22
+    },
+    {
+      "source": "outputs/Bz_vs_SB_preliminary_comparison/sb_pool_gfn2_xtb_status.json",
+      "snapshot": "research_results/comparison/sb_pool_screen/gfn2_xtb_status.json",
+      "source_bytes": 1932,
+      "snapshot_bytes": 1871,
+      "source_sha256": "5843c38c58f3e0f27c5105153db56523f5607fafe392b1dd53808f511180abf5",
+      "snapshot_sha256": "42a0984559a5c8455790a1c1449f05fb309954b16e2cd914e7242331238dc635",
+      "workspace_path_replacements": 0
+    },
+    {
+      "source": "outputs/Bz_vs_SB_preliminary_comparison/sb_pool_singlepoint_screen.json",
+      "snapshot": "research_results/comparison/sb_pool_screen/singlepoint_screen.json",
+      "source_bytes": 3025,
+      "snapshot_bytes": 2827,
+      "source_sha256": "e455a2bdf7f582aecf4ec724ae48f4ac18ef4b6d0318cc95afe87d2fdbf675bb",
+      "snapshot_sha256": "41c9cf7d687f63d6e2cb0686edee476a05b53f09b6d796c6bf23d7b1b0b55e9d",
+      "workspace_path_replacements": 2
+    },
+    {
+      "source": "outputs/Bz_vs_SB_preliminary_comparison/sb_pool_singlepoint_status.json",
+      "snapshot": "research_results/comparison/sb_pool_screen/singlepoint_status.json",
+      "source_bytes": 570,
+      "snapshot_bytes": 551,
+      "source_sha256": "eeaf7a833f04eea51c5fa40075b63809453b8477ab42707eb240c20bd44a747d",
+      "snapshot_sha256": "fa9743b9c6208ddf41a409256267734efe4a107cbea31d155fe1a250454ae5f1",
+      "workspace_path_replacements": 0
+    },
+    {
+      "source": "outputs/Bz_vs_SB_preliminary_comparison/sb_additional_dft_opt_result.json",
+      "snapshot": "research_results/comparison/sb_additional_opt/result.json",
+      "source_bytes": 4214,
+      "snapshot_bytes": 3964,
+      "source_sha256": "e12dad4ca6d0467fdc05b7c146bdf23668a85bc4cac002b6651dc2ebd41763ac",
+      "snapshot_sha256": "ad4e14a280395c14f92135cab116a1054712ae030b7390c758ebb91f08b31692",
+      "workspace_path_replacements": 2
+    },
+    {
+      "source": "outputs/Bz_vs_SB_preliminary_comparison/sb_additional_dft_opt_status.json",
+      "snapshot": "research_results/comparison/sb_additional_opt/status.json",
+      "source_bytes": 369,
+      "snapshot_bytes": 302,
+      "source_sha256": "5cec9a24a544f991a5b54687529917afd5c58f63212f3d8afbe8e942e2202c16",
+      "snapshot_sha256": "ee0630ae7b637384bfff8837634f35bc400010ad9a57f7658335869d01dc11ff",
+      "workspace_path_replacements": 1
+    },
+    {
+      "source": "outputs/Bz_vs_SB_preliminary_comparison/missing_freq_status.json",
+      "snapshot": "research_results/provenance/missing_freq_status.json",
+      "source_bytes": 1325,
+      "snapshot_bytes": 1179,
+      "source_sha256": "66c0a0cdf38615af4fe44baee9bb865e71e769fdf6729261e76bb5f544283188",
+      "snapshot_sha256": "7da0cd09fc303ddeb88dc10e99bff61f0a5c188e07b06c89d7b142ff7bb84d1c",
+      "workspace_path_replacements": 2
+    },
+    {
+      "source": "outputs/Bz_vs_SB_preliminary_comparison/operational_history.json",
+      "snapshot": "research_results/provenance/operational_history.json",
+      "source_bytes": 1225,
+      "snapshot_bytes": 1225,
+      "source_sha256": "df099a614509a565fc0ac12d8ebe9a27d8270deb7742da698bd215dd3c6d9e8a",
+      "snapshot_sha256": "df099a614509a565fc0ac12d8ebe9a27d8270deb7742da698bd215dd3c6d9e8a",
+      "workspace_path_replacements": 0
+    },
+    {
+      "source": "outputs/Bz_vs_SB_preliminary_comparison/IMPLEMENTATION_NOTES.md",
+      "snapshot": "research_results/provenance/IMPLEMENTATION_NOTES.md",
+      "source_bytes": 2389,
+      "snapshot_bytes": 2389,
+      "source_sha256": "eb024f6783a66212e6361d430f61a3e64382f48a9e90d92c7530852e60d86537",
+      "snapshot_sha256": "eb024f6783a66212e6361d430f61a3e64382f48a9e90d92c7530852e60d86537",
+      "workspace_path_replacements": 0
+    },
+    {
+      "source": "outputs/Bz_vs_SB_preliminary_comparison/ADDITIONAL_CALCULATIONS.md",
+      "snapshot": "research_results/provenance/ADDITIONAL_CALCULATIONS.md",
+      "source_bytes": 7852,
+      "snapshot_bytes": 7852,
+      "source_sha256": "81cc16d2d8732da2f52da3b5dc9db9d4ba5fbb35c3f834930eb5c1702d4fe87f",
+      "snapshot_sha256": "81cc16d2d8732da2f52da3b5dc9db9d4ba5fbb35c3f834930eb5c1702d4fe87f",
+      "workspace_path_replacements": 0
+    },
+    {
+      "source": "outputs/Bz_vs_SB_preliminary_comparison/metabolic_claim_evidence_matrix.json",
+      "snapshot": "research_results/context/metabolic_claim_evidence_matrix.json",
+      "source_bytes": 7714,
+      "snapshot_bytes": 7714,
+      "source_sha256": "a014803903a0332a510594ebd4b0aec5894b157e2f13a3dc529d94839d3ba2e9",
+      "snapshot_sha256": "a014803903a0332a510594ebd4b0aec5894b157e2f13a3dc529d94839d3ba2e9",
+      "workspace_path_replacements": 0
+    },
+    {
+      "source": "outputs/Bz_vs_SB_preliminary_comparison/METABOLIC_INFERENCE_LIMITS_JA.md",
+      "snapshot": "research_results/context/METABOLIC_INFERENCE_LIMITS_JA.md",
+      "source_bytes": 17078,
+      "snapshot_bytes": 17078,
+      "source_sha256": "a0368fc026297e0fcd3498041159849d7e87dc63679526d230fafe77dca50197",
+      "snapshot_sha256": "a0368fc026297e0fcd3498041159849d7e87dc63679526d230fafe77dca50197",
+      "workspace_path_replacements": 0
+    },
+    {
+      "source": "outputs/1Bz-LSD_RR/conformers/conformer_001/conformer_001.xyz",
+      "snapshot": "research_results/current_best_structures/1Bz-LSD_RR/conformer_001.xyz",
+      "source_bytes": 4639,
+      "snapshot_bytes": 4639,
+      "source_sha256": "06bce4f62d1932ca20ea4c898aa05088667e9dc56344a289ccb54bd96b269d40",
+      "snapshot_sha256": "06bce4f62d1932ca20ea4c898aa05088667e9dc56344a289ccb54bd96b269d40",
+      "workspace_path_replacements": 0,
+      "molecule": "1Bz-LSD_RR",
+      "conformer_id": "conf001",
+      "calculation_source": "generated"
+    },
+    {
+      "source": "outputs/1SB-LSD_RR_redo/1SB-LSD_RR_dft_calculations/conformer_002/conformer_002.xyz",
+      "snapshot": "research_results/current_best_structures/1SB-LSD_RR/conformer_002.xyz",
+      "source_bytes": 5539,
+      "snapshot_bytes": 5539,
+      "source_sha256": "9a2223a28b4734ecb5a67fe878c49645298441df87f2916ee95f19dc533dfcbe",
+      "snapshot_sha256": "9a2223a28b4734ecb5a67fe878c49645298441df87f2916ee95f19dc533dfcbe",
+      "workspace_path_replacements": 0,
+      "molecule": "1SB-LSD_RR",
+      "conformer_id": "conf002",
+      "calculation_source": "reused"
+    }
+  ]
+}

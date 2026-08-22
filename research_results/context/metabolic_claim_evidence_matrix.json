@@ -1,0 +1,146 @@
+{
+  "schema_version": 1,
+  "generated_date": "2026-08-14",
+  "research_theme": "Limits of computational inference for the metabolic mechanism of 1SB-LSD",
+  "scope": {
+    "same_compound_public_evidence": "Mouse in-vivo endpoint evidence reported in Japanese regulatory minutes",
+    "analogue_evidence": "Published N1-acyl LSD and silicon-containing 1S-LSD studies",
+    "computational_evidence": "Existing gas-phase B3LYP/def2-SVP conformer ensembles and property-only single points",
+    "new_quantum_calculations": false
+  },
+  "evidence_levels": {
+    "E4": "direct observation in the same compound",
+    "E3": "strong mechanistic inference required by the observed endpoint",
+    "E2": "support from a structural analogue",
+    "E1": "compatibility with computation or known chemistry",
+    "E0": "unresolved or unsupported by pathway-discriminating evidence"
+  },
+  "claims": [
+    {
+      "id": "C01",
+      "claim_ja": "1SB-LSD投与後にLSDが生じる",
+      "verdict": "supported",
+      "highest_evidence_level": "E4",
+      "basis": [
+        "LSD was detected by LC-MS/MS in mouse serum after 1SB-LSD administration"
+      ],
+      "allowed_wording_ja": "1SB-LSDを投与したマウスの血清からLSDが検出された。",
+      "forbidden_overinterpretation_ja": "1SB-LSDの全量が速やかにLSDへ変換される。"
+    },
+    {
+      "id": "C02",
+      "claim_ja": "LSD生成までのどこかで1SB-LSDのN1置換基が除去される",
+      "verdict": "strongly_inferred_endpoint_requirement",
+      "highest_evidence_level": "E3",
+      "basis": [
+        "LSD lacks the N1-(4-trimethylsilylbenzoyl) substituent present in 1SB-LSD"
+      ],
+      "allowed_wording_ja": "LSD生成に至る過程では、最終的にN1置換基が失われる必要がある。",
+      "forbidden_overinterpretation_ja": "最初の反応はN1-脱アシル化である。"
+    },
+    {
+      "id": "C03",
+      "claim_ja": "1SB-LSDは直接N1-脱アシル化されてLSDになる",
+      "verdict": "plausible_but_unresolved",
+      "highest_evidence_level": "E2",
+      "basis": [
+        "Aromatic N1-acyl analogues 1F-LSD and 1T-LSD form LSD in mice",
+        "The 1SB-LSD endpoint is compatible with direct deacylation"
+      ],
+      "missing_discriminator": "Time-resolved detection of parent, intermediates and LSD in the same 1SB-LSD experiment",
+      "allowed_wording_ja": "直接N1-脱アシル化は有力な候補経路の一つである。",
+      "forbidden_overinterpretation_ja": "1SB-LSDは直接加水分解されることが証明された。"
+    },
+    {
+      "id": "C04",
+      "claim_ja": "1SB-LSDは1Bz-LSDを主要中間体として経由する",
+      "verdict": "unsupported",
+      "highest_evidence_level": "E0",
+      "basis": [
+        "No public report of 1Bz-LSD detection after 1SB-LSD administration was identified",
+        "Separate observations of 1SB-LSD to LSD and 1Bz-LSD to LSD do not establish a sequential pathway"
+      ],
+      "missing_discriminator": "Direct and time-resolved identification of 1Bz-LSD after 1SB-LSD administration",
+      "allowed_wording_ja": "1Bz-LSD経由は排除できない仮説である。",
+      "forbidden_overinterpretation_ja": "1SB-LSDは1Bz-LSDへ代謝されてからLSDになる。"
+    },
+    {
+      "id": "C05",
+      "claim_ja": "TMS部分の代謝変換がN1-脱アシル化より先に起こる経路がある",
+      "verdict": "analogue_supported_possibility",
+      "highest_evidence_level": "E2",
+      "basis": [
+        "1S-LSD human-liver-microsome studies observed silanolized and hydroxylated metabolites retaining the silylpropanoyl moiety",
+        "The silicon attachment in 1S-LSD differs from the para-aryl silicon attachment in 1SB-LSD"
+      ],
+      "allowed_wording_ja": "Si保持変換が先行する並行経路は類縁体から考えられる。",
+      "forbidden_overinterpretation_ja": "1SB-LSDでも同じSi代謝物が主要になる。"
+    },
+    {
+      "id": "C06",
+      "claim_ja": "para-TMSはN1-カルボニルを直接大きく遮蔽する",
+      "verdict": "not_detected_in_current_geometry_model",
+      "highest_evidence_level": "E1",
+      "basis": [
+        "Attack-cone accessible fraction was 0.1528 for both ensembles",
+        "Best-clearance difference SB minus Bz was -0.0009 angstrom",
+        "Energy-weighted carbonyl-C to Si distance was approximately 6.25 angstrom",
+        "No TMS heavy atom was within 5 angstrom of carbonyl C"
+      ],
+      "allowed_wording_ja": "現在の静的気相モデルでは、大きな直接遮蔽は検出されなかった。",
+      "forbidden_overinterpretation_ja": "TMSは生体内でも立体障害にならない。"
+    },
+    {
+      "id": "C07",
+      "claim_ja": "para-TMSはN1-カルボニル周辺の電子構造へ影響する",
+      "verdict": "supported_within_current_model",
+      "highest_evidence_level": "E1",
+      "basis": [
+        "Carbonyl-C MBIS charge difference SB minus Bz was -0.00371 e",
+        "Benzoyl-centre LUMO Loewdin population difference was -0.02154",
+        "Other charge, bond-order, bond-length and frequency changes were smaller or less consistent"
+      ],
+      "allowed_wording_ja": "B3LYP/def2-SVP気相モデル内で小さい電子構造差が検出された。",
+      "forbidden_overinterpretation_ja": "TMSの電子効果が加水分解速度を決定する。"
+    },
+    {
+      "id": "C08",
+      "claim_ja": "TMS置換がN1-脱アシル化を速める、遅くする、または変えない",
+      "verdict": "not_determinable",
+      "highest_evidence_level": "E0",
+      "basis": [
+        "No comparative 1SB-LSD versus 1Bz-LSD kinetic data",
+        "No hydrolysis transition-state free energies",
+        "No identified enzyme or binding mode"
+      ],
+      "missing_discriminator": "Comparable disappearance and LSD-formation kinetics, or a validated reaction-barrier model for the relevant enzyme/pathway",
+      "allowed_wording_ja": "速度への影響は現在の資料から判定できない。",
+      "forbidden_overinterpretation_ja": "LSDが検出されたため、TMSは加水分解を阻害しない。"
+    },
+    {
+      "id": "C09",
+      "claim_ja": "1SB-LSDはLSDのプロドラッグ型化合物である",
+      "verdict": "supported_in_operational_sense",
+      "highest_evidence_level": "E4",
+      "basis": [
+        "LSD endpoint detection after parent administration",
+        "Reported inability to calculate a 5-HT2A EC50 for the parent under the stated assay"
+      ],
+      "allowed_wording_ja": "1SB-LSDは投与後にLSDを生じるプロドラッグ型化合物と扱われている。",
+      "forbidden_overinterpretation_ja": "主要経路、変換率、酵素およびヒトでの速度まで確立している。"
+    },
+    {
+      "id": "C10",
+      "claim_ja": "マウスで観測された経路がヒトでも主要である",
+      "verdict": "not_determinable",
+      "highest_evidence_level": "E0",
+      "basis": [
+        "No same-compound human metabolic time-course was identified",
+        "Human liver microsome evidence concerns the structurally different analogue 1S-LSD"
+      ],
+      "allowed_wording_ja": "ヒトへの外挿は未検証である。",
+      "forbidden_overinterpretation_ja": "ヒトでも同じ主要経路で速やかにLSDになる。"
+    }
+  ],
+  "overall_conclusion_ja": "1SB-LSD投与後のLSD生成は支持されるが、直接脱アシル化、Si変換先行、1Bz-LSD経由を識別する公開証拠はない。既存DFTは大きな直接立体遮蔽を検出せず、小さいモデル内電子差を示すが、代謝速度または主要経路を決定しない。"
+}

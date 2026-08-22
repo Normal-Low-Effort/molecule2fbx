@@ -1,0 +1,1823 @@
+{
+  "condition_summaries": {
+    "b3lyp_d3bj_def2_tzvp_cpcm_water": {
+      "fixed_geometry_tms_minus_h": {
+        "chelpg_charge_amide_n": {
+          "count": 2,
+          "maximum": 0.007760999999999997,
+          "mean": 0.0026584999999999985,
+          "median": 0.0026584999999999985,
+          "minimum": -0.002444,
+          "negative_count": 1,
+          "positive_count": 1,
+          "same_nonzero_sign": false,
+          "standard_deviation": 0.007216024702008716
+        },
+        "chelpg_charge_carbonyl_c": {
+          "count": 2,
+          "maximum": -0.007653999999999994,
+          "mean": -0.011122500000000035,
+          "median": -0.011122500000000035,
+          "minimum": -0.014591000000000076,
+          "negative_count": 2,
+          "positive_count": 0,
+          "same_nonzero_sign": true,
+          "standard_deviation": 0.004905199741091138
+        },
+        "chelpg_charge_carbonyl_o": {
+          "count": 2,
+          "maximum": 0.0020620000000000083,
+          "mean": 0.0008790000000000187,
+          "median": 0.0008790000000000187,
+          "minimum": -0.00030399999999997096,
+          "negative_count": 1,
+          "positive_count": 1,
+          "same_nonzero_sign": false,
+          "standard_deviation": 0.0016730146442873568
+        },
+        "dipole_magnitude_debye": {
+          "count": 2,
+          "maximum": 0.27612022400000047,
+          "mean": 0.2590304720000005,
+          "median": 0.2590304720000005,
+          "minimum": 0.24194072000000055,
+          "negative_count": 0,
+          "positive_count": 2,
+          "same_nonzero_sign": true,
+          "standard_deviation": 0.024168559055992668
+        },
+        "homo_energy_ev": {
+          "count": 2,
+          "maximum": 0.0039999999999995595,
+          "mean": 0.003749999999999698,
+          "median": 0.003749999999999698,
+          "minimum": 0.0034999999999998366,
+          "negative_count": 0,
+          "positive_count": 2,
+          "same_nonzero_sign": true,
+          "standard_deviation": 0.00035355339059307784
+        },
+        "homo_loewdin_population_benzoyl_center": {
+          "count": 2,
+          "maximum": 0.00022800000000000598,
+          "mean": 0.00020000000000000573,
+          "median": 0.00020000000000000573,
+          "minimum": 0.00017200000000000548,
+          "negative_count": 0,
+          "positive_count": 2,
+          "same_nonzero_sign": true,
+          "standard_deviation": 3.959797974644701e-05
+        },
+        "homo_lumo_gap_ev": {
+          "count": 2,
+          "maximum": -0.0237999999999996,
+          "mean": -0.024299999999999766,
+          "median": -0.024299999999999766,
+          "minimum": -0.024799999999999933,
+          "negative_count": 2,
+          "positive_count": 0,
+          "same_nonzero_sign": true,
+          "standard_deviation": 0.0007071067811867837
+        },
+        "loewdin_charge_amide_n": {
+          "count": 2,
+          "maximum": -0.00012099999999998223,
+          "mean": -0.00012149999999996886,
+          "median": -0.00012149999999996886,
+          "minimum": -0.00012199999999995548,
+          "negative_count": 2,
+          "positive_count": 0,
+          "same_nonzero_sign": true,
+          "standard_deviation": 7.071067811676286e-07
+        },
+        "loewdin_charge_carbonyl_c": {
+          "count": 2,
+          "maximum": -0.0005160000000000164,
+          "mean": -0.0005180000000000184,
+          "median": -0.0005180000000000184,
+          "minimum": -0.0005200000000000204,
+          "negative_count": 2,
+          "positive_count": 0,
+          "same_nonzero_sign": true,
+          "standard_deviation": 2.828427124749019e-06
+        },
+        "loewdin_charge_carbonyl_o": {
+          "count": 2,
+          "maximum": -0.0007649999999999879,
+          "mean": -0.0007874999999999896,
+          "median": -0.0007874999999999896,
+          "minimum": -0.0008099999999999913,
+          "negative_count": 2,
+          "positive_count": 0,
+          "same_nonzero_sign": true,
+          "standard_deviation": 3.181980515339702e-05
+        },
+        "lumo_energy_ev": {
+          "count": 2,
+          "maximum": -0.01980000000000004,
+          "mean": -0.020550000000000068,
+          "median": -0.020550000000000068,
+          "minimum": -0.021300000000000097,
+          "negative_count": 2,
+          "positive_count": 0,
+          "same_nonzero_sign": true,
+          "standard_deviation": 0.0010606601717798615
+        },
+        "lumo_loewdin_population_benzoyl_center": {
+          "count": 2,
+          "maximum": -0.014244000000000034,
+          "mean": -0.014900500000000011,
+          "median": -0.014900500000000011,
+          "minimum": -0.015556999999999988,
+          "negative_count": 2,
+          "positive_count": 0,
+          "same_nonzero_sign": true,
+          "standard_deviation": 0.0009284312036979038
+        },
+        "mayer_bond_order_c_n": {
+          "count": 2,
+          "maximum": 0.0004999999999999449,
+          "mean": 0.00034999999999996145,
+          "median": 0.00034999999999996145,
+          "minimum": 0.00019999999999997797,
+          "negative_count": 0,
+          "positive_count": 2,
+          "same_nonzero_sign": true,
+          "standard_deviation": 0.00021213203435594088
+        },
+        "mayer_bond_order_c_o": {
+          "count": 2,
+          "maximum": 0.0035999999999998256,
+          "mean": 0.003049999999999997,
+          "median": 0.003049999999999997,
+          "minimum": 0.0025000000000001688,
+          "negative_count": 0,
+          "positive_count": 2,
+          "same_nonzero_sign": true,
+          "standard_deviation": 0.0007778174593049596
+        },
+        "mbis_charge_amide_n": {
+          "count": 2,
+          "maximum": 0.0007959999999999912,
+          "mean": 0.000789999999999999,
+          "median": 0.000789999999999999,
+          "minimum": 0.0007840000000000069,
+          "negative_count": 0,
+          "positive_count": 2,
+          "same_nonzero_sign": true,
+          "standard_deviation": 8.48528137422743e-06
+        },
+        "mbis_charge_carbonyl_c": {
+          "count": 2,
+          "maximum": -0.004029999999999978,
+          "mean": -0.0040699999999999625,
+          "median": -0.0040699999999999625,
+          "minimum": -0.004109999999999947,
+          "negative_count": 2,
+          "positive_count": 0,
+          "same_nonzero_sign": true,
+          "standard_deviation": 5.656854249490187e-05
+        },
+        "mbis_charge_carbonyl_o": {
+          "count": 2,
+          "maximum": -0.000176000000000065,
+          "mean": -0.00023500000000004073,
+          "median": -0.00023500000000004073,
+          "minimum": -0.00029400000000001647,
+          "negative_count": 2,
+          "positive_count": 0,
+          "same_nonzero_sign": true,
+          "standard_deviation": 8.34386001799783e-05
+        }
+      },
+      "geometry_residual_detms_at_sb_minus_bz": {
+        "chelpg_charge_amide_n": {
+          "count": 2,
+          "maximum": 0.0022699999999999994,
+          "mean": -0.006887999999999999,
+          "median": -0.006887999999999999,
+          "minimum": -0.016045999999999998,
+          "negative_count": 1,
+          "positive_count": 1,
+          "same_nonzero_sign": false,
+          "standard_deviation": 0.012951367804212802
+        },
+        "chelpg_charge_carbonyl_c": {
+          "count": 2,
+          "maximum": 0.007152000000000047,
+          "mean": -0.002865499999999993,
+          "median": -0.002865499999999993,
+          "minimum": -0.012883000000000033,
+          "negative_count": 1,
+          "positive_count": 1,
+          "same_nonzero_sign": false,
+          "standard_deviation": 0.014166884361072536
+        },
+        "chelpg_charge_carbonyl_o": {
+          "count": 2,
+          "maximum": 0.0031360000000000277,
+          "mean": 0.0009155000000000135,
+          "median": 0.0009155000000000135,
+          "minimum": -0.0013050000000000006,
+          "negative_count": 1,
+          "positive_count": 1,
+          "same_nonzero_sign": false,
+          "standard_deviation": 0.0031402612152494776
+        },
+        "dipole_magnitude_debye": {
+          "count": 2,
+          "maximum": 0.5140151699999995,
+          "mean": 0.22697576949999965,
+          "median": 0.22697576949999965,
+          "minimum": -0.06006363100000023,
+          "negative_count": 1,
+          "positive_count": 1,
+          "same_nonzero_sign": false,
+          "standard_deviation": 0.4059350131225424
+        },
+        "homo_energy_ev": {
+          "count": 2,
+          "maximum": -0.00039999999999995595,
+          "mean": -0.0027999999999996916,
+          "median": -0.0027999999999996916,
+          "minimum": -0.005199999999999427,
+          "negative_count": 2,
+          "positive_count": 0,
+          "same_nonzero_sign": true,
+          "standard_deviation": 0.003394112549695054
+        },
+        "homo_loewdin_population_benzoyl_center": {
+          "count": 2,
+          "maximum": 0.0008719999999999839,
+          "mean": 0.00040099999999999164,
+          "median": 0.00040099999999999164,
+          "minimum": -7.000000000000062e-05,
+          "negative_count": 1,
+          "positive_count": 1,
+          "same_nonzero_sign": false,
+          "standard_deviation": 0.0006660945878777168
+        },
+        "homo_lumo_gap_ev": {
+          "count": 2,
+          "maximum": -0.0235000000000003,
+          "mean": -0.024950000000000472,
+          "median": -0.024950000000000472,
+          "minimum": -0.026400000000000645,
+          "negative_count": 2,
+          "positive_count": 0,
+          "same_nonzero_sign": true,
+          "standard_deviation": 0.002050609665441233
+        },
+        "loewdin_charge_amide_n": {
+          "count": 2,
+          "maximum": 0.00018299999999998873,
+          "mean": 9.499999999998399e-05,
+          "median": 9.499999999998399e-05,
+          "minimum": 6.999999999979245e-06,
+          "negative_count": 0,
+          "positive_count": 2,
+          "same_nonzero_sign": true,
+          "standard_deviation": 0.00012445079348883908
+        },
+        "loewdin_charge_carbonyl_c": {
+          "count": 2,
+          "maximum": 0.0006909999999999972,
+          "mean": 0.000607499999999983,
+          "median": 0.000607499999999983,
+          "minimum": 0.0005239999999999689,
+          "negative_count": 0,
+          "positive_count": 2,
+          "same_nonzero_sign": true,
+          "standard_deviation": 0.0001180868324581734
+        },
+        "loewdin_charge_carbonyl_o": {
+          "count": 2,
+          "maximum": 0.0003569999999999962,
+          "mean": 0.00025699999999999334,
+          "median": 0.00025699999999999334,
+          "minimum": 0.00015699999999999048,
+          "negative_count": 0,
+          "positive_count": 2,
+          "same_nonzero_sign": true,
+          "standard_deviation": 0.00014142135623731355
+        },
+        "lumo_energy_ev": {
+          "count": 2,
+          "maximum": -0.023900000000000032,
+          "mean": -0.02774999999999994,
+          "median": -0.02774999999999994,
+          "minimum": -0.03159999999999985,
+          "negative_count": 2,
+          "positive_count": 0,
+          "same_nonzero_sign": true,
+          "standard_deviation": 0.005444722215136287
+        },
+        "lumo_loewdin_population_benzoyl_center": {
+          "count": 2,
+          "maximum": -0.002736000000000016,
+          "mean": -0.0032949999999999924,
+          "median": -0.0032949999999999924,
+          "minimum": -0.0038539999999999686,
+          "negative_count": 2,
+          "positive_count": 0,
+          "same_nonzero_sign": true,
+          "standard_deviation": 0.0007905453813665265
+        },
+        "mayer_bond_order_c_n": {
+          "count": 2,
+          "maximum": 0.00029999999999996696,
+          "mean": 0.0,
+          "median": 0.0,
+          "minimum": -0.00029999999999996696,
+          "negative_count": 1,
+          "positive_count": 1,
+          "same_nonzero_sign": false,
+          "standard_deviation": 0.00042426406871188177
+        },
+        "mayer_bond_order_c_o": {
+          "count": 2,
+          "maximum": 0.00019999999999997797,
+          "mean": -0.0005500000000000504,
+          "median": -0.0005500000000000504,
+          "minimum": -0.0013000000000000789,
+          "negative_count": 1,
+          "positive_count": 1,
+          "same_nonzero_sign": false,
+          "standard_deviation": 0.0010606601717798615
+        },
+        "mbis_charge_amide_n": {
+          "count": 2,
+          "maximum": 0.0003730000000000122,
+          "mean": 0.00018350000000001698,
+          "median": 0.00018350000000001698,
+          "minimum": -5.999999999978245e-06,
+          "negative_count": 1,
+          "positive_count": 1,
+          "same_nonzero_sign": false,
+          "standard_deviation": 0.00026799347006969476
+        },
+        "mbis_charge_carbonyl_c": {
+          "count": 2,
+          "maximum": -0.0007019999999999804,
+          "mean": -0.0007590000000000097,
+          "median": -0.0007590000000000097,
+          "minimum": -0.0008160000000000389,
+          "negative_count": 2,
+          "positive_count": 0,
+          "same_nonzero_sign": true,
+          "standard_deviation": 8.061017305530778e-05
+        },
+        "mbis_charge_carbonyl_o": {
+          "count": 2,
+          "maximum": 0.0006659999999999444,
+          "mean": 0.0006039999999999934,
+          "median": 0.0006039999999999934,
+          "minimum": 0.0005420000000000424,
+          "negative_count": 0,
+          "positive_count": 2,
+          "same_nonzero_sign": true,
+          "standard_deviation": 8.768124086706257e-05
+        }
+      },
+      "optimized_sb_minus_bz": {
+        "chelpg_charge_amide_n": {
+          "count": 2,
+          "maximum": -0.00017400000000000054,
+          "mean": -0.004229500000000001,
+          "median": -0.004229500000000001,
+          "minimum": -0.008285,
+          "negative_count": 2,
+          "positive_count": 0,
+          "same_nonzero_sign": true,
+          "standard_deviation": 0.005735343102204087
+        },
+        "chelpg_charge_carbonyl_c": {
+          "count": 2,
+          "maximum": -0.007439000000000029,
+          "mean": -0.013988000000000028,
+          "median": -0.013988000000000028,
+          "minimum": -0.020537000000000027,
+          "negative_count": 2,
+          "positive_count": 0,
+          "same_nonzero_sign": true,
+          "standard_deviation": 0.009261684619981399
+        },
+        "chelpg_charge_carbonyl_o": {
+          "count": 2,
+          "maximum": 0.005198000000000036,
+          "mean": 0.0017945000000000322,
+          "median": 0.0017945000000000322,
+          "minimum": -0.0016089999999999716,
+          "negative_count": 1,
+          "positive_count": 1,
+          "same_nonzero_sign": false,
+          "standard_deviation": 0.004813275859536835
+        },
+        "dipole_magnitude_debye": {
+          "count": 2,
+          "maximum": 0.790135394,
+          "mean": 0.48600624150000016,
+          "median": 0.48600624150000016,
+          "minimum": 0.18187708900000032,
+          "negative_count": 0,
+          "positive_count": 2,
+          "same_nonzero_sign": true,
+          "standard_deviation": 0.43010357217853507
+        },
+        "homo_energy_ev": {
+          "count": 2,
+          "maximum": 0.0035999999999996035,
+          "mean": 0.0009500000000000064,
+          "median": 0.0009500000000000064,
+          "minimum": -0.0016999999999995907,
+          "negative_count": 1,
+          "positive_count": 1,
+          "same_nonzero_sign": false,
+          "standard_deviation": 0.003747665940288132
+        },
+        "homo_loewdin_population_benzoyl_center": {
+          "count": 2,
+          "maximum": 0.0010999999999999899,
+          "mean": 0.0006009999999999974,
+          "median": 0.0006009999999999974,
+          "minimum": 0.00010200000000000486,
+          "negative_count": 0,
+          "positive_count": 2,
+          "same_nonzero_sign": true,
+          "standard_deviation": 0.0007056925676241639
+        },
+        "homo_lumo_gap_ev": {
+          "count": 2,
+          "maximum": -0.0472999999999999,
+          "mean": -0.04925000000000024,
+          "median": -0.04925000000000024,
+          "minimum": -0.05120000000000058,
+          "negative_count": 2,
+          "positive_count": 0,
+          "same_nonzero_sign": true,
+          "standard_deviation": 0.0027577164466280166
+        },
+        "loewdin_charge_amide_n": {
+          "count": 2,
+          "maximum": 6.100000000003325e-05,
+          "mean": -2.649999999998487e-05,
+          "median": -2.649999999998487e-05,
+          "minimum": -0.00011400000000000299,
+          "negative_count": 1,
+          "positive_count": 1,
+          "same_nonzero_sign": false,
+          "standard_deviation": 0.00012374368670767144
+        },
+        "loewdin_charge_carbonyl_c": {
+          "count": 2,
+          "maximum": 0.00017499999999998073,
+          "mean": 8.949999999996461e-05,
+          "median": 8.949999999996461e-05,
+          "minimum": 3.999999999948489e-06,
+          "negative_count": 0,
+          "positive_count": 2,
+          "same_nonzero_sign": true,
+          "standard_deviation": 0.00012091525958292242
+        },
+        "loewdin_charge_carbonyl_o": {
+          "count": 2,
+          "maximum": -0.0004529999999999951,
+          "mean": -0.0005304999999999963,
+          "median": -0.0005304999999999963,
+          "minimum": -0.0006079999999999974,
+          "negative_count": 2,
+          "positive_count": 0,
+          "same_nonzero_sign": true,
+          "standard_deviation": 0.00010960155108391653
+        },
+        "lumo_energy_ev": {
+          "count": 2,
+          "maximum": -0.04370000000000007,
+          "mean": -0.04830000000000001,
+          "median": -0.04830000000000001,
+          "minimum": -0.05289999999999995,
+          "negative_count": 2,
+          "positive_count": 0,
+          "same_nonzero_sign": true,
+          "standard_deviation": 0.006505382386916149
+        },
+        "lumo_loewdin_population_benzoyl_center": {
+          "count": 2,
+          "maximum": -0.018098000000000003,
+          "mean": -0.018195500000000003,
+          "median": -0.018195500000000003,
+          "minimum": -0.018293000000000004,
+          "negative_count": 2,
+          "positive_count": 0,
+          "same_nonzero_sign": true,
+          "standard_deviation": 0.00013788582233137728
+        },
+        "mayer_bond_order_c_n": {
+          "count": 2,
+          "maximum": 0.0007999999999999119,
+          "mean": 0.00034999999999996145,
+          "median": 0.00034999999999996145,
+          "minimum": -9.999999999998899e-05,
+          "negative_count": 1,
+          "positive_count": 1,
+          "same_nonzero_sign": false,
+          "standard_deviation": 0.0006363961030678227
+        },
+        "mayer_bond_order_c_o": {
+          "count": 2,
+          "maximum": 0.0037999999999998035,
+          "mean": 0.0024999999999999467,
+          "median": 0.0024999999999999467,
+          "minimum": 0.0012000000000000899,
+          "negative_count": 0,
+          "positive_count": 2,
+          "same_nonzero_sign": true,
+          "standard_deviation": 0.0018384776310848212
+        },
+        "mbis_charge_amide_n": {
+          "count": 2,
+          "maximum": 0.0011570000000000191,
+          "mean": 0.000973500000000016,
+          "median": 0.000973500000000016,
+          "minimum": 0.0007900000000000129,
+          "negative_count": 0,
+          "positive_count": 2,
+          "same_nonzero_sign": true,
+          "standard_deviation": 0.00025950818869546733
+        },
+        "mbis_charge_carbonyl_c": {
+          "count": 2,
+          "maximum": -0.0047319999999999585,
+          "mean": -0.004828999999999972,
+          "median": -0.004828999999999972,
+          "minimum": -0.004925999999999986,
+          "negative_count": 2,
+          "positive_count": 0,
+          "same_nonzero_sign": true,
+          "standard_deviation": 0.00013717871555020964
+        },
+        "mbis_charge_carbonyl_o": {
+          "count": 2,
+          "maximum": 0.00037199999999992794,
+          "mean": 0.0003689999999999527,
+          "median": 0.0003689999999999527,
+          "minimum": 0.00036599999999997745,
+          "negative_count": 0,
+          "positive_count": 2,
+          "same_nonzero_sign": true,
+          "standard_deviation": 4.242640687084276e-06
+        }
+      }
+    },
+    "pbe0_d3bj_def2_tzvp_cpcm_water": {
+      "fixed_geometry_tms_minus_h": {
+        "chelpg_charge_amide_n": {
+          "count": 2,
+          "maximum": 0.007672000000000002,
+          "mean": 0.0025250000000000008,
+          "median": 0.0025250000000000008,
+          "minimum": -0.002622,
+          "negative_count": 1,
+          "positive_count": 1,
+          "same_nonzero_sign": false,
+          "standard_deviation": 0.007278957205534321
+        },
+        "chelpg_charge_carbonyl_c": {
+          "count": 2,
+          "maximum": -0.007422999999999957,
+          "mean": -0.010952499999999976,
+          "median": -0.010952499999999976,
+          "minimum": -0.014481999999999995,
+          "negative_count": 2,
+          "positive_count": 0,
+          "same_nonzero_sign": true,
+          "standard_deviation": 0.004991466768395865
+        },
+        "chelpg_charge_carbonyl_o": {
+          "count": 2,
+          "maximum": 0.0022220000000000573,
+          "mean": 0.001083500000000015,
+          "median": 0.001083500000000015,
+          "minimum": -5.500000000002725e-05,
+          "negative_count": 1,
+          "positive_count": 1,
+          "same_nonzero_sign": false,
+          "standard_deviation": 0.0016100821407618285
+        },
+        "dipole_magnitude_debye": {
+          "count": 2,
+          "maximum": 0.29624490700000017,
+          "mean": 0.27589846399999995,
+          "median": 0.27589846399999995,
+          "minimum": 0.25555202099999974,
+          "negative_count": 0,
+          "positive_count": 2,
+          "same_nonzero_sign": true,
+          "standard_deviation": 0.028774215636651425
+        },
+        "homo_energy_ev": {
+          "count": 2,
+          "maximum": 0.0031999999999996476,
+          "mean": 0.003049999999999997,
+          "median": 0.003049999999999997,
+          "minimum": 0.0029000000000003467,
+          "negative_count": 0,
+          "positive_count": 2,
+          "same_nonzero_sign": true,
+          "standard_deviation": 0.00021213203435546988
+        },
+        "homo_loewdin_population_benzoyl_center": {
+          "count": 2,
+          "maximum": 0.00017500000000000848,
+          "mean": 0.00014550000000000674,
+          "median": 0.00014550000000000674,
+          "minimum": 0.00011600000000000499,
+          "negative_count": 0,
+          "positive_count": 2,
+          "same_nonzero_sign": true,
+          "standard_deviation": 4.1719300090008776e-05
+        },
+        "homo_lumo_gap_ev": {
+          "count": 2,
+          "maximum": -0.0365000000000002,
+          "mean": -0.037050000000000693,
+          "median": -0.037050000000000693,
+          "minimum": -0.03760000000000119,
+          "negative_count": 2,
+          "positive_count": 0,
+          "same_nonzero_sign": true,
+          "standard_deviation": 0.0007778174593059017
+        },
+        "loewdin_charge_amide_n": {
+          "count": 2,
+          "maximum": -8.899999999995023e-05,
+          "mean": -9.949999999997461e-05,
+          "median": -9.949999999997461e-05,
+          "minimum": -0.00010999999999999899,
+          "negative_count": 2,
+          "positive_count": 0,
+          "same_nonzero_sign": true,
+          "standard_deviation": 1.4849242404951975e-05
+        },
+        "loewdin_charge_carbonyl_c": {
+          "count": 2,
+          "maximum": -0.00039000000000000146,
+          "mean": -0.0004035000000000011,
+          "median": -0.0004035000000000011,
+          "minimum": -0.0004170000000000007,
+          "negative_count": 2,
+          "positive_count": 0,
+          "same_nonzero_sign": true,
+          "standard_deviation": 1.909188309203625e-05
+        },
+        "loewdin_charge_carbonyl_o": {
+          "count": 2,
+          "maximum": -0.0005499999999999949,
+          "mean": -0.000559999999999998,
+          "median": -0.000559999999999998,
+          "minimum": -0.0005700000000000011,
+          "negative_count": 2,
+          "positive_count": 0,
+          "same_nonzero_sign": true,
+          "standard_deviation": 1.4142135623735281e-05
+        },
+        "lumo_energy_ev": {
+          "count": 2,
+          "maximum": -0.03330000000000011,
+          "mean": -0.03400000000000003,
+          "median": -0.03400000000000003,
+          "minimum": -0.03469999999999995,
+          "negative_count": 2,
+          "positive_count": 0,
+          "same_nonzero_sign": true,
+          "standard_deviation": 0.0009899494936610575
+        },
+        "lumo_loewdin_population_benzoyl_center": {
+          "count": 2,
+          "maximum": -0.01573800000000003,
+          "mean": -0.016403500000000043,
+          "median": -0.016403500000000043,
+          "minimum": -0.017069000000000056,
+          "negative_count": 2,
+          "positive_count": 0,
+          "same_nonzero_sign": true,
+          "standard_deviation": 0.0009411591257593136
+        },
+        "mayer_bond_order_c_n": {
+          "count": 2,
+          "maximum": 0.0012000000000000899,
+          "mean": 0.0010499999999999954,
+          "median": 0.0010499999999999954,
+          "minimum": 0.0008999999999999009,
+          "negative_count": 0,
+          "positive_count": 2,
+          "same_nonzero_sign": true,
+          "standard_deviation": 0.0002121320343560979
+        },
+        "mayer_bond_order_c_o": {
+          "count": 2,
+          "maximum": 0.0029999999999998916,
+          "mean": 0.002549999999999941,
+          "median": 0.002549999999999941,
+          "minimum": 0.0020999999999999908,
+          "negative_count": 0,
+          "positive_count": 2,
+          "same_nonzero_sign": true,
+          "standard_deviation": 0.0006363961030678227
+        },
+        "mbis_charge_amide_n": {
+          "count": 2,
+          "maximum": 0.0007769999999999999,
+          "mean": 0.0007744999999999974,
+          "median": 0.0007744999999999974,
+          "minimum": 0.0007719999999999949,
+          "negative_count": 0,
+          "positive_count": 2,
+          "same_nonzero_sign": true,
+          "standard_deviation": 3.5355339059362733e-06
+        },
+        "mbis_charge_carbonyl_c": {
+          "count": 2,
+          "maximum": -0.004052999999999973,
+          "mean": -0.004071500000000006,
+          "median": -0.004071500000000006,
+          "minimum": -0.004090000000000038,
+          "negative_count": 2,
+          "positive_count": 0,
+          "same_nonzero_sign": true,
+          "standard_deviation": 2.616295090394805e-05
+        },
+        "mbis_charge_carbonyl_o": {
+          "count": 2,
+          "maximum": 6.700000000003925e-05,
+          "mean": 2.849999999998687e-05,
+          "median": 2.849999999998687e-05,
+          "minimum": -1.0000000000065512e-05,
+          "negative_count": 1,
+          "positive_count": 1,
+          "same_nonzero_sign": false,
+          "standard_deviation": 5.444722215143824e-05
+        }
+      },
+      "geometry_residual_detms_at_sb_minus_bz": {
+        "chelpg_charge_amide_n": {
+          "count": 2,
+          "maximum": 0.0022140000000000003,
+          "mean": -0.005906,
+          "median": -0.005906,
+          "minimum": -0.014026,
+          "negative_count": 1,
+          "positive_count": 1,
+          "same_nonzero_sign": false,
+          "standard_deviation": 0.011483414126469532
+        },
+        "chelpg_charge_carbonyl_c": {
+          "count": 2,
+          "maximum": 0.00539400000000001,
+          "mean": -0.0038154999999999994,
+          "median": -0.0038154999999999994,
+          "minimum": -0.013025000000000009,
+          "negative_count": 1,
+          "positive_count": 1,
+          "same_nonzero_sign": false,
+          "standard_deviation": 0.013024199802675033
+        },
+        "chelpg_charge_carbonyl_o": {
+          "count": 2,
+          "maximum": 0.0032409999999999384,
+          "mean": 0.0010894999999999655,
+          "median": 0.0010894999999999655,
+          "minimum": -0.0010620000000000074,
+          "negative_count": 1,
+          "positive_count": 1,
+          "same_nonzero_sign": false,
+          "standard_deviation": 0.0030426804794456757
+        },
+        "dipole_magnitude_debye": {
+          "count": 2,
+          "maximum": 0.5178502720000004,
+          "mean": 0.22816731049999994,
+          "median": 0.22816731049999994,
+          "minimum": -0.06151565100000056,
+          "negative_count": 1,
+          "positive_count": 1,
+          "same_nonzero_sign": false,
+          "standard_deviation": 0.40967357294170387
+        },
+        "homo_energy_ev": {
+          "count": 2,
+          "maximum": -0.0004999999999997229,
+          "mean": -0.002949999999999786,
+          "median": -0.002949999999999786,
+          "minimum": -0.005399999999999849,
+          "negative_count": 2,
+          "positive_count": 0,
+          "same_nonzero_sign": true,
+          "standard_deviation": 0.003464823227814172
+        },
+        "homo_loewdin_population_benzoyl_center": {
+          "count": 2,
+          "maximum": 0.0008839999999999959,
+          "mean": 0.00041549999999999226,
+          "median": 0.00041549999999999226,
+          "minimum": -5.300000000001137e-05,
+          "negative_count": 1,
+          "positive_count": 1,
+          "same_nonzero_sign": false,
+          "standard_deviation": 0.0006625590539718002
+        },
+        "homo_lumo_gap_ev": {
+          "count": 2,
+          "maximum": -0.02430000000000021,
+          "mean": -0.025599999999999845,
+          "median": -0.025599999999999845,
+          "minimum": -0.02689999999999948,
+          "negative_count": 2,
+          "positive_count": 0,
+          "same_nonzero_sign": true,
+          "standard_deviation": 0.0018384776310845072
+        },
+        "loewdin_charge_amide_n": {
+          "count": 2,
+          "maximum": 0.00017399999999995197,
+          "mean": 0.00010249999999997761,
+          "median": 0.00010249999999997761,
+          "minimum": 3.100000000000325e-05,
+          "negative_count": 0,
+          "positive_count": 2,
+          "same_nonzero_sign": true,
+          "standard_deviation": 0.00010111626970964004
+        },
+        "loewdin_charge_carbonyl_c": {
+          "count": 2,
+          "maximum": 0.0006839999999999624,
+          "mean": 0.0006259999999999877,
+          "median": 0.0006259999999999877,
+          "minimum": 0.0005680000000000129,
+          "negative_count": 0,
+          "positive_count": 2,
+          "same_nonzero_sign": true,
+          "standard_deviation": 8.202438661760379e-05
+        },
+        "loewdin_charge_carbonyl_o": {
+          "count": 2,
+          "maximum": 0.00033600000000000296,
+          "mean": 0.00026099999999999735,
+          "median": 0.00026099999999999735,
+          "minimum": 0.00018599999999999173,
+          "negative_count": 0,
+          "positive_count": 2,
+          "same_nonzero_sign": true,
+          "standard_deviation": 0.00010606601717799008
+        },
+        "lumo_energy_ev": {
+          "count": 2,
+          "maximum": -0.024799999999999933,
+          "mean": -0.028549999999999964,
+          "median": -0.028549999999999964,
+          "minimum": -0.032299999999999995,
+          "negative_count": 2,
+          "positive_count": 0,
+          "same_nonzero_sign": true,
+          "standard_deviation": 0.00530330085889915
+        },
+        "lumo_loewdin_population_benzoyl_center": {
+          "count": 2,
+          "maximum": -0.0025089999999999835,
+          "mean": -0.0030879999999999797,
+          "median": -0.0030879999999999797,
+          "minimum": -0.003666999999999976,
+          "negative_count": 2,
+          "positive_count": 0,
+          "same_nonzero_sign": true,
+          "standard_deviation": 0.0008188296526140166
+        },
+        "mayer_bond_order_c_n": {
+          "count": 2,
+          "maximum": 0.00019999999999997797,
+          "mean": -4.999999999999449e-05,
+          "median": -4.999999999999449e-05,
+          "minimum": -0.00029999999999996696,
+          "negative_count": 1,
+          "positive_count": 1,
+          "same_nonzero_sign": false,
+          "standard_deviation": 0.00035355339059323483
+        },
+        "mayer_bond_order_c_o": {
+          "count": 2,
+          "maximum": 0.0,
+          "mean": -0.0006499999999999284,
+          "median": -0.0006499999999999284,
+          "minimum": -0.0012999999999998568,
+          "negative_count": 1,
+          "positive_count": 0,
+          "same_nonzero_sign": false,
+          "standard_deviation": 0.0009192388155424106
+        },
+        "mbis_charge_amide_n": {
+          "count": 2,
+          "maximum": 0.00039000000000000146,
+          "mean": 0.00020450000000001023,
+          "median": 0.00020450000000001023,
+          "minimum": 1.9000000000019e-05,
+          "negative_count": 0,
+          "positive_count": 2,
+          "same_nonzero_sign": true,
+          "standard_deviation": 0.0002623366158201967
+        },
+        "mbis_charge_carbonyl_c": {
+          "count": 2,
+          "maximum": -0.0006119999999999459,
+          "mean": -0.0007139999999999924,
+          "median": -0.0007139999999999924,
+          "minimum": -0.0008160000000000389,
+          "negative_count": 2,
+          "positive_count": 0,
+          "same_nonzero_sign": true,
+          "standard_deviation": 0.00014424978336212145
+        },
+        "mbis_charge_carbonyl_o": {
+          "count": 2,
+          "maximum": 0.0006249999999999867,
+          "mean": 0.000589499999999965,
+          "median": 0.000589499999999965,
+          "minimum": 0.0005539999999999434,
+          "negative_count": 0,
+          "positive_count": 2,
+          "same_nonzero_sign": true,
+          "standard_deviation": 5.020458146427546e-05
+        }
+      },
+      "optimized_sb_minus_bz": {
+        "chelpg_charge_amide_n": {
+          "count": 2,
+          "maximum": -0.00040799999999999994,
+          "mean": -0.0033809999999999995,
+          "median": -0.0033809999999999995,
+          "minimum": -0.0063539999999999985,
+          "negative_count": 2,
+          "positive_count": 0,
+          "same_nonzero_sign": true,
+          "standard_deviation": 0.0042044569209352105
+        },
+        "chelpg_charge_carbonyl_c": {
+          "count": 2,
+          "maximum": -0.009087999999999985,
+          "mean": -0.014767999999999976,
+          "median": -0.014767999999999976,
+          "minimum": -0.020447999999999966,
+          "negative_count": 2,
+          "positive_count": 0,
+          "same_nonzero_sign": true,
+          "standard_deviation": 0.008032733034279167
+        },
+        "chelpg_charge_carbonyl_o": {
+          "count": 2,
+          "maximum": 0.005462999999999996,
+          "mean": 0.0021729999999999805,
+          "median": 0.0021729999999999805,
+          "minimum": -0.0011170000000000346,
+          "negative_count": 1,
+          "positive_count": 1,
+          "same_nonzero_sign": false,
+          "standard_deviation": 0.004652762620207504
+        },
+        "dipole_magnitude_debye": {
+          "count": 2,
+          "maximum": 0.8140951790000006,
+          "mean": 0.5040657744999999,
+          "median": 0.5040657744999999,
+          "minimum": 0.19403636999999918,
+          "negative_count": 0,
+          "positive_count": 2,
+          "same_nonzero_sign": true,
+          "standard_deviation": 0.43844778857835526
+        },
+        "homo_energy_ev": {
+          "count": 2,
+          "maximum": 0.0026999999999999247,
+          "mean": 0.00010000000000021103,
+          "median": 0.00010000000000021103,
+          "minimum": -0.0024999999999995026,
+          "negative_count": 1,
+          "positive_count": 1,
+          "same_nonzero_sign": false,
+          "standard_deviation": 0.0036769552621696423
+        },
+        "homo_loewdin_population_benzoyl_center": {
+          "count": 2,
+          "maximum": 0.0010590000000000044,
+          "mean": 0.000560999999999999,
+          "median": 0.000560999999999999,
+          "minimum": 6.299999999999362e-05,
+          "negative_count": 0,
+          "positive_count": 2,
+          "same_nonzero_sign": true,
+          "standard_deviation": 0.000704278354061809
+        },
+        "homo_lumo_gap_ev": {
+          "count": 2,
+          "maximum": -0.06080000000000041,
+          "mean": -0.06265000000000054,
+          "median": -0.06265000000000054,
+          "minimum": -0.06450000000000067,
+          "negative_count": 2,
+          "positive_count": 0,
+          "same_nonzero_sign": true,
+          "standard_deviation": 0.0026162950903904085
+        },
+        "loewdin_charge_amide_n": {
+          "count": 2,
+          "maximum": 8.500000000000174e-05,
+          "mean": 3.0000000000030003e-06,
+          "median": 3.0000000000030003e-06,
+          "minimum": -7.899999999999574e-05,
+          "negative_count": 1,
+          "positive_count": 1,
+          "same_nonzero_sign": false,
+          "standard_deviation": 0.00011596551211459202
+        },
+        "loewdin_charge_carbonyl_c": {
+          "count": 2,
+          "maximum": 0.00029399999999996096,
+          "mean": 0.0002224999999999866,
+          "median": 0.0002224999999999866,
+          "minimum": 0.00015100000000001224,
+          "negative_count": 0,
+          "positive_count": 2,
+          "same_nonzero_sign": true,
+          "standard_deviation": 0.00010111626970964004
+        },
+        "loewdin_charge_carbonyl_o": {
+          "count": 2,
+          "maximum": -0.0002339999999999981,
+          "mean": -0.00029900000000000065,
+          "median": -0.00029900000000000065,
+          "minimum": -0.0003640000000000032,
+          "negative_count": 2,
+          "positive_count": 0,
+          "same_nonzero_sign": true,
+          "standard_deviation": 9.192388155425479e-05
+        },
+        "lumo_energy_ev": {
+          "count": 2,
+          "maximum": -0.05810000000000004,
+          "mean": -0.06255,
+          "median": -0.06255,
+          "minimum": -0.06699999999999995,
+          "negative_count": 2,
+          "positive_count": 0,
+          "same_nonzero_sign": true,
+          "standard_deviation": 0.006293250352560208
+        },
+        "lumo_loewdin_population_benzoyl_center": {
+          "count": 2,
+          "maximum": -0.019405000000000006,
+          "mean": -0.019491500000000023,
+          "median": -0.019491500000000023,
+          "minimum": -0.01957800000000004,
+          "negative_count": 2,
+          "positive_count": 0,
+          "same_nonzero_sign": true,
+          "standard_deviation": 0.00012232947314529694
+        },
+        "mayer_bond_order_c_n": {
+          "count": 2,
+          "maximum": 0.0014000000000000679,
+          "mean": 0.0010000000000000009,
+          "median": 0.0010000000000000009,
+          "minimum": 0.0005999999999999339,
+          "negative_count": 0,
+          "positive_count": 2,
+          "same_nonzero_sign": true,
+          "standard_deviation": 0.0005656854249493327
+        },
+        "mayer_bond_order_c_o": {
+          "count": 2,
+          "maximum": 0.0029999999999998916,
+          "mean": 0.0019000000000000128,
+          "median": 0.0019000000000000128,
+          "minimum": 0.0008000000000001339,
+          "negative_count": 0,
+          "positive_count": 2,
+          "same_nonzero_sign": true,
+          "standard_deviation": 0.0015556349186102332
+        },
+        "mbis_charge_amide_n": {
+          "count": 2,
+          "maximum": 0.0011670000000000014,
+          "mean": 0.0009790000000000076,
+          "median": 0.0009790000000000076,
+          "minimum": 0.0007910000000000139,
+          "negative_count": 0,
+          "positive_count": 2,
+          "same_nonzero_sign": true,
+          "standard_deviation": 0.00026587214972613297
+        },
+        "mbis_charge_carbonyl_c": {
+          "count": 2,
+          "maximum": -0.004664999999999919,
+          "mean": -0.004785499999999998,
+          "median": -0.004785499999999998,
+          "minimum": -0.004906000000000077,
+          "negative_count": 2,
+          "positive_count": 0,
+          "same_nonzero_sign": true,
+          "standard_deviation": 0.0001704127342660695
+        },
+        "mbis_charge_carbonyl_o": {
+          "count": 2,
+          "maximum": 0.0006209999999999827,
+          "mean": 0.0006179999999999519,
+          "median": 0.0006179999999999519,
+          "minimum": 0.0006149999999999212,
+          "negative_count": 0,
+          "positive_count": 2,
+          "same_nonzero_sign": true,
+          "standard_deviation": 4.242640687162781e-06
+        }
+      }
+    }
+  },
+  "cross_functional_robustness": {
+    "fixed_geometry_tms_minus_h": {
+      "chelpg_charge_amide_n": {
+        "all_pairs_same_nonzero_sign_within_each_condition": false,
+        "condition_means": [
+          0.0026584999999999985,
+          0.0025250000000000008
+        ],
+        "direction_votes": [
+          0,
+          0
+        ],
+        "same_nonzero_mean_sign": true
+      },
+      "chelpg_charge_carbonyl_c": {
+        "all_pairs_same_nonzero_sign_within_each_condition": true,
+        "condition_means": [
+          -0.011122500000000035,
+          -0.010952499999999976
+        ],
+        "direction_votes": [
+          -2,
+          -2
+        ],
+        "same_nonzero_mean_sign": true
+      },
+      "chelpg_charge_carbonyl_o": {
+        "all_pairs_same_nonzero_sign_within_each_condition": false,
+        "condition_means": [
+          0.0008790000000000187,
+          0.001083500000000015
+        ],
+        "direction_votes": [
+          0,
+          0
+        ],
+        "same_nonzero_mean_sign": true
+      },
+      "dipole_magnitude_debye": {
+        "all_pairs_same_nonzero_sign_within_each_condition": true,
+        "condition_means": [
+          0.2590304720000005,
+          0.27589846399999995
+        ],
+        "direction_votes": [
+          2,
+          2
+        ],
+        "same_nonzero_mean_sign": true
+      },
+      "homo_energy_ev": {
+        "all_pairs_same_nonzero_sign_within_each_condition": true,
+        "condition_means": [
+          0.003749999999999698,
+          0.003049999999999997
+        ],
+        "direction_votes": [
+          2,
+          2
+        ],
+        "same_nonzero_mean_sign": true
+      },
+      "homo_loewdin_population_benzoyl_center": {
+        "all_pairs_same_nonzero_sign_within_each_condition": true,
+        "condition_means": [
+          0.00020000000000000573,
+          0.00014550000000000674
+        ],
+        "direction_votes": [
+          2,
+          2
+        ],
+        "same_nonzero_mean_sign": true
+      },
+      "homo_lumo_gap_ev": {
+        "all_pairs_same_nonzero_sign_within_each_condition": true,
+        "condition_means": [
+          -0.024299999999999766,
+          -0.037050000000000693
+        ],
+        "direction_votes": [
+          -2,
+          -2
+        ],
+        "same_nonzero_mean_sign": true
+      },
+      "loewdin_charge_amide_n": {
+        "all_pairs_same_nonzero_sign_within_each_condition": true,
+        "condition_means": [
+          -0.00012149999999996886,
+          -9.949999999997461e-05
+        ],
+        "direction_votes": [
+          -2,
+          -2
+        ],
+        "same_nonzero_mean_sign": true
+      },
+      "loewdin_charge_carbonyl_c": {
+        "all_pairs_same_nonzero_sign_within_each_condition": true,
+        "condition_means": [
+          -0.0005180000000000184,
+          -0.0004035000000000011
+        ],
+        "direction_votes": [
+          -2,
+          -2
+        ],
+        "same_nonzero_mean_sign": true
+      },
+      "loewdin_charge_carbonyl_o": {
+        "all_pairs_same_nonzero_sign_within_each_condition": true,
+        "condition_means": [
+          -0.0007874999999999896,
+          -0.000559999999999998
+        ],
+        "direction_votes": [
+          -2,
+          -2
+        ],
+        "same_nonzero_mean_sign": true
+      },
+      "lumo_energy_ev": {
+        "all_pairs_same_nonzero_sign_within_each_condition": true,
+        "condition_means": [
+          -0.020550000000000068,
+          -0.03400000000000003
+        ],
+        "direction_votes": [
+          -2,
+          -2
+        ],
+        "same_nonzero_mean_sign": true
+      },
+      "lumo_loewdin_population_benzoyl_center": {
+        "all_pairs_same_nonzero_sign_within_each_condition": true,
+        "condition_means": [
+          -0.014900500000000011,
+          -0.016403500000000043
+        ],
+        "direction_votes": [
+          -2,
+          -2
+        ],
+        "same_nonzero_mean_sign": true
+      },
+      "mayer_bond_order_c_n": {
+        "all_pairs_same_nonzero_sign_within_each_condition": true,
+        "condition_means": [
+          0.00034999999999996145,
+          0.0010499999999999954
+        ],
+        "direction_votes": [
+          2,
+          2
+        ],
+        "same_nonzero_mean_sign": true
+      },
+      "mayer_bond_order_c_o": {
+        "all_pairs_same_nonzero_sign_within_each_condition": true,
+        "condition_means": [
+          0.003049999999999997,
+          0.002549999999999941
+        ],
+        "direction_votes": [
+          2,
+          2
+        ],
+        "same_nonzero_mean_sign": true
+      },
+      "mbis_charge_amide_n": {
+        "all_pairs_same_nonzero_sign_within_each_condition": true,
+        "condition_means": [
+          0.000789999999999999,
+          0.0007744999999999974
+        ],
+        "direction_votes": [
+          2,
+          2
+        ],
+        "same_nonzero_mean_sign": true
+      },
+      "mbis_charge_carbonyl_c": {
+        "all_pairs_same_nonzero_sign_within_each_condition": true,
+        "condition_means": [
+          -0.0040699999999999625,
+          -0.004071500000000006
+        ],
+        "direction_votes": [
+          -2,
+          -2
+        ],
+        "same_nonzero_mean_sign": true
+      },
+      "mbis_charge_carbonyl_o": {
+        "all_pairs_same_nonzero_sign_within_each_condition": false,
+        "condition_means": [
+          -0.00023500000000004073,
+          2.849999999998687e-05
+        ],
+        "direction_votes": [
+          -2,
+          0
+        ],
+        "same_nonzero_mean_sign": false
+      }
+    },
+    "optimized_sb_minus_bz": {
+      "chelpg_charge_amide_n": {
+        "all_pairs_same_nonzero_sign_within_each_condition": true,
+        "condition_means": [
+          -0.004229500000000001,
+          -0.0033809999999999995
+        ],
+        "direction_votes": [
+          -2,
+          -2
+        ],
+        "same_nonzero_mean_sign": true
+      },
+      "chelpg_charge_carbonyl_c": {
+        "all_pairs_same_nonzero_sign_within_each_condition": true,
+        "condition_means": [
+          -0.013988000000000028,
+          -0.014767999999999976
+        ],
+        "direction_votes": [
+          -2,
+          -2
+        ],
+        "same_nonzero_mean_sign": true
+      },
+      "chelpg_charge_carbonyl_o": {
+        "all_pairs_same_nonzero_sign_within_each_condition": false,
+        "condition_means": [
+          0.0017945000000000322,
+          0.0021729999999999805
+        ],
+        "direction_votes": [
+          0,
+          0
+        ],
+        "same_nonzero_mean_sign": true
+      },
+      "dipole_magnitude_debye": {
+        "all_pairs_same_nonzero_sign_within_each_condition": true,
+        "condition_means": [
+          0.48600624150000016,
+          0.5040657744999999
+        ],
+        "direction_votes": [
+          2,
+          2
+        ],
+        "same_nonzero_mean_sign": true
+      },
+      "homo_energy_ev": {
+        "all_pairs_same_nonzero_sign_within_each_condition": false,
+        "condition_means": [
+          0.0009500000000000064,
+          0.00010000000000021103
+        ],
+        "direction_votes": [
+          0,
+          0
+        ],
+        "same_nonzero_mean_sign": true
+      },
+      "homo_loewdin_population_benzoyl_center": {
+        "all_pairs_same_nonzero_sign_within_each_condition": true,
+        "condition_means": [
+          0.0006009999999999974,
+          0.000560999999999999
+        ],
+        "direction_votes": [
+          2,
+          2
+        ],
+        "same_nonzero_mean_sign": true
+      },
+      "homo_lumo_gap_ev": {
+        "all_pairs_same_nonzero_sign_within_each_condition": true,
+        "condition_means": [
+          -0.04925000000000024,
+          -0.06265000000000054
+        ],
+        "direction_votes": [
+          -2,
+          -2
+        ],
+        "same_nonzero_mean_sign": true
+      },
+      "loewdin_charge_amide_n": {
+        "all_pairs_same_nonzero_sign_within_each_condition": false,
+        "condition_means": [
+          -2.649999999998487e-05,
+          3.0000000000030003e-06
+        ],
+        "direction_votes": [
+          0,
+          0
+        ],
+        "same_nonzero_mean_sign": false
+      },
+      "loewdin_charge_carbonyl_c": {
+        "all_pairs_same_nonzero_sign_within_each_condition": true,
+        "condition_means": [
+          8.949999999996461e-05,
+          0.0002224999999999866
+        ],
+        "direction_votes": [
+          2,
+          2
+        ],
+        "same_nonzero_mean_sign": true
+      },
+      "loewdin_charge_carbonyl_o": {
+        "all_pairs_same_nonzero_sign_within_each_condition": true,
+        "condition_means": [
+          -0.0005304999999999963,
+          -0.00029900000000000065
+        ],
+        "direction_votes": [
+          -2,
+          -2
+        ],
+        "same_nonzero_mean_sign": true
+      },
+      "lumo_energy_ev": {
+        "all_pairs_same_nonzero_sign_within_each_condition": true,
+        "condition_means": [
+          -0.04830000000000001,
+          -0.06255
+        ],
+        "direction_votes": [
+          -2,
+          -2
+        ],
+        "same_nonzero_mean_sign": true
+      },
+      "lumo_loewdin_population_benzoyl_center": {
+        "all_pairs_same_nonzero_sign_within_each_condition": true,
+        "condition_means": [
+          -0.018195500000000003,
+          -0.019491500000000023
+        ],
+        "direction_votes": [
+          -2,
+          -2
+        ],
+        "same_nonzero_mean_sign": true
+      },
+      "mayer_bond_order_c_n": {
+        "all_pairs_same_nonzero_sign_within_each_condition": false,
+        "condition_means": [
+          0.00034999999999996145,
+          0.0010000000000000009
+        ],
+        "direction_votes": [
+          0,
+          2
+        ],
+        "same_nonzero_mean_sign": true
+      },
+      "mayer_bond_order_c_o": {
+        "all_pairs_same_nonzero_sign_within_each_condition": true,
+        "condition_means": [
+          0.0024999999999999467,
+          0.0019000000000000128
+        ],
+        "direction_votes": [
+          2,
+          2
+        ],
+        "same_nonzero_mean_sign": true
+      },
+      "mbis_charge_amide_n": {
+        "all_pairs_same_nonzero_sign_within_each_condition": true,
+        "condition_means": [
+          0.000973500000000016,
+          0.0009790000000000076
+        ],
+        "direction_votes": [
+          2,
+          2
+        ],
+        "same_nonzero_mean_sign": true
+      },
+      "mbis_charge_carbonyl_c": {
+        "all_pairs_same_nonzero_sign_within_each_condition": true,
+        "condition_means": [
+          -0.004828999999999972,
+          -0.004785499999999998
+        ],
+        "direction_votes": [
+          -2,
+          -2
+        ],
+        "same_nonzero_mean_sign": true
+      },
+      "mbis_charge_carbonyl_o": {
+        "all_pairs_same_nonzero_sign_within_each_condition": true,
+        "condition_means": [
+          0.0003689999999999527,
+          0.0006179999999999519
+        ],
+        "direction_votes": [
+          2,
+          2
+        ],
+        "same_nonzero_mean_sign": true
+      }
+    }
+  },
+  "delta_definitions": {
+    "fixed_geometry_tms_minus_h": "SB minus the same SB common-atom geometry after SiMe3-to-H replacement",
+    "geometry_residual_detms_at_sb_minus_bz": "De-TMS counterfactual at SB geometry minus matched optimized Bz",
+    "optimized_sb_minus_bz": "SB optimized geometry minus matched Bz optimized geometry"
+  },
+  "generated_at_utc": "2026-08-15T05:01:04.554584Z",
+  "interpretation_limits": {
+    "not_established": "Hydrolysis kinetics, activation free energy, enzyme binding, metabolism, or behavior of other protonation states.",
+    "orbital_warning": "A single canonical LUMO can change identity; MBIS carbonyl-C is the primary descriptor and the LUMO population is supporting evidence only.",
+    "supported_if_consistent": "A small ground-state electronic redistribution directly associated with TMS within the two tested functionals and two low-energy conformer pairs."
+  },
+  "pair_deltas": [
+    {
+      "condition": "b3lyp_d3bj_def2_tzvp_cpcm_water",
+      "deltas": {
+        "fixed_geometry_tms_minus_h": {
+          "chelpg_charge_amide_n": -0.002444,
+          "chelpg_charge_carbonyl_c": -0.007653999999999994,
+          "chelpg_charge_carbonyl_o": 0.0020620000000000083,
+          "dipole_magnitude_debye": 0.24194072000000055,
+          "homo_energy_ev": 0.0039999999999995595,
+          "homo_loewdin_population_benzoyl_center": 0.00017200000000000548,
+          "homo_lumo_gap_ev": -0.0237999999999996,
+          "loewdin_charge_amide_n": -0.00012199999999995548,
+          "loewdin_charge_carbonyl_c": -0.0005160000000000164,
+          "loewdin_charge_carbonyl_o": -0.0007649999999999879,
+          "lumo_energy_ev": -0.01980000000000004,
+          "lumo_loewdin_population_benzoyl_center": -0.014244000000000034,
+          "mayer_bond_order_c_n": 0.0004999999999999449,
+          "mayer_bond_order_c_o": 0.0025000000000001688,
+          "mbis_charge_amide_n": 0.0007840000000000069,
+          "mbis_charge_carbonyl_c": -0.004109999999999947,
+          "mbis_charge_carbonyl_o": -0.000176000000000065
+        },
+        "geometry_residual_detms_at_sb_minus_bz": {
+          "chelpg_charge_amide_n": 0.0022699999999999994,
+          "chelpg_charge_carbonyl_c": -0.012883000000000033,
+          "chelpg_charge_carbonyl_o": 0.0031360000000000277,
+          "dipole_magnitude_debye": -0.06006363100000023,
+          "homo_energy_ev": -0.00039999999999995595,
+          "homo_loewdin_population_benzoyl_center": -7.000000000000062e-05,
+          "homo_lumo_gap_ev": -0.0235000000000003,
+          "loewdin_charge_amide_n": 0.00018299999999998873,
+          "loewdin_charge_carbonyl_c": 0.0006909999999999972,
+          "loewdin_charge_carbonyl_o": 0.00015699999999999048,
+          "lumo_energy_ev": -0.023900000000000032,
+          "lumo_loewdin_population_benzoyl_center": -0.0038539999999999686,
+          "mayer_bond_order_c_n": 0.00029999999999996696,
+          "mayer_bond_order_c_o": -0.0013000000000000789,
+          "mbis_charge_amide_n": 0.0003730000000000122,
+          "mbis_charge_carbonyl_c": -0.0008160000000000389,
+          "mbis_charge_carbonyl_o": 0.0005420000000000424
+        },
+        "optimized_sb_minus_bz": {
+          "chelpg_charge_amide_n": -0.00017400000000000054,
+          "chelpg_charge_carbonyl_c": -0.020537000000000027,
+          "chelpg_charge_carbonyl_o": 0.005198000000000036,
+          "dipole_magnitude_debye": 0.18187708900000032,
+          "homo_energy_ev": 0.0035999999999996035,
+          "homo_loewdin_population_benzoyl_center": 0.00010200000000000486,
+          "homo_lumo_gap_ev": -0.0472999999999999,
+          "loewdin_charge_amide_n": 6.100000000003325e-05,
+          "loewdin_charge_carbonyl_c": 0.00017499999999998073,
+          "loewdin_charge_carbonyl_o": -0.0006079999999999974,
+          "lumo_energy_ev": -0.04370000000000007,
+          "lumo_loewdin_population_benzoyl_center": -0.018098000000000003,
+          "mayer_bond_order_c_n": 0.0007999999999999119,
+          "mayer_bond_order_c_o": 0.0012000000000000899,
+          "mbis_charge_amide_n": 0.0011570000000000191,
+          "mbis_charge_carbonyl_c": -0.004925999999999986,
+          "mbis_charge_carbonyl_o": 0.00036599999999997745
+        }
+      },
+      "pair_id": "pair001"
+    },
+    {
+      "condition": "b3lyp_d3bj_def2_tzvp_cpcm_water",
+      "deltas": {
+        "fixed_geometry_tms_minus_h": {
+          "chelpg_charge_amide_n": 0.007760999999999997,
+          "chelpg_charge_carbonyl_c": -0.014591000000000076,
+          "chelpg_charge_carbonyl_o": -0.00030399999999997096,
+          "dipole_magnitude_debye": 0.27612022400000047,
+          "homo_energy_ev": 0.0034999999999998366,
+          "homo_loewdin_population_benzoyl_center": 0.00022800000000000598,
+          "homo_lumo_gap_ev": -0.024799999999999933,
+          "loewdin_charge_amide_n": -0.00012099999999998223,
+          "loewdin_charge_carbonyl_c": -0.0005200000000000204,
+          "loewdin_charge_carbonyl_o": -0.0008099999999999913,
+          "lumo_energy_ev": -0.021300000000000097,
+          "lumo_loewdin_population_benzoyl_center": -0.015556999999999988,
+          "mayer_bond_order_c_n": 0.00019999999999997797,
+          "mayer_bond_order_c_o": 0.0035999999999998256,
+          "mbis_charge_amide_n": 0.0007959999999999912,
+          "mbis_charge_carbonyl_c": -0.004029999999999978,
+          "mbis_charge_carbonyl_o": -0.00029400000000001647
+        },
+        "geometry_residual_detms_at_sb_minus_bz": {
+          "chelpg_charge_amide_n": -0.016045999999999998,
+          "chelpg_charge_carbonyl_c": 0.007152000000000047,
+          "chelpg_charge_carbonyl_o": -0.0013050000000000006,
+          "dipole_magnitude_debye": 0.5140151699999995,
+          "homo_energy_ev": -0.005199999999999427,
+          "homo_loewdin_population_benzoyl_center": 0.0008719999999999839,
+          "homo_lumo_gap_ev": -0.026400000000000645,
+          "loewdin_charge_amide_n": 6.999999999979245e-06,
+          "loewdin_charge_carbonyl_c": 0.0005239999999999689,
+          "loewdin_charge_carbonyl_o": 0.0003569999999999962,
+          "lumo_energy_ev": -0.03159999999999985,
+          "lumo_loewdin_population_benzoyl_center": -0.002736000000000016,
+          "mayer_bond_order_c_n": -0.00029999999999996696,
+          "mayer_bond_order_c_o": 0.00019999999999997797,
+          "mbis_charge_amide_n": -5.999999999978245e-06,
+          "mbis_charge_carbonyl_c": -0.0007019999999999804,
+          "mbis_charge_carbonyl_o": 0.0006659999999999444
+        },
+        "optimized_sb_minus_bz": {
+          "chelpg_charge_amide_n": -0.008285,
+          "chelpg_charge_carbonyl_c": -0.007439000000000029,
+          "chelpg_charge_carbonyl_o": -0.0016089999999999716,
+          "dipole_magnitude_debye": 0.790135394,
+          "homo_energy_ev": -0.0016999999999995907,
+          "homo_loewdin_population_benzoyl_center": 0.0010999999999999899,
+          "homo_lumo_gap_ev": -0.05120000000000058,
+          "loewdin_charge_amide_n": -0.00011400000000000299,
+          "loewdin_charge_carbonyl_c": 3.999999999948489e-06,
+          "loewdin_charge_carbonyl_o": -0.0004529999999999951,
+          "lumo_energy_ev": -0.05289999999999995,
+          "lumo_loewdin_population_benzoyl_center": -0.018293000000000004,
+          "mayer_bond_order_c_n": -9.999999999998899e-05,
+          "mayer_bond_order_c_o": 0.0037999999999998035,
+          "mbis_charge_amide_n": 0.0007900000000000129,
+          "mbis_charge_carbonyl_c": -0.0047319999999999585,
+          "mbis_charge_carbonyl_o": 0.00037199999999992794
+        }
+      },
+      "pair_id": "pair002"
+    },
+    {
+      "condition": "pbe0_d3bj_def2_tzvp_cpcm_water",
+      "deltas": {
+        "fixed_geometry_tms_minus_h": {
+          "chelpg_charge_amide_n": -0.002622,
+          "chelpg_charge_carbonyl_c": -0.007422999999999957,
+          "chelpg_charge_carbonyl_o": 0.0022220000000000573,
+          "dipole_magnitude_debye": 0.25555202099999974,
+          "homo_energy_ev": 0.0031999999999996476,
+          "homo_loewdin_population_benzoyl_center": 0.00011600000000000499,
+          "homo_lumo_gap_ev": -0.0365000000000002,
+          "loewdin_charge_amide_n": -8.899999999995023e-05,
+          "loewdin_charge_carbonyl_c": -0.00039000000000000146,
+          "loewdin_charge_carbonyl_o": -0.0005499999999999949,
+          "lumo_energy_ev": -0.03330000000000011,
+          "lumo_loewdin_population_benzoyl_center": -0.01573800000000003,
+          "mayer_bond_order_c_n": 0.0012000000000000899,
+          "mayer_bond_order_c_o": 0.0020999999999999908,
+          "mbis_charge_amide_n": 0.0007769999999999999,
+          "mbis_charge_carbonyl_c": -0.004090000000000038,
+          "mbis_charge_carbonyl_o": 6.700000000003925e-05
+        },
+        "geometry_residual_detms_at_sb_minus_bz": {
+          "chelpg_charge_amide_n": 0.0022140000000000003,
+          "chelpg_charge_carbonyl_c": -0.013025000000000009,
+          "chelpg_charge_carbonyl_o": 0.0032409999999999384,
+          "dipole_magnitude_debye": -0.06151565100000056,
+          "homo_energy_ev": -0.0004999999999997229,
+          "homo_loewdin_population_benzoyl_center": -5.300000000001137e-05,
+          "homo_lumo_gap_ev": -0.02430000000000021,
+          "loewdin_charge_amide_n": 0.00017399999999995197,
+          "loewdin_charge_carbonyl_c": 0.0006839999999999624,
+          "loewdin_charge_carbonyl_o": 0.00018599999999999173,
+          "lumo_energy_ev": -0.024799999999999933,
+          "lumo_loewdin_population_benzoyl_center": -0.003666999999999976,
+          "mayer_bond_order_c_n": 0.00019999999999997797,
+          "mayer_bond_order_c_o": -0.0012999999999998568,
+          "mbis_charge_amide_n": 0.00039000000000000146,
+          "mbis_charge_carbonyl_c": -0.0008160000000000389,
+          "mbis_charge_carbonyl_o": 0.0005539999999999434
+        },
+        "optimized_sb_minus_bz": {
+          "chelpg_charge_amide_n": -0.00040799999999999994,
+          "chelpg_charge_carbonyl_c": -0.020447999999999966,
+          "chelpg_charge_carbonyl_o": 0.005462999999999996,
+          "dipole_magnitude_debye": 0.19403636999999918,
+          "homo_energy_ev": 0.0026999999999999247,
+          "homo_loewdin_population_benzoyl_center": 6.299999999999362e-05,
+          "homo_lumo_gap_ev": -0.06080000000000041,
+          "loewdin_charge_amide_n": 8.500000000000174e-05,
+          "loewdin_charge_carbonyl_c": 0.00029399999999996096,
+          "loewdin_charge_carbonyl_o": -0.0003640000000000032,
+          "lumo_energy_ev": -0.05810000000000004,
+          "lumo_loewdin_population_benzoyl_center": -0.019405000000000006,
+          "mayer_bond_order_c_n": 0.0014000000000000679,
+          "mayer_bond_order_c_o": 0.0008000000000001339,
+          "mbis_charge_amide_n": 0.0011670000000000014,
+          "mbis_charge_carbonyl_c": -0.004906000000000077,
+          "mbis_charge_carbonyl_o": 0.0006209999999999827
+        }
+      },
+      "pair_id": "pair001"
+    },
+    {
+      "condition": "pbe0_d3bj_def2_tzvp_cpcm_water",
+      "deltas": {
+        "fixed_geometry_tms_minus_h": {
+          "chelpg_charge_amide_n": 0.007672000000000002,
+          "chelpg_charge_carbonyl_c": -0.014481999999999995,
+          "chelpg_charge_carbonyl_o": -5.500000000002725e-05,
+          "dipole_magnitude_debye": 0.29624490700000017,
+          "homo_energy_ev": 0.0029000000000003467,
+          "homo_loewdin_population_benzoyl_center": 0.00017500000000000848,
+          "homo_lumo_gap_ev": -0.03760000000000119,
+          "loewdin_charge_amide_n": -0.00010999999999999899,
+          "loewdin_charge_carbonyl_c": -0.0004170000000000007,
+          "loewdin_charge_carbonyl_o": -0.0005700000000000011,
+          "lumo_energy_ev": -0.03469999999999995,
+          "lumo_loewdin_population_benzoyl_center": -0.017069000000000056,
+          "mayer_bond_order_c_n": 0.0008999999999999009,
+          "mayer_bond_order_c_o": 0.0029999999999998916,
+          "mbis_charge_amide_n": 0.0007719999999999949,
+          "mbis_charge_carbonyl_c": -0.004052999999999973,
+          "mbis_charge_carbonyl_o": -1.0000000000065512e-05
+        },
+        "geometry_residual_detms_at_sb_minus_bz": {
+          "chelpg_charge_amide_n": -0.014026,
+          "chelpg_charge_carbonyl_c": 0.00539400000000001,
+          "chelpg_charge_carbonyl_o": -0.0010620000000000074,
+          "dipole_magnitude_debye": 0.5178502720000004,
+          "homo_energy_ev": -0.005399999999999849,
+          "homo_loewdin_population_benzoyl_center": 0.0008839999999999959,
+          "homo_lumo_gap_ev": -0.02689999999999948,
+          "loewdin_charge_amide_n": 3.100000000000325e-05,
+          "loewdin_charge_carbonyl_c": 0.0005680000000000129,
+          "loewdin_charge_carbonyl_o": 0.00033600000000000296,
+          "lumo_energy_ev": -0.032299999999999995,
+          "lumo_loewdin_population_benzoyl_center": -0.0025089999999999835,
+          "mayer_bond_order_c_n": -0.00029999999999996696,
+          "mayer_bond_order_c_o": 0.0,
+          "mbis_charge_amide_n": 1.9000000000019e-05,
+          "mbis_charge_carbonyl_c": -0.0006119999999999459,
+          "mbis_charge_carbonyl_o": 0.0006249999999999867
+        },
+        "optimized_sb_minus_bz": {
+          "chelpg_charge_amide_n": -0.0063539999999999985,
+          "chelpg_charge_carbonyl_c": -0.009087999999999985,
+          "chelpg_charge_carbonyl_o": -0.0011170000000000346,
+          "dipole_magnitude_debye": 0.8140951790000006,
+          "homo_energy_ev": -0.0024999999999995026,
+          "homo_loewdin_population_benzoyl_center": 0.0010590000000000044,
+          "homo_lumo_gap_ev": -0.06450000000000067,
+          "loewdin_charge_amide_n": -7.899999999999574e-05,
+          "loewdin_charge_carbonyl_c": 0.00015100000000001224,
+          "loewdin_charge_carbonyl_o": -0.0002339999999999981,
+          "lumo_energy_ev": -0.06699999999999995,
+          "lumo_loewdin_population_benzoyl_center": -0.01957800000000004,
+          "mayer_bond_order_c_n": 0.0005999999999999339,
+          "mayer_bond_order_c_o": 0.0029999999999998916,
+          "mbis_charge_amide_n": 0.0007910000000000139,
+          "mbis_charge_carbonyl_c": -0.004664999999999919,
+          "mbis_charge_carbonyl_o": 0.0006149999999999212
+        }
+      },
+      "pair_id": "pair002"
+    }
+  ],
+  "primary_mbisc_and_lumo_directions_consistent": true,
+  "source": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\hypothesis2_validation\\results.json"
+}

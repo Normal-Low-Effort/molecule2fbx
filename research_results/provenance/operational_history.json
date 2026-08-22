@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "historical_launch_events": [
+    {
+      "molecule": "1Bz-LSD_RR",
+      "conformer_id": "conf008",
+      "phase": "manual_startup_validation",
+      "archived_directory": "../1Bz-LSD_RR/conformers/frequency_additions/incomplete_attempts/conformer_008_20260814T131723Z",
+      "classification": "operator_terminated_startup_test",
+      "counts_as_final_calculation_failure": false,
+      "reason": "A short direct ORCA startup check was deliberately stopped before completion."
+    },
+    {
+      "molecule": "1Bz-LSD_RR",
+      "conformer_id": "conf008",
+      "phase": "launcher_wrapper",
+      "archived_directory": "../1Bz-LSD_RR/conformers/frequency_additions/incomplete_attempts/conformer_008_20260814T132000Z",
+      "classification": "powershell_stderr_handling_failure_before_orca_run",
+      "counts_as_final_calculation_failure": false,
+      "reason": "Windows PowerShell treated CLI progress on stderr as a terminating NativeCommandError; the wrapper was corrected before the final run."
+    }
+  ],
+  "final_calculation_failures": [],
+  "interpretation": "Historical launcher/startup events are retained separately and must not make the final Opt/Freq calculation status PARTIAL."
+}

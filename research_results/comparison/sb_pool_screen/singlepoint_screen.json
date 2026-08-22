@@ -1,0 +1,79 @@
+{
+  "calculation": "B3LYP/def2-SVP single point on retained MMFF94s geometry",
+  "charge": 0,
+  "generated_at_utc": "2026-08-14T07:52:29.628308Z",
+  "geometry_optimization_performed": false,
+  "interpretation": "Screening of omitted basins only; unrelaxed energies are not conformer free energies.",
+  "multiplicity": 1,
+  "omitted_cluster_results": [
+    {
+      "energy_hartree": -1767.589021610004,
+      "mmff_relative_energy_kj_mol": 7.4913090910020825,
+      "output": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\sb_pool_singlepoints\\pool_046\\pool_046_sp.out",
+      "pool_index": 46,
+      "provenance": "computed_this_run",
+      "relative_to_best_retained_initial_geometry_kj_mol": 6.481205437967699
+    },
+    {
+      "energy_hartree": -1767.589729549101,
+      "mmff_relative_energy_kj_mol": 7.278425808489326,
+      "output": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\sb_pool_singlepoints\\pool_109\\pool_109_sp.out",
+      "pool_index": 109,
+      "provenance": "computed_this_run",
+      "relative_to_best_retained_initial_geometry_kj_mol": 4.6225115938025585
+    }
+  ],
+  "retained_initial_geometry_energies": [
+    {
+      "conformer_id": "conf002",
+      "initial_geometry_energy_hartree": -1767.591490170784,
+      "optimized_energy_hartree": -1767.60519964422
+    },
+    {
+      "conformer_id": "conf007",
+      "initial_geometry_energy_hartree": -1767.590505309523,
+      "optimized_energy_hartree": -1767.604816415424
+    },
+    {
+      "conformer_id": "conf005",
+      "initial_geometry_energy_hartree": -1767.590610335005,
+      "optimized_energy_hartree": -1767.604813101043
+    },
+    {
+      "conformer_id": "conf004",
+      "initial_geometry_energy_hartree": -1767.59056003792,
+      "optimized_energy_hartree": -1767.604784157697
+    },
+    {
+      "conformer_id": "conf006",
+      "initial_geometry_energy_hartree": -1767.590492174227,
+      "optimized_energy_hartree": -1767.604782588891
+    },
+    {
+      "conformer_id": "conf003",
+      "initial_geometry_energy_hartree": -1767.58804479873,
+      "optimized_energy_hartree": -1767.602462433349
+    },
+    {
+      "conformer_id": "conf010",
+      "initial_geometry_energy_hartree": -1767.587289800697,
+      "optimized_energy_hartree": -1767.602219801419
+    },
+    {
+      "conformer_id": "conf009",
+      "initial_geometry_energy_hartree": -1767.587313279124,
+      "optimized_energy_hartree": -1767.602203900568
+    },
+    {
+      "conformer_id": "conf008",
+      "initial_geometry_energy_hartree": -1767.587302240998,
+      "optimized_energy_hartree": -1767.602183402846
+    },
+    {
+      "conformer_id": "conf001",
+      "initial_geometry_energy_hartree": -1767.580719414805,
+      "optimized_energy_hartree": -1767.595600478331
+    }
+  ],
+  "retained_initial_geometry_reference_hartree": -1767.591490170784
+}
