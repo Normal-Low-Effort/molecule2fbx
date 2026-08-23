@@ -1,0 +1,63 @@
+{
+    "status":  "SUCCESS",
+    "run_type":  "para_alkyl_control_ensemble_dft_screening",
+    "started_at_utc":  "2026-08-22T07:52:27.0702974Z",
+    "updated_at_utc":  "2026-08-23T14:05:46.0994810Z",
+    "process_id":  4532,
+    "execution":  "sequential",
+    "existing_reference_ensembles":  [
+                                         "${WORKSPACE}\\outputs\\1Bz-LSD_RR",
+                                         "${WORKSPACE}\\outputs\\1SB-LSD_RR"
+                                     ],
+    "electronic_structure":  "ORCA 6.1.1 B3LYP/def2-SVP gas phase, charge=0, multiplicity=1",
+    "ensemble_settings":  {
+                              "conformer_pool":  200,
+                              "forcefield_energy_window_kj_mol":  10,
+                              "pre_dft_heavy_atom_rmsd_angstrom":  0.75,
+                              "maximum_dft_conformers":  10,
+                              "post_dft_heavy_atom_rmsd_angstrom":  0.75,
+                              "frequency_window_kj_mol":  5,
+                              "frequency_maximum":  3,
+                              "random_seed":  61453
+                          },
+    "resources":  {
+                      "nprocs":  16,
+                      "maxcore_mb_per_process":  1000,
+                      "quantum_timeout_seconds_per_job":  14400
+                  },
+    "controls":  [
+                     {
+                         "name":  "1pMeBz-LSD_RR",
+                         "label":  "1-(4-methylbenzoyl)-LSD (6aR,9R)",
+                         "smiles":  "CCN(CC)C(=O)[C@H]1CN(C)[C@@H]2Cc3cn(C(=O)c4ccc(cc4)C)c5cccc(C2=C1)c35",
+                         "status":  "SUCCESS",
+                         "started_at_utc":  "2026-08-22T07:52:27.2078311Z",
+                         "finished_at_utc":  "2026-08-22T16:10:10.6672446Z",
+                         "exit_code":  0,
+                         "output_directory":  "${WORKSPACE}\\outputs\\1pMeBz-LSD_RR",
+                         "ensemble_json":  "${WORKSPACE}\\outputs\\1pMeBz-LSD_RR\\ensemble.json"
+                     },
+                     {
+                         "name":  "1p-iPrBz-LSD_RR",
+                         "label":  "1-[4-(propan-2-yl)benzoyl]-LSD (6aR,9R)",
+                         "smiles":  "CCN(CC)C(=O)[C@H]1CN(C)[C@@H]2Cc3cn(C(=O)c4ccc(cc4)C(C)C)c5cccc(C2=C1)c35",
+                         "status":  "SUCCESS",
+                         "started_at_utc":  "2026-08-22T16:10:10.8376501Z",
+                         "finished_at_utc":  "2026-08-23T02:38:04.7822718Z",
+                         "exit_code":  0,
+                         "output_directory":  "${WORKSPACE}\\outputs\\1p-iPrBz-LSD_RR",
+                         "ensemble_json":  "${WORKSPACE}\\outputs\\1p-iPrBz-LSD_RR\\ensemble.json"
+                     },
+                     {
+                         "name":  "1ptBuBz-LSD_RR",
+                         "label":  "1-(4-tert-butylbenzoyl)-LSD (6aR,9R)",
+                         "smiles":  "CCN(CC)C(=O)[C@H]1CN(C)[C@@H]2Cc3cn(C(=O)c4ccc(cc4)C(C)(C)C)c5cccc(C2=C1)c35",
+                         "status":  "SUCCESS",
+                         "started_at_utc":  "2026-08-23T02:38:04.8299997Z",
+                         "finished_at_utc":  "2026-08-23T14:05:45.9592196Z",
+                         "exit_code":  0,
+                         "output_directory":  "${WORKSPACE}\\outputs\\1ptBuBz-LSD_RR",
+                         "ensemble_json":  "${WORKSPACE}\\outputs\\1ptBuBz-LSD_RR\\ensemble.json"
+                     }
+                 ]
+}

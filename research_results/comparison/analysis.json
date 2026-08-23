@@ -127,10 +127,10 @@
         "second_conformer_id": "conf009"
       },
       {
-        "common_scaffold_rmsd_angstrom": 0.7816992508025524,
+        "common_scaffold_rmsd_angstrom": 0.015097777591019422,
         "first_conformer_id": "conf007",
-        "reaction_center_rmsd_angstrom": 0.006955916178302296,
-        "second_conformer_id": "conf003"
+        "reaction_center_rmsd_angstrom": 0.005356410529549088,
+        "second_conformer_id": "conf011"
       },
       {
         "common_scaffold_rmsd_angstrom": 0.036022572638609585,
@@ -176,6 +176,12 @@
         "first_conformer_id": "conf002",
         "reaction_center_rmsd_angstrom": 0.006345824144358446,
         "second_conformer_id": "conf009"
+      },
+      {
+        "common_scaffold_rmsd_angstrom": 0.015097777591019422,
+        "first_conformer_id": "conf007",
+        "reaction_center_rmsd_angstrom": 0.005356410529549088,
+        "second_conformer_id": "conf011"
       },
       {
         "common_scaffold_rmsd_angstrom": 0.036022572638609585,
@@ -234,6 +240,12 @@
         "second_conformer_id": "conf003"
       },
       {
+        "common_scaffold_rmsd_angstrom": 2.167801682689811,
+        "first_conformer_id": "conf001",
+        "reaction_center_rmsd_angstrom": 1.140324303017941,
+        "second_conformer_id": "conf011"
+      },
+      {
         "common_scaffold_rmsd_angstrom": 1.8338517088441304,
         "first_conformer_id": "conf001",
         "reaction_center_rmsd_angstrom": 1.1403056150237751,
@@ -250,12 +262,6 @@
         "first_conformer_id": "conf001",
         "reaction_center_rmsd_angstrom": 1.1358933759270755,
         "second_conformer_id": "conf008"
-      },
-      {
-        "common_scaffold_rmsd_angstrom": 1.7040523851728273,
-        "first_conformer_id": "conf001",
-        "reaction_center_rmsd_angstrom": 1.133137147366439,
-        "second_conformer_id": "conf001"
       },
       {
         "common_scaffold_rmsd_angstrom": 1.0499103108686716,
@@ -300,6 +306,12 @@
         "second_conformer_id": "conf003"
       },
       {
+        "common_scaffold_rmsd_angstrom": 1.9798372443752548,
+        "first_conformer_id": "conf004",
+        "reaction_center_rmsd_angstrom": 1.132443962377992,
+        "second_conformer_id": "conf011"
+      },
+      {
         "common_scaffold_rmsd_angstrom": 1.5204492698843244,
         "first_conformer_id": "conf004",
         "reaction_center_rmsd_angstrom": 1.1359672501238978,
@@ -316,12 +328,6 @@
         "first_conformer_id": "conf004",
         "reaction_center_rmsd_angstrom": 1.1407019800478424,
         "second_conformer_id": "conf008"
-      },
-      {
-        "common_scaffold_rmsd_angstrom": 1.8887681582540183,
-        "first_conformer_id": "conf004",
-        "reaction_center_rmsd_angstrom": 1.1401663659234802,
-        "second_conformer_id": "conf001"
       },
       {
         "common_scaffold_rmsd_angstrom": 0.8297968007029789,
@@ -366,6 +372,12 @@
         "second_conformer_id": "conf003"
       },
       {
+        "common_scaffold_rmsd_angstrom": 1.7882355893751418,
+        "first_conformer_id": "conf003",
+        "reaction_center_rmsd_angstrom": 1.1410536012721095,
+        "second_conformer_id": "conf011"
+      },
+      {
         "common_scaffold_rmsd_angstrom": 2.1932797258163936,
         "first_conformer_id": "conf003",
         "reaction_center_rmsd_angstrom": 1.141058298118068,
@@ -382,12 +394,6 @@
         "first_conformer_id": "conf003",
         "reaction_center_rmsd_angstrom": 1.1314106324149253,
         "second_conformer_id": "conf008"
-      },
-      {
-        "common_scaffold_rmsd_angstrom": 1.8243488292211554,
-        "first_conformer_id": "conf003",
-        "reaction_center_rmsd_angstrom": 1.128647990631753,
-        "second_conformer_id": "conf001"
       },
       {
         "common_scaffold_rmsd_angstrom": 1.5388607727796741,
@@ -432,6 +438,12 @@
         "second_conformer_id": "conf003"
       },
       {
+        "common_scaffold_rmsd_angstrom": 1.8690516422260446,
+        "first_conformer_id": "conf008",
+        "reaction_center_rmsd_angstrom": 1.140101008681389,
+        "second_conformer_id": "conf011"
+      },
+      {
         "common_scaffold_rmsd_angstrom": 2.1720071480463448,
         "first_conformer_id": "conf008",
         "reaction_center_rmsd_angstrom": 1.1400795260748549,
@@ -448,12 +460,6 @@
         "first_conformer_id": "conf008",
         "reaction_center_rmsd_angstrom": 1.1370786798951593,
         "second_conformer_id": "conf008"
-      },
-      {
-        "common_scaffold_rmsd_angstrom": 1.8504020060183977,
-        "first_conformer_id": "conf008",
-        "reaction_center_rmsd_angstrom": 1.1343247124817242,
-        "second_conformer_id": "conf001"
       },
       {
         "common_scaffold_rmsd_angstrom": 1.3566100033215027,
@@ -498,6 +504,12 @@
         "second_conformer_id": "conf003"
       },
       {
+        "common_scaffold_rmsd_angstrom": 1.230752515736017,
+        "first_conformer_id": "conf002",
+        "reaction_center_rmsd_angstrom": 0.8690847394556167,
+        "second_conformer_id": "conf011"
+      },
+      {
         "common_scaffold_rmsd_angstrom": 1.722271711470435,
         "first_conformer_id": "conf002",
         "reaction_center_rmsd_angstrom": 0.8731000718522225,
@@ -514,12 +526,6 @@
         "first_conformer_id": "conf002",
         "reaction_center_rmsd_angstrom": 0.006433018739768531,
         "second_conformer_id": "conf008"
-      },
-      {
-        "common_scaffold_rmsd_angstrom": 1.6047259835385788,
-        "first_conformer_id": "conf002",
-        "reaction_center_rmsd_angstrom": 0.004406481602687925,
-        "second_conformer_id": "conf001"
       },
       {
         "common_scaffold_rmsd_angstrom": 1.9915132846240435,
@@ -564,6 +570,12 @@
         "second_conformer_id": "conf003"
       },
       {
+        "common_scaffold_rmsd_angstrom": 0.015097777591019422,
+        "first_conformer_id": "conf007",
+        "reaction_center_rmsd_angstrom": 0.005356410529549088,
+        "second_conformer_id": "conf011"
+      },
+      {
         "common_scaffold_rmsd_angstrom": 1.2876390691811064,
         "first_conformer_id": "conf007",
         "reaction_center_rmsd_angstrom": 0.01059233785325491,
@@ -580,12 +592,6 @@
         "first_conformer_id": "conf007",
         "reaction_center_rmsd_angstrom": 0.8712242680990677,
         "second_conformer_id": "conf008"
-      },
-      {
-        "common_scaffold_rmsd_angstrom": 1.6067908491917176,
-        "first_conformer_id": "conf007",
-        "reaction_center_rmsd_angstrom": 0.8714916215200397,
-        "second_conformer_id": "conf001"
       },
       {
         "common_scaffold_rmsd_angstrom": 1.9318409765109754,
@@ -630,6 +636,12 @@
         "second_conformer_id": "conf003"
       },
       {
+        "common_scaffold_rmsd_angstrom": 1.2887036811342951,
+        "first_conformer_id": "conf006",
+        "reaction_center_rmsd_angstrom": 0.006874764440248276,
+        "second_conformer_id": "conf011"
+      },
+      {
         "common_scaffold_rmsd_angstrom": 0.036022572638609585,
         "first_conformer_id": "conf006",
         "reaction_center_rmsd_angstrom": 0.01223397389570547,
@@ -646,12 +658,6 @@
         "first_conformer_id": "conf006",
         "reaction_center_rmsd_angstrom": 0.8709897172504137,
         "second_conformer_id": "conf008"
-      },
-      {
-        "common_scaffold_rmsd_angstrom": 1.1758006721581848,
-        "first_conformer_id": "conf006",
-        "reaction_center_rmsd_angstrom": 0.8712611069575869,
-        "second_conformer_id": "conf001"
       },
       {
         "common_scaffold_rmsd_angstrom": 1.6046354394367208,
@@ -696,6 +702,12 @@
         "second_conformer_id": "conf003"
       },
       {
+        "common_scaffold_rmsd_angstrom": 1.5684887066388122,
+        "first_conformer_id": "conf005",
+        "reaction_center_rmsd_angstrom": 0.8698071965229399,
+        "second_conformer_id": "conf011"
+      },
+      {
         "common_scaffold_rmsd_angstrom": 0.9162039411682261,
         "first_conformer_id": "conf005",
         "reaction_center_rmsd_angstrom": 0.873824179969248,
@@ -712,12 +724,6 @@
         "first_conformer_id": "conf005",
         "reaction_center_rmsd_angstrom": 0.005260834931621166,
         "second_conformer_id": "conf008"
-      },
-      {
-        "common_scaffold_rmsd_angstrom": 0.8015167958426538,
-        "first_conformer_id": "conf005",
-        "reaction_center_rmsd_angstrom": 0.003627895179200399,
-        "second_conformer_id": "conf001"
       },
       {
         "common_scaffold_rmsd_angstrom": 1.8538361547312818,
@@ -762,6 +768,12 @@
         "second_conformer_id": "conf003"
       },
       {
+        "common_scaffold_rmsd_angstrom": 0.9460730936455214,
+        "first_conformer_id": "conf009",
+        "reaction_center_rmsd_angstrom": 0.004826422958327563,
+        "second_conformer_id": "conf011"
+      },
+      {
         "common_scaffold_rmsd_angstrom": 1.4808607562632816,
         "first_conformer_id": "conf009",
         "reaction_center_rmsd_angstrom": 0.009117397530727626,
@@ -778,12 +790,6 @@
         "first_conformer_id": "conf009",
         "reaction_center_rmsd_angstrom": 0.8722731826423112,
         "second_conformer_id": "conf008"
-      },
-      {
-        "common_scaffold_rmsd_angstrom": 1.8376403116609952,
-        "first_conformer_id": "conf009",
-        "reaction_center_rmsd_angstrom": 0.8725371840076717,
-        "second_conformer_id": "conf001"
       },
       {
         "common_scaffold_rmsd_angstrom": 1.9727542355805785,
@@ -831,6 +837,12 @@
         "second_conformer_id": "conf003"
       },
       {
+        "common_scaffold_rmsd_angstrom": 0.015097777591019422,
+        "first_conformer_id": "conf007",
+        "reaction_center_rmsd_angstrom": 0.005356410529549088,
+        "second_conformer_id": "conf011"
+      },
+      {
         "common_scaffold_rmsd_angstrom": 0.036022572638609585,
         "first_conformer_id": "conf006",
         "reaction_center_rmsd_angstrom": 0.01223397389570547,
@@ -847,12 +859,6 @@
         "first_conformer_id": "conf005",
         "reaction_center_rmsd_angstrom": 0.005260834931621166,
         "second_conformer_id": "conf008"
-      },
-      {
-        "common_scaffold_rmsd_angstrom": 0.8015167958426538,
-        "first_conformer_id": "conf005",
-        "reaction_center_rmsd_angstrom": 0.003627895179200399,
-        "second_conformer_id": "conf001"
       },
       {
         "common_scaffold_rmsd_angstrom": 0.8297968007029789,
@@ -6014,9 +6020,9 @@
             ]
           },
           "common_scaffold_rmsd_cluster_id": "dft_core_cluster_001",
-          "common_scaffold_unique_conditional_gibbs_weight": 0.38092781797922654,
-          "common_scaffold_unique_electronic_weight": 0.37202908329670514,
-          "conditional_gibbs_boltzmann_weight": 0.25321569990458376,
+          "common_scaffold_unique_conditional_gibbs_weight": 0.38093030691752916,
+          "common_scaffold_unique_electronic_weight": 0.37203440259503684,
+          "conditional_gibbs_boltzmann_weight": 0.253216799692796,
           "conformer_id": "conf002",
           "conformer_index": 1,
           "dft_energy_hartree": -1767.60519964422,
@@ -6563,9 +6569,9 @@
             "property_single_point_output": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\electronic_properties\\1SB-LSD_RR\\conf002\\property.out",
             "property_single_point_provenance": "reused_completed_property_job"
           },
-          "electronic_boltzmann_weight": 0.2503159488842916,
+          "electronic_boltzmann_weight": 0.24762692159339725,
           "frequency_calculated": true,
-          "frequency_provenance": "reused_external_read_only",
+          "frequency_provenance": "reused_existing",
           "gibbs_energy_hartree": -1767.05772569,
           "imaginary_frequencies_cm1": [],
           "imaginary_modes": 0,
@@ -6827,8 +6833,8 @@
           },
           "common_scaffold_rmsd_cluster_id": "dft_core_cluster_002",
           "common_scaffold_unique_conditional_gibbs_weight": null,
-          "common_scaffold_unique_electronic_weight": 0.2479157102647082,
-          "conditional_gibbs_boltzmann_weight": 0.17643009586957367,
+          "common_scaffold_unique_electronic_weight": 0.24791925498119202,
+          "conditional_gibbs_boltzmann_weight": 0.1764308621559445,
           "conformer_id": "conf007",
           "conformer_index": 6,
           "dft_energy_hartree": -1767.604816415424,
@@ -7375,9 +7381,9 @@
             "property_single_point_output": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\electronic_properties\\1SB-LSD_RR\\conf007\\property.out",
             "property_single_point_provenance": "reused_completed_property_job"
           },
-          "electronic_boltzmann_weight": 0.16680754017486554,
+          "electronic_boltzmann_weight": 0.16501560470348847,
           "frequency_calculated": true,
-          "frequency_provenance": "computed_original_ensemble_run",
+          "frequency_provenance": "reused_existing",
           "gibbs_energy_hartree": -1767.05738454,
           "imaginary_frequencies_cm1": [],
           "imaginary_modes": 0,
@@ -7640,7 +7646,7 @@
           "common_scaffold_rmsd_cluster_id": "dft_core_cluster_002",
           "common_scaffold_unique_conditional_gibbs_weight": null,
           "common_scaffold_unique_electronic_weight": null,
-          "conditional_gibbs_boltzmann_weight": 0.15883583128728057,
+          "conditional_gibbs_boltzmann_weight": 0.1588365211567278,
           "conformer_id": "conf005",
           "conformer_index": 4,
           "dft_energy_hartree": -1767.604813101043,
@@ -8187,9 +8193,9 @@
             "property_single_point_output": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\electronic_properties\\1SB-LSD_RR\\conf005\\property.out",
             "property_single_point_provenance": "reused_completed_property_job"
           },
-          "electronic_boltzmann_weight": 0.1662230206156502,
+          "electronic_boltzmann_weight": 0.1644373643648094,
           "frequency_calculated": true,
-          "frequency_provenance": "computed_original_ensemble_run",
+          "frequency_provenance": "reused_existing",
           "gibbs_energy_hartree": -1767.05728535,
           "imaginary_frequencies_cm1": [],
           "imaginary_modes": 0,
@@ -8450,9 +8456,9 @@
             ]
           },
           "common_scaffold_rmsd_cluster_id": "dft_core_cluster_003",
-          "common_scaffold_unique_conditional_gibbs_weight": 0.29870240497714606,
-          "common_scaffold_unique_electronic_weight": 0.23958881423475745,
-          "conditional_gibbs_boltzmann_weight": 0.19855766622850107,
+          "common_scaffold_unique_conditional_gibbs_weight": 0.2987043566641107,
+          "common_scaffold_unique_electronic_weight": 0.2395922398926887,
+          "conditional_gibbs_boltzmann_weight": 0.19855852862123913,
           "conformer_id": "conf004",
           "conformer_index": 3,
           "dft_energy_hartree": -1767.604784157697,
@@ -8999,9 +9005,9 @@
             "property_single_point_output": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\electronic_properties\\1SB-LSD_RR\\conf004\\property.out",
             "property_single_point_provenance": "reused_completed_property_job"
           },
-          "electronic_boltzmann_weight": 0.16120487367759165,
+          "electronic_boltzmann_weight": 0.159473125034821,
           "frequency_calculated": true,
-          "frequency_provenance": "reused_external_read_only",
+          "frequency_provenance": "reused_existing",
           "gibbs_energy_hartree": -1767.0574961,
           "imaginary_frequencies_cm1": [],
           "imaginary_modes": 0,
@@ -9262,9 +9268,9 @@
             ]
           },
           "common_scaffold_rmsd_cluster_id": "dft_core_cluster_002",
-          "common_scaffold_unique_conditional_gibbs_weight": 0.2939727039393612,
+          "common_scaffold_unique_conditional_gibbs_weight": 0.29397462472300634,
           "common_scaffold_unique_electronic_weight": null,
-          "conditional_gibbs_boltzmann_weight": 0.1954136727943239,
+          "conditional_gibbs_boltzmann_weight": 0.1954145215317992,
           "conformer_id": "conf006",
           "conformer_index": 5,
           "dft_energy_hartree": -1767.604782588891,
@@ -9811,9 +9817,9 @@
             "property_single_point_output": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\electronic_properties\\1SB-LSD_RR\\conf006\\property.out",
             "property_single_point_provenance": "reused_completed_property_job"
           },
-          "electronic_boltzmann_weight": 0.16093724689317632,
+          "electronic_boltzmann_weight": 0.15920837323991502,
           "frequency_calculated": true,
-          "frequency_provenance": "computed_supplemental_frequency_only",
+          "frequency_provenance": "reused_existing",
           "gibbs_energy_hartree": -1767.05748103,
           "imaginary_frequencies_cm1": [],
           "imaginary_modes": 0,
@@ -10074,9 +10080,9 @@
             ]
           },
           "common_scaffold_rmsd_cluster_id": "dft_core_cluster_005",
-          "common_scaffold_unique_conditional_gibbs_weight": 0.02639053926262264,
-          "common_scaffold_unique_electronic_weight": 0.020490307570424613,
-          "conditional_gibbs_boltzmann_weight": 0.017542690648570097,
+          "common_scaffold_unique_conditional_gibbs_weight": 0.026390711695353716,
+          "common_scaffold_unique_electronic_weight": 0.02049060054230173,
+          "conditional_gibbs_boltzmann_weight": 0.017542766841493338,
           "conformer_id": "conf003",
           "conformer_index": 2,
           "dft_energy_hartree": -1767.602462433349,
@@ -10103,9 +10109,9 @@
             "mulliken_charge_carbonyl_c": 0.188759,
             "mulliken_charge_carbonyl_o": -0.210347
           },
-          "electronic_boltzmann_weight": 0.013786693064346364,
+          "electronic_boltzmann_weight": 0.013638589061918822,
           "frequency_calculated": true,
-          "frequency_provenance": "reused_external_read_only",
+          "frequency_provenance": "reused_existing",
           "gibbs_energy_hartree": -1767.05520509,
           "imaginary_frequencies_cm1": [],
           "imaginary_modes": 0,
@@ -10327,15 +10333,268 @@
           }
         },
         {
-          "all_heavy_rmsd_cluster_id": "dft_cluster_007",
-          "calculation_directory": "${WORKSPACE}\\outputs\\1SB-LSD_RR\\conformers\\conformer_010",
+          "all_heavy_rmsd_cluster_id": null,
+          "calculation_directory": "${WORKSPACE}\\outputs\\1SB-LSD_RR\\conformers\\conformer_011",
           "carbonyl_stretch": {
             "available": false,
             "reason": "frequency_not_calculated"
           },
           "common_scaffold_rmsd_cluster_id": "dft_core_cluster_006",
           "common_scaffold_unique_conditional_gibbs_weight": null,
-          "common_scaffold_unique_electronic_weight": 0.0158469483381264,
+          "common_scaffold_unique_electronic_weight": null,
+          "conditional_gibbs_boltzmann_weight": null,
+          "conformer_id": "conf011",
+          "conformer_index": 10,
+          "dft_energy_hartree": -1767.602237899761,
+          "electronic": {
+            "charge_model_note": "MBIS/CHELPG are null when they were not requested in the retained Opt job. Mulliken and Loewdin values are extracted but are not treated as observables.",
+            "chelpg_charge_amide_n": null,
+            "chelpg_charge_carbonyl_c": null,
+            "chelpg_charge_carbonyl_o": null,
+            "dipole_magnitude_debye": 2.109598813,
+            "frontier_orbital_local_contributions": null,
+            "frontier_orbital_local_contributions_reason": "The output does not print per-MO atom populations; a new single-point property job or GBW post-processing is required.",
+            "homo_energy_ev": -5.4737,
+            "homo_lumo_gap_ev": 3.9414,
+            "loewdin_charge_amide_n": 0.014259,
+            "loewdin_charge_carbonyl_c": 0.099794,
+            "loewdin_charge_carbonyl_o": -0.166611,
+            "lumo_energy_ev": -1.5323,
+            "mayer_bond_order_c_n": 1.0237,
+            "mayer_bond_order_c_o": 2.104,
+            "mbis_charge_amide_n": null,
+            "mbis_charge_carbonyl_c": null,
+            "mbis_charge_carbonyl_o": null,
+            "mulliken_charge_amide_n": -0.198757,
+            "mulliken_charge_carbonyl_c": 0.188285,
+            "mulliken_charge_carbonyl_o": -0.211677
+          },
+          "electronic_boltzmann_weight": 0.010752049626416096,
+          "frequency_calculated": false,
+          "frequency_provenance": null,
+          "gibbs_energy_hartree": null,
+          "imaginary_frequencies_cm1": [],
+          "imaginary_modes": null,
+          "local_minimum_assessment": "not_evaluated",
+          "low_frequency_modes_cm1": [],
+          "optimization_provenance": "computed_strict_selection_repair",
+          "reaction_center_rmsd_cluster_id": "dft_site_cluster_003",
+          "relative_energy_kj_mol": 7.776059009523506,
+          "relative_gibbs_energy_kj_mol": null,
+          "steric_access": {
+            "best_clearance_angstrom": 0.321759431943603,
+            "clearance_percentiles_angstrom": {
+              "p10": -1.4688355025374336,
+              "p50": -0.7334610174343097,
+              "p90": 0.09260759765565804
+            },
+            "face_assignment": {
+              "labels": [
+                "face_positive",
+                "face_negative"
+              ],
+              "re_si_assigned": false,
+              "reason": "Signed faces are reported without an unvalidated Re/Si assignment."
+            },
+            "face_summary": {
+              "face_negative": {
+                "accessible_fraction": 0.19444444444444445,
+                "best_clearance_angstrom": 0.321759431943603,
+                "mean_clearance_angstrom": -0.6708155356126608
+              },
+              "face_positive": {
+                "accessible_fraction": 0.1111111111111111,
+                "best_clearance_angstrom": 0.19237710437703792,
+                "mean_clearance_angstrom": -0.7305932556577864
+              }
+            },
+            "interpretation_limit": "Hard-sphere access is a directional reactant-geometry descriptor. It does not include solvent, protein motion, nucleophile identity, or activation energy.",
+            "mean_clearance_angstrom": -0.7007043956352237,
+            "method": "sampled_vdw_probe_on_burgi_dunitz_cone",
+            "minimum_terminal_tms_distance_from_carbonyl_c_angstrom": 6.239498815420008,
+            "nearest_heavy_atoms_from_carbonyl_c": [
+              {
+                "atom_index": 17,
+                "distance_angstrom": 1.214971467600777,
+                "element": "O",
+                "terminal_tms_atom": false
+              },
+              {
+                "atom_index": 15,
+                "distance_angstrom": 1.4092993013892716,
+                "element": "N",
+                "terminal_tms_atom": false
+              },
+              {
+                "atom_index": 18,
+                "distance_angstrom": 1.497481319020712,
+                "element": "C",
+                "terminal_tms_atom": false
+              },
+              {
+                "atom_index": 14,
+                "distance_angstrom": 2.450153389736105,
+                "element": "C",
+                "terminal_tms_atom": false
+              },
+              {
+                "atom_index": 19,
+                "distance_angstrom": 2.489836143551382,
+                "element": "C",
+                "terminal_tms_atom": false
+              },
+              {
+                "atom_index": 23,
+                "distance_angstrom": 2.5433201751726884,
+                "element": "C",
+                "terminal_tms_atom": false
+              },
+              {
+                "atom_index": 28,
+                "distance_angstrom": 2.5702905939098293,
+                "element": "C",
+                "terminal_tms_atom": false
+              },
+              {
+                "atom_index": 29,
+                "distance_angstrom": 3.3293471378054913,
+                "element": "C",
+                "terminal_tms_atom": false
+              },
+              {
+                "atom_index": 13,
+                "distance_angstrom": 3.599045060492135,
+                "element": "C",
+                "terminal_tms_atom": false
+              },
+              {
+                "atom_index": 35,
+                "distance_angstrom": 3.641059863477579,
+                "element": "C",
+                "terminal_tms_atom": false
+              },
+              {
+                "atom_index": 20,
+                "distance_angstrom": 3.78068899628279,
+                "element": "C",
+                "terminal_tms_atom": false
+              },
+              {
+                "atom_index": 22,
+                "distance_angstrom": 3.813649484192166,
+                "element": "C",
+                "terminal_tms_atom": false
+              }
+            ],
+            "overall_accessible_fraction": 0.1527777777777778,
+            "parameters": {
+              "azimuth_samples": 72,
+              "burgi_dunitz_o_c_probe_angle_deg": 107.0,
+              "carbonyl_c_probe_distance_angstrom": 2.2,
+              "probe_radius_angstrom": 0.5,
+              "vdw_radii_angstrom": {
+                "c": 1.7,
+                "cl": 1.75,
+                "f": 1.47,
+                "h": 1.2,
+                "n": 1.55,
+                "o": 1.52,
+                "p": 1.8,
+                "s": 1.8,
+                "si": 2.1
+              }
+            },
+            "probe_radius_sensitivity": {
+              "probe_radius_0.0_angstrom": {
+                "accessible_fraction": 0.3888888888888889,
+                "best_clearance_angstrom": 0.821759431943603
+              },
+              "probe_radius_0.5_angstrom": {
+                "accessible_fraction": 0.1527777777777778,
+                "best_clearance_angstrom": 0.321759431943603
+              },
+              "probe_radius_0.8_angstrom": {
+                "accessible_fraction": 0.013888888888888888,
+                "best_clearance_angstrom": 0.02175943194360297
+              },
+              "probe_radius_1.0_angstrom": {
+                "accessible_fraction": 0.0,
+                "best_clearance_angstrom": -0.178240568056397
+              },
+              "probe_radius_1.2_angstrom": {
+                "accessible_fraction": 0.0,
+                "best_clearance_angstrom": -0.37824056805639694
+              }
+            },
+            "silicon_distance_from_carbonyl_c_angstrom": 6.239498815420008,
+            "terminal_tms_distances_from_carbonyl_c": [
+              {
+                "atom_index": 24,
+                "distance_angstrom": 6.239498815420008,
+                "element": "Si",
+                "terminal_tms_atom": true
+              },
+              {
+                "atom_index": 27,
+                "distance_angstrom": 7.063896168287213,
+                "element": "C",
+                "terminal_tms_atom": true
+              },
+              {
+                "atom_index": 26,
+                "distance_angstrom": 7.097514855985787,
+                "element": "C",
+                "terminal_tms_atom": true
+              },
+              {
+                "atom_index": 25,
+                "distance_angstrom": 7.112546531913799,
+                "element": "C",
+                "terminal_tms_atom": true
+              }
+            ],
+            "terminal_tms_heavy_atoms_within_5_angstrom": 0
+          },
+          "structure": {
+            "amide_c_n_length_angstrom": 1.4092993013892716,
+            "amide_n_planarity_torsion_abs_mean_deg": 21.524973072071077,
+            "amide_n_planarity_torsions_deg": [
+              17.629388463087476,
+              25.420557681054675
+            ],
+            "aryl_c_si_length_angstrom": 1.9046891400466475,
+            "atom_indices": {
+              "amide_n_ring_neighbors": [
+                14,
+                28
+              ],
+              "benzoyl_amide_n": 15,
+              "benzoyl_carbonyl_c": 16,
+              "benzoyl_carbonyl_o": 17,
+              "benzoyl_ipso_c": 18,
+              "benzoyl_ortho_c": [
+                19,
+                23
+              ]
+            },
+            "benzoyl_carbonyl_torsion_abs_mean_deg": 37.99447937361718,
+            "benzoyl_carbonyl_torsions_deg": [
+              34.56362430185911,
+              41.42533444537525
+            ],
+            "carbonyl_c_o_length_angstrom": 1.214971467600777
+          }
+        },
+        {
+          "all_heavy_rmsd_cluster_id": "dft_cluster_008",
+          "calculation_directory": "${WORKSPACE}\\outputs\\1SB-LSD_RR\\conformers\\conformer_010",
+          "carbonyl_stretch": {
+            "available": false,
+            "reason": "frequency_not_calculated"
+          },
+          "common_scaffold_rmsd_cluster_id": "dft_core_cluster_007",
+          "common_scaffold_unique_conditional_gibbs_weight": null,
+          "common_scaffold_unique_electronic_weight": 0.01584717491892248,
           "conditional_gibbs_boltzmann_weight": null,
           "conformer_id": "conf010",
           "conformer_index": 9,
@@ -10363,7 +10622,7 @@
             "mulliken_charge_carbonyl_c": 0.187813,
             "mulliken_charge_carbonyl_o": -0.211965
           },
-          "electronic_boltzmann_weight": 0.010662456480626413,
+          "electronic_boltzmann_weight": 0.010547914692169971,
           "frequency_calculated": false,
           "frequency_provenance": null,
           "gibbs_energy_hartree": null,
@@ -10580,15 +10839,15 @@
           }
         },
         {
-          "all_heavy_rmsd_cluster_id": "dft_cluster_008",
+          "all_heavy_rmsd_cluster_id": "dft_cluster_009",
           "calculation_directory": "${WORKSPACE}\\outputs\\1SB-LSD_RR\\conformers\\conformer_009",
           "carbonyl_stretch": {
             "available": false,
             "reason": "frequency_not_calculated"
           },
-          "common_scaffold_rmsd_cluster_id": "dft_core_cluster_007",
+          "common_scaffold_rmsd_cluster_id": "dft_core_cluster_008",
           "common_scaffold_unique_conditional_gibbs_weight": null,
-          "common_scaffold_unique_electronic_weight": 0.015582307311519663,
+          "common_scaffold_unique_electronic_weight": 0.015582530108459492,
           "conditional_gibbs_boltzmann_weight": null,
           "conformer_id": "conf009",
           "conformer_index": 8,
@@ -10616,7 +10875,7 @@
             "mulliken_charge_carbonyl_c": 0.188673,
             "mulliken_charge_carbonyl_o": -0.212026
           },
-          "electronic_boltzmann_weight": 0.010484395483078146,
+          "electronic_boltzmann_weight": 0.010371766520728014,
           "frequency_calculated": false,
           "frequency_provenance": null,
           "gibbs_energy_hartree": null,
@@ -10833,15 +11092,15 @@
           }
         },
         {
-          "all_heavy_rmsd_cluster_id": "dft_cluster_009",
+          "all_heavy_rmsd_cluster_id": "dft_cluster_010",
           "calculation_directory": "${WORKSPACE}\\outputs\\1SB-LSD_RR\\conformers\\conformer_008",
           "carbonyl_stretch": {
             "available": false,
             "reason": "frequency_not_calculated"
           },
-          "common_scaffold_rmsd_cluster_id": "dft_core_cluster_008",
+          "common_scaffold_rmsd_cluster_id": "dft_core_cluster_009",
           "common_scaffold_unique_conditional_gibbs_weight": null,
-          "common_scaffold_unique_electronic_weight": 0.015247669733192202,
+          "common_scaffold_unique_electronic_weight": 0.015247887745460102,
           "conditional_gibbs_boltzmann_weight": null,
           "conformer_id": "conf008",
           "conformer_index": 7,
@@ -10869,7 +11128,7 @@
             "mulliken_charge_carbonyl_c": 0.188096,
             "mulliken_charge_carbonyl_o": -0.211636
           },
-          "electronic_boltzmann_weight": 0.010259238024394804,
+          "electronic_boltzmann_weight": 0.010149027823429418,
           "frequency_calculated": false,
           "frequency_provenance": null,
           "gibbs_energy_hartree": null,
@@ -11086,306 +11345,15 @@
           }
         },
         {
-          "all_heavy_rmsd_cluster_id": "dft_cluster_010",
-          "calculation_directory": "${WORKSPACE}\\outputs\\1SB-LSD_RR_redo\\1SB-LSD_RR_dft_calculations\\conformer_001",
-          "carbonyl_stretch": {
-            "available": true,
-            "frequency_cm1": 1776.8077687851955,
-            "hessian_path": "${WORKSPACE}\\outputs\\1SB-LSD_RR_redo\\1SB-LSD_RR_dft_calculations\\conformer_001\\conformer_001_freq.hess",
-            "method": "Largest absolute projection of the C/O relative normal-mode displacement onto the optimized benzoyl C=O bond, considering modes above 500 cm^-1.",
-            "mode_index": 181,
-            "relative_bond_stretch_projection": 1.351038200191506,
-            "top_projection_candidates": [
-              {
-                "frequency_cm1": 1776.8077687851955,
-                "mode_index": 181,
-                "relative_projection": 1.351038200191506
-              },
-              {
-                "frequency_cm1": 1598.4476355163533,
-                "mode_index": 174,
-                "relative_projection": 0.07755757213802557
-              },
-              {
-                "frequency_cm1": 1316.6104763502437,
-                "mode_index": 137,
-                "relative_projection": 0.04742899703566666
-              },
-              {
-                "frequency_cm1": 1625.8007700931398,
-                "mode_index": 175,
-                "relative_projection": 0.04224440296941431
-              },
-              {
-                "frequency_cm1": 1167.895253820638,
-                "mode_index": 121,
-                "relative_projection": 0.027703612181862212
-              }
-            ]
-          },
-          "common_scaffold_rmsd_cluster_id": "dft_core_cluster_009",
-          "common_scaffold_unique_conditional_gibbs_weight": 6.533841643464931e-06,
-          "common_scaffold_unique_electronic_weight": 1.4297866795643573e-05,
-          "conditional_gibbs_boltzmann_weight": 4.343267166972597e-06,
-          "conformer_id": "conf001",
-          "conformer_index": 0,
-          "dft_energy_hartree": -1767.595600478331,
-          "electronic": {
-            "charge_model_note": "MBIS/CHELPG are null when they were not requested in the retained Opt job. Mulliken and Loewdin values are extracted but are not treated as observables.",
-            "chelpg_charge_amide_n": null,
-            "chelpg_charge_carbonyl_c": null,
-            "chelpg_charge_carbonyl_o": null,
-            "dipole_magnitude_debye": 3.838827136,
-            "frontier_orbital_local_contributions": null,
-            "frontier_orbital_local_contributions_reason": "The output does not print per-MO atom populations; a new single-point property job or GBW post-processing is required.",
-            "homo_energy_ev": -5.4511,
-            "homo_lumo_gap_ev": 3.9209000000000005,
-            "loewdin_charge_amide_n": 0.014253,
-            "loewdin_charge_carbonyl_c": 0.099794,
-            "loewdin_charge_carbonyl_o": -0.166358,
-            "lumo_energy_ev": -1.5302,
-            "mayer_bond_order_c_n": 1.0238,
-            "mayer_bond_order_c_o": 2.1035,
-            "mbis_charge_amide_n": null,
-            "mbis_charge_carbonyl_c": null,
-            "mbis_charge_carbonyl_o": null,
-            "mulliken_charge_amide_n": -0.197633,
-            "mulliken_charge_carbonyl_c": 0.188178,
-            "mulliken_charge_carbonyl_o": -0.211678
-          },
-          "electronic_boltzmann_weight": 9.620172869975253e-06,
-          "frequency_calculated": true,
-          "frequency_provenance": "reused_external_read_only",
-          "gibbs_energy_hartree": -1767.0473648,
-          "imaginary_frequencies_cm1": [],
-          "imaginary_modes": 0,
-          "local_minimum_assessment": "local_minimum_candidate",
-          "low_frequency_modes_cm1": [
-            10.74,
-            15.86,
-            17.91,
-            25.45,
-            31.37,
-            45.86
-          ],
-          "optimization_provenance": "reused_external_read_only",
-          "reaction_center_rmsd_cluster_id": "dft_site_cluster_004",
-          "relative_energy_kj_mol": 25.202606580505122,
-          "relative_gibbs_energy_kj_mol": 27.202512960030823,
-          "steric_access": {
-            "best_clearance_angstrom": 0.323847806663877,
-            "clearance_percentiles_angstrom": {
-              "p10": -1.4726541643042028,
-              "p50": -0.7313341353972657,
-              "p90": 0.09258354795999334
-            },
-            "face_assignment": {
-              "labels": [
-                "face_positive",
-                "face_negative"
-              ],
-              "re_si_assigned": false,
-              "reason": "Signed faces are reported without an unvalidated Re/Si assignment."
-            },
-            "face_summary": {
-              "face_negative": {
-                "accessible_fraction": 0.1111111111111111,
-                "best_clearance_angstrom": 0.1923491612498227,
-                "mean_clearance_angstrom": -0.7335198354182771
-              },
-              "face_positive": {
-                "accessible_fraction": 0.19444444444444445,
-                "best_clearance_angstrom": 0.323847806663877,
-                "mean_clearance_angstrom": -0.6698465516032579
-              }
-            },
-            "interpretation_limit": "Hard-sphere access is a directional reactant-geometry descriptor. It does not include solvent, protein motion, nucleophile identity, or activation energy.",
-            "mean_clearance_angstrom": -0.7016831935107675,
-            "method": "sampled_vdw_probe_on_burgi_dunitz_cone",
-            "minimum_terminal_tms_distance_from_carbonyl_c_angstrom": 6.238044945002305,
-            "nearest_heavy_atoms_from_carbonyl_c": [
-              {
-                "atom_index": 17,
-                "distance_angstrom": 1.21501598199229,
-                "element": "O",
-                "terminal_tms_atom": false
-              },
-              {
-                "atom_index": 15,
-                "distance_angstrom": 1.4091673288038753,
-                "element": "N",
-                "terminal_tms_atom": false
-              },
-              {
-                "atom_index": 18,
-                "distance_angstrom": 1.4974453269153138,
-                "element": "C",
-                "terminal_tms_atom": false
-              },
-              {
-                "atom_index": 14,
-                "distance_angstrom": 2.448664532400582,
-                "element": "C",
-                "terminal_tms_atom": false
-              },
-              {
-                "atom_index": 19,
-                "distance_angstrom": 2.4905027680533176,
-                "element": "C",
-                "terminal_tms_atom": false
-              },
-              {
-                "atom_index": 23,
-                "distance_angstrom": 2.5420608953508697,
-                "element": "C",
-                "terminal_tms_atom": false
-              },
-              {
-                "atom_index": 28,
-                "distance_angstrom": 2.5700591119572183,
-                "element": "C",
-                "terminal_tms_atom": false
-              },
-              {
-                "atom_index": 29,
-                "distance_angstrom": 3.3227288487943785,
-                "element": "C",
-                "terminal_tms_atom": false
-              },
-              {
-                "atom_index": 13,
-                "distance_angstrom": 3.596961920688043,
-                "element": "C",
-                "terminal_tms_atom": false
-              },
-              {
-                "atom_index": 35,
-                "distance_angstrom": 3.6437497091709368,
-                "element": "C",
-                "terminal_tms_atom": false
-              },
-              {
-                "atom_index": 20,
-                "distance_angstrom": 3.7786556815039782,
-                "element": "C",
-                "terminal_tms_atom": false
-              },
-              {
-                "atom_index": 22,
-                "distance_angstrom": 3.8148280626430244,
-                "element": "C",
-                "terminal_tms_atom": false
-              }
-            ],
-            "overall_accessible_fraction": 0.1527777777777778,
-            "parameters": {
-              "azimuth_samples": 72,
-              "burgi_dunitz_o_c_probe_angle_deg": 107.0,
-              "carbonyl_c_probe_distance_angstrom": 2.2,
-              "probe_radius_angstrom": 0.5,
-              "vdw_radii_angstrom": {
-                "c": 1.7,
-                "cl": 1.75,
-                "f": 1.47,
-                "h": 1.2,
-                "n": 1.55,
-                "o": 1.52,
-                "p": 1.8,
-                "s": 1.8,
-                "si": 2.1
-              }
-            },
-            "probe_radius_sensitivity": {
-              "probe_radius_0.0_angstrom": {
-                "accessible_fraction": 0.3888888888888889,
-                "best_clearance_angstrom": 0.823847806663877
-              },
-              "probe_radius_0.5_angstrom": {
-                "accessible_fraction": 0.1527777777777778,
-                "best_clearance_angstrom": 0.323847806663877
-              },
-              "probe_radius_0.8_angstrom": {
-                "accessible_fraction": 0.013888888888888888,
-                "best_clearance_angstrom": 0.02384780666387698
-              },
-              "probe_radius_1.0_angstrom": {
-                "accessible_fraction": 0.0,
-                "best_clearance_angstrom": -0.17615219333612298
-              },
-              "probe_radius_1.2_angstrom": {
-                "accessible_fraction": 0.0,
-                "best_clearance_angstrom": -0.37615219333612293
-              }
-            },
-            "silicon_distance_from_carbonyl_c_angstrom": 6.238044945002305,
-            "terminal_tms_distances_from_carbonyl_c": [
-              {
-                "atom_index": 24,
-                "distance_angstrom": 6.238044945002305,
-                "element": "Si",
-                "terminal_tms_atom": true
-              },
-              {
-                "atom_index": 26,
-                "distance_angstrom": 7.037279449259117,
-                "element": "C",
-                "terminal_tms_atom": true
-              },
-              {
-                "atom_index": 27,
-                "distance_angstrom": 7.091185461704455,
-                "element": "C",
-                "terminal_tms_atom": true
-              },
-              {
-                "atom_index": 25,
-                "distance_angstrom": 7.139036113819365,
-                "element": "C",
-                "terminal_tms_atom": true
-              }
-            ],
-            "terminal_tms_heavy_atoms_within_5_angstrom": 0
-          },
-          "structure": {
-            "amide_c_n_length_angstrom": 1.4091673288038753,
-            "amide_n_planarity_torsion_abs_mean_deg": 22.139715957078725,
-            "amide_n_planarity_torsions_deg": [
-              17.99100354846164,
-              26.288428365695808
-            ],
-            "aryl_c_si_length_angstrom": 1.9046524386035437,
-            "atom_indices": {
-              "amide_n_ring_neighbors": [
-                14,
-                28
-              ],
-              "benzoyl_amide_n": 15,
-              "benzoyl_carbonyl_c": 16,
-              "benzoyl_carbonyl_o": 17,
-              "benzoyl_ipso_c": 18,
-              "benzoyl_ortho_c": [
-                19,
-                23
-              ]
-            },
-            "benzoyl_carbonyl_torsion_abs_mean_deg": 37.966293372699575,
-            "benzoyl_carbonyl_torsions_deg": [
-              34.46104967935881,
-              41.47153706604034
-            ],
-            "carbonyl_c_o_length_angstrom": 1.21501598199229
-          }
-        },
-        {
           "all_heavy_rmsd_cluster_id": null,
           "calculation_directory": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\sb_additional_dft_opt\\conformer_011_pool_109",
           "carbonyl_stretch": {
             "available": false,
             "reason": "frequency_not_calculated"
           },
-          "common_scaffold_rmsd_cluster_id": "dft_core_cluster_004",
+          "common_scaffold_rmsd_cluster_id": "dft_core_cluster_006",
           "common_scaffold_unique_conditional_gibbs_weight": null,
-          "common_scaffold_unique_electronic_weight": 0.07328486138377067,
+          "common_scaffold_unique_electronic_weight": 0.07328590921593864,
           "conditional_gibbs_boltzmann_weight": null,
           "conformer_id": "conf011_pool109",
           "conformer_index": 10,
@@ -11933,7 +11901,7 @@
             "property_single_point_output": "${WORKSPACE}\\outputs\\Bz_vs_SB_preliminary_comparison\\electronic_properties\\1SB-LSD_RR\\conf011_pool109\\property.out",
             "property_single_point_provenance": "reused_completed_property_job"
           },
-          "electronic_boltzmann_weight": 0.04930896652910898,
+          "electronic_boltzmann_weight": 0.0487792633389065,
           "frequency_calculated": false,
           "frequency_provenance": null,
           "gibbs_energy_hartree": null,
@@ -11942,7 +11910,7 @@
           "local_minimum_assessment": "not_evaluated",
           "low_frequency_modes_cm1": [],
           "optimization_provenance": "computed_targeted_followup",
-          "reaction_center_rmsd_cluster_id": "dft_site_cluster_002",
+          "reaction_center_rmsd_cluster_id": "dft_site_cluster_003",
           "relative_energy_kj_mol": 4.027358147345122,
           "relative_gibbs_energy_kj_mol": null,
           "steric_access": {
@@ -12168,40 +12136,38 @@
       "summary": {
         "common_scaffold_unique": {
           "conditional_gibbs_weights": {
-            "conf001": 6.533841643464931e-06,
-            "conf002": 0.38092781797922654,
-            "conf003": 0.02639053926262264,
-            "conf004": 0.29870240497714606,
-            "conf006": 0.2939727039393612
+            "conf002": 0.38093030691752916,
+            "conf003": 0.026390711695353716,
+            "conf004": 0.2987043566641107,
+            "conf006": 0.29397462472300634
           },
           "electronic_weights": {
-            "conf001": 1.4297866795643573e-05,
-            "conf002": 0.37202908329670514,
-            "conf003": 0.020490307570424613,
-            "conf004": 0.23958881423475745,
-            "conf007": 0.2479157102647082,
-            "conf008": 0.015247669733192202,
-            "conf009": 0.015582307311519663,
-            "conf010": 0.0158469483381264,
-            "conf011_pool109": 0.07328486138377067
+            "conf002": 0.37203440259503684,
+            "conf003": 0.02049060054230173,
+            "conf004": 0.2395922398926887,
+            "conf007": 0.24791925498119202,
+            "conf008": 0.015247887745460102,
+            "conf009": 0.015582530108459492,
+            "conf010": 0.01584717491892248,
+            "conf011_pool109": 0.07328590921593864
           },
           "metrics": {
             "carbonyl_stretch.frequency_cm1": {
               "conditional_gibbs_weighted": {
-                "conformer_count": 5,
+                "conformer_count": 4,
                 "maximum": 1778.5090999530048,
                 "minimum": 1776.651270788419,
                 "weight_coverage": 0.9999999999999999,
-                "weighted_mean": 1776.9787855381728,
-                "weighted_std": 0.37258792687189624
+                "weighted_mean": 1776.9787866555766,
+                "weighted_std": 0.3725888876497036
               },
               "electronic_energy_weighted": {
-                "conformer_count": 5,
+                "conformer_count": 4,
                 "maximum": 1778.5090999530048,
                 "minimum": 1776.651270788419,
-                "weight_coverage": 0.880038213233391,
-                "weighted_mean": 1777.0088462000124,
-                "weighted_std": 0.3566602415614429
+                "weight_coverage": 0.8800364980112193,
+                "weighted_mean": 1777.0088494669442,
+                "weighted_std": 0.356662217981312
               }
             },
             "electronic.chelpg_charge_carbonyl_c": {
@@ -12209,7 +12175,7 @@
                 "conformer_count": 3,
                 "maximum": 0.541031,
                 "minimum": 0.512237,
-                "weight_coverage": 0.9736029268957338,
+                "weight_coverage": 0.9736092883046462,
                 "weighted_mean": 0.526373518702963,
                 "weighted_std": 0.011233946101776523
               },
@@ -12217,9 +12183,9 @@
                 "conformer_count": 4,
                 "maximum": 0.557016,
                 "minimum": 0.512237,
-                "weight_coverage": 0.9328184691799415,
+                "weight_coverage": 0.9328318066848562,
                 "weighted_mean": 0.5289193065914612,
-                "weighted_std": 0.01321690535615356
+                "weighted_std": 0.013216905356153563
               }
             },
             "electronic.chelpg_charge_carbonyl_o": {
@@ -12227,7 +12193,7 @@
                 "conformer_count": 3,
                 "maximum": -0.482385,
                 "minimum": -0.486945,
-                "weight_coverage": 0.9736029268957338,
+                "weight_coverage": 0.9736092883046462,
                 "weighted_mean": -0.4841949808205026,
                 "weighted_std": 0.0018659897963284734
               },
@@ -12235,45 +12201,45 @@
                 "conformer_count": 4,
                 "maximum": -0.482385,
                 "minimum": -0.489292,
-                "weight_coverage": 0.9328184691799415,
+                "weight_coverage": 0.9328318066848562,
                 "weighted_mean": -0.48465492818968225,
                 "weighted_std": 0.0023032202266299625
               }
             },
             "electronic.dipole_magnitude_debye": {
               "conditional_gibbs_weighted": {
-                "conformer_count": 5,
+                "conformer_count": 4,
                 "maximum": 6.518542225,
                 "minimum": 3.050956793,
                 "weight_coverage": 0.9999999999999999,
-                "weighted_mean": 5.680127003923541,
-                "weighted_std": 0.8552903763251057
+                "weighted_mean": 5.680139034763904,
+                "weighted_std": 0.8552802201515792
               },
               "electronic_energy_weighted": {
-                "conformer_count": 9,
+                "conformer_count": 8,
                 "maximum": 6.518542225,
                 "minimum": 2.084472017,
                 "weight_coverage": 1.0,
-                "weighted_mean": 5.372556538424484,
-                "weighted_std": 1.101148362564333
+                "weighted_mean": 5.372578467796724,
+                "weighted_std": 1.1011409623576303
               }
             },
             "electronic.homo_energy_ev": {
               "conditional_gibbs_weighted": {
-                "conformer_count": 5,
-                "maximum": -5.4511,
+                "conformer_count": 4,
+                "maximum": -5.4677,
                 "minimum": -5.5595,
                 "weight_coverage": 0.9999999999999999,
-                "weighted_mean": -5.505592633739276,
-                "weighted_std": 0.043246192184699515
+                "weighted_mean": -5.505592989787843,
+                "weighted_std": 0.04324610914535668
               },
               "electronic_energy_weighted": {
-                "conformer_count": 9,
-                "maximum": -5.4511,
+                "conformer_count": 8,
+                "maximum": -5.4691,
                 "minimum": -5.5595,
                 "weight_coverage": 1.0,
-                "weighted_mean": -5.511530428399813,
-                "weighted_std": 0.04285369216884294
+                "weighted_mean": -5.511531292438383,
+                "weighted_std": 0.04285338930667138
               }
             },
             "electronic.homo_loewdin_population_benzoyl_center": {
@@ -12281,7 +12247,7 @@
                 "conformer_count": 3,
                 "maximum": 0.095615,
                 "minimum": 0.09234,
-                "weight_coverage": 0.9736029268957338,
+                "weight_coverage": 0.9736092883046462,
                 "weighted_mean": 0.09426951574729861,
                 "weighted_std": 0.0015490438270713198
               },
@@ -12289,81 +12255,81 @@
                 "conformer_count": 4,
                 "maximum": 0.095566,
                 "minimum": 0.09109,
-                "weight_coverage": 0.9328184691799415,
+                "weight_coverage": 0.9328318066848562,
                 "weighted_mean": 0.09388665602868729,
                 "weighted_std": 0.0017061445251639882
               }
             },
             "electronic.homo_lumo_gap_ev": {
               "conditional_gibbs_weighted": {
-                "conformer_count": 5,
+                "conformer_count": 4,
                 "maximum": 4.0355,
-                "minimum": 3.9209000000000005,
+                "minimum": 3.9652,
                 "weight_coverage": 0.9999999999999999,
-                "weighted_mean": 4.017453487371922,
-                "weighted_std": 0.016026274924349947
+                "weighted_mean": 4.017454118241241,
+                "weighted_std": 0.016024426763308522
               },
               "electronic_energy_weighted": {
-                "conformer_count": 9,
+                "conformer_count": 8,
                 "maximum": 4.0355,
-                "minimum": 3.9209000000000005,
+                "minimum": 3.9501,
                 "weight_coverage": 1.0,
-                "weighted_mean": 4.017505867726329,
-                "weighted_std": 0.02056367329782445
+                "weighted_mean": 4.0175072490039065,
+                "weighted_std": 0.020560575483720832
               }
             },
             "electronic.loewdin_charge_carbonyl_c": {
               "conditional_gibbs_weighted": {
-                "conformer_count": 5,
+                "conformer_count": 4,
                 "maximum": 0.100197,
                 "minimum": 0.098258,
                 "weight_coverage": 0.9999999999999999,
-                "weighted_mean": 0.09859845030187593,
-                "weighted_std": 0.00043644642843541123
+                "weighted_mean": 0.09859844249029248,
+                "weighted_std": 0.0004364371550485855
               },
               "electronic_energy_weighted": {
-                "conformer_count": 9,
+                "conformer_count": 8,
                 "maximum": 0.100197,
                 "minimum": 0.098258,
                 "weight_coverage": 1.0,
-                "weighted_mean": 0.09870982843697475,
-                "weighted_std": 0.0004758722450332128
+                "weighted_mean": 0.09870981293541252,
+                "weighted_std": 0.00047585798812329266
               }
             },
             "electronic.loewdin_charge_carbonyl_o": {
               "conditional_gibbs_weighted": {
-                "conformer_count": 5,
+                "conformer_count": 4,
                 "maximum": -0.165092,
                 "minimum": -0.167618,
                 "weight_coverage": 0.9999999999999999,
-                "weighted_mean": -0.1673012878281552,
-                "weighted_std": 0.0004578550832789757
+                "weighted_mean": -0.16730129399148877,
+                "weighted_std": 0.00045785023004842794
               },
               "electronic_energy_weighted": {
-                "conformer_count": 9,
+                "conformer_count": 8,
                 "maximum": -0.165092,
                 "minimum": -0.167688,
                 "weight_coverage": 1.0,
-                "weighted_mean": -0.167281621770095,
-                "weighted_std": 0.0004580879471885862
+                "weighted_mean": -0.16728163497610485,
+                "weighted_std": 0.0004580779084385383
               }
             },
             "electronic.lumo_energy_ev": {
               "conditional_gibbs_weighted": {
-                "conformer_count": 5,
+                "conformer_count": 4,
                 "maximum": -1.4596,
                 "minimum": -1.5943,
                 "weight_coverage": 0.9999999999999999,
-                "weighted_mean": -1.4881391463673546,
-                "weighted_std": 0.034015950132483416
+                "weighted_mean": -1.488138871546602,
+                "weighted_std": 0.034015891351003615
               },
               "electronic_energy_weighted": {
-                "conformer_count": 9,
+                "conformer_count": 8,
                 "maximum": -1.4596,
                 "minimum": -1.5943,
                 "weight_coverage": 1.0,
-                "weighted_mean": -1.494024560673484,
-                "weighted_std": 0.03370656278927842
+                "weighted_mean": -1.494024043434476,
+                "weighted_std": 0.0337065261923162
               }
             },
             "electronic.lumo_loewdin_population_benzoyl_center": {
@@ -12371,7 +12337,7 @@
                 "conformer_count": 3,
                 "maximum": 0.44225,
                 "minimum": 0.44081000000000004,
-                "weight_coverage": 0.9736029268957338,
+                "weight_coverage": 0.9736092883046462,
                 "weighted_mean": 0.44161979397506373,
                 "weighted_std": 0.0005971536127210307
               },
@@ -12379,45 +12345,45 @@
                 "conformer_count": 4,
                 "maximum": 0.442842,
                 "minimum": 0.44081000000000004,
-                "weight_coverage": 0.9328184691799415,
+                "weight_coverage": 0.9328318066848562,
                 "weighted_mean": 0.4417143031591134,
                 "weighted_std": 0.0006654488986956925
               }
             },
             "electronic.mayer_bond_order_c_n": {
               "conditional_gibbs_weighted": {
-                "conformer_count": 5,
+                "conformer_count": 4,
                 "maximum": 1.0403,
                 "minimum": 1.0211,
                 "weight_coverage": 0.9999999999999999,
-                "weighted_mean": 1.038617702377257,
-                "weighted_std": 0.0031226141147646085
+                "weighted_mean": 1.0386177991944106,
+                "weighted_std": 0.003122394594323151
               },
               "electronic_energy_weighted": {
-                "conformer_count": 9,
+                "conformer_count": 8,
                 "maximum": 1.0403,
                 "minimum": 1.0211,
                 "weight_coverage": 1.0,
-                "weighted_mean": 1.037918452002425,
-                "weighted_std": 0.004189057677709909
+                "weighted_mean": 1.0379186538690575,
+                "weighted_std": 0.004188747431815911
               }
             },
             "electronic.mayer_bond_order_c_o": {
               "conditional_gibbs_weighted": {
-                "conformer_count": 5,
+                "conformer_count": 4,
                 "maximum": 2.1053,
                 "minimum": 2.0868,
                 "weight_coverage": 0.9999999999999999,
-                "weighted_mean": 2.0876344798638775,
-                "weighted_std": 0.002919211758268791
+                "weighted_mean": 2.087634376200404,
+                "weighted_std": 0.002918939582173733
               },
               "electronic_energy_weighted": {
-                "conformer_count": 9,
+                "conformer_count": 8,
                 "maximum": 2.1053,
                 "minimum": 2.0868,
                 "weight_coverage": 1.0,
-                "weighted_mean": 2.088214373047022,
-                "weighted_std": 0.004293606711534726
+                "weighted_mean": 2.0882141544920394,
+                "weighted_std": 0.004293248348443496
               }
             },
             "electronic.mbis_charge_carbonyl_c": {
@@ -12425,7 +12391,7 @@
                 "conformer_count": 3,
                 "maximum": 0.647371,
                 "minimum": 0.646607,
-                "weight_coverage": 0.9736029268957338,
+                "weight_coverage": 0.9736092883046462,
                 "weighted_mean": 0.6469138962789771,
                 "weighted_std": 0.0003666013263042656
               },
@@ -12433,7 +12399,7 @@
                 "conformer_count": 4,
                 "maximum": 0.647449,
                 "minimum": 0.646563,
-                "weight_coverage": 0.9328184691799415,
+                "weight_coverage": 0.9328318066848562,
                 "weighted_mean": 0.6469728344062831,
                 "weighted_std": 0.00039413540770981333
               }
@@ -12443,7 +12409,7 @@
                 "conformer_count": 3,
                 "maximum": -0.511092,
                 "minimum": -0.511522,
-                "weight_coverage": 0.9736029268957338,
+                "weight_coverage": 0.9736092883046462,
                 "weighted_mean": -0.5113193982764026,
                 "weighted_std": 0.0001874680142656223
               },
@@ -12451,140 +12417,140 @@
                 "conformer_count": 4,
                 "maximum": -0.511092,
                 "minimum": -0.511578,
-                "weight_coverage": 0.9328184691799415,
+                "weight_coverage": 0.9328318066848562,
                 "weighted_mean": -0.5113372514127454,
                 "weighted_std": 0.00020897510142139862
               }
             },
             "electronic.mulliken_charge_carbonyl_c": {
               "conditional_gibbs_weighted": {
-                "conformer_count": 5,
+                "conformer_count": 4,
                 "maximum": 0.199901,
-                "minimum": 0.188178,
+                "minimum": 0.188759,
                 "weight_coverage": 0.9999999999999999,
-                "weighted_mean": 0.19929278185762828,
-                "weighted_std": 0.0017537644727930028
+                "weighted_mean": 0.19929285448032735,
+                "weighted_std": 0.0017535400569991036
               },
               "electronic_energy_weighted": {
-                "conformer_count": 9,
+                "conformer_count": 8,
                 "maximum": 0.200079,
                 "minimum": 0.187813,
                 "weight_coverage": 1.0,
-                "weighted_mean": 0.1989540520660817,
-                "weighted_std": 0.002854275251003841
+                "weighted_mean": 0.19895420614284168,
+                "weighted_std": 0.002854004788072214
               }
             },
             "steric_access.best_clearance_angstrom": {
               "conditional_gibbs_weighted": {
-                "conformer_count": 5,
-                "maximum": 0.323847806663877,
+                "conformer_count": 4,
+                "maximum": 0.3187219122499425,
                 "minimum": 0.2821492153170817,
                 "weight_coverage": 0.9999999999999999,
-                "weighted_mean": 0.2834740860862614,
-                "weighted_std": 0.0058158337867508245
+                "weighted_mean": 0.28347382228904094,
+                "weighted_std": 0.005814937066886905
               },
               "electronic_energy_weighted": {
-                "conformer_count": 9,
-                "maximum": 0.323847806663877,
+                "conformer_count": 8,
+                "maximum": 0.32253836633957733,
                 "minimum": 0.2821492153170817,
                 "weight_coverage": 1.0,
-                "weighted_mean": 0.28512059423164077,
-                "weighted_std": 0.009572411033279079
+                "weighted_mean": 0.28512004050719897,
+                "weighted_std": 0.009571359288349176
               }
             },
             "steric_access.clearance_percentiles_angstrom.p90": {
               "conditional_gibbs_weighted": {
-                "conformer_count": 5,
+                "conformer_count": 4,
                 "maximum": 0.09291818546262501,
                 "minimum": 0.08767200844786652,
                 "weight_coverage": 0.9999999999999999,
-                "weighted_mean": 0.08805677526319652,
-                "weighted_std": 0.0008393658396128785
+                "weighted_mean": 0.08805674568578732,
+                "weighted_std": 0.0008392888209526172
               },
               "electronic_energy_weighted": {
-                "conformer_count": 9,
+                "conformer_count": 8,
                 "maximum": 0.09291818546262501,
                 "minimum": 0.08767200844786652,
                 "weight_coverage": 1.0,
-                "weighted_mean": 0.08826591844989815,
-                "weighted_std": 0.001205735910797255
+                "weighted_mean": 0.08826585671612387,
+                "weighted_std": 0.0012056339932717398
               }
             },
             "steric_access.face_summary.face_negative.accessible_fraction": {
               "conditional_gibbs_weighted": {
-                "conformer_count": 5,
+                "conformer_count": 4,
                 "maximum": 0.19444444444444445,
-                "minimum": 0.1111111111111111,
+                "minimum": 0.1388888888888889,
                 "weight_coverage": 0.9999999999999999,
-                "weighted_mean": 0.15923346576777708,
-                "weighted_std": 0.013855018984830608
+                "weighted_mean": 0.15923378019367632,
+                "weighted_std": 0.013854518191228722
               },
               "electronic_energy_weighted": {
-                "conformer_count": 9,
+                "conformer_count": 8,
                 "maximum": 0.19444444444444445,
                 "minimum": 0.1111111111111111,
                 "weight_coverage": 1.0,
-                "weighted_mean": 0.15704022595658493,
-                "weighted_std": 0.01668556178178281
+                "weighted_mean": 0.15704088265434038,
+                "weighted_std": 0.01668477721435988
               }
             },
             "steric_access.face_summary.face_positive.accessible_fraction": {
               "conditional_gibbs_weighted": {
-                "conformer_count": 5,
-                "maximum": 0.19444444444444445,
+                "conformer_count": 4,
+                "maximum": 0.16666666666666666,
                 "minimum": 0.1111111111111111,
                 "weight_coverage": 0.9999999999999999,
-                "weighted_mean": 0.1463220897877785,
-                "weighted_std": 0.013855018984830608
+                "weighted_mean": 0.14632177536187926,
+                "weighted_std": 0.013854518191228722
               },
               "electronic_energy_weighted": {
-                "conformer_count": 9,
+                "conformer_count": 8,
                 "maximum": 0.19444444444444445,
                 "minimum": 0.1111111111111111,
                 "weight_coverage": 1.0,
-                "weighted_mean": 0.14851532959897065,
-                "weighted_std": 0.01668556178178281
+                "weighted_mean": 0.14851467290121517,
+                "weighted_std": 0.01668477721435988
               }
             },
             "steric_access.mean_clearance_angstrom": {
               "conditional_gibbs_weighted": {
-                "conformer_count": 5,
+                "conformer_count": 4,
                 "maximum": -0.6996345842275685,
                 "minimum": -0.70232743590203,
                 "weight_coverage": 0.9999999999999999,
-                "weighted_mean": -0.700556335242671,
-                "weighted_std": 0.001166041772183123
+                "weighted_mean": -0.7005563278799095,
+                "weighted_std": 0.0011660420238786958
               },
               "electronic_energy_weighted": {
-                "conformer_count": 9,
+                "conformer_count": 8,
                 "maximum": -0.6988615015135611,
                 "minimum": -0.7033767063480835,
                 "weight_coverage": 1.0,
-                "weighted_mean": -0.7004284126158484,
-                "weighted_std": 0.0012265165656379798
+                "weighted_mean": -0.7004283946749018,
+                "weighted_std": 0.00122651615672489
               }
             },
             "steric_access.minimum_terminal_tms_distance_from_carbonyl_c_angstrom": {
               "conditional_gibbs_weighted": {
-                "conformer_count": 5,
+                "conformer_count": 4,
                 "maximum": 6.248761617612987,
-                "minimum": 6.238044945002305,
+                "minimum": 6.23886426950915,
                 "weight_coverage": 0.9999999999999999,
-                "weighted_mean": 6.248229178643332,
-                "weighted_std": 0.0015789142555283123
+                "weighted_mean": 6.248229245185938,
+                "weighted_std": 0.0015787047935661954
               },
               "electronic_energy_weighted": {
-                "conformer_count": 9,
+                "conformer_count": 8,
                 "maximum": 6.248813424084836,
-                "minimum": 6.238044945002305,
+                "minimum": 6.2387238059234855,
                 "weight_coverage": 1.0,
-                "weighted_mean": 6.247863195997838,
-                "weighted_std": 0.002451694544499321
+                "weighted_mean": 6.247863336379891,
+                "weighted_std": 0.0024514309609965554
               }
             },
             "steric_access.overall_accessible_fraction": {
               "conditional_gibbs_weighted": {
-                "conformer_count": 5,
+                "conformer_count": 4,
                 "maximum": 0.1527777777777778,
                 "minimum": 0.1527777777777778,
                 "weight_coverage": 0.9999999999999999,
@@ -12592,7 +12558,7 @@
                 "weighted_std": 0.0
               },
               "electronic_energy_weighted": {
-                "conformer_count": 9,
+                "conformer_count": 8,
                 "maximum": 0.1527777777777778,
                 "minimum": 0.1527777777777778,
                 "weight_coverage": 1.0,
@@ -12602,25 +12568,25 @@
             },
             "steric_access.silicon_distance_from_carbonyl_c_angstrom": {
               "conditional_gibbs_weighted": {
-                "conformer_count": 5,
+                "conformer_count": 4,
                 "maximum": 6.248761617612987,
-                "minimum": 6.238044945002305,
+                "minimum": 6.23886426950915,
                 "weight_coverage": 0.9999999999999999,
-                "weighted_mean": 6.248229178643332,
-                "weighted_std": 0.0015789142555283123
+                "weighted_mean": 6.248229245185938,
+                "weighted_std": 0.0015787047935661954
               },
               "electronic_energy_weighted": {
-                "conformer_count": 9,
+                "conformer_count": 8,
                 "maximum": 6.248813424084836,
-                "minimum": 6.238044945002305,
+                "minimum": 6.2387238059234855,
                 "weight_coverage": 1.0,
-                "weighted_mean": 6.247863195997838,
-                "weighted_std": 0.002451694544499321
+                "weighted_mean": 6.247863336379891,
+                "weighted_std": 0.0024514309609965554
               }
             },
             "steric_access.terminal_tms_heavy_atoms_within_5_angstrom": {
               "conditional_gibbs_weighted": {
-                "conformer_count": 5,
+                "conformer_count": 4,
                 "maximum": 0.0,
                 "minimum": 0.0,
                 "weight_coverage": 0.9999999999999999,
@@ -12628,7 +12594,7 @@
                 "weighted_std": 0.0
               },
               "electronic_energy_weighted": {
-                "conformer_count": 9,
+                "conformer_count": 8,
                 "maximum": 0.0,
                 "minimum": 0.0,
                 "weight_coverage": 1.0,
@@ -12638,92 +12604,92 @@
             },
             "structure.amide_c_n_length_angstrom": {
               "conditional_gibbs_weighted": {
-                "conformer_count": 5,
+                "conformer_count": 4,
                 "maximum": 1.4101006143280943,
                 "minimum": 1.4016452814291789,
                 "weight_coverage": 0.9999999999999999,
-                "weighted_mean": 1.402314133854872,
-                "weighted_std": 0.0013574750531424784
+                "weighted_mean": 1.4023140890768888,
+                "weighted_std": 0.001357366452322918
               },
               "electronic_energy_weighted": {
-                "conformer_count": 9,
+                "conformer_count": 8,
                 "maximum": 1.4101006143280943,
                 "minimum": 1.4016452814291789,
                 "weight_coverage": 1.0,
-                "weighted_mean": 1.4026347427906225,
-                "weighted_std": 0.001899417028009279
+                "weighted_mean": 1.4026346493872424,
+                "weighted_std": 0.0018992699798397353
               }
             },
             "structure.amide_n_planarity_torsion_abs_mean_deg": {
               "conditional_gibbs_weighted": {
-                "conformer_count": 5,
-                "maximum": 22.139715957078725,
+                "conformer_count": 4,
+                "maximum": 21.596597924548263,
                 "minimum": 13.791451772627752,
                 "weight_coverage": 0.9999999999999999,
-                "weighted_mean": 14.197431959240406,
-                "weighted_std": 1.2418394019594055
+                "weighted_mean": 14.19738006527541,
+                "weighted_std": 1.2416775013209052
               },
               "electronic_energy_weighted": {
-                "conformer_count": 9,
-                "maximum": 22.139715957078725,
+                "conformer_count": 8,
+                "maximum": 21.838404097872512,
                 "minimum": 13.791451772627752,
                 "weight_coverage": 1.0,
-                "weighted_mean": 14.460540257065814,
-                "weighted_std": 1.9352033855467494
+                "weighted_mean": 14.460430459664686,
+                "weighted_std": 1.934999360282024
               }
             },
             "structure.aryl_c_si_length_angstrom": {
               "conditional_gibbs_weighted": {
-                "conformer_count": 5,
+                "conformer_count": 4,
                 "maximum": 1.9051092177385858,
                 "minimum": 1.9043796171445202,
                 "weight_coverage": 0.9999999999999999,
-                "weighted_mean": 1.904652708638633,
-                "weighted_std": 0.00019658341785459824
+                "weighted_mean": 1.9046527086403973,
+                "weighted_std": 0.0001965840600789946
               },
               "electronic_energy_weighted": {
-                "conformer_count": 9,
+                "conformer_count": 8,
                 "maximum": 1.9051092177385858,
                 "minimum": 1.9043796171445202,
                 "weight_coverage": 1.0,
-                "weighted_mean": 1.9046642197275652,
-                "weighted_std": 0.00018813445334697418
+                "weighted_mean": 1.9046642198960124,
+                "weighted_std": 0.00018813579304788469
               }
             },
             "structure.benzoyl_carbonyl_torsion_abs_mean_deg": {
               "conditional_gibbs_weighted": {
-                "conformer_count": 5,
+                "conformer_count": 4,
                 "maximum": 41.02117595655121,
-                "minimum": 37.966293372699575,
+                "minimum": 38.10423812748979,
                 "weight_coverage": 0.9999999999999999,
-                "weighted_mean": 40.63180973013735,
-                "weighted_std": 0.46842058538666315
+                "weighted_mean": 40.63182714631292,
+                "weighted_std": 0.46837256010638423
               },
               "electronic_energy_weighted": {
-                "conformer_count": 9,
+                "conformer_count": 8,
                 "maximum": 41.02117595655121,
                 "minimum": 37.81781615338599,
                 "weight_coverage": 1.0,
-                "weighted_mean": 40.535977491746756,
-                "weighted_std": 0.659128259549719
+                "weighted_mean": 40.53601423327332,
+                "weighted_std": 0.659061346816602
               }
             },
             "structure.carbonyl_c_o_length_angstrom": {
               "conditional_gibbs_weighted": {
-                "conformer_count": 5,
+                "conformer_count": 4,
                 "maximum": 1.2158083219956566,
                 "minimum": 1.214669128342864,
                 "weight_coverage": 0.9999999999999999,
-                "weighted_mean": 1.2157203351949888,
-                "weighted_std": 0.0001846340899618911
+                "weighted_mean": 1.2157203397971512,
+                "weighted_std": 0.0001846259146099083
               },
               "electronic_energy_weighted": {
-                "conformer_count": 9,
+                "conformer_count": 8,
                 "maximum": 1.2158083219956566,
                 "minimum": 1.214669128342864,
                 "weight_coverage": 1.0,
-                "weighted_mean": 1.2156803701053513,
-                "weighted_std": 0.0002272936244274582
+                "weighted_mean": 1.21568037960482,
+                "weighted_std": 0.00022728136517033914
               }
             }
           },
@@ -12732,66 +12698,64 @@
             "conf007",
             "conf004",
             "conf003",
+            "conf011_pool109",
             "conf010",
             "conf009",
-            "conf008",
-            "conf001",
-            "conf011_pool109"
+            "conf008"
           ],
-          "representative_count": 9,
+          "representative_count": 8,
           "scope": "Lowest-electronic-energy representative per common-scaffold RMSD cluster. This avoids counting TMS-only rotations as independent scaffold conformers, but does not supply rigorous rotor degeneracy or configurational entropy."
         },
         "conditional_gibbs_weights": {
-          "conf001": 4.343267166972597e-06,
-          "conf002": 0.25321569990458376,
-          "conf003": 0.017542690648570097,
-          "conf004": 0.19855766622850107,
-          "conf005": 0.15883583128728057,
-          "conf006": 0.1954136727943239,
-          "conf007": 0.17643009586957367
+          "conf002": 0.253216799692796,
+          "conf003": 0.017542766841493338,
+          "conf004": 0.19855852862123913,
+          "conf005": 0.1588365211567278,
+          "conf006": 0.1954145215317992,
+          "conf007": 0.1764308621559445
         },
         "dft_representative_count": 11,
         "electronic_weight_scope": "All final DFT representatives in this run, weighted by electronic energy; not a complete molecular conformer ensemble.",
         "electronic_weights": {
-          "conf001": 9.620172869975253e-06,
-          "conf002": 0.2503159488842916,
-          "conf003": 0.013786693064346364,
-          "conf004": 0.16120487367759165,
-          "conf005": 0.1662230206156502,
-          "conf006": 0.16093724689317632,
-          "conf007": 0.16680754017486554,
-          "conf008": 0.010259238024394804,
-          "conf009": 0.010484395483078146,
-          "conf010": 0.010662456480626413,
-          "conf011_pool109": 0.04930896652910898
+          "conf002": 0.24762692159339725,
+          "conf003": 0.013638589061918822,
+          "conf004": 0.159473125034821,
+          "conf005": 0.1644373643648094,
+          "conf006": 0.15920837323991502,
+          "conf007": 0.16501560470348847,
+          "conf008": 0.010149027823429418,
+          "conf009": 0.010371766520728014,
+          "conf010": 0.010547914692169971,
+          "conf011": 0.010752049626416096,
+          "conf011_pool109": 0.0487792633389065
         },
         "frequency_bookkeeping": {
-          "available_total": 7,
+          "available_total": 6,
           "original_selection_candidates": 3,
           "original_selection_completed": 3,
           "preexisting_or_reused_total": 6,
-          "supplemental_completed": 1
+          "supplemental_completed": 0
         },
-        "frequency_completed_count": 7,
+        "frequency_completed_count": 6,
         "gibbs_weight_is_complete_for_final_dft_set": false,
         "gibbs_weight_scope": "Conditional on conformers with completed frequency calculations",
         "metrics": {
           "carbonyl_stretch.frequency_cm1": {
             "conditional_gibbs_weighted": {
-              "conformer_count": 7,
+              "conformer_count": 6,
               "maximum": 1778.5090999530048,
               "minimum": 1776.4095909890782,
               "weight_coverage": 1.0,
-              "weighted_mean": 1776.8615129806128,
-              "weighted_std": 0.3661654964930881
+              "weighted_mean": 1776.8615132140392,
+              "weighted_std": 0.36616627454226797
             },
             "electronic_energy_weighted": {
-              "conformer_count": 7,
+              "conformer_count": 6,
               "maximum": 1778.5090999530048,
               "minimum": 1776.4095909890782,
-              "weight_coverage": 0.9192849434827917,
-              "weighted_mean": 1776.8615590403256,
-              "weighted_std": 0.3658310515222074
+              "weight_coverage": 0.9093999779983499,
+              "weighted_mean": 1776.861559603238,
+              "weighted_std": 0.36583292433518555
             }
           },
           "electronic.chelpg_charge_carbonyl_c": {
@@ -12799,7 +12763,7 @@
               "conformer_count": 5,
               "maximum": 0.541031,
               "minimum": 0.512237,
-              "weight_coverage": 0.9824529660842629,
+              "weight_coverage": 0.9824572331585066,
               "weighted_mean": 0.5268279191898553,
               "weighted_std": 0.012226569725504245
             },
@@ -12807,7 +12771,7 @@
               "conformer_count": 6,
               "maximum": 0.557016,
               "minimum": 0.512237,
-              "weight_coverage": 0.9547975967746842,
+              "weight_coverage": 0.9445406522753377,
               "weighted_mean": 0.5281986063953289,
               "weighted_std": 0.013522686856191839
             }
@@ -12817,53 +12781,53 @@
               "conformer_count": 5,
               "maximum": -0.479278,
               "minimum": -0.487223,
-              "weight_coverage": 0.9824529660842629,
-              "weighted_mean": -0.48394381457597696,
-              "weighted_std": 0.002790320792766188
+              "weight_coverage": 0.9824572331585066,
+              "weighted_mean": -0.4839438145759769,
+              "weighted_std": 0.0027903207927661875
             },
             "electronic_energy_weighted": {
               "conformer_count": 6,
               "maximum": -0.479278,
               "minimum": -0.489292,
-              "weight_coverage": 0.9547975967746842,
-              "weighted_mean": -0.4841048520324356,
+              "weight_coverage": 0.9445406522753377,
+              "weighted_mean": -0.48410485203243553,
               "weighted_std": 0.0030169153418136857
             }
           },
           "electronic.dipole_magnitude_debye": {
             "conditional_gibbs_weighted": {
-              "conformer_count": 7,
+              "conformer_count": 6,
               "maximum": 6.523306437,
               "minimum": 3.050956793,
               "weight_coverage": 1.0,
-              "weighted_mean": 5.909100092755707,
-              "weighted_std": 0.7732827378085434
+              "weighted_mean": 5.90910908454332,
+              "weighted_std": 0.7732723803391056
             },
             "electronic_energy_weighted": {
               "conformer_count": 11,
               "maximum": 6.523306437,
               "minimum": 2.084472017,
               "weight_coverage": 1.0,
-              "weighted_mean": 5.690367456838995,
-              "weighted_std": 1.0170684513393984
+              "weighted_mean": 5.65188447547021,
+              "weighted_std": 1.076876984150244
             }
           },
           "electronic.homo_energy_ev": {
             "conditional_gibbs_weighted": {
-              "conformer_count": 7,
-              "maximum": -5.4511,
+              "conformer_count": 6,
+              "maximum": -5.4677,
               "minimum": -5.5595,
               "weight_coverage": 1.0,
-              "weighted_mean": -5.493580267218085,
-              "weighted_std": 0.03910843999641043
+              "weighted_mean": -5.4935804517220355,
+              "weighted_std": 0.03910842471984358
             },
             "electronic_energy_weighted": {
               "conformer_count": 11,
-              "maximum": -5.4511,
+              "maximum": -5.4677,
               "minimum": -5.5595,
               "weight_coverage": 1.0,
-              "weighted_mean": -5.497656278177228,
-              "weighted_std": 0.04039988141979192
+              "weighted_mean": -5.497399142153486,
+              "weighted_std": 0.04025792939494679
             }
           },
           "electronic.homo_loewdin_population_benzoyl_center": {
@@ -12871,89 +12835,89 @@
               "conformer_count": 5,
               "maximum": 0.095615,
               "minimum": 0.09234,
-              "weight_coverage": 0.9824529660842629,
-              "weighted_mean": 0.09467864150461915,
-              "weighted_std": 0.001381089621335139
+              "weight_coverage": 0.9824572331585066,
+              "weighted_mean": 0.09467864150461913,
+              "weighted_std": 0.0013810896213351388
             },
             "electronic_energy_weighted": {
               "conformer_count": 6,
               "maximum": 0.095615,
               "minimum": 0.09109,
-              "weight_coverage": 0.9547975967746842,
-              "weighted_mean": 0.09443447748059694,
+              "weight_coverage": 0.9445406522753377,
+              "weighted_mean": 0.09443447748059693,
               "weighted_std": 0.0015794971605986243
             }
           },
           "electronic.homo_lumo_gap_ev": {
             "conditional_gibbs_weighted": {
-              "conformer_count": 7,
+              "conformer_count": 6,
               "maximum": 4.0355,
-              "minimum": 3.9209000000000005,
+              "minimum": 3.9652,
               "weight_coverage": 1.0,
-              "weighted_mean": 4.013717621940058,
-              "weighted_std": 0.014086045893318456
+              "weighted_mean": 4.013718025073539,
+              "weighted_std": 0.014084748227624717
             },
             "electronic_energy_weighted": {
               "conformer_count": 11,
               "maximum": 4.0355,
-              "minimum": 3.9209000000000005,
+              "minimum": 3.9414,
               "weight_coverage": 1.0,
-              "weighted_mean": 4.013452446496027,
-              "weighted_std": 0.017850426157029406
+              "weighted_mean": 4.012678615821296,
+              "weighted_std": 0.019244590428277118
             }
           },
           "electronic.loewdin_charge_carbonyl_c": {
             "conditional_gibbs_weighted": {
-              "conformer_count": 7,
+              "conformer_count": 6,
               "maximum": 0.100197,
               "minimum": 0.098258,
               "weight_coverage": 1.0,
-              "weighted_mean": 0.09850881997932842,
-              "weighted_std": 0.0003778693532249178
+              "weighted_mean": 0.09850881439742398,
+              "weighted_std": 0.0003778606813106934
             },
             "electronic_energy_weighted": {
               "conformer_count": 11,
               "maximum": 0.100197,
               "minimum": 0.098258,
               "weight_coverage": 1.0,
-              "weighted_mean": 0.09858346382990807,
-              "weighted_std": 0.0004308495260314157
+              "weighted_mean": 0.09859646805441914,
+              "weighted_std": 0.000446329629176734
             }
           },
           "electronic.loewdin_charge_carbonyl_o": {
             "conditional_gibbs_weighted": {
-              "conformer_count": 7,
+              "conformer_count": 6,
               "maximum": -0.165092,
               "minimum": -0.167705,
               "weight_coverage": 1.0,
-              "weighted_mean": -0.16743363945212347,
-              "weighted_std": 0.0004172579437500929
+              "weighted_mean": -0.16743364412393325,
+              "weighted_std": 0.0004172528281534977
             },
             "electronic_energy_weighted": {
               "conformer_count": 11,
               "maximum": -0.165092,
               "minimum": -0.167705,
               "weight_coverage": 1.0,
-              "weighted_mean": -0.16740613276456842,
-              "weighted_std": 0.0004167663684409533
+              "weighted_mean": -0.16739759343252328,
+              "weighted_std": 0.0004225431918933634
             }
           },
           "electronic.lumo_energy_ev": {
             "conditional_gibbs_weighted": {
-              "conformer_count": 7,
+              "conformer_count": 6,
               "maximum": -1.4596,
               "minimum": -1.5943,
               "weight_coverage": 1.0,
-              "weighted_mean": -1.479862645278026,
-              "weighted_std": 0.030087221667121807
+              "weighted_mean": -1.479862426648496,
+              "weighted_std": 0.030087104115995106
             },
             "electronic_energy_weighted": {
               "conformer_count": 11,
               "maximum": -1.4596,
               "minimum": -1.5943,
               "weight_coverage": 1.0,
-              "weighted_mean": -1.4842038316812012,
-              "weighted_std": 0.031029666825331387
+              "weighted_mean": -1.4847205263321896,
+              "weighted_std": 0.03125830864590392
             }
           },
           "electronic.lumo_loewdin_population_benzoyl_center": {
@@ -12961,53 +12925,53 @@
               "conformer_count": 5,
               "maximum": 0.442871,
               "minimum": 0.44081000000000004,
-              "weight_coverage": 0.9824529660842629,
-              "weighted_mean": 0.44179176761422245,
+              "weight_coverage": 0.9824572331585066,
+              "weighted_mean": 0.4417917676142224,
               "weighted_std": 0.0006808426784053982
             },
             "electronic_energy_weighted": {
               "conformer_count": 6,
               "maximum": 0.442871,
               "minimum": 0.44081000000000004,
-              "weight_coverage": 0.9547975967746842,
+              "weight_coverage": 0.9445406522753377,
               "weighted_mean": 0.44190079124424325,
-              "weighted_std": 0.0007003947116452691
+              "weighted_std": 0.000700394711645269
             }
           },
           "electronic.mayer_bond_order_c_n": {
             "conditional_gibbs_weighted": {
-              "conformer_count": 7,
+              "conformer_count": 6,
               "maximum": 1.0406,
               "minimum": 1.0211,
               "weight_coverage": 1.0,
-              "weighted_mean": 1.039194084179712,
-              "weighted_std": 0.0026760452972185095
+              "weighted_mean": 1.0391941510406226,
+              "weighted_std": 0.002675858790935361
             },
             "electronic_energy_weighted": {
               "conformer_count": 11,
               "maximum": 1.0406,
               "minimum": 1.0211,
               "weight_coverage": 1.0,
-              "weighted_mean": 1.0386669981651349,
-              "weighted_std": 0.003607190211260597
+              "weighted_mean": 1.038506213744767,
+              "weighted_std": 0.003905465906578657
             }
           },
           "electronic.mayer_bond_order_c_o": {
             "conditional_gibbs_weighted": {
-              "conformer_count": 7,
+              "conformer_count": 6,
               "maximum": 2.1053,
               "minimum": 2.0859,
               "weight_coverage": 1.0,
-              "weighted_mean": 2.087229397960049,
-              "weighted_std": 0.0024644796051242037
+              "weighted_mean": 2.0872293272921705,
+              "weighted_std": 0.002464251669329178
             },
             "electronic_energy_weighted": {
               "conformer_count": 11,
               "maximum": 2.1053,
               "minimum": 2.0859,
               "weight_coverage": 1.0,
-              "weighted_mean": 2.087666420562804,
-              "weighted_std": 0.003627606497512904
+              "weighted_mean": 2.0878418893340402,
+              "weighted_std": 0.003981643052402344
             }
           },
           "electronic.mbis_charge_carbonyl_c": {
@@ -13015,15 +12979,15 @@
               "conformer_count": 5,
               "maximum": 0.647371,
               "minimum": 0.646413,
-              "weight_coverage": 0.9824529660842629,
-              "weighted_mean": 0.646769900641645,
-              "weighted_std": 0.0003612106963549352
+              "weight_coverage": 0.9824572331585066,
+              "weighted_mean": 0.6467699006416449,
+              "weighted_std": 0.00036121069635493513
             },
             "electronic_energy_weighted": {
               "conformer_count": 6,
               "maximum": 0.647449,
               "minimum": 0.646413,
-              "weight_coverage": 0.9547975967746842,
+              "weight_coverage": 0.9445406522753377,
               "weighted_mean": 0.6468137077508158,
               "weighted_std": 0.0003923203293464304
             }
@@ -13033,7 +12997,7 @@
               "conformer_count": 5,
               "maximum": -0.511092,
               "minimum": -0.511578,
-              "weight_coverage": 0.9824529660842629,
+              "weight_coverage": 0.9824572331585066,
               "weighted_mean": -0.5113958450209645,
               "weighted_std": 0.00018677742021615203
             },
@@ -13041,140 +13005,140 @@
               "conformer_count": 6,
               "maximum": -0.511092,
               "minimum": -0.511578,
-              "weight_coverage": 0.9547975967746842,
+              "weight_coverage": 0.9445406522753377,
               "weighted_mean": -0.5113975957266317,
               "weighted_std": 0.00018899085324795996
             }
           },
           "electronic.mulliken_charge_carbonyl_c": {
             "conditional_gibbs_weighted": {
-              "conformer_count": 7,
+              "conformer_count": 6,
               "maximum": 0.199901,
-              "minimum": 0.188178,
+              "minimum": 0.188759,
               "weight_coverage": 1.0,
-              "weighted_mean": 0.19942335946051953,
-              "weighted_std": 0.0014418530400850203
+              "weighted_mean": 0.19942340830233216,
+              "weighted_std": 0.0014416656937406552
             },
             "electronic_energy_weighted": {
               "conformer_count": 11,
               "maximum": 0.200079,
               "minimum": 0.187813,
               "weight_coverage": 1.0,
-              "weighted_mean": 0.19914417148473013,
-              "weighted_std": 0.002357835860812578
+              "weighted_mean": 0.1990275174971907,
+              "weighted_std": 0.002598617777414288
             }
           },
           "steric_access.best_clearance_angstrom": {
             "conditional_gibbs_weighted": {
-              "conformer_count": 7,
-              "maximum": 0.323847806663877,
+              "conformer_count": 6,
+              "maximum": 0.3187219122499425,
               "minimum": 0.2821492153170817,
               "weight_coverage": 1.0,
-              "weighted_mean": 0.28306076667129404,
-              "weighted_std": 0.004777402232228775
+              "weighted_mean": 0.2830605895215129,
+              "weighted_std": 0.004776656337985814
             },
             "electronic_energy_weighted": {
               "conformer_count": 11,
-              "maximum": 0.323847806663877,
+              "maximum": 0.32253836633957733,
               "minimum": 0.2821492153170817,
               "weight_coverage": 1.0,
-              "weighted_mean": 0.2841967397421599,
-              "weighted_std": 0.00796293545400128
+              "weighted_mean": 0.2846002383204338,
+              "weighted_std": 0.00881589862718493
             }
           },
           "steric_access.clearance_percentiles_angstrom.p90": {
             "conditional_gibbs_weighted": {
-              "conformer_count": 7,
+              "conformer_count": 6,
               "maximum": 0.09291818546262501,
               "minimum": 0.08767200844786652,
               "weight_coverage": 1.0,
-              "weighted_mean": 0.08794889021107855,
-              "weighted_std": 0.0007012948750171154
+              "weighted_mean": 0.08794887008143429,
+              "weighted_std": 0.0007012298791404814
             },
             "electronic_energy_weighted": {
               "conformer_count": 11,
               "maximum": 0.09291818546262501,
               "minimum": 0.08767200844786652,
               "weight_coverage": 1.0,
-              "weighted_mean": 0.08810449190453877,
-              "weighted_std": 0.0010157588699025572
+              "weighted_mean": 0.08815286689464241,
+              "weighted_std": 0.0011118367157286427
             }
           },
           "steric_access.face_summary.face_negative.accessible_fraction": {
             "conditional_gibbs_weighted": {
-              "conformer_count": 7,
+              "conformer_count": 6,
               "maximum": 0.19444444444444445,
-              "minimum": 0.1111111111111111,
+              "minimum": 0.1388888888888889,
               "weight_coverage": 1.0,
-              "weighted_mean": 0.1568247287625094,
-              "weighted_std": 0.014268923517136283
+              "weighted_mean": 0.15682492730982636,
+              "weighted_std": 0.014268636454995518
             },
             "electronic_energy_weighted": {
               "conformer_count": 11,
               "maximum": 0.19444444444444445,
               "minimum": 0.1111111111111111,
               "weight_coverage": 1.0,
-              "weighted_mean": 0.1557191357940871,
-              "weighted_std": 0.01593757957434534
+              "weighted_mean": 0.15613593676138554,
+              "weighted_std": 0.01634654140679485
             }
           },
           "steric_access.face_summary.face_positive.accessible_fraction": {
             "conditional_gibbs_weighted": {
-              "conformer_count": 7,
-              "maximum": 0.19444444444444445,
+              "conformer_count": 6,
+              "maximum": 0.16666666666666666,
               "minimum": 0.1111111111111111,
               "weight_coverage": 1.0,
-              "weighted_mean": 0.14873082679304614,
-              "weighted_std": 0.014268923517136283
+              "weighted_mean": 0.14873062824572916,
+              "weighted_std": 0.014268636454995518
             },
             "electronic_energy_weighted": {
               "conformer_count": 11,
               "maximum": 0.19444444444444445,
               "minimum": 0.1111111111111111,
               "weight_coverage": 1.0,
-              "weighted_mean": 0.14983641976146844,
-              "weighted_std": 0.01593757957434534
+              "weighted_mean": 0.14941961879416998,
+              "weighted_std": 0.01634654140679485
             }
           },
           "steric_access.mean_clearance_angstrom": {
             "conditional_gibbs_weighted": {
-              "conformer_count": 7,
+              "conformer_count": 6,
               "maximum": -0.6989978867827777,
               "minimum": -0.70232743590203,
               "weight_coverage": 1.0,
-              "weighted_mean": -0.7002218668027972,
-              "weighted_std": 0.001104783230952614
+              "weighted_mean": -0.7002218604558372,
+              "weighted_std": 0.0011047814324798217
             },
             "electronic_energy_weighted": {
               "conformer_count": 11,
               "maximum": -0.6988615015135611,
               "minimum": -0.7033767063480835,
               "weight_coverage": 1.0,
-              "weighted_mean": -0.7001205700884149,
-              "weighted_std": 0.0011349315768036839
+              "weighted_mean": -0.7001268325384492,
+              "weighted_std": 0.0011304136222273502
             }
           },
           "steric_access.minimum_terminal_tms_distance_from_carbonyl_c_angstrom": {
             "conditional_gibbs_weighted": {
-              "conformer_count": 7,
+              "conformer_count": 6,
               "maximum": 6.248813424084836,
-              "minimum": 6.238044945002305,
+              "minimum": 6.23886426950915,
               "weight_coverage": 1.0,
-              "weighted_mean": 6.248216395270725,
-              "weighted_std": 0.0013422878630683483
+              "weighted_mean": 6.2482164394482425,
+              "weighted_std": 0.001342123385319269
             },
             "electronic_energy_weighted": {
               "conformer_count": 11,
               "maximum": 6.248813424084836,
-              "minimum": 6.238044945002305,
+              "minimum": 6.2387238059234855,
               "weight_coverage": 1.0,
-              "weighted_mean": 6.247928070177174,
-              "weighted_std": 0.0020395091496607344
+              "weighted_mean": 6.247837532467712,
+              "weighted_std": 0.0022067497715693002
             }
           },
           "steric_access.overall_accessible_fraction": {
             "conditional_gibbs_weighted": {
-              "conformer_count": 7,
+              "conformer_count": 6,
               "maximum": 0.1527777777777778,
               "minimum": 0.1527777777777778,
               "weight_coverage": 1.0,
@@ -13192,25 +13156,25 @@
           },
           "steric_access.silicon_distance_from_carbonyl_c_angstrom": {
             "conditional_gibbs_weighted": {
-              "conformer_count": 7,
+              "conformer_count": 6,
               "maximum": 6.248813424084836,
-              "minimum": 6.238044945002305,
+              "minimum": 6.23886426950915,
               "weight_coverage": 1.0,
-              "weighted_mean": 6.248216395270725,
-              "weighted_std": 0.0013422878630683483
+              "weighted_mean": 6.2482164394482425,
+              "weighted_std": 0.001342123385319269
             },
             "electronic_energy_weighted": {
               "conformer_count": 11,
               "maximum": 6.248813424084836,
-              "minimum": 6.238044945002305,
+              "minimum": 6.2387238059234855,
               "weight_coverage": 1.0,
-              "weighted_mean": 6.247928070177174,
-              "weighted_std": 0.0020395091496607344
+              "weighted_mean": 6.247837532467712,
+              "weighted_std": 0.0022067497715693002
             }
           },
           "steric_access.terminal_tms_heavy_atoms_within_5_angstrom": {
             "conditional_gibbs_weighted": {
-              "conformer_count": 7,
+              "conformer_count": 6,
               "maximum": 0.0,
               "minimum": 0.0,
               "weight_coverage": 1.0,
@@ -13228,92 +13192,92 @@
           },
           "structure.amide_c_n_length_angstrom": {
             "conditional_gibbs_weighted": {
-              "conformer_count": 7,
+              "conformer_count": 6,
               "maximum": 1.4101006143280943,
               "minimum": 1.4016452814291789,
               "weight_coverage": 1.0,
-              "weighted_mean": 1.4021273963679517,
-              "weighted_std": 0.0011375974334748374
+              "weighted_mean": 1.4021273657915114,
+              "weighted_std": 0.0011375052898374323
             },
             "electronic_energy_weighted": {
               "conformer_count": 11,
               "maximum": 1.4101006143280943,
               "minimum": 1.4016452814291789,
               "weight_coverage": 1.0,
-              "weighted_mean": 1.4023646771565077,
-              "weighted_std": 0.001605601007455476
+              "weighted_mean": 1.4024391738407345,
+              "weighted_std": 0.001749664577268723
             }
           },
           "structure.amide_n_planarity_torsion_abs_mean_deg": {
             "conditional_gibbs_weighted": {
-              "conformer_count": 7,
-              "maximum": 22.139715957078725,
+              "conformer_count": 6,
+              "maximum": 21.596597924548263,
               "minimum": 13.791451772627752,
               "weight_coverage": 1.0,
-              "weighted_mean": 14.134049756245439,
-              "weighted_std": 1.023265496011882
+              "weighted_mean": 14.134014985347259,
+              "weighted_std": 1.0231316912545956
             },
             "electronic_energy_weighted": {
               "conformer_count": 11,
-              "maximum": 22.139715957078725,
+              "maximum": 21.838404097872512,
               "minimum": 13.791451772627752,
               "weight_coverage": 1.0,
-              "weighted_mean": 14.33397076441808,
-              "weighted_std": 1.6060268438336156
+              "weighted_mean": 14.411214492160418,
+              "weighted_std": 1.7609830589067927
             }
           },
           "structure.aryl_c_si_length_angstrom": {
             "conditional_gibbs_weighted": {
-              "conformer_count": 7,
+              "conformer_count": 6,
               "maximum": 1.9051092177385858,
               "minimum": 1.9043796171445202,
               "weight_coverage": 1.0,
-              "weighted_mean": 1.9046190743161842,
-              "weighted_std": 0.00017063613254278415
+              "weighted_mean": 1.9046190741712734,
+              "weighted_std": 0.0001706364889360099
             },
             "electronic_energy_weighted": {
               "conformer_count": 11,
               "maximum": 1.9051092177385858,
               "minimum": 1.9043796171445202,
               "weight_coverage": 1.0,
-              "weighted_mean": 1.9046363660885766,
-              "weighted_std": 0.0001676553655021122
+              "weighted_mean": 1.9046369333638333,
+              "weighted_std": 0.0001668412065059844
             }
           },
           "structure.benzoyl_carbonyl_torsion_abs_mean_deg": {
             "conditional_gibbs_weighted": {
-              "conformer_count": 7,
+              "conformer_count": 6,
               "maximum": 41.02117595655121,
-              "minimum": 37.966293372699575,
+              "minimum": 38.10423812748979,
               "weight_coverage": 1.0,
-              "weighted_mean": 40.60191095067758,
-              "weighted_std": 0.38482092147415764
+              "weighted_mean": 40.601922397918585,
+              "weighted_std": 0.38478255431915026
             },
             "electronic_energy_weighted": {
               "conformer_count": 11,
               "maximum": 41.02117595655121,
               "minimum": 37.81781615338599,
               "weight_coverage": 1.0,
-              "weighted_mean": 40.52461477042887,
-              "weighted_std": 0.5409090867664013
+              "weighted_mean": 40.49743497618512,
+              "weighted_std": 0.5978868568298955
             }
           },
           "structure.carbonyl_c_o_length_angstrom": {
             "conditional_gibbs_weighted": {
-              "conformer_count": 7,
+              "conformer_count": 6,
               "maximum": 1.215846896573199,
               "minimum": 1.214669128342864,
               "weight_coverage": 1.0,
-              "weighted_mean": 1.2157491407850172,
-              "weighted_std": 0.00015749402306334693
+              "weighted_mean": 1.2157491439693353,
+              "weighted_std": 0.00015748695314853287
             },
             "electronic_energy_weighted": {
               "conformer_count": 11,
               "maximum": 1.215846896573199,
               "minimum": 1.214669128342864,
               "weight_coverage": 1.0,
-              "weighted_mean": 1.2157262208798976,
-              "weighted_std": 0.00019829076154952223
+              "weighted_mean": 1.2157181124944059,
+              "weighted_std": 0.0002120170359787353
             }
           }
         },
@@ -13322,7 +13286,7 @@
       }
     }
   },
-  "generated_at_utc": "2026-08-14T09:12:18.156800Z",
+  "generated_at_utc": "2026-08-23T16:30:57.263082Z",
   "interpretation_rules": {
     "detected_vs_absent": "A difference smaller than conformer spread or model uncertainty is reported as not detected at this level, never as proof of absence.",
     "gibbs_scope": "Gibbs weights are conditional whenever Freq is incomplete.",
@@ -13482,7 +13446,7 @@
     "eligible_count": 40,
     "energy_window_kj_mol": 10.0,
     "exact_energy_reproduction_of_retained_metadata": true,
-    "generated_at_utc": "2026-08-14T09:12:18.100254Z",
+    "generated_at_utc": "2026-08-23T16:30:57.203198Z",
     "maximum_energy_difference_kcal_mol": 0.0,
     "name": "1SB-LSD_RR",
     "original_all_heavy_cluster_count": 22,

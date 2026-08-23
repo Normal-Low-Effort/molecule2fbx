@@ -1,3 +1,4 @@
+import json
 from pathlib import Path
 
 import pytest
@@ -5,6 +6,9 @@ import pytest
 pytest.importorskip("rdkit")
 
 from molecule2fbx.comparison import (
+    _recorded_pool_index,
+    _successful_selection_repair_pool_indices,
+    _synchronize_ensemble_conformer_aliases,
     carbonyl_continuous_steric_access,
     carbonyl_steric_access,
     ensemble_descriptor_summary,
@@ -312,6 +316,70 @@ def test_ensemble_report_uses_null_for_uncomputed_imaginary_modes():
     assert payload["summary"]["frequency_completed_for_this_run_selection"] == 1
     assert payload["dft"]["failures"] == []
     assert len(payload["dft"]["recovery_history"]) == 1
+
+
+def test_metadata_repair_synchronizes_legacy_conformer_alias():
+    payload = {
+        "final_conformer_ensemble": [
+            {
+                "conformer_id": "conf001",
+                "frequency_calculated": False,
+                "imaginary_modes": None,
+            }
+        ],
+        "conformers": [
+            {
+                "conformer_id": "conf001",
+                "frequency_calculated": False,
+                "imaginary_modes": 0,
+            }
+        ],
+    }
+
+    _synchronize_ensemble_conformer_aliases(payload)
+
+    assert payload["conformers"] == payload["final_conformer_ensemble"]
+    assert payload["conformers"][0]["imaginary_modes"] is None
+    assert payload["conformers"] is not payload["final_conformer_ensemble"]
+
+
+def test_pool_index_is_recovered_from_external_reuse_metadata(tmp_path):
+    calculation_root = tmp_path / "calculations"
+    calculation_dir = calculation_root / "conformer_002"
+    calculation_dir.mkdir(parents=True)
+    (tmp_path / "conf002.metadata.json").write_text(
+        json.dumps(
+            {
+                "metadata": {
+                    "calculation_files_directory": str(calculation_root.resolve()),
+                    "conformer_index": 1,
+                    "conformer_pool_index": 78,
+                }
+            }
+        ),
+        encoding="utf-8",
+    )
+
+    assert _recorded_pool_index(
+        tmp_path / "ensemble",
+        "conf002",
+        calculation_dir,
+    ) == 78
+
+
+def test_successful_selection_repair_pool_is_preserved(tmp_path):
+    (tmp_path / "strict_selection_repair_plan.json").write_text(
+        json.dumps(
+            {
+                "status": "SUCCESS",
+                "target": {"pool_index": 151},
+                "result": {"geometry_optimization_converged": True},
+            }
+        ),
+        encoding="utf-8",
+    )
+
+    assert _successful_selection_repair_pool_indices(tmp_path) == {151}
 
 
 def test_descriptor_summary_deduplicates_common_scaffold_clusters():

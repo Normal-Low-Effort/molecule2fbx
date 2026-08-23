@@ -1,4 +1,4 @@
-﻿condition,pair_id,bz_conformer_id,sb_conformer_id,metric,bz,sb,sb_minus_bz
+condition,pair_id,bz_conformer_id,sb_conformer_id,metric,bz,sb,sb_minus_bz
 b3lyp_d3bj_def2_tzvp_cpcm_water,pair001,conf003,conf005,mbis_charge_carbonyl_c,0.679042,0.674116,-0.004925999999999986
 b3lyp_d3bj_def2_tzvp_cpcm_water,pair001,conf003,conf005,mbis_charge_carbonyl_o,-0.587665,-0.587299,0.00036599999999997745
 b3lyp_d3bj_def2_tzvp_cpcm_water,pair001,conf003,conf005,mbis_charge_amide_n,-0.227197,-0.22604,0.0011570000000000191

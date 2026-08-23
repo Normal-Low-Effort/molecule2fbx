@@ -20,6 +20,14 @@ from typing import Iterable
 WORKSPACE = Path(__file__).resolve().parents[1]
 DEFAULT_MAX_FILE_MIB = 5.0
 
+ENSEMBLE_NAMES: tuple[str, ...] = (
+    "1Bz-LSD_RR",
+    "1SB-LSD_RR",
+    "1pMeBz-LSD_RR",
+    "1p-iPrBz-LSD_RR",
+    "1ptBuBz-LSD_RR",
+)
+
 
 # source path below outputs/, destination path below research_results/
 SNAPSHOT_FILES: tuple[tuple[str, str], ...] = (
@@ -27,6 +35,26 @@ SNAPSHOT_FILES: tuple[tuple[str, str], ...] = (
     ("1Bz-LSD_RR/RUN_SUMMARY.md", "ensembles/1Bz-LSD_RR/RUN_SUMMARY.md"),
     ("1SB-LSD_RR/ensemble.json", "ensembles/1SB-LSD_RR/ensemble.json"),
     ("1SB-LSD_RR/RUN_SUMMARY.md", "ensembles/1SB-LSD_RR/RUN_SUMMARY.md"),
+    (
+        "1SB-LSD_RR/strict_selection_repair_plan.json",
+        "provenance/1SB-LSD_RR_strict_selection_repair.json",
+    ),
+    ("1pMeBz-LSD_RR/ensemble.json", "ensembles/1pMeBz-LSD_RR/ensemble.json"),
+    ("1pMeBz-LSD_RR/RUN_SUMMARY.md", "ensembles/1pMeBz-LSD_RR/RUN_SUMMARY.md"),
+    (
+        "1p-iPrBz-LSD_RR/ensemble.json",
+        "ensembles/1p-iPrBz-LSD_RR/ensemble.json",
+    ),
+    (
+        "1p-iPrBz-LSD_RR/RUN_SUMMARY.md",
+        "ensembles/1p-iPrBz-LSD_RR/RUN_SUMMARY.md",
+    ),
+    ("1ptBuBz-LSD_RR/ensemble.json", "ensembles/1ptBuBz-LSD_RR/ensemble.json"),
+    ("1ptBuBz-LSD_RR/RUN_SUMMARY.md", "ensembles/1ptBuBz-LSD_RR/RUN_SUMMARY.md"),
+    (
+        "para_alkyl_controls_queue_status.json",
+        "provenance/para_alkyl_controls_queue_status.json",
+    ),
     (
         "Bz_vs_SB_preliminary_comparison/1Bz-LSD_RR_conformer_metrics.csv",
         "comparison/1Bz-LSD_RR_conformer_metrics.csv",
@@ -208,6 +236,8 @@ def sha256_bytes(data: bytes) -> str:
 def portable_snapshot_bytes(source: Path, workspace: Path) -> tuple[bytes, int]:
     """Return UTF-8 content with only the local workspace prefix redacted."""
     text = source.read_text(encoding="utf-8")
+    if text.startswith("\ufeff"):
+        text = text[1:]
     replacements = (
         str(workspace).replace("\\", "\\\\"),
         str(workspace),
@@ -230,7 +260,7 @@ def ensure_within(path: Path, parent: Path) -> None:
 
 
 def iter_best_xyz(outputs: Path) -> Iterable[tuple[Path, Path, dict[str, str]]]:
-    for name in ("1Bz-LSD_RR", "1SB-LSD_RR"):
+    for name in ENSEMBLE_NAMES:
         ensemble_path = outputs / name / "ensemble.json"
         payload = json.loads(ensemble_path.read_text(encoding="utf-8"))
         best_id = str(payload["best_conformer_id"])

@@ -1,4 +1,4 @@
-﻿pair_id,molecule,conformer_id,azimuth_deg,face,total_clearance_without_probe_angstrom,nonlocal_clearance_without_probe_angstrom,terminal_tms_clearance_without_probe_angstrom
+pair_id,molecule,conformer_id,azimuth_deg,face,total_clearance_without_probe_angstrom,nonlocal_clearance_without_probe_angstrom,terminal_tms_clearance_without_probe_angstrom
 pair001,Bz,conf003,0.0,Si,-1.5448487820813044,-1.5448487820813044,
 pair001,Bz,conf003,0.5,Si,-1.5569954065430636,-1.5569954065430636,
 pair001,Bz,conf003,1.0,Si,-1.5635581260429903,-1.5635581260429903,

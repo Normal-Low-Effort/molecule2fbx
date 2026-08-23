@@ -6,7 +6,7 @@
 現時点では、差が配座内分布または計算法の不確かさ以下なら『この条件では検出できない』とし、『効果が存在しない』とは扱わない。
 
 - Bz: DFT代表 9 / 共通骨格unique 9、元のFreq選択 3/3完了、補足Freq 1、利用可能合計 4
-- SB感度解析集合: DFT代表 11（元の10 + targeted follow-up 1） / 共通骨格unique 9、元のFreq選択 3/3完了、補足Freq 1、利用可能合計 7
+- SB感度解析集合: DFT代表 11（元の10 + targeted follow-up 1） / 共通骨格unique 8、元のFreq選択 3/3完了、補足Freq 0、利用可能合計 6
 - SB力場候補: 全重原子22 cluster → 共通骨格 9 cluster、DFT未カバー 1 cluster
 - MBIS/CHELPG property対象: Bz 4、SB 6
 - 過去のlauncher/startup失敗はoperational_historyとして保存し、最終Opt/Freq失敗とは別集計
@@ -38,10 +38,10 @@
 | conf006 | 1.095 | 0.642 | 完了 | 0 | computed_original_ensemble_run |
 | conf011_pool109 | 4.027 | — | 未実施 | null | computed_targeted_followup |
 | conf003 | 7.187 | 6.618 | 完了 | 0 | reused_external_read_only |
+| conf011 | 7.776 | — | 未実施 | null | computed_strict_selection_repair |
 | conf010 | 7.824 | — | 未実施 | null | computed_original_ensemble_run |
 | conf009 | 7.865 | — | 未実施 | null | computed_original_ensemble_run |
 | conf008 | 7.919 | — | 未実施 | null | computed_original_ensemble_run |
-| conf001 | 25.203 | 27.203 | 完了 | 0 | reused_external_read_only |
 
 ## Bz–SB共通骨格の相互最近傍
 
@@ -51,6 +51,7 @@
 | conf003 | conf005 | 0.042 | 0.010 |
 | conf008 | conf002 | 0.496 | 0.003 |
 | conf002 | conf009 | 0.773 | 0.006 |
+| conf007 | conf011 | 0.015 | 0.005 |
 | conf006 | conf010 | 0.036 | 0.012 |
 | conf005 | conf008 | 0.012 | 0.005 |
 | conf009 | conf003 | 0.505 | 0.006 |

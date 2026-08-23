@@ -7,6 +7,9 @@ external ORCA/xTB/runEDDB programs can be located consistently.
 ## Groups
 
 - `night_run_*.ps1`, `run_missing_freqs.ps1`: ensemble and supplemental Freq runs.
+- `run_para_alkyl_control_ensembles.ps1`: sequential, resumable p-Me, p-iPr,
+  and p-tBu control ensembles using the same B3LYP/def2-SVP settings as the
+  existing 1Bz-LSD/1SB-LSD comparison.
 - `run_*.py`: non-destructive ORCA, xTB, and runEDDB follow-up calculations.
 - `analyze_*.py`: parsing and comparison of existing calculations.
 - `export_research_results.py`: copy the approved lightweight result set into

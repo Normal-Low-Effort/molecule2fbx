@@ -1,0 +1,39 @@
+{
+  "status": "SUCCESS",
+  "target": {
+    "molecule": "1SB-LSD_RR",
+    "pool_index": 151,
+    "calculation": "ORCA 6.1.1 B3LYP/def2-SVP gas-phase geometry optimization",
+    "charge": 0,
+    "multiplicity": 1,
+    "nprocs": 16,
+    "maxcore_mb_per_process": 1000
+  },
+  "reason": "Pool 151 was retained by the current 10 kJ/mol and 0.75 angstrom force-field pre-screen but was displaced when a legacy, out-of-window pool-0 optimization consumed one of the ten ensemble slots.",
+  "estimated_wall_time_hours": {
+    "optimization": "0.4-0.8",
+    "frequency_if_selected": "0.6-1.7",
+    "total": "0.4-2.5"
+  },
+  "frequency_policy": "Run Freq only if the optimized pool-151 structure is selected by the unchanged top-3 and 5 kJ/mol rule.",
+  "expected_hypothesis_impact": "A newly found low-energy minimum could change the SB conformer distribution and Bz/SB descriptor comparison. A higher-energy result would remove the principal candidate-selection asymmetry without materially changing the current best structure.",
+  "non_destructive_policy": "Existing ORCA calculation directories are reused read-only and are not overwritten or deleted. The pre-repair ensemble metadata is backed up before regeneration.",
+  "result": {
+    "started_at_utc": "2026-08-23T15:37:14.1073498Z",
+    "finished_at_utc": "2026-08-23T16:21:08.1124142Z",
+    "wall_time_hours": 0.732,
+    "calculation_directory": "outputs/1SB-LSD_RR/conformers/conformer_011",
+    "geometry_optimization_converged": true,
+    "scf_converged": true,
+    "orca_terminated_normally": true,
+    "final_energy_hartree": -1767.602237899761,
+    "relative_energy_kj_mol": 7.776059009523506,
+    "electronic_energy_rank_in_strict_ensemble": 7,
+    "frequency_selected": false,
+    "frequency_reason": "Outside the unchanged 5 kJ/mol frequency window and top-3 selection.",
+    "imaginary_modes": null,
+    "stereochemistry_retained": "(6aR,9R)",
+    "strict_pool_indices": [32, 77, 78, 93, 133, 144, 151, 154, 161, 172],
+    "current_best_unchanged": "conf002"
+  }
+}

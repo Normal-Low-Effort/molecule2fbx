@@ -6,11 +6,13 @@ import pytest
 from molecule2fbx.config import ConversionRequest
 from molecule2fbx.errors import ConfigurationError
 from molecule2fbx.pipeline import (
+    _match_external_reuse_to_selected_candidates,
     _run_quantum,
     _run_selective_frequencies,
     _select_quantum_candidates,
     run_conversion,
 )
+from molecule2fbx.model import Atom, Bond, MoleculeModel
 from molecule2fbx.quantum.base import FrequencyResult, QuantumResult, QuantumSettings
 from molecule2fbx.quantum.orca import render_orca_frequency_input, render_orca_input
 from molecule2fbx.structures import ConformerCandidate
@@ -118,6 +120,30 @@ def _optimized_result(model, settings, work_dir, index):
     )
 
 
+def _triangle_model(scale: float, *, pool_index=None):
+    metadata = {"conformer_index": 0}
+    if pool_index is not None:
+        metadata.update(
+            {
+                "conformer_pool_index": pool_index,
+                "conformer_pool_index_provenance": (
+                    "recorded_from_current_etkdg_pool"
+                ),
+            }
+        )
+    return MoleculeModel(
+        None,
+        "triangle",
+        (
+            Atom(0, "C", 0.0, 0.0, 0.0),
+            Atom(1, "C", scale, 0.0, 0.0),
+            Atom(2, "C", 0.0, scale, 0.0),
+        ),
+        (Bond(0, 1, 1), Bond(0, 2, 1)),
+        metadata,
+    )
+
+
 class RecordingBackend:
     def __init__(self):
         self.optimized_indices = []
@@ -147,6 +173,56 @@ class RecordingBackend:
             input_path=work_dir / f"{stem}.inp",
             output_path=work_dir / f"{stem}.out",
         )
+
+
+def test_external_reuse_outside_current_prescreen_does_not_consume_slot(tmp_path):
+    settings = QuantumSettings("dft", "B3LYP", "def2-SVP", 0, 1)
+    selected_model = _triangle_model(1.5, pool_index=78)
+    selected = [
+        ConformerCandidate(selected_model, 0, 0.0, "MMFF94s", True)
+    ]
+    outside = _optimized_result(_triangle_model(3.0), settings, tmp_path, 0)
+    matching = _optimized_result(_triangle_model(1.5), settings, tmp_path, 1)
+    messages = []
+
+    retained = _match_external_reuse_to_selected_candidates(
+        [outside, matching],
+        selected,
+        rmsd_threshold=0.75,
+        log=messages.append,
+    )
+
+    assert [result.conformer_index for result in retained] == [1]
+    assert retained[0].model.metadata["conformer_pool_index"] == 78
+    assert retained[0].model.metadata["matched_current_candidate_index"] == 0
+    assert any("does not match a candidate" in message for message in messages)
+
+
+def test_local_reuse_recovers_current_pool_index_and_filters_stale_result(tmp_path):
+    settings = QuantumSettings("dft", "B3LYP", "def2-SVP", 0, 1)
+    selected = [
+        ConformerCandidate(
+            _triangle_model(1.5, pool_index=151), 0, 0.0, "MMFF94s", True
+        )
+    ]
+    stale = _optimized_result(_triangle_model(3.0), settings, tmp_path, 4)
+    matching = _optimized_result(_triangle_model(1.5), settings, tmp_path, 10)
+    messages = []
+
+    retained = _match_external_reuse_to_selected_candidates(
+        [stale, matching],
+        selected,
+        rmsd_threshold=0.75,
+        log=messages.append,
+        reuse_description="local resumed",
+    )
+
+    assert [result.conformer_index for result in retained] == [10]
+    assert retained[0].model.metadata["conformer_pool_index"] == 151
+    assert retained[0].model.metadata["conformer_pool_index_provenance"] == (
+        "recorded_from_current_etkdg_pool"
+    )
+    assert any("local resumed calculation" in message for message in messages)
 
 
 def test_reuses_conformer_001_and_optimizes_only_three_additions(tmp_path):

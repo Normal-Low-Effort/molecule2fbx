@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import copy
 import csv
 import json
 import math
@@ -57,6 +58,22 @@ def _load_json(path: Path) -> Dict[str, object]:
     if not isinstance(value, dict):
         raise ValueError(f"JSON root must be an object: {path}")
     return value
+
+
+def _synchronize_ensemble_conformer_aliases(
+    payload: Dict[str, object],
+) -> None:
+    """Keep the legacy ``conformers`` alias identical to the canonical array.
+
+    JSON serialization breaks the shared-list identity used by
+    :func:`build_ensemble_report`.  Any later metadata repair must therefore
+    update both keys explicitly or consumers of the legacy alias can observe
+    stale Freq/provenance values.
+    """
+
+    entries = payload.get("final_conformer_ensemble")
+    if isinstance(entries, list):
+        payload["conformers"] = copy.deepcopy(entries)
 
 
 def _rdkit_model_from_xyz(
@@ -1992,18 +2009,70 @@ def _frequency_entry_fields(
     }
 
 
-def _recorded_pool_index(ensemble_dir: Path, conformer_id: str) -> Optional[int]:
+def _recorded_pool_index(
+    ensemble_dir: Path,
+    conformer_id: str,
+    calculation_dir: Optional[Path] = None,
+) -> Optional[int]:
     matches = list(
         (ensemble_dir / "structures").glob(f"*_dft_{conformer_id}.metadata.json")
     )
-    if len(matches) != 1:
+    if len(matches) == 1:
+        data = _load_json(matches[0])
+        metadata = data.get("metadata", {})
+        if isinstance(metadata, dict):
+            value = metadata.get("conformer_pool_index")
+            if isinstance(value, int):
+                return int(value)
+
+    if calculation_dir is None:
         return None
-    data = _load_json(matches[0])
-    metadata = data.get("metadata", {})
-    if not isinstance(metadata, dict):
+    calculation_dir = Path(calculation_dir).resolve()
+    match = re.fullmatch(r"conf(\d{3,})", conformer_id)
+    if match is None:
         return None
-    value = metadata.get("conformer_pool_index")
-    return int(value) if isinstance(value, int) else None
+    conformer_index = int(match.group(1)) - 1
+    calculation_root = calculation_dir.parent
+    metadata_candidates = list(calculation_dir.glob("*.metadata.json"))
+    metadata_candidates.extend(calculation_root.parent.glob("*.metadata.json"))
+    for path in sorted(set(metadata_candidates)):
+        data = _load_json(path)
+        metadata = data.get("metadata", {})
+        if not isinstance(metadata, dict):
+            continue
+        if metadata.get("conformer_index") != conformer_index:
+            continue
+        recorded_root = metadata.get("calculation_files_directory")
+        if (
+            isinstance(recorded_root, str)
+            and Path(recorded_root).expanduser().resolve() != calculation_root
+        ):
+            continue
+        value = metadata.get("conformer_pool_index")
+        if isinstance(value, int):
+            return int(value)
+    return None
+
+
+def _successful_selection_repair_pool_indices(ensemble_dir: Path) -> set[int]:
+    """Return pool members added by a completed strict-selection repair."""
+
+    path = Path(ensemble_dir) / "strict_selection_repair_plan.json"
+    if not path.is_file():
+        return set()
+    data = _load_json(path)
+    if str(data.get("status", "")).upper() != "SUCCESS":
+        return set()
+    target = data.get("target", {})
+    result = data.get("result", {})
+    if not isinstance(target, dict) or not isinstance(result, dict):
+        return set()
+    pool_index = target.get("pool_index")
+    if not isinstance(pool_index, int):
+        return set()
+    if result.get("geometry_optimization_converged") is not True:
+        return set()
+    return {int(pool_index)}
 
 
 def refresh_existing_ensemble_metadata(
@@ -2041,6 +2110,9 @@ def refresh_existing_ensemble_metadata(
         int(record["conformer_index"]): record
         for record in rmsd_analysis.get("records", [])
     }
+    strict_selection_repairs = _successful_selection_repair_pool_indices(
+        ensemble_dir
+    )
 
     entries = payload.get("final_conformer_ensemble", [])
     by_index = {int(item.entry["conformer_index"]): item for item in conformers}
@@ -2091,21 +2163,33 @@ def refresh_existing_ensemble_metadata(
             )
         calculation = Path(str(entry["calculation_directory"])).resolve()
         reused = not calculation.is_relative_to(ensemble_dir / "conformers")
-        entry["optimization_provenance"] = (
-            "reused_external_read_only" if reused else "computed_original_ensemble_run"
+        pool_index = _recorded_pool_index(
+            ensemble_dir,
+            str(entry["conformer_id"]),
+            calculation,
         )
-        entry["source"] = "reused" if reused else "generated"
-        pool_index = None if reused else _recorded_pool_index(
-            ensemble_dir, str(entry["conformer_id"])
-        )
+        if pool_index in strict_selection_repairs:
+            entry["optimization_provenance"] = "computed_strict_selection_repair"
+            entry["source"] = "generated"
+        else:
+            entry["optimization_provenance"] = (
+                "reused_external_read_only"
+                if reused
+                else "computed_original_ensemble_run"
+            )
+            entry["source"] = "reused" if reused else "generated"
         entry["conformer_pool_index"] = pool_index
         entry["conformer_pool_index_provenance"] = (
-            "unavailable_for_legacy_reuse"
-            if reused
+            "recorded_from_reuse_metadata"
+            if reused and pool_index is not None
             else (
                 "recorded_from_current_etkdg_pool"
                 if pool_index is not None
-                else "unavailable_in_retained_metadata"
+                else (
+                    "unavailable_for_legacy_reuse"
+                    if reused
+                    else "unavailable_in_retained_metadata"
+                )
             )
         )
         rmsd = rmsd_records[index]
@@ -2254,6 +2338,8 @@ def refresh_existing_ensemble_metadata(
             "separated optimization and frequency provenance",
             "added common-scaffold and reaction-centre RMSD analyses",
             "attached non-destructive supplemental frequency results when present",
+            "synchronized conformers with final_conformer_ensemble",
+            "preserved successful strict-selection repair provenance",
         ],
     }
     if not any(
@@ -2261,6 +2347,7 @@ def refresh_existing_ensemble_metadata(
         for item in revisions
     ):
         revisions.append(revision)
+    _synchronize_ensemble_conformer_aliases(payload)
     if write:
         path = ensemble_dir / "ensemble.json"
         backup = ensemble_dir / "ensemble.before_preliminary_repair.json"

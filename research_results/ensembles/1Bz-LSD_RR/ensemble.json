@@ -2444,22 +2444,23 @@
   },
   "conformers": [
     {
+      "all_heavy_rmsd_cluster_id": "dft_cluster_001",
       "calculation_directory": "${WORKSPACE}\\outputs\\1Bz-LSD_RR\\conformers\\conformer_001",
+      "common_scaffold_rmsd_cluster_id": "dft_core_cluster_001",
+      "common_scaffold_rmsd_to_representative_angstrom": 0.0,
       "conformer_id": "conf001",
       "conformer_index": 0,
+      "conformer_pool_index": 144,
+      "conformer_pool_index_provenance": "recorded_from_current_etkdg_pool",
       "dft_energy_hartree": -1359.238243112178,
       "frequency_calculated": true,
+      "frequency_output": "${WORKSPACE}\\outputs\\1Bz-LSD_RR\\conformers\\frequency_additions\\conformer_001\\conformer_001_freq.out",
+      "frequency_provenance": "computed_original_ensemble_run",
       "gibbs_energy_hartree": -1358.78273757,
       "imaginary_frequencies_cm1": [],
       "imaginary_modes": 0,
       "local_minimum_assessment": "local_minimum_candidate",
       "low_frequency_modes_cm1": [
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
         13.91,
         26.97,
         30.32,
@@ -2479,6 +2480,7 @@
         40.99
       ],
       "number_of_modes": 183,
+      "optimization_provenance": "computed_original_ensemble_run",
       "post_dft_stereochemistry_validation": {
         "atom_order_matches": true,
         "expected_centers": [
@@ -2503,6 +2505,8 @@
           }
         ]
       },
+      "reaction_center_rmsd_cluster_id": "dft_site_cluster_001",
+      "reaction_center_rmsd_to_representative_angstrom": 0.0,
       "relative_energy_kj_mol": 0.0,
       "relative_gibbs_energy_kj_mol": 0.0,
       "rmsd_cluster_id": "dft_cluster_001",
@@ -2533,25 +2537,34 @@
         "thermal_correction_hartree": 0.02833391,
         "thermal_energy_hartree": -1358.69977679,
         "zero_point_energy_hartree": 0.51018116
-      }
+      },
+      "translation_rotation_near_zero_modes_cm1": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
     },
     {
+      "all_heavy_rmsd_cluster_id": "dft_cluster_002",
       "calculation_directory": "${WORKSPACE}\\outputs\\1Bz-LSD_RR\\conformers\\conformer_004",
+      "common_scaffold_rmsd_cluster_id": "dft_core_cluster_002",
+      "common_scaffold_rmsd_to_representative_angstrom": 0.0,
       "conformer_id": "conf004",
       "conformer_index": 3,
+      "conformer_pool_index": 104,
+      "conformer_pool_index_provenance": "recorded_from_current_etkdg_pool",
       "dft_energy_hartree": -1359.237919267897,
       "frequency_calculated": true,
+      "frequency_output": "${WORKSPACE}\\outputs\\1Bz-LSD_RR\\conformers\\frequency_additions\\conformer_004\\conformer_004_freq.out",
+      "frequency_provenance": "computed_original_ensemble_run",
       "gibbs_energy_hartree": -1358.78230645,
       "imaginary_frequencies_cm1": [],
       "imaginary_modes": 0,
       "local_minimum_assessment": "local_minimum_candidate",
       "low_frequency_modes_cm1": [
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
         15.34,
         25.22,
         33.81,
@@ -2571,6 +2584,7 @@
         39.82
       ],
       "number_of_modes": 183,
+      "optimization_provenance": "computed_original_ensemble_run",
       "post_dft_stereochemistry_validation": {
         "atom_order_matches": true,
         "expected_centers": [
@@ -2595,6 +2609,8 @@
           }
         ]
       },
+      "reaction_center_rmsd_cluster_id": "dft_site_cluster_002",
+      "reaction_center_rmsd_to_representative_angstrom": 0.0,
       "relative_energy_kj_mol": 0.8502530428979248,
       "relative_gibbs_energy_kj_mol": 1.1319054046519212,
       "rmsd_cluster_id": "dft_cluster_002",
@@ -2625,25 +2641,34 @@
         "thermal_correction_hartree": 0.02832492,
         "thermal_energy_hartree": -1358.69942199,
         "zero_point_energy_hartree": 0.51015841
-      }
+      },
+      "translation_rotation_near_zero_modes_cm1": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
     },
     {
+      "all_heavy_rmsd_cluster_id": "dft_cluster_003",
       "calculation_directory": "${WORKSPACE}\\outputs\\1Bz-LSD_RR\\conformers\\conformer_003",
+      "common_scaffold_rmsd_cluster_id": "dft_core_cluster_003",
+      "common_scaffold_rmsd_to_representative_angstrom": 0.0,
       "conformer_id": "conf003",
       "conformer_index": 2,
+      "conformer_pool_index": 125,
+      "conformer_pool_index_provenance": "recorded_from_current_etkdg_pool",
       "dft_energy_hartree": -1359.237866764605,
       "frequency_calculated": true,
+      "frequency_output": "${WORKSPACE}\\outputs\\1Bz-LSD_RR\\conformers\\frequency_additions\\conformer_003\\conformer_003_freq.out",
+      "frequency_provenance": "computed_original_ensemble_run",
       "gibbs_energy_hartree": -1358.78237427,
       "imaginary_frequencies_cm1": [],
       "imaginary_modes": 0,
       "local_minimum_assessment": "local_minimum_candidate",
       "low_frequency_modes_cm1": [
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
         14.47,
         24.93,
         31.29,
@@ -2663,6 +2688,7 @@
         41.89
       ],
       "number_of_modes": 183,
+      "optimization_provenance": "computed_original_ensemble_run",
       "post_dft_stereochemistry_validation": {
         "atom_order_matches": true,
         "expected_centers": [
@@ -2687,6 +2713,8 @@
           }
         ]
       },
+      "reaction_center_rmsd_cluster_id": "dft_site_cluster_001",
+      "reaction_center_rmsd_to_representative_angstrom": 0.006872724803429062,
       "relative_energy_kj_mol": 0.9881004169948056,
       "relative_gibbs_energy_kj_mol": 0.9538440193310707,
       "rmsd_cluster_id": "dft_cluster_003",
@@ -2717,21 +2745,54 @@
         "thermal_correction_hartree": 0.02835229,
         "thermal_energy_hartree": -1358.69938643,
         "zero_point_energy_hartree": 0.51011624
-      }
+      },
+      "translation_rotation_near_zero_modes_cm1": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
     },
     {
+      "all_heavy_rmsd_cluster_id": "dft_cluster_004",
       "calculation_directory": "${WORKSPACE}\\outputs\\1Bz-LSD_RR\\conformers\\conformer_008",
+      "common_scaffold_rmsd_cluster_id": "dft_core_cluster_004",
+      "common_scaffold_rmsd_to_representative_angstrom": 0.0,
       "conformer_id": "conf008",
       "conformer_index": 7,
+      "conformer_pool_index": 73,
+      "conformer_pool_index_provenance": "recorded_from_current_etkdg_pool",
       "dft_energy_hartree": -1359.236420656359,
-      "frequency_calculated": false,
-      "gibbs_energy_hartree": null,
+      "frequency_calculated": true,
+      "frequency_output": "${WORKSPACE}\\outputs\\1Bz-LSD_RR\\conformers\\frequency_additions\\conformer_008\\conformer_008_freq.out",
+      "frequency_provenance": "computed_supplemental_frequency_only",
+      "gibbs_energy_hartree": -1358.78057349,
       "imaginary_frequencies_cm1": [],
       "imaginary_modes": 0,
-      "local_minimum_assessment": "not_evaluated",
-      "low_frequency_modes_cm1": [],
-      "lowest_frequencies_cm1": [],
-      "number_of_modes": 0,
+      "local_minimum_assessment": "local_minimum_candidate",
+      "low_frequency_modes_cm1": [
+        14.51,
+        29.35,
+        32.1,
+        41.61,
+        47.24
+      ],
+      "lowest_frequencies_cm1": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        14.51,
+        29.35,
+        32.1,
+        41.61
+      ],
+      "number_of_modes": 183,
+      "optimization_provenance": "computed_original_ensemble_run",
       "post_dft_stereochemistry_validation": {
         "atom_order_matches": true,
         "expected_centers": [
@@ -2756,8 +2817,10 @@
           }
         ]
       },
+      "reaction_center_rmsd_cluster_id": "dft_site_cluster_001",
+      "reaction_center_rmsd_to_representative_angstrom": 0.0016392652145757246,
       "relative_energy_kj_mol": 4.7848570955174425,
-      "relative_gibbs_energy_kj_mol": null,
+      "relative_gibbs_energy_kj_mol": 5.681791259955154,
       "rmsd_cluster_id": "dft_cluster_004",
       "source": "generated",
       "stereochemistry": {
@@ -2776,21 +2839,46 @@
         "unspecified_double_bonds": [],
         "unspecified_stereocenters": []
       },
-      "thermochemistry": null
+      "thermochemistry": {
+        "electronic_energy_hartree": -1359.236414408283,
+        "enthalpy_hartree": -1358.69703071,
+        "gibbs_free_energy_hartree": -1358.78057349,
+        "pressure_atm": 1.0,
+        "quasi_rrho": true,
+        "temperature_kelvin": 298.15,
+        "thermal_correction_hartree": 0.02822002,
+        "thermal_energy_hartree": -1358.69797492,
+        "zero_point_energy_hartree": 0.51021947
+      },
+      "translation_rotation_near_zero_modes_cm1": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
     },
     {
+      "all_heavy_rmsd_cluster_id": "dft_cluster_005",
       "calculation_directory": "${WORKSPACE}\\outputs\\1Bz-LSD_RR\\conformers\\conformer_002",
+      "common_scaffold_rmsd_cluster_id": "dft_core_cluster_005",
+      "common_scaffold_rmsd_to_representative_angstrom": 0.0,
       "conformer_id": "conf002",
       "conformer_index": 1,
+      "conformer_pool_index": 176,
+      "conformer_pool_index_provenance": "recorded_from_current_etkdg_pool",
       "dft_energy_hartree": -1359.235448035419,
       "frequency_calculated": false,
+      "frequency_provenance": null,
       "gibbs_energy_hartree": null,
       "imaginary_frequencies_cm1": [],
-      "imaginary_modes": 0,
+      "imaginary_modes": null,
       "local_minimum_assessment": "not_evaluated",
       "low_frequency_modes_cm1": [],
       "lowest_frequencies_cm1": [],
-      "number_of_modes": 0,
+      "number_of_modes": null,
+      "optimization_provenance": "computed_original_ensemble_run",
       "post_dft_stereochemistry_validation": {
         "atom_order_matches": true,
         "expected_centers": [
@@ -2815,6 +2903,8 @@
           }
         ]
       },
+      "reaction_center_rmsd_cluster_id": "dft_site_cluster_003",
+      "reaction_center_rmsd_to_representative_angstrom": 0.0,
       "relative_energy_kj_mol": 7.338473022961301,
       "relative_gibbs_energy_kj_mol": null,
       "rmsd_cluster_id": "dft_cluster_005",
@@ -2835,21 +2925,29 @@
         "unspecified_double_bonds": [],
         "unspecified_stereocenters": []
       },
-      "thermochemistry": null
+      "thermochemistry": null,
+      "translation_rotation_near_zero_modes_cm1": []
     },
     {
+      "all_heavy_rmsd_cluster_id": "dft_cluster_006",
       "calculation_directory": "${WORKSPACE}\\outputs\\1Bz-LSD_RR\\conformers\\conformer_007",
+      "common_scaffold_rmsd_cluster_id": "dft_core_cluster_006",
+      "common_scaffold_rmsd_to_representative_angstrom": 0.0,
       "conformer_id": "conf007",
       "conformer_index": 6,
+      "conformer_pool_index": 88,
+      "conformer_pool_index_provenance": "recorded_from_current_etkdg_pool",
       "dft_energy_hartree": -1359.235337153039,
       "frequency_calculated": false,
+      "frequency_provenance": null,
       "gibbs_energy_hartree": null,
       "imaginary_frequencies_cm1": [],
-      "imaginary_modes": 0,
+      "imaginary_modes": null,
       "local_minimum_assessment": "not_evaluated",
       "low_frequency_modes_cm1": [],
       "lowest_frequencies_cm1": [],
-      "number_of_modes": 0,
+      "number_of_modes": null,
+      "optimization_provenance": "computed_original_ensemble_run",
       "post_dft_stereochemistry_validation": {
         "atom_order_matches": true,
         "expected_centers": [
@@ -2874,6 +2972,8 @@
           }
         ]
       },
+      "reaction_center_rmsd_cluster_id": "dft_site_cluster_004",
+      "reaction_center_rmsd_to_representative_angstrom": 0.0,
       "relative_energy_kj_mol": 7.629594671973331,
       "relative_gibbs_energy_kj_mol": null,
       "rmsd_cluster_id": "dft_cluster_006",
@@ -2894,21 +2994,29 @@
         "unspecified_double_bonds": [],
         "unspecified_stereocenters": []
       },
-      "thermochemistry": null
+      "thermochemistry": null,
+      "translation_rotation_near_zero_modes_cm1": []
     },
     {
+      "all_heavy_rmsd_cluster_id": "dft_cluster_007",
       "calculation_directory": "${WORKSPACE}\\outputs\\1Bz-LSD_RR\\conformers\\conformer_006",
+      "common_scaffold_rmsd_cluster_id": "dft_core_cluster_007",
+      "common_scaffold_rmsd_to_representative_angstrom": 0.0,
       "conformer_id": "conf006",
       "conformer_index": 5,
+      "conformer_pool_index": 130,
+      "conformer_pool_index_provenance": "recorded_from_current_etkdg_pool",
       "dft_energy_hartree": -1359.235317767659,
       "frequency_calculated": false,
+      "frequency_provenance": null,
       "gibbs_energy_hartree": null,
       "imaginary_frequencies_cm1": [],
-      "imaginary_modes": 0,
+      "imaginary_modes": null,
       "local_minimum_assessment": "not_evaluated",
       "low_frequency_modes_cm1": [],
       "lowest_frequencies_cm1": [],
-      "number_of_modes": 0,
+      "number_of_modes": null,
+      "optimization_provenance": "computed_original_ensemble_run",
       "post_dft_stereochemistry_validation": {
         "atom_order_matches": true,
         "expected_centers": [
@@ -2933,6 +3041,8 @@
           }
         ]
       },
+      "reaction_center_rmsd_cluster_id": "dft_site_cluster_004",
+      "reaction_center_rmsd_to_representative_angstrom": 0.0017287829622512916,
       "relative_energy_kj_mol": 7.680490980248881,
       "relative_gibbs_energy_kj_mol": null,
       "rmsd_cluster_id": "dft_cluster_007",
@@ -2953,21 +3063,29 @@
         "unspecified_double_bonds": [],
         "unspecified_stereocenters": []
       },
-      "thermochemistry": null
+      "thermochemistry": null,
+      "translation_rotation_near_zero_modes_cm1": []
     },
     {
+      "all_heavy_rmsd_cluster_id": "dft_cluster_008",
       "calculation_directory": "${WORKSPACE}\\outputs\\1Bz-LSD_RR\\conformers\\conformer_005",
+      "common_scaffold_rmsd_cluster_id": "dft_core_cluster_008",
+      "common_scaffold_rmsd_to_representative_angstrom": 0.0,
       "conformer_id": "conf005",
       "conformer_index": 4,
+      "conformer_pool_index": 164,
+      "conformer_pool_index_provenance": "recorded_from_current_etkdg_pool",
       "dft_energy_hartree": -1359.235277453023,
       "frequency_calculated": false,
+      "frequency_provenance": null,
       "gibbs_energy_hartree": null,
       "imaginary_frequencies_cm1": [],
-      "imaginary_modes": 0,
+      "imaginary_modes": null,
       "local_minimum_assessment": "not_evaluated",
       "low_frequency_modes_cm1": [],
       "lowest_frequencies_cm1": [],
-      "number_of_modes": 0,
+      "number_of_modes": null,
+      "optimization_provenance": "computed_original_ensemble_run",
       "post_dft_stereochemistry_validation": {
         "atom_order_matches": true,
         "expected_centers": [
@@ -2992,6 +3110,8 @@
           }
         ]
       },
+      "reaction_center_rmsd_cluster_id": "dft_site_cluster_003",
+      "reaction_center_rmsd_to_representative_angstrom": 0.0016038706819272207,
       "relative_energy_kj_mol": 7.786337042409537,
       "relative_gibbs_energy_kj_mol": null,
       "rmsd_cluster_id": "dft_cluster_008",
@@ -3012,21 +3132,29 @@
         "unspecified_double_bonds": [],
         "unspecified_stereocenters": []
       },
-      "thermochemistry": null
+      "thermochemistry": null,
+      "translation_rotation_near_zero_modes_cm1": []
     },
     {
+      "all_heavy_rmsd_cluster_id": "dft_cluster_009",
       "calculation_directory": "${WORKSPACE}\\outputs\\1Bz-LSD_RR\\conformers\\conformer_009",
+      "common_scaffold_rmsd_cluster_id": "dft_core_cluster_009",
+      "common_scaffold_rmsd_to_representative_angstrom": 0.0,
       "conformer_id": "conf009",
       "conformer_index": 8,
+      "conformer_pool_index": 195,
+      "conformer_pool_index_provenance": "recorded_from_current_etkdg_pool",
       "dft_energy_hartree": -1359.233689689057,
       "frequency_calculated": false,
+      "frequency_provenance": null,
       "gibbs_energy_hartree": null,
       "imaginary_frequencies_cm1": [],
-      "imaginary_modes": 0,
+      "imaginary_modes": null,
       "local_minimum_assessment": "not_evaluated",
       "low_frequency_modes_cm1": [],
       "lowest_frequencies_cm1": [],
-      "number_of_modes": 0,
+      "number_of_modes": null,
+      "optimization_provenance": "computed_original_ensemble_run",
       "post_dft_stereochemistry_validation": {
         "atom_order_matches": true,
         "expected_centers": [
@@ -3051,6 +3179,8 @@
           }
         ]
       },
+      "reaction_center_rmsd_cluster_id": "dft_site_cluster_004",
+      "reaction_center_rmsd_to_representative_angstrom": 0.002057566753952806,
       "relative_energy_kj_mol": 11.955010762648474,
       "relative_gibbs_energy_kj_mol": null,
       "rmsd_cluster_id": "dft_cluster_009",
@@ -3071,7 +3201,8 @@
         "unspecified_double_bonds": [],
         "unspecified_stereocenters": []
       },
-      "thermochemistry": null
+      "thermochemistry": null,
+      "translation_rotation_near_zero_modes_cm1": []
     }
   ],
   "dft": {

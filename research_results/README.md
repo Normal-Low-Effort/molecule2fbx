@@ -6,6 +6,9 @@ calculation tree under `outputs/`.
 - `outputs/` remains the canonical source of ORCA, xTB, runEDDB, Freq, and FBX
   calculation records and is intentionally ignored by Git.
 - Files here are summaries, parsed tables, or selected optimized XYZ files.
+- The curated ensemble set currently covers 1Bz-LSD_RR, 1SB-LSD_RR, and the
+  p-Me, p-iPr, and p-tBu benzoyl controls. Selection-repair and control-run
+  provenance is retained alongside the summaries.
 - They are computational results, not experimental structures or measurements.
 - Local workspace prefixes in text files are replaced with `${WORKSPACE}` so
   the Git snapshot does not publish a user-specific absolute path.

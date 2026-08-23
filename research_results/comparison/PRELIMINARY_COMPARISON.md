@@ -5,7 +5,7 @@ Generated from retained B3LYP/def2-SVP gas-phase structures. These are computed 
 ## Scope
 
 - Bz: 9 final DFT representatives; original Freq selection 3/3 completed, 1 supplemental, 4 total available.
-- SB sensitivity set: 11 DFT representatives including one targeted follow-up; original Freq selection 3/3 completed, 1 supplemental, 7 total available.
+- SB sensitivity set: 11 DFT representatives including one targeted follow-up; original Freq selection 3/3 completed, 0 supplemental, 6 total available.
 - SB force-field pool review: 9 common-scaffold clusters within the force-field window; 1 clusters lacked a selected DFT representative.
 - Values in the main table use one lowest-energy representative per common-scaffold cluster, then electronic-energy weighting. This is not claimed to be a complete Boltzmann ensemble or a rotor-degeneracy treatment.
 - Gibbs-weighted values in analysis.json are conditional on structures with Freq unless every final representative has Freq.

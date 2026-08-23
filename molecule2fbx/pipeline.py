@@ -339,6 +339,80 @@ def _validate_quantum_request(request: ConversionRequest, model: MoleculeModel, 
     )
 
 
+def _match_external_reuse_to_selected_candidates(
+    imported: Sequence[QuantumResult],
+    candidates: Sequence[ConformerCandidate],
+    *,
+    rmsd_threshold: float,
+    log: Logger,
+    reuse_description: str = "external",
+) -> List[QuantumResult]:
+    """Retain only reusable Opt results represented in the current pre-screen.
+
+    Legacy calculation numbering is not a conformer identity: for example,
+    ``conformer_001`` in an older four-structure run may correspond to a pool
+    member that is outside the current force-field energy window.  Match by
+    optimized/current-candidate heavy-atom RMSD instead, without renaming or
+    modifying the retained ORCA files.
+    """
+
+    edges = []
+    for result_position, result in enumerate(imported):
+        for candidate_position, candidate in enumerate(candidates):
+            rmsd = aligned_heavy_atom_rmsd(result.model, candidate.model)
+            if rmsd < rmsd_threshold:
+                edges.append(
+                    (rmsd, result_position, candidate_position)
+                )
+    used_results = set()
+    used_candidates = set()
+    matches: Dict[int, int] = {}
+    for _rmsd, result_position, candidate_position in sorted(edges):
+        if result_position in used_results or candidate_position in used_candidates:
+            continue
+        used_results.add(result_position)
+        used_candidates.add(candidate_position)
+        matches[result_position] = candidate_position
+
+    retained = []
+    copied_metadata = (
+        "conformer_pool_index",
+        "conformer_pool_index_provenance",
+        "conformer_pool_size",
+        "initial_rmsd_cluster_id",
+        "conformer_selection_rmsd_threshold_angstrom",
+        "conformer_selection_threshold_relaxed",
+    )
+    for result_position, result in enumerate(imported):
+        candidate_position = matches.get(result_position)
+        if candidate_position is None:
+            log(
+                f"Ignoring compatible {reuse_description} calculation "
+                f"conformer_{result.conformer_index + 1:03d} for this ensemble: "
+                "it does not match a candidate retained by the current "
+                "force-field energy/RMSD pre-screen. The source files remain unchanged."
+            )
+            continue
+        candidate = candidates[candidate_position]
+        updates = {
+            key: candidate.model.metadata[key]
+            for key in copied_metadata
+            if key in candidate.model.metadata
+        }
+        updates.update(
+            {
+                "matched_current_candidate_index": candidate.conformer_index,
+                "reuse_selection_provenance": (
+                    "matched_current_forcefield_prescreen_by_heavy_atom_rmsd"
+                ),
+            }
+        )
+        retained.append(
+            replace(result, model=result.model.with_metadata(**updates))
+        )
+    return retained
+
+
 def _run_quantum(
     request: ConversionRequest,
     candidates: Sequence[ConformerCandidate],
@@ -402,6 +476,12 @@ def _run_quantum(
             imported, _ = discover_reusable_orca_results(
                 candidates[0], settings, backend, reuse_root, log, strict=True
             )
+            imported = _match_external_reuse_to_selected_candidates(
+                imported,
+                candidates,
+                rmsd_threshold=request.conformer_rmsd_threshold,
+                log=log,
+            )
             imported = [
                 replace(
                     result,
@@ -428,6 +508,24 @@ def _run_quantum(
             )
             for result in resumed
         ]
+        externally_matched_pool_indices = {
+            result.model.metadata.get("conformer_pool_index")
+            for result in retained
+            if result.model.metadata.get("conformer_pool_index") is not None
+        }
+        locally_available_candidates = [
+            candidate
+            for candidate in candidates
+            if candidate.model.metadata.get("conformer_pool_index")
+            not in externally_matched_pool_indices
+        ]
+        resumed = _match_external_reuse_to_selected_candidates(
+            resumed,
+            locally_available_candidates,
+            rmsd_threshold=request.conformer_rmsd_threshold,
+            log=log,
+            reuse_description="local resumed",
+        )
         retained.extend(resumed)
         for record in incomplete:
             source = Path(str(record["directory"]))
