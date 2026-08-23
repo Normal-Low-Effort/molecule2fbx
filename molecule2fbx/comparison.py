@@ -7,6 +7,7 @@ import csv
 import json
 import math
 import re
+import shutil
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
@@ -74,6 +75,33 @@ def _synchronize_ensemble_conformer_aliases(
     entries = payload.get("final_conformer_ensemble")
     if isinstance(entries, list):
         payload["conformers"] = copy.deepcopy(entries)
+
+
+def _forcefield_used_from_screening(
+    payload: Mapping[str, object],
+) -> Optional[str]:
+    search = payload.get("conformer_search", {})
+    if not isinstance(search, Mapping):
+        return None
+    recorded = search.get("forcefield_used")
+    if isinstance(recorded, str) and recorded:
+        return recorded
+    screening = search.get("initial_screening", {})
+    if not isinstance(screening, Mapping):
+        return None
+    records = screening.get("records", [])
+    if not isinstance(records, list):
+        return None
+    values = sorted(
+        {
+            str(item["forcefield"])
+            for item in records
+            if isinstance(item, Mapping)
+            and isinstance(item.get("forcefield"), str)
+            and item["forcefield"]
+        }
+    )
+    return values[0] if len(values) == 1 else "/".join(values) or None
 
 
 def _rdkit_model_from_xyz(
@@ -316,6 +344,125 @@ def secondary_rmsd_analysis(
         },
         "records": records,
     }
+
+
+def repair_ensemble_analysis_metadata(
+    ensemble_dir: Path,
+    *,
+    common_threshold: float = 0.75,
+    reaction_threshold: float = 0.25,
+) -> Dict[str, object]:
+    """Refresh derived RMSD/force-field metadata without touching calculations."""
+
+    ensemble_dir = Path(ensemble_dir).resolve()
+    path = ensemble_dir / "ensemble.json"
+    payload, conformers = load_existing_conformers(ensemble_dir)
+    secondary = secondary_rmsd_analysis(
+        conformers,
+        common_threshold=common_threshold,
+        reaction_threshold=reaction_threshold,
+    )
+    by_index = {
+        int(record["conformer_index"]): record
+        for record in secondary.get("records", [])
+    }
+
+    entries = payload.get("final_conformer_ensemble", [])
+    if not isinstance(entries, list):
+        raise ValueError("final_conformer_ensemble must be an array")
+    for entry in entries:
+        if not isinstance(entry, dict):
+            continue
+        record = by_index.get(int(entry["conformer_index"]))
+        if record is None:
+            continue
+        for key in (
+            "common_scaffold_rmsd_cluster_id",
+            "common_scaffold_rmsd_to_representative_angstrom",
+            "reaction_center_rmsd_cluster_id",
+            "reaction_center_rmsd_to_representative_angstrom",
+        ):
+            entry[key] = record[key]
+    _synchronize_ensemble_conformer_aliases(payload)
+
+    dft = payload.get("dft", {})
+    if not isinstance(dft, dict):
+        raise ValueError("dft metadata must be an object")
+    post = dft.get("post_optimization_screening", {})
+    if not isinstance(post, dict):
+        raise ValueError("post_optimization_screening must be an object")
+    post["secondary_rmsd_analysis"] = secondary
+    post_records = post.get("records", [])
+    if isinstance(post_records, list):
+        for item in post_records:
+            if not isinstance(item, dict):
+                continue
+            record = by_index.get(int(item["conformer_index"]))
+            if record is None:
+                continue
+            for key in (
+                "common_scaffold_rmsd_cluster_id",
+                "common_scaffold_rmsd_to_representative_angstrom",
+                "reaction_center_rmsd_cluster_id",
+                "reaction_center_rmsd_to_representative_angstrom",
+            ):
+                item[key] = record[key]
+    rmsd_analyses = post.get("rmsd_analyses", {})
+    if not isinstance(rmsd_analyses, dict):
+        rmsd_analyses = {}
+    atom_subsets = secondary["atom_subsets"]
+    rmsd_analyses["atom_subset_definition"] = atom_subsets
+    rmsd_analyses["common_scaffold"] = {
+        "cluster_count": secondary["common_scaffold"]["cluster_count"],
+        "threshold_angstrom": common_threshold,
+        "atom_indices": atom_subsets["common_scaffold_atom_indices"],
+        "symmetry_permutations": False,
+    }
+    rmsd_analyses["reaction_center"] = {
+        "cluster_count": secondary["reaction_center"]["cluster_count"],
+        "threshold_angstrom": reaction_threshold,
+        "atom_indices": atom_subsets["reaction_center_atom_indices"],
+        "symmetry_permutations": False,
+    }
+    post["rmsd_analyses"] = rmsd_analyses
+    dft["post_optimization_screening"] = post
+    payload["dft"] = dft
+
+    search = payload.get("conformer_search", {})
+    forcefield = _forcefield_used_from_screening(payload)
+    if isinstance(search, dict) and forcefield is not None:
+        search["forcefield_used"] = forcefield
+        payload["conformer_search"] = search
+
+    revisions = payload.setdefault("analysis_revisions", [])
+    if not isinstance(revisions, list):
+        revisions = []
+        payload["analysis_revisions"] = revisions
+    revision_type = "para_substituent_common_scaffold_metadata_refresh"
+    revisions[:] = [
+        item
+        for item in revisions
+        if not isinstance(item, Mapping) or item.get("type") != revision_type
+    ]
+    revisions.append(
+        {
+            "type": revision_type,
+            "performed_at_utc": _utc_now(),
+            "calculation_files_modified": False,
+            "common_scaffold_definition": (
+                "all heavy atoms except the branch outside the benzoyl para carbon"
+            ),
+            "common_scaffold_threshold_angstrom": common_threshold,
+            "reaction_center_threshold_angstrom": reaction_threshold,
+            "forcefield_used": forcefield,
+            "symmetry_permutations": False,
+        }
+    )
+    backup = ensemble_dir / "ensemble.before_para_scaffold_metadata_refresh.json"
+    if not backup.exists():
+        shutil.copy2(path, backup)
+    _atomic_write_json(path, payload)
+    return payload
 
 
 def cross_ensemble_rmsd_analysis(
@@ -1172,14 +1319,18 @@ def carbonyl_continuous_steric_access(
         raise ValueError("Could not identify the benzoyl ipso carbon")
     ipso = ipso_candidates[0]
 
-    terminal_tms_heavy = set(subsets.excluded_terminal_substituent)
-    terminal_tms_group = set(terminal_tms_heavy)
-    for index in tuple(terminal_tms_heavy):
-        terminal_tms_group.update(
+    para_substituent_heavy = set(subsets.excluded_terminal_substituent)
+    para_substituent_group = set(para_substituent_heavy)
+    for index in tuple(para_substituent_heavy):
+        para_substituent_group.update(
             neighbor
             for neighbor in neighbors[index]
             if model.atoms[neighbor].element.casefold() == "h"
         )
+    para_substituent_is_tms = any(
+        model.atoms[index].element.casefold() == "si"
+        for index in para_substituent_heavy
+    )
 
     center = np.asarray(model.atoms[c].position, dtype=float)
     priority_vectors = [
@@ -1222,10 +1373,10 @@ def carbonyl_continuous_steric_access(
 
         scope_values: Dict[str, Optional[float]] = {
             "total": None,
-            "total_without_terminal_tms": None,
+            "total_without_para_substituent": None,
             "nonlocal_environment": None,
-            "nonlocal_without_terminal_tms": None,
-            "terminal_tms": None,
+            "nonlocal_without_para_substituent": None,
+            "para_substituent": None,
         }
         scope_limiters: Dict[str, Optional[Dict[str, object]]] = {
             key: None for key in scope_values
@@ -1241,14 +1392,14 @@ def carbonyl_continuous_steric_access(
                 atom.element.casefold(), 1.80
             )
             scopes = ["total"]
-            if atom.index not in terminal_tms_group:
-                scopes.append("total_without_terminal_tms")
+            if atom.index not in para_substituent_group:
+                scopes.append("total_without_para_substituent")
             if atom.index not in local_environment:
                 scopes.append("nonlocal_environment")
-                if atom.index not in terminal_tms_group:
-                    scopes.append("nonlocal_without_terminal_tms")
-            if atom.index in terminal_tms_group:
-                scopes.append("terminal_tms")
+                if atom.index not in para_substituent_group:
+                    scopes.append("nonlocal_without_para_substituent")
+            if atom.index in para_substituent_group:
+                scopes.append("para_substituent")
             for scope in scopes:
                 current = scope_values[scope]
                 if current is None or clearance < current:
@@ -1271,10 +1422,10 @@ def carbonyl_continuous_steric_access(
     scopes = {}
     for scope in (
         "total",
-        "total_without_terminal_tms",
+        "total_without_para_substituent",
         "nonlocal_environment",
-        "nonlocal_without_terminal_tms",
-        "terminal_tms",
+        "nonlocal_without_para_substituent",
+        "para_substituent",
     ):
         values = [
             float(value)
@@ -1300,27 +1451,27 @@ def carbonyl_continuous_steric_access(
             "face_summary": face_summary,
         }
 
-    tms_limiter_count = sum(
+    substituent_limiter_count = sum(
         record["limiting_atoms"]["total"] is not None  # type: ignore[index]
         and int(record["limiting_atoms"]["total"]["atom_index"])  # type: ignore[index]
-        in terminal_tms_group
+        in para_substituent_group
         for record in records
     )
-    direct_tms_effect: Dict[str, object] = {
+    direct_substituent_effect: Dict[str, object] = {
         "total_clearance_changed_fraction": None,
         "nonlocal_clearance_changed_fraction": None,
         "probe_radius_sensitivity": {},
     }
-    if terminal_tms_group:
+    if para_substituent_group:
         for scope, without_scope, output_key in (
-            ("total", "total_without_terminal_tms", "total_clearance_changed_fraction"),
+            ("total", "total_without_para_substituent", "total_clearance_changed_fraction"),
             (
                 "nonlocal_environment",
-                "nonlocal_without_terminal_tms",
+                "nonlocal_without_para_substituent",
                 "nonlocal_clearance_changed_fraction",
             ),
         ):
-            direct_tms_effect[output_key] = sum(
+            direct_substituent_effect[output_key] = sum(
                 float(record["clearance_without_probe_angstrom"][scope])  # type: ignore[index]
                 < float(
                     record["clearance_without_probe_angstrom"][without_scope]  # type: ignore[index]
@@ -1330,21 +1481,21 @@ def carbonyl_continuous_steric_access(
             ) / len(records)
         for radius in radii:
             key = f"probe_radius_{radius:.2f}_angstrom"
-            direct_tms_effect["probe_radius_sensitivity"][key] = {}
+            direct_substituent_effect["probe_radius_sensitivity"][key] = {}
             for scope, without_scope in (
-                ("total", "total_without_terminal_tms"),
-                ("nonlocal_environment", "nonlocal_without_terminal_tms"),
+                ("total", "total_without_para_substituent"),
+                ("nonlocal_environment", "nonlocal_without_para_substituent"),
             ):
                 with_probe = scopes[scope]["probe_radius_sensitivity"][key]
                 without_probe = scopes[without_scope][
                     "probe_radius_sensitivity"
                 ][key]
-                direct_tms_effect["probe_radius_sensitivity"][key][scope] = {
-                    "positive_clearance_fraction_with_minus_without_tms": (
+                direct_substituent_effect["probe_radius_sensitivity"][key][scope] = {
+                    "positive_clearance_fraction_with_minus_without_substituent": (
                         float(with_probe["positive_clearance_fraction"])
                         - float(without_probe["positive_clearance_fraction"])
                     ),
-                    "positive_clearance_integral_with_minus_without_tms_angstrom": (
+                    "positive_clearance_integral_with_minus_without_substituent_angstrom": (
                         float(with_probe["positive_clearance_integral_angstrom"])
                         - float(
                             without_probe[
@@ -1353,6 +1504,55 @@ def carbonyl_continuous_steric_access(
                         )
                     ),
                 }
+    empty_scope = {
+        "clearance_without_probe": _clearance_statistics([]),
+        "probe_radius_sensitivity": _probe_sensitivity([], radii),
+        "face_summary": {
+            face: {
+                "clearance_without_probe": _clearance_statistics([]),
+                "probe_radius_sensitivity": _probe_sensitivity([], radii),
+            }
+            for face in ("Re", "Si")
+        },
+    }
+    # Backward-compatible TMS keys remain truthful for Bz/SB consumers.  The
+    # new generic keys are used for the p-Me/p-iPr/p-tBu/TMS series.
+    scopes["total_without_terminal_tms"] = (
+        scopes["total_without_para_substituent"]
+        if para_substituent_is_tms
+        else scopes["total"]
+    )
+    scopes["nonlocal_without_terminal_tms"] = (
+        scopes["nonlocal_without_para_substituent"]
+        if para_substituent_is_tms
+        else scopes["nonlocal_environment"]
+    )
+    scopes["terminal_tms"] = (
+        scopes["para_substituent"] if para_substituent_is_tms else empty_scope
+    )
+    legacy_tms_effect = (
+        copy.deepcopy(direct_substituent_effect)
+        if para_substituent_is_tms
+        else {
+            "total_clearance_changed_fraction": None,
+            "nonlocal_clearance_changed_fraction": None,
+            "probe_radius_sensitivity": {},
+        }
+    )
+    if para_substituent_is_tms:
+        for radius_payload in legacy_tms_effect["probe_radius_sensitivity"].values():
+            for scope_payload in radius_payload.values():
+                scope_payload[
+                    "positive_clearance_fraction_with_minus_without_tms"
+                ] = scope_payload[
+                    "positive_clearance_fraction_with_minus_without_substituent"
+                ]
+                scope_payload[
+                    "positive_clearance_integral_with_minus_without_tms_angstrom"
+                ] = scope_payload[
+                    "positive_clearance_integral_with_minus_without_substituent_angstrom"
+                ]
+
     result = {
         "method": "continuous_vdw_corridor_on_burgi_dunitz_cone",
         "parameters": {
@@ -1368,8 +1568,14 @@ def carbonyl_continuous_steric_access(
             "benzoyl_carbonyl_o_priority_1": o,
             "benzoyl_amide_n_priority_2": n,
             "benzoyl_ipso_c_priority_3": ipso,
-            "terminal_tms_heavy": sorted(terminal_tms_heavy),
-            "terminal_tms_group_including_h": sorted(terminal_tms_group),
+            "para_substituent_heavy": sorted(para_substituent_heavy),
+            "para_substituent_group_including_h": sorted(para_substituent_group),
+            "terminal_tms_heavy": (
+                sorted(para_substituent_heavy) if para_substituent_is_tms else []
+            ),
+            "terminal_tms_group_including_h": (
+                sorted(para_substituent_group) if para_substituent_is_tms else []
+            ),
         },
         "face_assignment": {
             "re_si_assigned": True,
@@ -1383,10 +1589,18 @@ def carbonyl_continuous_steric_access(
             ),
         },
         "scopes": scopes,
-        "terminal_tms_as_total_limiter_fraction": (
-            tms_limiter_count / len(records) if terminal_tms_group else None
+        "para_substituent_as_total_limiter_fraction": (
+            substituent_limiter_count / len(records)
+            if para_substituent_group
+            else None
         ),
-        "direct_terminal_tms_counterfactual": direct_tms_effect,
+        "direct_para_substituent_counterfactual": direct_substituent_effect,
+        "terminal_tms_as_total_limiter_fraction": (
+            substituent_limiter_count / len(records)
+            if para_substituent_is_tms
+            else None
+        ),
+        "direct_terminal_tms_counterfactual": legacy_tms_effect,
         "interpretation_limit": (
             "This is a static hard-sphere approach-corridor descriptor. It omits "
             "enzyme geometry, solvent, molecular dynamics, nucleophile-specific "
@@ -2768,7 +2982,7 @@ def write_preliminary_comparison_report(
         "",
         "## Evidence supporting hypothesis 1 (steric relief from the longer aryl-Si bond)",
         "",
-        "- SB retains essentially the same sampled directional carbonyl access as Bz. The terminal para-TMS atoms remain remote from the carbonyl center. This is consistent with absence of direct static occlusion at the carbonyl, but it does not prove that the longer Si-C bond is the cause.",
+        "- The terminal para-TMS atoms remain remote from the carbonyl center. The later five-series continuous-trajectory analysis should be used for the control-based judgment; it finds only a small total-access change and does not identify TMS-specific relief relative to tBu.",
         "",
         "## Evidence against hypothesis 1",
         "",
@@ -2793,12 +3007,12 @@ def write_preliminary_comparison_report(
         "## Method limitations",
         "",
         "- B3LYP/def2-SVP, gas phase, no explicit dispersion correction and neutral singlet only.",
-        "- Common-scaffold RMSD uses fixed input atom order. It does not permute symmetric atoms; the entire terminal aryl-Si(CH3)3 branch is excluded to prevent methyl rotation from defining scaffold clusters.",
+        "- Common-scaffold RMSD uses fixed input atom order. It does not permute symmetric atoms; the heavy branch outside the benzoyl para carbon is excluded to prevent substituent rotation from defining scaffold clusters.",
         "- Low-frequency modes make sub-kJ/mol Gibbs rankings sensitive to the thermochemistry treatment.",
         "",
         "## Highest-value next calculation",
         "",
-        "No further long calculation is required for this preliminary comparison. Pool 109 was already optimized as the single targeted follow-up and remained 4.03 kJ/mol above SB conf002; pool 46 is the only uncovered common-scaffold cluster and was 6.48 kJ/mol above the best retained initial geometry in the DFT single-point screen. The highest-value next checks are a finer continuous steric trajectory descriptor and matched higher-basis/solvent property single points. Pool 46 Opt is optional if closing the residual search asymmetry becomes more important than model validation. Reaction TS and substituted controls remain later-stage work.",
+        "No further long calculation is required for this preliminary comparison. The continuous steric trajectory and H/Me/iPr/tBu/TMS control analysis is now available separately in para_substituent_series_analysis. Pool 46 Opt remains optional if closing the residual SB search asymmetry becomes more important than model validation; reaction TS is not justified by the present static-access differences alone.",
     ]
     output_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
@@ -3084,10 +3298,10 @@ def write_japanese_preliminary_report(
         "",
         "## 次に価値が高い計算",
         "",
-        "1. 直ちに追加の長時間DFTは不要。まず固定円錐より連続的な求核攻撃trajectory/SASA指標を実装し、相互最近傍のBz/SB配座でpaired差を確認する（新規量子化学計算なし）。",
-        "2. 仮説2のMBIS/LUMO差を検証するなら、相互対応する低エネルギー構造だけに高い基底・dispersion・暗黙溶媒を用いたproperty単一点を行う。OptやTSより安価で、気相/基底依存性を直接判定できる。",
+        "1. 連続trajectoryとH/Me/iPr/tBu/TMS対照解析は完了した。仮説1の対照ベース判定にはpara_substituent_series_analysisを優先して参照する。",
+        "2. 仮説2は既存の高基底・dispersion・暗黙溶媒property感度解析を参照し、モデル間で維持されない差を反応性へ結び付けない。",
         "3. pool 46 Optは探索非対称性を完全に閉じたい場合だけ実行する。現screenではcurrent bestを更新する優先度は低く、見積り0.4–0.8時間、上位化した場合のみFreq約2時間を追加する。",
-        "4. 上記で電子差または立体差がモデル変更後も維持されて初めて、溶媒中反応物複合体、加水分解TS、置換基対照へ進む価値を再判定する。",
+        "4. 現在の小さな静的access差だけを理由に加水分解TSへ進まず、まず今回の対照系列と電子指標を統合して仮説1・2の停止線を判断する。",
     ]
     output_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 

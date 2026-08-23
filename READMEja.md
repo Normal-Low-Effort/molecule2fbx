@@ -21,18 +21,18 @@ RDKit力場構造、ORCA量子化学構造を区別し、由来と計算条件�
 追加の解析指標を提供します。
 
 - `all_heavy_rmsd_cluster_id`：入力時の原子順を固定した全重原子RMSD。
-- `common_scaffold_rmsd_cluster_id`：末端の芳香環-Si(CH3)3分岐、すなわちSiと
-  三つのメチル炭素を除外し、入力時の原子順を固定したRMSD。
+- `common_scaffold_rmsd_cluster_id`：ベンゾイルpara炭素より外側の重原子分岐を
+  除外し、入力時の原子順を固定したRMSD。
 - `reaction_center_rmsd_cluster_id`：芳香族N-ベンゾイルカルボニル炭素から
   グラフ上で二結合以内にある重原子を対象としたRMSD。
 
 対称原子の入れ替えは行いません。ORCAのXYZは入力時の原子順を保持する一方、
 自動的な原子置換は原子の同一性を暗黙に変える可能性があるためです。共通骨格指標では
-末端TMS分岐全体を除き、等価なメチル基の回転や入れ替えだけで別のLSD-ベンゾイル
-骨格クラスタが生じないようにしています。この指標は追加の記述子であり、座標や従来の
-全重原子クラスタIDを書き換えません。
+para置換基分岐全体を除き、TMS、p-Me、p-iPr、p-tBuの回転だけで別の
+LSD-ベンゾイル骨格クラスタが生じないようにしています。この指標は追加の記述子であり、
+座標や従来の全重原子クラスタIDを書き換えません。
 
-Bz体とTMS-Bz体を直接比較するRMSDでは、RDKitグラフから末端TMS分岐を除き、
+Bz体とpara置換体を直接比較するRMSDでは、RDKitグラフから各para置換基分岐を除き、
 キラリティを保持するグラフ同型写像を求めます。ベンゾイル基のC/O/N/ipso原子を
 固定点とし、保持された入力原子順で変位が最小となる写像を選び、その一つの決定論的な
 写像にKabsch重ね合わせを適用します。RMSDを下げるためのベンゼン環やエチル分岐の
@@ -50,6 +50,13 @@ Bz/SB予備解析は次のコマンドで再生成できます。
 
 ```powershell
 work\test-venv\Scripts\python.exe scripts\analyze_bz_sb_preliminary.py
+```
+
+ORCAを起動せず、strict primary集合だけを用いた5系列の共通骨格・立体アクセス解析は、
+次のコマンドで再生成できます。
+
+```powershell
+work\test-venv\Scripts\python.exe scripts\analyze_para_substituent_series.py
 ```
 
 この解析は、振動数計算がない場合に `imaginary_modes: null` とし、最終的な計算失敗と

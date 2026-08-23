@@ -47,7 +47,7 @@
         24
       ],
       "isomorphism_choice": "benzoyl reaction-centre anchors followed by minimum retained input-order displacement",
-      "method": "terminal_TMS_removal_then_graph_isomorphism",
+      "method": "benzoyl_para_substituent_removal_then_graph_isomorphism",
       "second_atom_indices": [
         0,
         1,
@@ -13286,7 +13286,7 @@
       }
     }
   },
-  "generated_at_utc": "2026-08-23T16:30:57.263082Z",
+  "generated_at_utc": "2026-08-23T19:17:49.003742Z",
   "interpretation_rules": {
     "detected_vs_absent": "A difference smaller than conformer spread or model uncertainty is reported as not detected at this level, never as proof of absence.",
     "gibbs_scope": "Gibbs weights are conditional whenever Freq is incomplete.",
@@ -13446,7 +13446,7 @@
     "eligible_count": 40,
     "energy_window_kj_mol": 10.0,
     "exact_energy_reproduction_of_retained_metadata": true,
-    "generated_at_utc": "2026-08-23T16:30:57.203198Z",
+    "generated_at_utc": "2026-08-23T19:17:48.944737Z",
     "maximum_energy_difference_kcal_mol": 0.0,
     "name": "1SB-LSD_RR",
     "original_all_heavy_cluster_count": 22,

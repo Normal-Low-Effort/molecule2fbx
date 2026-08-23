@@ -23,20 +23,21 @@ is not proof of the true global minimum.
 all-heavy-atom clustering:
 
 - `all_heavy_rmsd_cluster_id`: fixed input atom order, all heavy atoms.
-- `common_scaffold_rmsd_cluster_id`: fixed input atom order with a terminal
-  aryl-Si(CH3)3 branch, consisting of Si and its three methyl carbons, excluded.
+- `common_scaffold_rmsd_cluster_id`: fixed input atom order with the heavy-atom
+  branch outside the benzoyl para carbon excluded.
 - `reaction_center_rmsd_cluster_id`: fixed input atom order for heavy atoms no
   more than two graph bonds from the aromatic N-benzoyl carbonyl carbon.
 
 No symmetry permutation is applied. ORCA XYZ files retain the input atom order,
 while automatic permutation can silently change atom identity. The
-common-scaffold metric removes the whole terminal TMS branch so that rotation
-or permutation of its equivalent methyl groups does not create a new
-LSD-benzoyl scaffold cluster. This additional descriptor does not rewrite
-coordinates or alter the original all-heavy cluster IDs.
+common-scaffold metric removes the whole para substituent branch so that TMS,
+p-Me, p-iPr, or p-tBu rotation does not create a new LSD-benzoyl scaffold
+cluster. This additional descriptor does not rewrite coordinates or alter the
+original all-heavy cluster IDs.
 
-For direct Bz-versus-TMS-Bz RMSD, the analysis removes the terminal TMS branch
-from the RDKit graph, finds a chirality-preserving graph isomorphism, anchors
+For direct comparison across the para-substituent series, the analysis removes
+each para substituent branch from the RDKit graph, finds a chirality-preserving
+graph isomorphism, anchors
 the mapping at the benzoyl C/O/N/ipso atoms, and selects the mapping with the
 smallest displacement in retained input-atom order. Kabsch alignment is applied
 to that deterministic mapping. Symmetry-equivalent benzene or ethyl-branch
@@ -57,6 +58,13 @@ Regenerate the preliminary Bz/SB analysis with:
 
 ```powershell
 work\test-venv\Scripts\python.exe scripts\analyze_bz_sb_preliminary.py
+```
+
+Regenerate the strict-primary five-series common-scaffold and steric-access
+analysis, without starting ORCA, with:
+
+```powershell
+work\test-venv\Scripts\python.exe scripts\analyze_para_substituent_series.py
 ```
 
 The analysis uses `imaginary_modes: null` when no frequency calculation exists,

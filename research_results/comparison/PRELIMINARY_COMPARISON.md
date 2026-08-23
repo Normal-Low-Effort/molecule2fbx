@@ -31,7 +31,7 @@ Generated from retained B3LYP/def2-SVP gas-phase structures. These are computed 
 
 ## Evidence supporting hypothesis 1 (steric relief from the longer aryl-Si bond)
 
-- SB retains essentially the same sampled directional carbonyl access as Bz. The terminal para-TMS atoms remain remote from the carbonyl center. This is consistent with absence of direct static occlusion at the carbonyl, but it does not prove that the longer Si-C bond is the cause.
+- The terminal para-TMS atoms remain remote from the carbonyl center. The later five-series continuous-trajectory analysis should be used for the control-based judgment; it finds only a small total-access change and does not identify TMS-specific relief relative to tBu.
 
 ## Evidence against hypothesis 1
 
@@ -56,9 +56,9 @@ Generated from retained B3LYP/def2-SVP gas-phase structures. These are computed 
 ## Method limitations
 
 - B3LYP/def2-SVP, gas phase, no explicit dispersion correction and neutral singlet only.
-- Common-scaffold RMSD uses fixed input atom order. It does not permute symmetric atoms; the entire terminal aryl-Si(CH3)3 branch is excluded to prevent methyl rotation from defining scaffold clusters.
+- Common-scaffold RMSD uses fixed input atom order. It does not permute symmetric atoms; the heavy branch outside the benzoyl para carbon is excluded to prevent substituent rotation from defining scaffold clusters.
 - Low-frequency modes make sub-kJ/mol Gibbs rankings sensitive to the thermochemistry treatment.
 
 ## Highest-value next calculation
 
-No further long calculation is required for this preliminary comparison. Pool 109 was already optimized as the single targeted follow-up and remained 4.03 kJ/mol above SB conf002; pool 46 is the only uncovered common-scaffold cluster and was 6.48 kJ/mol above the best retained initial geometry in the DFT single-point screen. The highest-value next checks are a finer continuous steric trajectory descriptor and matched higher-basis/solvent property single points. Pool 46 Opt is optional if closing the residual search asymmetry becomes more important than model validation. Reaction TS and substituted controls remain later-stage work.
+No further long calculation is required for this preliminary comparison. The continuous steric trajectory and H/Me/iPr/tBu/TMS control analysis is now available separately in para_substituent_series_analysis. Pool 46 Opt remains optional if closing the residual SB search asymmetry becomes more important than model validation; reaction TS is not justified by the present static-access differences alone.

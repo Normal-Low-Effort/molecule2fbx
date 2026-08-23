@@ -11,6 +11,16 @@
       ],
       "timestamp_utc": "2026-08-23T16:26:47.436169Z",
       "type": "preliminary_bz_sb_comparison_metadata_repair"
+    },
+    {
+      "calculation_files_modified": false,
+      "common_scaffold_definition": "all heavy atoms except the branch outside the benzoyl para carbon",
+      "common_scaffold_threshold_angstrom": 0.75,
+      "forcefield_used": "MMFF94s",
+      "performed_at_utc": "2026-08-23T19:29:38.033500Z",
+      "reaction_center_threshold_angstrom": 0.25,
+      "symmetry_permutations": false,
+      "type": "para_substituent_common_scaffold_metadata_refresh"
     }
   ],
   "best_conformer_id": "conf002",
@@ -24,7 +34,7 @@
       "MMFF94s",
       "UFF"
     ],
-    "forcefield_used": null,
+    "forcefield_used": "MMFF94s",
     "initial_screening": {
       "cluster_count": 22,
       "converged": 200,
@@ -3615,7 +3625,7 @@
             34,
             35
           ],
-          "assumption": "Equivalent atoms are not permuted. The common-scaffold view excludes a terminal aryl-Si(CH3)3 branch so methyl rotation does not create a separate scaffold cluster.",
+          "assumption": "Equivalent atoms are not permuted. The common-scaffold view excludes the heavy-atom branch outside the benzoyl para carbon so substituent rotation does not create a separate scaffold cluster.",
           "atom_correspondence": "fixed_input_atom_order",
           "benzoyl_reaction_center": {
             "amide_n": 15,
@@ -3727,7 +3737,7 @@
           ],
           "cluster_count": 4,
           "symmetry_permutations": false,
-          "threshold_angstrom": 0.75
+          "threshold_angstrom": 0.25
         }
       },
       "rmsd_threshold_angstrom": 0.75,
@@ -3771,7 +3781,7 @@
             34,
             35
           ],
-          "assumption": "Equivalent atoms are not permuted. The common-scaffold view excludes a terminal aryl-Si(CH3)3 branch so methyl rotation does not create a separate scaffold cluster.",
+          "assumption": "Equivalent atoms are not permuted. The common-scaffold view excludes the heavy-atom branch outside the benzoyl para carbon so substituent rotation does not create a separate scaffold cluster.",
           "atom_correspondence": "fixed_input_atom_order",
           "benzoyl_reaction_center": {
             "amide_n": 15,

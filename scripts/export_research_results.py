@@ -56,6 +56,18 @@ SNAPSHOT_FILES: tuple[tuple[str, str], ...] = (
         "provenance/para_alkyl_controls_queue_status.json",
     ),
     (
+        "para_substituent_series_analysis/analysis.json",
+        "comparison/para_substituent_series/analysis.json",
+    ),
+    (
+        "para_substituent_series_analysis/conformer_metrics.csv",
+        "comparison/para_substituent_series/conformer_metrics.csv",
+    ),
+    (
+        "para_substituent_series_analysis/FINDINGS_JA.md",
+        "comparison/para_substituent_series/FINDINGS_JA.md",
+    ),
+    (
         "Bz_vs_SB_preliminary_comparison/1Bz-LSD_RR_conformer_metrics.csv",
         "comparison/1Bz-LSD_RR_conformer_metrics.csv",
     ),

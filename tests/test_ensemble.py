@@ -5,6 +5,7 @@ import pytest
 from molecule2fbx.cli import _request_from_args, build_parser
 from molecule2fbx.config import ConversionRequest
 from molecule2fbx.ensemble import (
+    _forcefield_used_summary,
     build_ensemble_report,
     cluster_optimized_results,
     screen_forcefield_candidates,
@@ -37,6 +38,18 @@ def _model(points, *, index=0):
 BASE = ((0.0, 0.0, 0.0), (1.0, 0.0, 0.0), (0.0, 1.0, 0.0), (0.0, 0.0, 1.0))
 DISTINCT = ((0.0, 0.0, 0.0), (1.4, 0.0, 0.0), (0.0, 1.0, 0.0), (0.0, 0.0, 0.6))
 TRANSLATED = tuple((x + 4.0, y - 3.0, z + 2.0) for x, y, z in BASE)
+
+
+def test_forcefield_summary_falls_back_to_current_screening_records():
+    assert _forcefield_used_summary(
+        {},
+        {
+            "records": [
+                {"forcefield": "MMFF94s"},
+                {"forcefield": "MMFF94s"},
+            ]
+        },
+    ) == "MMFF94s"
 
 
 def _candidate(points, index, energy, converged=True):

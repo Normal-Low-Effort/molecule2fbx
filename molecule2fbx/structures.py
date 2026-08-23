@@ -93,8 +93,8 @@ class RMSDAtomSubsets:
     """Fixed atom-order subsets used for complementary conformer RMSDs.
 
     The subsets deliberately do not replace the historical all-heavy-atom
-    metric.  They add views that ignore a terminal trimethylsilyl group and
-    that focus on the N-benzoyl reaction centre.
+    metric.  They add views that ignore a terminal para-benzoyl substituent
+    and that focus on the N-benzoyl reaction centre.
     """
 
     all_heavy: Tuple[int, ...]
@@ -124,15 +124,15 @@ class RMSDAtomSubsets:
             "symmetry_permutations": False,
             "assumption": (
                 "Equivalent atoms are not permuted. The common-scaffold view excludes "
-                "a terminal aryl-Si(CH3)3 branch so methyl rotation does not create a "
-                "separate scaffold cluster."
+                "the heavy-atom branch outside the benzoyl para carbon so substituent "
+                "rotation does not create a separate scaffold cluster."
             ),
         }
 
 
 @dataclass(frozen=True)
 class CrossMoleculeAtomMapping:
-    """Deterministic Bz/TMS-Bz scaffold correspondence."""
+    """Deterministic correspondence for a shared para-substituted Bz scaffold."""
 
     first_indices: Tuple[int, ...]
     second_indices: Tuple[int, ...]
@@ -149,7 +149,7 @@ class CrossMoleculeAtomMapping:
             "second_reaction_center_atom_indices": list(
                 self.second_reaction_indices
             ),
-            "method": "terminal_TMS_removal_then_graph_isomorphism",
+            "method": "benzoyl_para_substituent_removal_then_graph_isomorphism",
             "symmetry_permutations_for_rmsd_minimization": False,
             "isomorphism_choice": (
                 "benzoyl reaction-centre anchors followed by minimum retained "
@@ -526,37 +526,64 @@ def _benzoyl_reaction_center(mol) -> Optional[Tuple[int, int, int, int]]:
     return matches[0] if len(matches) == 1 else None
 
 
-def _terminal_tms_heavy_atoms(mol) -> Tuple[int, ...]:
+def _benzoyl_para_substituent_heavy_atoms(
+    mol, reaction_center: Optional[Tuple[int, int, int, int]]
+) -> Tuple[int, ...]:
+    """Return the heavy branch attached outside the benzoyl para carbon.
+
+    The benzoyl ring itself remains part of the common scaffold.  The function
+    deliberately requires one unambiguous six-membered aromatic ring containing
+    the carbonyl ipso carbon and at most one heavy para substituent.  Unsubstituted
+    benzoyl therefore returns an empty tuple.
+    """
+
+    if reaction_center is None:
+        return ()
+    ipso = int(reaction_center[3])
+    rings = [
+        tuple(int(index) for index in ring)
+        for ring in mol.GetRingInfo().AtomRings()
+        if len(ring) == 6
+        and ipso in ring
+        and all(mol.GetAtomWithIdx(int(index)).GetIsAromatic() for index in ring)
+    ]
+    if len(rings) != 1:
+        return ()
+    ring = set(rings[0])
+    distances = {ipso: 0}
+    pending = [ipso]
+    while pending:
+        index = pending.pop(0)
+        for neighbor in mol.GetAtomWithIdx(index).GetNeighbors():
+            neighbor_index = neighbor.GetIdx()
+            if neighbor_index in ring and neighbor_index not in distances:
+                distances[neighbor_index] = distances[index] + 1
+                pending.append(neighbor_index)
+    para = [index for index, distance in distances.items() if distance == 3]
+    if len(para) != 1:
+        return ()
+    para_index = para[0]
+    branch_roots = [
+        neighbor.GetIdx()
+        for neighbor in mol.GetAtomWithIdx(para_index).GetNeighbors()
+        if neighbor.GetIdx() not in ring and neighbor.GetAtomicNum() != 1
+    ]
+    if not branch_roots:
+        return ()
+    if len(branch_roots) != 1:
+        raise ValueError("Benzoyl para carbon has multiple external heavy branches")
+
     excluded = set()
-    for silicon in mol.GetAtoms():
-        if silicon.GetAtomicNum() != 14:
+    pending = list(branch_roots)
+    while pending:
+        index = pending.pop()
+        if index in ring or index in excluded:
             continue
-        aromatic_anchors = [
-            neighbor
-            for neighbor in silicon.GetNeighbors()
-            if neighbor.GetAtomicNum() == 6 and neighbor.GetIsAromatic()
-        ]
-        carbon_branches = [
-            neighbor
-            for neighbor in silicon.GetNeighbors()
-            if neighbor.GetAtomicNum() == 6 and not neighbor.GetIsAromatic()
-        ]
-        if len(aromatic_anchors) != 1 or len(carbon_branches) != 3:
+        atom = mol.GetAtomWithIdx(index)
+        if atom.GetAtomicNum() == 1:
             continue
-        excluded.add(silicon.GetIdx())
-        stack = [atom.GetIdx() for atom in carbon_branches]
-        anchor_index = aromatic_anchors[0].GetIdx()
-        while stack:
-            index = stack.pop()
-            if index == anchor_index or index in excluded:
-                continue
-            atom = mol.GetAtomWithIdx(index)
-            if atom.GetAtomicNum() == 1:
-                continue
-            excluded.add(index)
-            for neighbor in atom.GetNeighbors():
-                if neighbor.GetIdx() not in excluded and neighbor.GetIdx() != anchor_index:
-                    stack.append(neighbor.GetIdx())
+        excluded.add(index)
+        pending.extend(neighbor.GetIdx() for neighbor in atom.GetNeighbors())
     return tuple(sorted(excluded))
 
 
@@ -568,9 +595,9 @@ def rmsd_atom_subsets(model: MoleculeModel) -> RMSDAtomSubsets:
     all_heavy = tuple(
         atom.GetIdx() for atom in mol.GetAtoms() if atom.GetAtomicNum() != 1
     )
-    excluded = _terminal_tms_heavy_atoms(mol)
-    common = tuple(index for index in all_heavy if index not in set(excluded))
     center = _benzoyl_reaction_center(mol)
+    excluded = _benzoyl_para_substituent_heavy_atoms(mol, center)
+    common = tuple(index for index in all_heavy if index not in set(excluded))
     reaction: Tuple[int, ...] = ()
     if center is not None:
         carbonyl_c, _oxygen, _nitrogen, _ipso = center
@@ -595,7 +622,7 @@ def rmsd_atom_subsets(model: MoleculeModel) -> RMSDAtomSubsets:
 def common_scaffold_atom_mapping(
     first: MoleculeModel, second: MoleculeModel
 ) -> CrossMoleculeAtomMapping:
-    """Map a Bz scaffold to its TMS-Bz counterpart without reordering XYZ."""
+    """Map shared Bz scaffolds after removing their para substituent branches."""
 
     Chem, _ = _rdkit_modules()
     first_mol = Chem.RemoveHs(_analysis_rdkit_molecule(first))
@@ -616,7 +643,7 @@ def common_scaffold_atom_mapping(
     first_core = stripped(first_mol, first_subsets.excluded_terminal_substituent)
     second_core = stripped(second_mol, second_subsets.excluded_terminal_substituent)
     if first_core.GetNumAtoms() != second_core.GetNumAtoms():
-        raise ValueError("Molecules do not share the same TMS-excluded heavy scaffold")
+        raise ValueError("Molecules do not share the same para-substituent-excluded scaffold")
     matches = second_core.GetSubstructMatches(
         first_core,
         useChirality=True,

@@ -6,6 +6,7 @@ import pytest
 pytest.importorskip("rdkit")
 
 from molecule2fbx.comparison import (
+    _forcefield_used_from_screening,
     _recorded_pool_index,
     _successful_selection_repair_pool_indices,
     _synchronize_ensemble_conformer_aliases,
@@ -35,6 +36,18 @@ SB_SMILES = (
 BZ_SMILES = (
     "CCN(CC)C(=O)[C@H]1CN(C)[C@@H]2Cc3cn("
     "C(=O)c4ccccc4)c5cccc(C2=C1)c35"
+)
+PME_SMILES = (
+    "CCN(CC)C(=O)[C@H]1CN(C)[C@@H]2Cc3cn("
+    "C(=O)c4ccc(cc4)C)c5cccc(C2=C1)c35"
+)
+PIPR_SMILES = (
+    "CCN(CC)C(=O)[C@H]1CN(C)[C@@H]2Cc3cn("
+    "C(=O)c4ccc(cc4)C(C)C)c5cccc(C2=C1)c35"
+)
+PTBU_SMILES = (
+    "CCN(CC)C(=O)[C@H]1CN(C)[C@@H]2Cc3cn("
+    "C(=O)c4ccc(cc4)C(C)(C)C)c5cccc(C2=C1)c35"
 )
 
 
@@ -77,6 +90,37 @@ def test_tms_common_scaffold_excludes_terminal_si_and_three_carbons():
     assert len(subsets.common_scaffold) == len(subsets.all_heavy) - 4
     assert subsets.benzoyl_carbonyl_c in subsets.reaction_center
     assert subsets.benzoyl_carbonyl_o in subsets.reaction_center
+
+
+@pytest.mark.parametrize(
+    ("smiles", "excluded_heavy_atoms"),
+    (
+        (BZ_SMILES, 0),
+        (PME_SMILES, 1),
+        (PIPR_SMILES, 3),
+        (PTBU_SMILES, 4),
+        (SB_SMILES, 4),
+    ),
+)
+def test_common_scaffold_excludes_generic_para_substituent_branch(
+    smiles, excluded_heavy_atoms
+):
+    model = generate_forcefield_conformers(smiles, 1)[0][0].model
+    subsets = rmsd_atom_subsets(model)
+
+    assert len(subsets.excluded_terminal_substituent) == excluded_heavy_atoms
+    assert len(subsets.common_scaffold) == len(subsets.all_heavy) - excluded_heavy_atoms
+
+
+def test_all_para_controls_map_to_same_bz_common_scaffold():
+    bz = generate_forcefield_conformers(BZ_SMILES, 1)[0][0].model
+    bz_heavy = len(rmsd_atom_subsets(bz).all_heavy)
+
+    for smiles in (PME_SMILES, PIPR_SMILES, PTBU_SMILES, SB_SMILES):
+        control = generate_forcefield_conformers(smiles, 1)[0][0].model
+        mapping = common_scaffold_atom_mapping(bz, control)
+        assert len(mapping.first_indices) == bz_heavy
+        assert len(mapping.second_indices) == bz_heavy
 
 
 def test_fixed_geometry_tms_to_h_counterfactual_preserves_common_atoms():
@@ -220,6 +264,41 @@ def test_continuous_steric_access_has_no_tms_scope_for_bz_control():
     assert steric["direct_terminal_tms_counterfactual"][
         "probe_radius_sensitivity"
     ] == {}
+
+
+def test_continuous_steric_access_reports_non_tms_para_substituent_generically():
+    candidate = generate_forcefield_conformers(PME_SMILES, 1)[0][0]
+    steric = carbonyl_continuous_steric_access(
+        candidate.model,
+        azimuth_samples=24,
+    )
+
+    assert len(steric["atom_indices"]["para_substituent_heavy"]) == 1
+    assert steric["atom_indices"]["terminal_tms_heavy"] == []
+    assert steric["para_substituent_as_total_limiter_fraction"] is not None
+    assert steric["terminal_tms_as_total_limiter_fraction"] is None
+    assert steric["direct_para_substituent_counterfactual"][
+        "probe_radius_sensitivity"
+    ]
+    assert steric["direct_terminal_tms_counterfactual"][
+        "probe_radius_sensitivity"
+    ] == {}
+
+
+def test_forcefield_summary_is_recovered_from_screening_records():
+    payload = {
+        "conformer_search": {
+            "forcefield_used": None,
+            "initial_screening": {
+                "records": [
+                    {"forcefield": "MMFF94s"},
+                    {"forcefield": "MMFF94s"},
+                ]
+            },
+        }
+    }
+
+    assert _forcefield_used_from_screening(payload) == "MMFF94s"
 
 
 def test_existing_orca_property_parser_uses_final_population_sections(tmp_path):

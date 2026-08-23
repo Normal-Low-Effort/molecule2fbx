@@ -9,6 +9,8 @@ calculation tree under `outputs/`.
 - The curated ensemble set currently covers 1Bz-LSD_RR, 1SB-LSD_RR, and the
   p-Me, p-iPr, and p-tBu benzoyl controls. Selection-repair and control-run
   provenance is retained alongside the summaries.
+- `comparison/para_substituent_series/` contains the strict-primary five-series
+  common-scaffold and carbonyl-access analysis generated without new ORCA jobs.
 - They are computational results, not experimental structures or measurements.
 - Local workspace prefixes in text files are replaced with `${WORKSPACE}` so
   the Git snapshot does not publish a user-specific absolute path.

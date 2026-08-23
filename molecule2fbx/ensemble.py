@@ -48,6 +48,34 @@ def _frequency_provenance(result: QuantumResult) -> Optional[str]:
     return "reused_or_preexisting_unspecified"
 
 
+def _forcefield_used_summary(
+    metadata: Dict[str, object], initial_screening: Dict[str, object]
+) -> Optional[str]:
+    """Recover the force field from screening records when the best Opt was reused.
+
+    Externally reused quantum structures do not necessarily retain RDKit
+    force-field metadata.  The force-field stage belongs to the current
+    screening run, so its records are the authoritative fallback.
+    """
+
+    recorded = metadata.get("forcefield")
+    if isinstance(recorded, str) and recorded:
+        return recorded
+    records = initial_screening.get("records", [])
+    if not isinstance(records, list):
+        return None
+    values = sorted(
+        {
+            str(item["forcefield"])
+            for item in records
+            if isinstance(item, dict)
+            and isinstance(item.get("forcefield"), str)
+            and item["forcefield"]
+        }
+    )
+    return values[0] if len(values) == 1 else "/".join(values) or None
+
+
 def _cluster_by_subset(
     results: Sequence[QuantumResult],
     atom_indices: Sequence[int],
@@ -594,7 +622,9 @@ def build_ensemble_report(
             "embedding_failures": etkdg.get("embedding_failures"),
             "rdkit_version": etkdg.get("rdkit_version"),
             "forcefield_preference": ["MMFF94s", "UFF"],
-            "forcefield_used": metadata.get("forcefield"),
+            "forcefield_used": _forcefield_used_summary(
+                metadata, initial_screening
+            ),
             "initial_screening": initial_screening,
         },
         "dft": {
