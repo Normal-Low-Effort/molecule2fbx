@@ -198,3 +198,19 @@ class FrequencyOnlyRequest:
             raise ValueError("--imaginary-threshold-cm1 must be negative")
         if self.low_frequency_threshold_cm1 <= 0:
             raise ValueError("--low-frequency-threshold-cm1 must be greater than zero")
+
+
+@dataclass(frozen=True)
+class XYZConversionRequest:
+    """Export one existing XYZ geometry to FBX without recalculation."""
+
+    xyz_path: Path
+    name: Optional[str] = None
+    output_dir: Optional[Path] = None
+    blender_executable: Optional[str] = None
+    blender_timeout: float = 180.0
+    charge: int = DEFAULT_CHARGE
+
+    def validate(self) -> None:
+        if self.blender_timeout <= 0:
+            raise ValueError("--blender-timeout must be greater than zero")

@@ -18,10 +18,11 @@ from .config import (
     DEFAULT_MULTIPLICITY,
     ConversionRequest,
     FrequencyOnlyRequest,
+    XYZConversionRequest,
 )
 from .errors import Molecule2FBXError
 from .frequency import run_frequency_only
-from .pipeline import run_conversion
+from .pipeline import run_conversion, run_xyz_conversion
 from .pubchem import validate_cid
 
 
@@ -101,7 +102,8 @@ def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         prog="molecule2fbx",
         description=(
-            "Create provenance-aware molecular FBX models from PubChem CID or SMILES. "
+            "Create provenance-aware molecular FBX models from PubChem CID, SMILES, "
+            "or an existing XYZ geometry. "
             "Quantum calculations run only with --method dft/hf or explicit --ensemble."
         ),
     )
@@ -113,6 +115,11 @@ def build_parser() -> argparse.ArgumentParser:
     source = parser.add_argument_group("molecule input")
     source.add_argument("--cid", dest="cid_option", help="PubChem Compound ID")
     source.add_argument("--smiles", help="SMILES; explicit R/S and E/Z information is retained")
+    source.add_argument(
+        "--xyz",
+        metavar="XYZ",
+        help="Export an existing single-frame XYZ geometry to FBX without recalculation",
+    )
     source.add_argument("--name", help="Override the molecule name used for output files")
     source.add_argument(
         "--frequency-only",
@@ -340,8 +347,8 @@ def build_parser() -> argparse.ArgumentParser:
         "--output-dir",
         default=None,
         help=(
-            "Directory for outputs (default: ./output; for --frequency-only, "
-            "the XYZ directory)"
+            "Directory for outputs (default: ./output; for --xyz and "
+            "--frequency-only, the XYZ directory)"
         ),
     )
     output.add_argument("--api-timeout", type=float, default=30.0, help="PubChem timeout seconds")
@@ -469,10 +476,43 @@ def _frequency_request_from_args(args: argparse.Namespace) -> FrequencyOnlyReque
     )
 
 
+def _xyz_request_from_args(args: argparse.Namespace) -> XYZConversionRequest:
+    cid_values = [value for value in (args.legacy_cid, args.cid_option) if value is not None]
+    if cid_values or args.smiles is not None or args.frequency_only is not None:
+        raise ValueError("--xyz cannot be combined with CID, --smiles, or --frequency-only")
+    if args.metadata is not None:
+        raise ValueError("--metadata requires --frequency-only")
+    if args.method != "auto":
+        raise ValueError("--xyz does not use --method or run electronic-structure calculations")
+    if args.ensemble or args.frequency:
+        raise ValueError("--xyz cannot be combined with --ensemble or --frequency")
+    if args.conformers is not None or args.conformer_pool is not None:
+        raise ValueError("Conformer-generation options cannot be combined with --xyz")
+    if args.reuse_calculations is not None:
+        raise ValueError("--reuse-calculations cannot be combined with --xyz")
+    return XYZConversionRequest(
+        xyz_path=Path(args.xyz),
+        name=args.name,
+        output_dir=Path(args.output_dir) if args.output_dir else None,
+        blender_executable=args.blender,
+        blender_timeout=args.blender_timeout,
+        charge=DEFAULT_CHARGE if args.charge is None else args.charge,
+    )
+
+
 def main(argv: Optional[Sequence[str]] = None) -> int:
     parser = build_parser()
     args = parser.parse_args(argv)
     try:
+        if args.xyz:
+            request = _xyz_request_from_args(args)
+            outcome = run_xyz_conversion(
+                request, log=lambda message: print(message, file=sys.stderr)
+            )
+            for artifact in outcome.artifacts:
+                print(f"Created: {artifact.fbx_path}")
+                print(f"Metadata: {artifact.metadata_path}")
+            return 0
         if args.frequency_only:
             request = _frequency_request_from_args(args)
             outcome = run_frequency_only(

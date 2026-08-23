@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "molecule2fbx"
-version = "0.4.0"
-description = "Generate provenance-aware molecular FBX models from PubChem or SMILES"
+version = "0.4.1"
+description = "Generate provenance-aware molecular FBX models from PubChem, SMILES, or XYZ"
 readme = "README.md"
 requires-python = ">=3.9"
 dependencies = [

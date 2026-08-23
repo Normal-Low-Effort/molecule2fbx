@@ -10,7 +10,7 @@ from pathlib import Path
 from typing import Callable, Dict, List, Optional, Sequence, Tuple, Type
 
 from .blender_export import export_model, find_blender
-from .config import ConversionRequest
+from .config import ConversionRequest, XYZConversionRequest
 from .electronic import validate_electronic_state, validate_metal_policy
 from .ensemble import (
     build_ensemble_report,
@@ -43,6 +43,7 @@ from .structures import (
     select_diverse_conformers,
     validate_model_stereochemistry,
 )
+from .xyz import load_xyz_for_export
 
 
 Logger = Callable[[str], None]
@@ -74,8 +75,12 @@ def _rename_model(model: MoleculeModel, name: str) -> MoleculeModel:
     return MoleculeModel(model.cid, name, model.atoms, model.bonds, model.metadata)
 
 
-def _write_metadata(model: MoleculeModel, fbx_path: Path) -> Path:
-    metadata_path = fbx_path.with_suffix(".metadata.json")
+def _write_metadata(
+    model: MoleculeModel,
+    fbx_path: Path,
+    metadata_path: Optional[Path] = None,
+) -> Path:
+    metadata_path = metadata_path or fbx_path.with_suffix(".metadata.json")
     payload = model.to_dict()
     payload.update(
         {
@@ -99,6 +104,7 @@ def _export_artifact(
     blender_executable: str,
     blender_timeout: float,
     exporter: Callable[..., Path],
+    metadata_path: Optional[Path] = None,
 ) -> ExportedArtifact:
     fbx_path = exporter(
         model,
@@ -106,7 +112,7 @@ def _export_artifact(
         blender_executable=blender_executable,
         timeout=blender_timeout,
     )
-    metadata_path = _write_metadata(model, fbx_path)
+    metadata_path = _write_metadata(model, fbx_path, metadata_path)
     return ExportedArtifact(
         fbx_path=fbx_path,
         metadata_path=metadata_path,
@@ -117,6 +123,49 @@ def _export_artifact(
             else None
         ),
     )
+
+
+def run_xyz_conversion(
+    request: XYZConversionRequest,
+    *,
+    log: Optional[Logger] = None,
+    blender_finder: Callable[[Optional[str]], str] = find_blender,
+    exporter: Callable[..., Path] = export_model,
+) -> ConversionOutcome:
+    """Export an existing XYZ geometry without force-field or quantum work."""
+
+    request.validate()
+    emit = log or (lambda _message: None)
+    xyz_path = Path(request.xyz_path).expanduser().resolve()
+    if not xyz_path.is_file():
+        raise ConfigurationError(f"XYZ file not found: {xyz_path}")
+    model = load_xyz_for_export(
+        xyz_path,
+        name=request.name,
+        charge=request.charge,
+    )
+    output_dir = (
+        Path(request.output_dir).expanduser().resolve()
+        if request.output_dir is not None
+        else xyz_path.parent
+    )
+    output_dir.mkdir(parents=True, exist_ok=True)
+    blender = blender_finder(request.blender_executable)
+    base = safe_filename(model.name, xyz_path.stem)
+    emit("Structure origin: imported_xyz")
+    inference = model.metadata.get("xyz_bond_inference")
+    if isinstance(inference, dict) and inference.get("warning"):
+        emit(f"Warning: {inference['warning']}")
+    artifact = _export_artifact(
+        model,
+        output_dir=output_dir,
+        stem=base,
+        blender_executable=blender,
+        blender_timeout=request.blender_timeout,
+        exporter=exporter,
+        metadata_path=output_dir / f"{base}.fbx.metadata.json",
+    )
+    return ConversionOutcome(model, (artifact,), "xyz")
 
 
 def _properties_for_cid(cid: int, timeout: float) -> Tuple[str, str]:

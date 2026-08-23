@@ -1,9 +1,10 @@
-# molecule2fbx 0.4.0
+# molecule2fbx 0.4.1
 
 [Japanese version](READMEja.md)
 
 `molecule2fbx` is a command-line tool that generates ball-and-stick molecular
-models from a PubChem CID or SMILES and exports them to FBX through Blender.
+models from a PubChem CID, SMILES, or existing XYZ geometry and exports them to
+FBX through Blender.
 It distinguishes PubChem 3D structures, RDKit force-field structures, and ORCA
 quantum-chemistry structures, and records their provenance and calculation
 settings in JSON metadata.
@@ -12,6 +13,7 @@ The repository also includes descriptions related to research analyses of LSD co
 Version 0.4.0 adds an `--ensemble` mode that runs ETKDG conformer generation,
 DFT geometry optimization, post-DFT duplicate removal, selective frequency
 calculations, and relative energy and Gibbs-energy analysis as one workflow.
+Version 0.4.1 adds direct, recalculation-free XYZ-to-FBX export.
 
 Computed structures are not experimental structures. The lowest-energy
 structure in a run is only the current best among the candidates examined; it
@@ -146,6 +148,24 @@ when PubChem 3D is unavailable. It never starts a quantum-chemistry calculation.
 molecule2fbx --smiles "CCO" --name Ethanol --method forcefield
 molecule2fbx --smiles "O" --name Water --method dft
 ```
+
+Export an existing single-frame XYZ geometry without running PubChem, ETKDG,
+force-field optimization, ORCA Opt, or Freq:
+
+```powershell
+molecule2fbx --xyz research_results\current_best_structures\Molecule\best.xyz
+molecule2fbx --xyz path\to\best.xyz --name Molecule_best --output-dir output
+```
+
+The default output directory is the XYZ file's directory. The FBX uses the XYZ
+stem (or `--name`), and its provenance metadata is written as
+`<name>.fbx.metadata.json` so an existing `<name>.metadata.json` is not
+overwritten. XYZ preserves atom order and coordinates but contains no bond
+table; RDKit therefore infers connectivity and bond orders for visualization
+using `--charge` (default 0). If consistent bond orders cannot be assigned,
+the tool falls back to connectivity-only single bonds and records a warning.
+The imported geometry is labelled `imported_xyz`, not experimental or newly
+optimized.
 
 The default ORCA electronic-structure model is `B3LYP/def2-SVP`, charge 0, and
 multiplicity 1.
@@ -314,6 +334,7 @@ electronic-structure assessment.
 - `quantum/orca.py`: ORCA input generation, execution, and output parsing.
 - `quantum/reuse.py`: non-destructive Opt and Freq reuse.
 - `frequency.py`: Freq-only workflow for an optimized XYZ.
+- `xyz.py`: single-frame XYZ parsing and RDKit bond inference for direct FBX export.
 - `blender_export.py` and `blender_worker.py`: FBX generation.
 
 ORCA was selected because it is practical as an external executable on Windows

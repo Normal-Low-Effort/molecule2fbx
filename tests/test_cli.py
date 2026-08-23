@@ -2,7 +2,12 @@ from pathlib import Path
 
 import pytest
 
-from molecule2fbx.cli import _frequency_request_from_args, _request_from_args, build_parser
+from molecule2fbx.cli import (
+    _frequency_request_from_args,
+    _request_from_args,
+    _xyz_request_from_args,
+    build_parser,
+)
 from molecule2fbx.config import ConversionRequest
 
 
@@ -39,6 +44,29 @@ def test_frequency_only_cli_does_not_require_cid_or_smiles(tmp_path):
     assert request.xyz_path == xyz
     assert request.nprocs == 8
     assert request.method is None
+
+
+def test_xyz_cli_does_not_require_cid_or_smiles(tmp_path):
+    xyz = tmp_path / "best.xyz"
+    args = build_parser().parse_args(["--xyz", str(xyz), "--charge", "-1"])
+    request = _xyz_request_from_args(args)
+    assert request.xyz_path == xyz
+    assert request.output_dir is None
+    assert request.charge == -1
+
+
+def test_xyz_cli_rejects_quantum_method(tmp_path):
+    xyz = tmp_path / "best.xyz"
+    args = build_parser().parse_args(["--xyz", str(xyz), "--method", "dft"])
+    with pytest.raises(ValueError, match="does not use --method"):
+        _xyz_request_from_args(args)
+
+
+def test_xyz_cli_rejects_another_molecule_source(tmp_path):
+    xyz = tmp_path / "best.xyz"
+    args = build_parser().parse_args(["--xyz", str(xyz), "--smiles", "O"])
+    with pytest.raises(ValueError, match="cannot be combined"):
+        _xyz_request_from_args(args)
 
 
 def test_reuse_calculations_cli_option_is_preserved():

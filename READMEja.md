@@ -1,9 +1,9 @@
-# molecule2fbx 0.4.0
+# molecule2fbx 0.4.1
 
 [英語版](README.md)
 
-`molecule2fbx` は、PubChem CIDまたはSMILESから球棒分子モデルを生成し、
-Blenderを介してFBXへ出力するコマンドラインツールです。PubChem 3D構造、
+`molecule2fbx` は、PubChem CID、SMILES、または既存XYZ構造から球棒分子モデルを
+生成し、Blenderを介してFBXへ出力するコマンドラインツールです。PubChem 3D構造、
 RDKit力場構造、ORCA量子化学構造を区別し、由来と計算条件をJSONメタデータへ
 保存します。
 このリポジトリには、molecule2fbxを用いて実施された、LSDを対象とした研究解析に関連する記述および研究解析の厳選されたスナップショットも含まれています。大規模な生計算データはローカルに保存されており、リポジトリには含まれていません。研究データにご興味がある場合は、お気軽にお問い合わせください。
@@ -11,6 +11,7 @@ RDKit力場構造、ORCA量子化学構造を区別し、由来と計算条件�
 バージョン0.4.0では、ETKDGによる配座生成、DFT構造最適化、DFT後の重複除去、
 選択的な振動数計算、相対エネルギーとGibbs自由エネルギーの解析を一つの処理として
 実行する `--ensemble` モードを追加しました。
+バージョン0.4.1では、再計算を行わないXYZからFBXへの直接変換を追加しました。
 
 計算構造は実験構造ではありません。一回の計算で得られた最低エネルギー構造も、
 調べた候補中の現時点での最良構造にすぎず、真の大域的最小構造を保証しません。
@@ -135,6 +136,22 @@ molecule2fbx --cid 5360697 --method auto
 molecule2fbx --smiles "CCO" --name Ethanol --method forcefield
 molecule2fbx --smiles "O" --name Water --method dft
 ```
+
+既存の単一構造XYZを、PubChem、ETKDG、力場最適化、ORCA Opt、Freqを実行せず
+そのままFBXへ変換できます。
+
+```powershell
+molecule2fbx --xyz research_results\current_best_structures\Molecule\best.xyz
+molecule2fbx --xyz path\to\best.xyz --name Molecule_best --output-dir output
+```
+
+出力先の既定値はXYZと同じディレクトリです。FBX名にはXYZのstemまたは `--name` を
+使用し、来歴metadataは既存の `<name>.metadata.json` を上書きしないよう
+`<name>.fbx.metadata.json` として保存します。XYZには結合表がないため、原子順序と座標を
+保持した上で、表示用の結合と結合次数をRDKitで推定します。結合推定に使う全電荷は
+`--charge` で指定でき、既定値は0です。整合する結合次数を割り当てられない場合は、
+connectivityのみを推定して単結合表示へフォールバックし、その警告をmetadataへ記録します。
+構造由来は `imported_xyz` とし、実験構造や新規最適化構造とは扱いません。
 
 ORCAの既定電子構造条件は `B3LYP/def2-SVP`、電荷0、多重度1です。
 
@@ -289,6 +306,7 @@ molecule2fbx --smiles "..." --method dft --allow-metals `
 - `quantum/orca.py`：ORCA入力生成、外部実行、出力解析。
 - `quantum/reuse.py`：OptとFreqの非破壊的な再利用。
 - `frequency.py`：最適化済みXYZに対するFreq専用処理。
+- `xyz.py`：単一構造XYZの読込と、直接FBX出力用のRDKit結合推定。
 - `blender_export.py` と `blender_worker.py`：FBX生成。
 
 ORCAを採用した理由は、Windows上で外部実行ファイルとして導入でき、DFT構造最適化、
